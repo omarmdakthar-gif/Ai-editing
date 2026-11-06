@@ -20,8 +20,8 @@ Unzip into your project folder, so that you get:
 Claude Code picks the skills up automatically from `.claude/skills/`.
 
 ## Also needed (not in this zip)
-- ffmpeg, Python 3.11 with `mlx-whisper`, `rembg`, `numpy`, `scipy`, `soundfile` and `Pillow`, and the `deep-filter` binary.
-- In `tools/remotion`, run `npm install`, then `npm i @fontsource/plus-jakarta-sans @fontsource/instrument-serif @fontsource/sora @fontsource/inter-tight @fontsource/playfair-display`.
+- ffmpeg, Python 3.11 with the packages in `tools/requirements.txt` (installed into `tools/venv`; see the comments in that file), and the `deep-filter` binary in `tools/bin/` (from the DeepFilterNet GitHub releases).
+- Run `npm install` in `tools/` and in `tools/remotion` (the fonts are already listed in its `package.json`).
 - A Google account with Earth Studio access, and Claude in Chrome connected.
 - `tools/env.sh` sets the paths. Edit it if your folders differ.
 
