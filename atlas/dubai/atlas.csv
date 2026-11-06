@@ -1,0 +1,719 @@
+name,also,kind,parent,area_km2,lon,lat,has_boundary,osm
+Abu Hail,,neighbourhood,,1.277,55.329902,25.285558,yes,relation/18471786
+Academic City,,admin 10,,13.009,55.409999,25.112412,yes,relation/18471831
+"Akoya Aquilegia, Damac Hills 2, Dubai",,development (residential),Damac Hills 2,0.201,55.38829,24.991815,yes,way/1131131517
+"Akoya Vardon, Damac Hills 2, Dubai",,development (residential),Damac Hills 2,0.218,55.379157,24.991512,yes,way/1131115809
+Al Athbah,,suburb,Wadi Al Shabak,0.0,55.478478,25.175974,point only,node/11799523281
+Al Awir,,suburb,,70.641,55.56467,25.184095,yes,relation/18471730
+Al Awir 1,,suburb,Al Awir,41.554,55.586816,25.198852,yes,way/1270572725
+Al Awir 2,,suburb,Al Awir,0.0,55.590766,25.170464,point only,node/11799803582
+Al Bada'a,,admin 10,Bur Dubai,1.98,55.268642,25.22451,yes,relation/18471722
+Al Baraha,,admin 10,,1.025,55.319765,25.282269,yes,relation/18471780
+Al Barari,,suburb,,36.415,55.31877,25.108277,yes,relation/18471806
+Al Barari Residences,,merged from 2 mapped parts (may be partial),Al Barari,0.439,55.306104,25.099329,yes,way/1132767684;way/1132777257
+Al Barsha,,development (residential),,35.982,55.210872,25.087543,yes,relation/15607818
+Al Barsha 1,,development (residential),Al Barsha North,3.172,55.194309,25.108971,yes,way/360092893
+Al Barsha 2,,development (residential),Al Barsha North,4.685,55.216899,25.101998,yes,way/359650319
+Al Barsha 3,,development (residential),Al Barsha North,4.102,55.197651,25.09187,yes,way/360092892
+Al Barsha North,,development (residential),Al Barsha,13.429,55.203451,25.098637,yes,way/1178789138
+Al Barsha South,,development (residential),Al Barsha,13.132,55.231132,25.077363,yes,way/1178788518
+Al Barsha South 1,,neighbourhood,Al Barsha South,5.81,55.2336,25.085855,yes,way/1270300281
+Al Barsha South 2,,neighbourhood,Al Barsha South,4.62,55.233746,25.071843,yes,way/1270384366
+Al Barsha South 3,,neighbourhood,Al Barsha South,3.9,55.235581,25.059205,yes,relation/18471699
+Al Barsha South 4,,neighbourhood,,6.776,55.208987,25.060156,yes,way/1012040533
+Al Barsha South 5,,admin 10,Jumeirah Village Circle,2.985,55.190171,25.046763,yes,relation/18471834
+Al Bateen,,suburb,,0.141,55.299725,25.268962,yes,relation/14506839
+Al Buteen,,suburb,Al Bateen,0.0,55.299871,25.269361,point only,node/13705920541
+Al Corniche,,suburb,Corniche Deira,0.0,55.303192,25.277573,point only,node/11799185909
+Al Daghaya,,suburb,Al Dhagaya,0.0,55.300116,25.272528,point only,node/13705920540
+Al Dhagaya,,suburb,,0.173,55.300383,25.272717,yes,relation/18471663
+Al Fagaa,,suburb,Al Fagaa',0.0,55.575521,24.750896,point only,node/11799906834
+Al Fagaa',,suburb,,208.068,55.52917,24.736692,yes,relation/7761574
+Al Fahidi,,neighbourhood,Al Souk Al Kabeer,0.0,55.288951,25.264137,point only,node/7826894571
+Al Furjan,,neighbourhood,Jabal Ali 1,2.699,55.148423,25.02669,yes,way/1009294959
+Al Garhoud,,admin 10,,3.801,55.348888,25.243504,yes,relation/18471788
+Al Hamriya,,admin 10,Bur Dubai,0.758,55.304061,25.260033,yes,relation/18471710
+Al Hamriya Port,,admin 10,,0.768,55.33632,25.30075,yes,relation/18471732
+Al Hathmah,,suburb,,0.0,55.409504,24.776555,point only,node/11799922406
+Al Hebiah 1,,suburb,,4.082,55.238601,25.045178,yes,way/874795222
+Al Hebiah 2,,suburb,,2.204,55.240719,25.035867,yes,relation/18471650
+Al Hebiah 3,,suburb,,4.607,55.253625,25.021693,yes,way/360103612
+Al Hebiah 4,,suburb,,8.517,55.219298,25.033613,yes,way/874795221
+Al Hebiah 5,,suburb,,7.754,55.236843,25.008317,yes,relation/18471818
+Al Hebiah 6,,suburb,,2.928,55.268897,25.015994,yes,way/360103613
+Al Hudaiba,,admin 10,Bur Dubai,0.85,55.279289,25.242545,yes,relation/18471790
+Al Jadaf,,suburb,Al Jaddaf,0.0,55.324569,25.214294,point only,node/5240753150
+Al Jaddaf,,admin 10,Bur Dubai,10.131,55.323387,25.206294,yes,relation/18471794
+Al Jaffiliya,,suburb,Al Jafiliya,0.0,55.286937,25.237631,point only,node/8143204806
+Al Jafiliya,,admin 10,Bur Dubai,1.672,55.28715,25.237929,yes,relation/18471800
+Al Karama,,admin 10,Bur Dubai,2.107,55.304903,25.244678,yes,relation/18471789
+Al Khabisi,,neighbourhood,,1.228,55.336296,25.268565,yes,relation/14506844
+Al Khail Gate Residential,,neighbourhood,Al Quoz Community,0.613,55.252353,25.139913,yes,way/241250684
+Al Khail Heights,,development (residential),Al Qouz 4,0.293,55.253688,25.15586,yes,way/685411567
+Al Khawaneej 1,,suburb,Al-Khawaneej 1,0.0,55.48902,25.240711,point only,node/11799298545
+Al Khawaneej 2,,suburb,Al-Khawaneej 2,0.0,55.521561,25.226975,point only,node/11799298546
+Al Kheeran,,suburb,Dubai Festival City,0.0,55.36392,25.21524,point only,node/11799523274
+Al Kheeran 1,,suburb,Dubai Creek Harbour,0.0,55.359302,25.197915,point only,node/11799523275
+Al Kifaf,,development (residential),Za'abeel,0.863,55.298597,25.234627,yes,way/1151635456
+Al Layan 1,,suburb,,32.109,55.125385,24.790419,yes,relation/18471840
+Al Layan 2,,suburb,,0.0,55.169096,24.75084,point only,node/11799922414
+Al Lesaily,,admin 10,,111.476,55.445672,24.912706,yes,relation/18471841
+Al Lisaili,,village,Al Lesaily,0.0,55.473254,24.930673,point only,node/5243981238
+Al Maha,,suburb,,0.0,55.661437,24.898695,point only,node/11795157806
+Al Mahra,,admin 10,Wadi Al Safa 6,0.174,55.275803,25.048742,yes,way/359668886
+Al Maktoum International Airport Extension,,development (construction),Madinat Al Mataar,40.851,55.173054,24.921729,yes,way/1434201974
+Al Mamzar,,admin 10,,8.57,55.363279,25.304432,yes,relation/18471731
+Al Manara,,admin 10,,2.194,55.214661,25.144797,yes,relation/18471689
+Al Mankhool,,admin 10,Bur Dubai,1.962,55.294166,25.249005,yes,relation/18471793
+Al Marmoom,,admin 10,,28.155,55.451365,24.980447,yes,relation/18471801
+Al Meryal,,suburb,,0.0,55.652123,25.063662,point only,node/11799803585
+Al Mina,,suburb,Bur Dubai,6.653,55.262932,25.263393,yes,relation/18471712
+Al Mizhar,,suburb,,11.172,55.448058,25.242615,yes,relation/18471787
+Al Mizhar 1,,development (residential),Al Mizhar,6.691,55.441714,25.244696,yes,way/1134486846
+Al Mizhar 2,,development (residential),Al Mizhar,4.169,55.460553,25.243342,yes,way/1134490286
+Al Mizhar 3,,development (residential),Oud Al Muteena,2.421,55.464454,25.264926,yes,way/1270299174
+Al Mizhar 4,,neighbourhood,Oud Al Muteena,3.634,55.445374,25.263962,yes,way/1496208958
+Al Muraqqabat,,suburb,,1.505,55.322131,25.264576,yes,relation/18471665
+Al Murar,,admin 10,,0.388,55.310133,25.276739,yes,relation/18471782
+Al Muteena,,admin 10,,1.113,55.322561,25.274337,yes,relation/18471783
+Al Nahda,,suburb,,3.9,55.3715,25.28845,yes,relation/18471785
+Al Nahda 1,,neighbourhood,Al Nahda,1.449,55.363138,25.288351,yes,relation/4721570
+Al Nahda 2,,neighbourhood,Al Nahda,0.0,55.374458,25.291304,point only,node/8143204789
+"Al Naseem, Mudon, Dubai",,development (residential),Mudon,0.286,55.27597,25.022028,yes,way/1131416194
+Al Nassem,,admin 10,Mudon,0.25,55.275935,25.021733,yes,way/360100825
+Al O'shoosh,,suburb,,69.614,55.348368,24.678694,yes,relation/7760903
+Al Qouz 1,,development (residential),Al Quoz,3.319,55.252966,25.169091,yes,way/1150001584
+Al Qouz 3,,development (residential),Al Quoz,2.241,55.24192,25.1602,yes,way/1149998432
+Al Qouz 4,,development (residential),Al Quoz,2.043,55.252681,25.151856,yes,way/1150002952
+Al Quoz,,development (residential),,10.163,55.253666,25.162671,yes,way/1178795065
+Al Quoz 1,,suburb,Al Qouz 1,0.0,55.254308,25.16812,point only,node/11799454203
+Al Quoz 3,,suburb,Al Qouz 3,0.0,55.242817,25.158752,point only,node/11799454207
+Al Quoz 4,,suburb,Al Qouz 4,0.0,55.254084,25.150874,point only,node/11799454208
+Al Quoz Community,,admin 10,,27.196,55.239379,25.139999,yes,relation/15621952
+Al Quoz Industrial 1,,suburb,Al Quoz Industrial Area 1,0.0,55.232981,25.143714,point only,node/11799489429
+Al Quoz Industrial 2,,suburb,Al Quoz Industrial Area 2,0.0,55.247928,25.133977,point only,node/11799489430
+Al Quoz Industrial 3,,suburb,Al Quoz Industrial Area 3,0.0,55.21836,25.125063,point only,node/11799489432
+Al Quoz Industrial 4,,suburb,Al Quoz Industrial Area 4,0.0,55.233182,25.116089,point only,node/11799489433
+Al Quoz Industrial Area,,suburb,Al Quoz Industrial Area 1,0.0,55.233507,25.131687,point only,node/8143204843
+Al Quoz Industrial Area 1,,neighbourhood,Al Quoz Community,4.595,55.231168,25.14206,yes,way/346472554
+Al Quoz Industrial Area 2,,neighbourhood,Al Quoz Community,2.987,55.244895,25.132636,yes,way/87376403
+Al Quoz Industrial Area 3,,neighbourhood,Al Quoz Community,4.194,55.218655,25.126366,yes,way/87386999
+Al Quoz Industrial Area 4,,neighbourhood,Al Quoz Community,3.726,55.231661,25.116968,yes,way/87383260
+Al Qusais,,suburb,,6.782,55.385939,25.270144,yes,relation/18471660
+Al Qusais Ind 1,,suburb,Al Qusais Industrial Area,0.0,55.387107,25.286895,point only,node/13706209527
+Al Qusais Ind 2,,suburb,Al Qusais Industrial 2,0.0,55.394459,25.282812,point only,node/13706209528
+Al Qusais Ind 3,,suburb,Al Qusais Industrial Area,0.0,55.390132,25.2981,point only,node/13706209531
+Al Qusais Ind 4,,suburb,Al Qusais Industrial Area,0.0,55.400542,25.293399,point only,node/13706209532
+Al Qusais Ind 5,,suburb,Al Qusais Industrial Area,0.0,55.414125,25.286926,point only,node/13706209533
+Al Qusais Industrial 1,,neighbourhood,Al Qusais Industrial Area,0.0,55.386058,25.285531,point only,node/11799298529
+Al Qusais Industrial 2,,admin 10,Al Qusais Industrial Area,0.716,55.395423,25.28682,yes,relation/18471839
+Al Qusais Industrial 3,,neighbourhood,Al Qusais Industrial Area,0.0,55.390233,25.297331,point only,node/11799298533
+Al Qusais Industrial 4,,neighbourhood,Al Qusais Industrial Area,0.0,55.399379,25.292331,point only,node/11799298534
+Al Qusais Industrial 5,,neighbourhood,Al Qusais Industrial Area,0.0,55.413684,25.287038,point only,node/11799298535
+Al Qusais Industrial Area,,admin 10,,7.321,55.415848,25.286732,yes,relation/18471784
+Al Raffa,,admin 10,Bur Dubai,1.234,55.287373,25.253014,yes,relation/18471711
+Al Ras,,suburb,,0.319,55.296435,25.270038,yes,relation/14506838
+Al Rashidiya,,suburb,,5.929,55.390646,25.223952,yes,relation/18471723
+Al Reem 1,,admin 11,Wadi Al Safa 6,0.224,55.295787,25.059689,yes,way/359668871
+Al Reem 2,,admin 11,Wadi Al Safa 6,0.166,55.289758,25.055825,yes,way/359668872
+Al Reem 3,,admin 11,Wadi Al Safa 6,0.147,55.289156,25.059399,yes,way/359668873
+Al Rigga,,suburb,,0.636,55.311207,25.265998,yes,relation/14506842
+Al Rowaiyah 1,,suburb,Al Ruwayyah 1,0.0,55.433174,25.125763,point only,node/13708385922
+Al Rowaiyah 2,,suburb,Al Ruwayyah 2,0.0,55.400399,25.103491,point only,node/13708385923
+Al Rowaiyah 3,,suburb,Al Ruwayyah 3,0.0,55.477811,25.114278,point only,node/13708385924
+Al Ruwayya,,suburb,Al Ruwayyah 1,0.0,55.419853,25.114415,point only,node/13263889497
+Al Ruwayyah 1,,neighbourhood,,10.363,55.425681,25.120294,yes,relation/18471643
+Al Ruwayyah 2,,neighbourhood,Academic City,7.576,55.397118,25.106212,yes,relation/18471659
+Al Ruwayyah 3,,neighbourhood,,58.789,55.476862,25.121414,yes,way/1270573808
+Al Sabkha,,suburb,,0.068,55.302432,25.269395,yes,way/874795358
+Al Safa,,admin 10,,4.332,55.23238,25.168081,yes,relation/18471742
+Al Safa 1,,development (residential),Al Safa,2.436,55.238474,25.175466,yes,way/89618951
+Al Safa 2,,neighbourhood,Al Safa,1.896,55.226645,25.161296,yes,way/87408747
+"Al Salam, Mudon",,development (residential),Mudon,0.233,55.26994,25.026595,yes,way/1131415756
+Al Satwa,,admin 10,Bur Dubai,2.699,55.273245,25.220255,yes,relation/18471715
+Al Selal/Madinat Latifa,,admin 10,,168.62,55.272423,24.891414,yes,relation/18471684
+Al Seyouh,,suburb,,51.143,55.612017,25.24539,yes,way/874795329
+Al Shindagha,,admin 10,Bur Dubai,0.292,55.288889,25.266579,yes,relation/18471759
+Al Souk Al Kabeer,,admin 10,Bur Dubai,0.863,55.29295,25.261923,yes,relation/18471713
+Al Souq Al Kabeer,,suburb,Al Souk Al Kabeer,0.0,55.293631,25.262046,point only,node/8143204799
+Al Sufouh,,neighbourhood,,10.05,55.173926,25.111842,yes,way/874795236
+Al Sufouh 1,,neighbourhood,Al Sufouh,6.179,55.186433,25.122557,yes,way/360092894
+Al Sufouh 2,,neighbourhood,Al Sufouh,4.062,55.164772,25.101019,yes,way/360092896
+Al Thanyah 1,,neighbourhood,Dubai Media City 2,1.075,55.175154,25.098234,yes,way/691039035
+Al Thanyah 2,,neighbourhood,Al Barsha,6.248,55.19026,25.080667,yes,way/1270322707
+Al Thanyah 3,,suburb,Emirates Golf Club,0.0,55.164938,25.085917,point only,node/11799526281
+Al Thanyah 4,,suburb,Emirates Hills,0.0,55.175188,25.064373,point only,node/11799526283
+Al Thanyah 5,,suburb,Jumeirah Heights,0.0,55.141112,25.063654,point only,node/11799526282
+Al Ttay,,suburb,,3.271,55.542479,25.24039,yes,way/1270338214
+Al Twar,,admin 10,,6.624,55.384556,25.259948,yes,relation/14506845
+Al Twar 1,,development (residential),Al Twar,2.389,55.361485,25.27187,yes,way/1134811878
+Al Twar 2,,development (residential),Al Twar,1.006,55.382104,25.261322,yes,way/1134813825
+Al Twar 3,,development (residential),Al Twar,2.884,55.396052,25.248431,yes,way/1134814847
+Al Twar 4,,development (residential),Al Qusais,2.041,55.399217,25.261658,yes,way/1134791904
+Al Twar 5,,neighbourhood,Al Qusais,1.672,55.387098,25.269279,yes,way/1134786867
+Al Waha Villas,,neighbourhood,Wadi Al Safa 7,0.136,55.28587,25.029016,yes,way/149865385
+Al Waheda,,admin 10,,1.432,55.336611,25.291327,yes,relation/14506841
+Al Wajeha Al Bahriya,,suburb,,254.86,54.967033,24.953702,yes,way/477069137
+Al Wajeha Al Bahriya (Dubai Waterfront),,neighbourhood,Al Wajeha Al Bahriya,3.297,54.909042,24.944335,yes,relation/7661463
+Al Warqa,,admin 10,,21.548,55.429249,25.190296,yes,relation/18471737
+Al Warqa 1,,neighbourhood,Al Warqa,1.938,55.403376,25.188983,yes,way/334470164
+Al Warqa 2,,neighbourhood,Al Warqa,3.261,55.408048,25.200975,yes,way/396540244
+Al Warqa 3,,neighbourhood,Al Warqa,5.677,55.419019,25.191657,yes,way/334470460
+Al Warqa 4,,neighbourhood,Al Warqa,4.557,55.437364,25.18712,yes,way/200764068
+Al Warqa 5,,neighbourhood,Al Warqa,4.2,55.452973,25.180479,yes,way/396541324
+Al Warqa'a 1,,suburb,Al Warqa 1,0.0,55.403439,25.188383,point only,node/13707364566
+Al Warqa'a 2,,suburb,Al Warqa 2,0.0,55.409689,25.201618,point only,node/13707364567
+Al Warqa'a 3,,suburb,Al Warqa 3,0.0,55.418229,25.188354,point only,node/13707364568
+Al Warqa'a 4,,suburb,Al Warqa 4,0.0,55.43766,25.187454,point only,node/13707364569
+Al Warqa'a 5,,suburb,Al Warqa 5,0.0,55.453815,25.180072,point only,node/13707364570
+Al Wasl,,admin 10,Bur Dubai,4.878,55.255077,25.195949,yes,relation/18471795
+Al Wohoosh,,suburb,,0.0,55.62594,25.120115,point only,node/11799803583
+Al Yalayis 1,,suburb,,18.44,55.306044,25.019379,yes,relation/18471697
+Al Yalayis 2,,neighbourhood,,14.597,55.286744,24.998263,yes,relation/18471752
+Al Yalayis 3,,admin 10,,12.115,55.34647,24.975174,yes,relation/18471687
+Al Yalayis 4,,admin 10,,13.313,55.319007,24.968866,yes,relation/18471653
+Al Yalayis 5,,suburb,,24.793,55.270839,24.975347,yes,relation/18471637
+Al Yufrah 1,,suburb,The Valley,0.0,55.438739,25.002988,point only,node/11799914691
+Al Yufrah 2,,suburb,Al Yufrah 4,0.0,55.383744,24.959855,point only,node/11799914693
+Al Yufrah 4,,admin 10,,11.826,55.392314,24.967728,yes,relation/18471652
+Al-Khawaneej,,suburb,Al-Khawaneej 2,0.0,55.509796,25.238252,point only,node/8143204797
+Al-Khawaneej 1,,development (residential),,15.142,55.488225,25.244152,yes,way/1134445829
+Al-Khawaneej 2,,development (residential),,12.113,55.524719,25.230076,yes,way/1134453026
+Alana,,neighbourhood,The Valley,0.242,55.450019,25.004477,yes,way/1494508285
+Aleyas,,suburb,,10.501,55.536144,25.211903,yes,relation/18471756
+Alma 1,,admin 11,Wadi Al Safa 6,0.119,55.268474,25.053494,yes,way/359668898
+Alma 2,,admin 11,Wadi Al Safa 6,0.028,55.272525,25.054371,yes,way/359668893
+Alvorada 1,,admin 11,Wadi Al Safa 6,0.087,55.257464,25.043338,yes,way/365020691
+Alvorada 2,,admin 11,Wadi Al Safa 6,0.149,55.261531,25.043232,yes,way/365020692
+Alvorada 3,,admin 11,Wadi Al Safa 6,0.093,55.264577,25.044205,yes,way/365020693
+Alvorada 4,,admin 11,Wadi Al Safa 6,0.122,55.268966,25.044206,yes,way/365020694
+Amber Way,,neighbourhood,Jumeirah Golf Estates,0.079,55.206774,25.022561,yes,way/360203600
+Antarctica,,islet,,0.353,55.189318,25.214396,yes,relation/9641774
+Arabella 1,,development (residential),"Arabella Townhouses, Dubai",0.306,55.271322,25.017465,yes,way/360100828
+"Arabella Townhouses, Dubai",,development (residential),Al Hebiah 6,0.839,55.26654,25.013026,yes,way/1131527275
+Arabian Ranches,,suburb,,8.326,55.267275,25.048762,yes,way/874795223
+Arabian Ranches 2,,development (residential),Wadi Al Safa 7,1.959,55.270064,25.035289,yes,way/1161357420
+Arabian Ranches 3,,development (construction),Wadi Al Safa 5,1.353,55.322786,25.065163,yes,way/712621092
+Area 2,,development (residential),Al Mizhar 4,0.238,55.455394,25.267235,yes,way/183248446
+Area 3,,development (residential),Al Mizhar 4,0.201,55.450385,25.268945,yes,way/183248403
+Arjan,,development (residential),Al Barsha South,3.908,55.235486,25.060331,yes,way/309488167
+Australia,,islet,,0.364,55.194351,25.231477,yes,relation/9641714
+Avena,,neighbourhood,The Valley,0.225,55.441443,25.007672,yes,way/1494508289
+Avena 2,,neighbourhood,The Valley,0.209,55.444858,25.003663,yes,way/1494508294
+Axel Heiberg Island,,islet,,0.662,55.134242,25.215807,yes,relation/16672994
+Ayal Nasir,,suburb,,0.173,55.304047,25.274318,yes,relation/18471791
+Azalea,,neighbourhood,Arabian Ranches 2,0.074,55.273328,25.029082,yes,way/360103621
+Badrah,,suburb,Palm Springs,0.0,55.050505,24.951501,point only,node/4916824173
+Barsha Heights,,neighbourhood,Al Thanyah 1,0.0,55.175782,25.098284,point only,node/3087418334
+Block 12K,,neighbourhood,District 12,0.03,55.216777,25.05348,yes,way/384131551
+Block 5A,,neighbourhood,District 5,0.006,55.190534,25.047207,yes,way/433989990
+Block 5B,,neighbourhood,District 5,0.028,55.19043,25.049074,yes,way/433989993
+Block 5C,,neighbourhood,District 5,0.01,55.192163,25.050393,yes,way/433989997
+Block 5D,,neighbourhood,District 5,0.01,55.191681,25.047359,yes,way/433990000
+Block 5E,,neighbourhood,District 5,0.018,55.191211,25.04889,yes,way/433990003
+Block 5F,,neighbourhood,District 5,0.012,55.192498,25.04855,yes,way/433990006
+Block 5G,,neighbourhood,District 5,0.015,55.193103,25.049048,yes,way/433990009
+Block 7C,,neighbourhood,"District 7, Jumeirah Village Triangle",0.008,55.190857,25.054356,yes,way/392395646
+Block 8D,,neighbourhood,District 8,0.015,55.188085,25.050927,yes,way/634645012
+Bluewaters,,neighbourhood,,0.377,55.121704,25.079548,yes,way/1090798761
+Brookfield,,admin 10,Al Hebiah 3,0.11,55.24654,25.02479,yes,way/360100848
+Bukadra,,admin 10,Meydan,1.798,55.325069,25.177389,yes,relation/18471797
+Bur Dubai,,island,,64.446,55.29672,25.23559,yes,relation/6843778
+Burj Khalifa,,suburb,Downtown Dubai,0.0,55.272338,25.191821,point only,node/13707693371
+Business Bay,,neighbourhood,,6.713,55.273481,25.183865,yes,way/1012135274
+Business Park Motor City,,development (commercial),Motor City,0.692,55.23202,25.046874,yes,way/365032020
+Calida Village,,admin 10,Al Hebiah 4,0.108,55.209617,25.040361,yes,way/359691077
+Camelia 2,,neighbourhood,Arabian Ranches 2,0.058,55.27599,25.037607,yes,way/1131548970
+Camelia I,,neighbourhood,Arabian Ranches 2,0.076,55.278007,25.034486,yes,way/365020708
+Canal Cove Village,,development (residential),Palm Jumeirah,0.208,55.130562,25.120835,yes,way/1124414575
+Carmen Village,,admin 10,Al Hebiah 4,0.097,55.214892,25.034703,yes,way/146496665
+Carmen Village North,,admin 10,Al Hebiah 4,0.01,55.213627,25.037888,yes,way/148713181
+Casa Dora,,development (residential),Serena,0.282,55.285256,25.033798,yes,way/1149552394
+Casa Villas,,neighbourhood,Arabian Ranches 2,0.175,55.265777,25.035662,yes,way/360103617
+Casa Viva,,development (residential),Serena,0.213,55.282934,25.036365,yes,way/1149552000
+Cedre Villas A-D,,development (residential),Nadd Hessa,0.255,55.392774,25.122834,yes,way/213572535
+Cedre Villas E-J,,development (residential),Nadd Hessa,0.522,55.397609,25.128298,yes,way/99761865
+Central District,,neighbourhood,Warsan 1,0.36,55.406782,25.16597,yes,way/285424628
+China Cluster,,neighbourhood,Warsan 1,0.538,55.414148,25.166746,yes,way/285428832
+City of Arabia,,admin 10,,17.453,55.337371,25.088969,yes,relation/18471805
+City Walk,,development (residential),Al Wasl,0.841,55.26345,25.205426,yes,way/1173700865
+"Club Villas, Dubai Hills Estate",,development (residential),Dubai Hills Estate,0.202,55.262128,25.121125,yes,way/1130768933
+Clubhouse Area,,admin 10,The Lakes,0.043,55.167197,25.078653,yes,way/360092889
+Commercial Offices,,development (commercial),Nadd Hessa,0.229,55.381427,25.133149,yes,way/364840302
+Corniche Deira,,admin 10,,1.523,55.3136,25.284015,yes,relation/14506837
+Crescent Moon Island  ♡𓆝,Crescent Moon Island Dubai,island,,0.875,54.651651,25.30692,yes,way/395307466
+Culture Village,,neighbourhood,Al Jaddaf,0.786,55.338098,25.226332,yes,way/396553693
+Damac Hills,,neighbourhood,Al Hebiah 3,0.0,55.251228,25.026438,point only,node/11795397123
+Damac Hills 2,,neighbourhood,,5.457,55.386791,24.987561,yes,way/1012057887
+Deema 1,,admin 10,The Lakes,0.068,55.167927,25.076382,yes,way/89567050
+Deema 2,,admin 10,The Lakes,0.058,55.171167,25.076601,yes,way/89567001
+Deema 3,,admin 10,The Lakes,0.059,55.174308,25.077185,yes,way/89567047
+Deema 4,,admin 10,The Lakes,0.062,55.177002,25.078346,yes,way/359511983
+Deira,,town,Naif,0.0,55.305334,25.272794,point only,node/7826901099
+Deira Island,,island,,16.642,55.326318,25.317917,yes,relation/8122161
+Deira Island Mall,,development (construction),Deira Island,0.39,55.30107,25.296263,yes,way/679207831
+"Desert Leaf, Al Barari Residences, Dubai",,development (residential),Al Barari Residences,0.202,55.310057,25.100868,yes,way/1132767684
+Desert Spring Village,,neighbourhood,Al Thanyah 1,0.06,55.175677,25.10187,yes,way/928738017
+DIC Village 3,,development (residential),Saih Shuaib 4,0.22,55.079094,24.828731,yes,way/286223921
+Discovery Gardens,,suburb,Jabal Ali 1,2.228,55.145696,25.038271,yes,way/213900204
+District 1,,development (residential),Al Barsha South 5,0.212,55.173981,25.034439,yes,way/1124076466
+District 10,,development (residential),Al Barsha South 4,0.824,55.20542,25.064059,yes,way/1123570128
+District 11,,development (residential),Al Barsha South 4,0.869,55.214391,25.063514,yes,way/1123864983
+District 12,,development (residential),Al Barsha South 4,0.721,55.215901,25.054249,yes,way/1123595154
+District 13,,development (residential),Al Barsha South 4,0.616,55.210927,25.0509,yes,way/1123649275
+District 14,,development (residential),Al Barsha South 4,0.718,55.20198,25.050577,yes,way/1123670419
+District 15,,development (residential),Al Barsha South 4,0.552,55.201281,25.058924,yes,way/1123672640
+"District 16, Jumeirah Village Circle",,development (residential),Al Barsha South 4,0.282,55.210889,25.071164,yes,way/1123397880
+District 2,,development (residential),Al Barsha South 5,0.25,55.178699,25.038996,yes,way/1124083176
+"District 2, Jumeirah Park",,development (residential),Jumeirah Park,0.352,55.14676,25.056289,yes,way/1123307140
+"District 3, Jumeirah Park",,development (residential),Jumeirah Park,0.287,55.147901,25.050297,yes,way/1123309102
+District 4,,development (residential),Al Barsha South 5,0.283,55.192788,25.044526,yes,way/1124086440
+"District 4, Jumeirah Park",,development (residential),Jumeirah Park,0.396,55.153008,25.051222,yes,way/1123316535
+District 5,,development (residential),Al Barsha South 5,0.241,55.192779,25.048431,yes,way/1124091058
+"District 5, Jumeirah Park",,development (residential),Jumeirah Park,0.388,55.153149,25.045918,yes,way/1123320585
+"District 6, Jumeirah Park",,development (residential),Jumeirah Park,0.614,55.161964,25.045848,yes,way/1123339350
+"District 7, Jumeirah Park",,development (residential),Jumeirah Park,0.403,55.163406,25.040064,yes,way/1123350244
+"District 7, Jumeirah Village Triangle",,quarter,Al Barsha South 5,0.127,55.192223,25.055783,yes,way/398104630
+District 8,,development (residential),Al Barsha South 5,0.398,55.187457,25.049332,yes,way/1124132326
+"District 8, Jumeirah Park",,development (residential),Jumeirah Park,0.412,55.165911,25.037716,yes,way/1123355156
+District 9,,development (residential),Al Barsha South 5,0.315,55.184854,25.043971,yes,way/1124140861
+"District 9, Jumeirah Park",,development (residential),Jumeirah Park,0.407,55.169398,25.046118,yes,way/1123358490
+Downtown Dubai,,admin 10,Bur Dubai,9.239,55.274705,25.186684,yes,relation/18471738
+Downtown Jebel Ali,,development (residential),Jabal Ali Industrial 2,3.957,55.07783,24.954518,yes,way/1161112368
+Downtown Jebel Ali 3,,development (construction),Downtown Jebel Ali,0.586,55.049518,24.940535,yes,way/360653138
+Downtown Jebel Ali 4,,development (construction),Downtown Jebel Ali,0.764,55.016253,24.928472,yes,way/360653135
+Dragon Mart 1,,development (commercial),Warsan 1,0.428,55.41604,25.173705,yes,way/396549384
+DSO Semmer Villas,,development (residential),Nadd Hessa,0.554,55.381734,25.113984,yes,way/201485415
+Dubai,,development (commercial),Umm Nahad 1/Madinat Hind 1,1.332,55.406034,25.06526,yes,way/360219428
+Dubai Airport Free Zone,,neighbourhood,Dubai International Airport,0.0,55.372926,25.261045,point only,node/13258039755
+Dubai Birds & Pet Market,,development (commercial),Warsan 3,0.44,55.460082,25.145763,yes,way/361046733
+Dubai Creek Harbour,,development (residential),New Ras Al Khor Community,7.039,55.36038,25.197978,yes,way/1012353010
+Dubai Design District,,suburb,Zabeel,2.132,55.302017,25.189933,yes,way/404591752
+Dubai Festival City,,suburb,New Ras Al Khor Community,6.035,55.359178,25.2217,yes,way/838663334
+Dubai Golf City,,suburb,,5.368,55.234267,25.011316,yes,relation/18471843
+Dubai Harbour,,development (residential),Emaar Beachfront,0.947,55.138001,25.095619,yes,way/1156814571
+Dubai Healthcare City,,neighbourhood,Umm Hurair 2,0.456,55.322504,25.231819,yes,way/396554518
+Dubai Hills,,development (residential),Hadaeq Sheikh Mohammed Bin Rashid,4.773,55.246363,25.102254,yes,way/519273031
+Dubai Hills Estate,,merged from 10 mapped parts (may be partial),Hadaeq Sheikh Mohammed Bin Rashid,3.512,55.251188,25.099907,yes,way/508546068;way/1130767654;way/1130768933;way/1130770248;way/1130770710;way/1130771113;way/1130772434;way/1130773786;way/1130775589;way/1130776143
+Dubai Industrial City,,suburb,Saih Shuaib 3,0.0,55.066293,24.839901,point only,node/4916824174
+Dubai Int'l Airport,,suburb,Dubai International Airport,0.0,55.368747,25.260045,point only,node/13707693373
+Dubai International Airport,,admin 10,,14.416,55.365276,25.252671,yes,relation/18471754
+Dubai International Financial Centre,,development (residential),Zabeel,0.637,55.277639,25.208824,yes,way/1012362722
+Dubai Internet City,,development (residential),Al Sufouh 2,1.102,55.161716,25.095591,yes,way/1154309751
+Dubai Investment Park 1,,neighbourhood,Dubai Investments Park,8.928,55.160475,24.982434,yes,way/1093772525
+Dubai Investment Park 2,,neighbourhood,Dubai Investments Park,17.413,55.211914,24.974446,yes,way/1093773633
+Dubai Investments Park,,neighbourhood,,35.784,55.184738,24.985679,yes,way/874795301
+Dubai Knowledge Park,,neighbourhood,Al Sufouh 2,0.0,55.163622,25.103133,point only,node/13264966064
+Dubai Land,,suburb,Wadi Al Safa 5,3.91,55.366141,25.077675,yes,way/1147909867
+Dubai Lifestyle City,,neighbourhood,Wadi Al Safa 7,0.384,55.282163,25.042603,yes,way/360103624
+Dubai Marina,,development (residential),,3.668,55.137555,25.08131,yes,relation/11912728
+Dubai Maritime City,,suburb,Al Mina,0.0,55.276165,25.249626,point only,node/8143204804
+Dubai Media City,,development (residential),Al Sufouh 2,0.509,55.154627,25.094973,yes,relation/15599971
+Dubai Media City 2,,neighbourhood,,1.76,55.173567,25.096257,yes,way/360092891
+Dubai Parks and Resorts,,suburb,Dubai Techno Park,0.0,55.00868,24.919855,point only,node/4580218094
+Dubai Police Training Village,,development (residential),Umm Nahad 1/Madinat Hind 1,0.252,55.390851,25.079459,yes,way/365014873
+Dubai Production City,,neighbourhood,Me’aisem 1,4.383,55.191273,25.032128,yes,relation/18471777
+Dubai Residence Complex,,neighbourhood,Wadi Al Safa 5,2.626,55.380324,25.093104,yes,way/365212294
+Dubai Silicon Oasis,,neighbourhood,International City,8.498,55.385505,25.121706,yes,way/364819827
+Dubai South,,suburb,Al Maktoum International Airport Extension,0.0,55.161513,24.914439,point only,node/11795445497
+Dubai South Residential District,,development (residential),Madinat Al Mataar,6.626,55.219926,24.943556,yes,way/435857015
+Dubai Sports City,,neighbourhood,Al Hebiah 4,0.0,55.219353,25.032138,point only,node/11800596708
+Dubai Studio City,,neighbourhood,Al Hebiah 2,0.0,55.252259,25.041564,point only,node/1627989278
+Dubai Studio City 1,,neighbourhood,Al Hebiah 2,0.0,55.237378,25.03509,point only,node/1627999656
+Dubai Sustainable City,,neighbourhood,Wadi Al Safa 7,0.607,55.27886,25.02962,yes,way/360103623
+Dubai Techno Park,,suburb,Al Wajeha Al Bahriya,40.61,55.042559,24.919197,yes,way/874795167
+Dubai Textile Zone,,development (commercial),Warsan 1,0.467,55.420715,25.168351,yes,way/100240918
+Dubai Waterfront,,development (residential),Al Wajeha Al Bahriya,58.883,54.998449,24.944817,yes,way/1181749862
+Dubai World Trade Centre,,development (residential),Trade Centre,0.634,55.287722,25.223803,yes,way/1161399237
+Dubiotech,,neighbourhood,Al Barsha South 2,2.03,55.24251,25.074827,yes,way/360092882
+"Eastern Residence North, Falcon City of Wonders, Dubai",,development (residential),Falcon City of Wonders,0.278,55.351091,25.093656,yes,way/1131146869
+"Eastern Residence South, Falcon City of Wonders, Dubai",,development (residential),Falcon City of Wonders,0.322,55.346688,25.090325,yes,way/1131146483
+Eden,,neighbourhood,The Valley,0.125,55.449428,25.013785,yes,way/1468554320
+Elora,,neighbourhood,The Valley,0.14,55.446582,25.009177,yes,way/1494508283
+Emaar Beachfront,,suburb,,1.577,55.140933,25.096804,yes,way/988138866
+Emaar South Golf District,,development (residential),Madinat Al Mataar,6.876,55.147066,24.85472,yes,way/510986232
+"Emerald Hills, Dubai Hills Estate",,development (residential),Dubai Hills Estate,0.342,55.271291,25.126994,yes,way/508546068
+Emirates Cluster,,neighbourhood,Warsan 1,0.147,55.422726,25.162012,yes,way/285431095
+Emirates Golf Club,,development (residential),Emirates Hills,2.014,55.160309,25.084772,yes,way/1154216606
+Emirates Hills,,development (residential),,23.965,55.166369,25.06292,yes,way/874795233
+England Cluster,,neighbourhood,Warsan 1,0.35,55.407134,25.172446,yes,way/285450845
+Enkhali,,suburb,Lehbab Palace,0.0,55.571142,25.11183,point only,node/11794881384
+Esmeralda Village,,admin 10,Al Hebiah 4,0.152,55.217824,25.029631,yes,way/145564936
+Estella Village,,admin 10,Al Hebiah 4,0.16,55.218357,25.035674,yes,way/148606413
+Etihad Rail,,development (construction),Dubai Investment Park 2,0.863,55.228539,24.974619,yes,relation/13415451
+Ewan Residences,,development (residential),Dubai Investments Park,0.21,55.180182,24.994921,yes,way/190013144
+Expo 2020 District,,suburb,,5.198,55.151093,24.960132,yes,way/499367597
+Expo City Dubai,,development (residential),,6.455,55.159344,24.961764,yes,way/1191742059
+Expo Valley,,development (construction),Expo 2020 District,0.669,55.16957,24.963387,yes,way/1156919000
+Fairbanks,,islet,,0.318,55.135144,25.202003,yes,relation/16672995
+Fairways 1,,development (construction),Hadaeq Sheikh Mohammed Bin Rashid,0.22,55.260391,25.115242,yes,way/508546031
+Fairways 2,,neighbourhood,Hadaeq Sheikh Mohammed Bin Rashid,0.0,55.268391,25.111414,point only,node/4958436339
+Falcon City of Wonders,,development (residential),Wadi Al Safa 2,4.741,55.343605,25.096786,yes,way/365014932
+Falcon City of Wonders 1,,neighbourhood,Falcon City of Wonders,0.361,55.339423,25.099591,yes,way/360213221
+Falcon City of Wonders 2,,neighbourhood,Falcon City of Wonders,0.259,55.344302,25.102023,yes,way/360213229
+Farm Gardens,,neighbourhood,The Valley,0.237,55.442625,25.015592,yes,way/1494508292
+Farm Gardens 2,,neighbourhood,The Valley,0.381,55.437685,25.013106,yes,way/1494508293
+Fireside,,neighbourhood,Jumeirah Golf Estates,0.126,55.204786,25.019982,yes,way/360203601
+Flame Tree Ridge,,neighbourhood,Jumeirah Golf Estates,0.109,55.204499,25.016666,yes,way/360181246
+Forat,,admin 10,The Lakes,0.051,55.168369,25.078298,yes,way/89567000
+Forbidden City,,neighbourhood,Warsan 1,0.347,55.411966,25.161342,yes,way/285451796
+France Cluster,,neighbourhood,Warsan 1,0.378,55.401717,25.161417,yes,way/264254089
+Gardenia Townhomes,,neighbourhood,Wasl Gate,0.169,55.110421,25.025114,yes,way/798567816
+Ghadeer,,admin 10,The Lakes,0.136,55.172764,25.08212,yes,way/359543948
+Ghadeer Al Tair,,development (residential),Al Quoz,4.851,55.271368,25.151667,yes,way/1150000171
+Ghadeer Barashy,,admin 10,,75.695,55.324131,24.803024,yes,relation/18471649
+Ghoroob Mirdif,,neighbourhood,Mirdif,0.306,55.416717,25.212007,yes,way/445161115
+Global Village,,neighbourhood,Wadi Al Safa 4,1.804,55.306833,25.068753,yes,way/360166196
+Golf Homes,,admin 10,Wadi Al Safa 6,0.048,55.258844,25.048743,yes,way/359671135
+Golf Links,,suburb,Emaar South Golf District,0.0,55.138868,24.860367,point only,node/8843417850
+"Golf Place, Dubai Hills Estate",,development (residential),Dubai Hills Estate,0.283,55.27512,25.122615,yes,way/1130767654
+Grand Views,,development (residential),Meydan Gated Community,0.406,55.300144,25.145686,yes,way/364191034
+Grayteesah,,admin 10,,92.619,55.506199,24.866087,yes,relation/18471807
+Greece Cluster,,neighbourhood,Warsan 1,0.182,55.408825,25.156279,yes,way/264254416
+Green Community,,development (residential),Dubai Investments Park,2.656,55.163709,24.998579,yes,way/1177901730
+Green Community East,,admin 10,Green Community,0.496,55.160547,25.005584,yes,relation/18471835
+Green Community Motor City,,neighbourhood,Al Hebiah 1,0.631,55.233735,25.037621,yes,way/175395028
+Green Community West,,admin 10,Green Community,1.04,55.165338,24.996418,yes,relation/18471844
+Greenwoods,,admin 10,Al Hebiah 3,0.115,55.263123,25.030722,yes,way/360100844
+Hacienda,,neighbourhood,The Villa,0.628,55.361839,25.087566,yes,way/360215697
+Hadaeq Sheikh Mohammed Bin Rashid,,suburb,,42.016,55.263592,25.104342,yes,relation/18471757
+Hattan,,admin 10,Wadi Al Safa 6,0.158,55.266835,25.046671,yes,way/359671143
+Hattan 1,,admin 10,The Lakes,0.101,55.165032,25.076984,yes,way/192796892
+Hattan 2,,neighbourhood,The Lakes,0.21,55.166989,25.082889,yes,way/360092888
+"Hayat Townhouses, Town Square, Dubai",,development (residential),Town Square Dubai,0.237,55.300843,24.99997,yes,way/566134551
+Hayl,,suburb,,0.0,56.113943,24.789303,point only,node/12373079466
+Hefair,Community No. 991,suburb,,146.685,55.250063,24.676533,yes,relation/7760800
+Hessyan 1,,suburb,Dubai Waterfront,24.54,55.024513,24.957349,yes,relation/18471799
+Hessyan 2,,suburb,Al Wajeha Al Bahriya,44.146,54.970915,24.942216,yes,relation/18471819
+Hills Grove,,neighbourhood,Hadaeq Sheikh Mohammed Bin Rashid,0.107,55.267887,25.121032,yes,relation/9735026
+Hills View,,neighbourhood,Hadaeq Sheikh Mohammed Bin Rashid,0.312,55.267767,25.11611,yes,relation/9735027
+Hor Al Anz,,admin 10,,3.125,55.343081,25.280464,yes,relation/14506843
+Hor Al Anz East,,development (residential),Hor Al Anz,1.377,55.34716,25.282502,yes,way/396533652
+International City,,suburb,,17.746,55.398141,25.132274,yes,relation/18471686
+Italy Cluster,,neighbourhood,Warsan 1,0.154,55.400711,25.167776,yes,way/285424625
+Jabal Ali,,neighbourhood,,121.661,55.114105,24.995326,yes,way/874795165
+Jabal Ali 1,,neighbourhood,Jabal Ali,21.383,55.13364,25.041619,yes,way/1270552238
+Jabal Ali 2,,suburb,Jabal Ali,0.0,55.117629,25.054362,point only,node/11799707010
+Jabal Ali 3,,suburb,Jabal Ali,0.0,55.09549,25.031404,point only,node/11799707011
+Jabal Ali Industrial 1,,suburb,Jebel Ali Industrial Area,0.0,55.121504,24.998575,point only,node/11799707015
+Jabal Ali Industrial 2,,suburb,Jabal Ali,32.572,55.104707,24.95406,yes,relation/18471645
+Jabal Ali Industrial 3,,suburb,Al Wajeha Al Bahriya,30.265,55.060697,24.918492,yes,relation/18471829
+JAFZA Liu 1 - 2 - 3,,development (residential),Jebel Ali North Free Zone,0.344,55.060831,24.963747,yes,way/360026625
+JAFZA Liu 4 - 5,,development (residential),Jebel Ali North Free Zone,0.378,55.065035,24.962575,yes,way/360026592
+"Jasmine Leaf, Al Barari Residence, Dubai",,development (residential),Al Barari,0.343,55.310262,25.096262,yes,way/1132770610
+Jebel Ali Hills,,suburb,Saih Shuaib 1,6.217,54.971222,24.90019,yes,way/508523670
+Jebel Ali Industrial Area,,suburb,Jabal Ali,22.147,55.12081,24.996833,yes,way/874795299
+Jebel Ali North Free Zone,,suburb,Jabal Ali,26.248,55.08201,24.986473,yes,relation/18471647
+Jebel Ali Port,,suburb,,0.0,55.059888,24.980458,point only,node/4545361722
+Jebel Ali Show Village,,neighbourhood,Nakhlat Jabal Ali,0.0,54.990743,25.017223,point only,node/4938992181
+Jebel Ali Village,,development (residential),Jabal Ali 1,4.285,55.112699,25.030177,yes,way/1018273191
+JLT cluster Q,,neighbourhood,Jumeirah Lakes Towers,0.0,55.145772,25.076552,point only,node/4874143021
+Johannesburg,,island,,0.011,55.183042,25.214812,yes,relation/2695811
+Jumeirah,,admin 10,Bur Dubai,12.209,55.246841,25.206318,yes,relation/11912729
+Jumeirah 1,,suburb,Jumeirah,0.0,55.257818,25.219343,point only,node/11799418068
+Jumeirah 2,,suburb,Jumeirah,0.0,55.245202,25.200831,point only,node/11799459159
+Jumeirah 3,,neighbourhood,Jumeirah,2.66,55.229076,25.181502,yes,way/89654811
+Jumeirah Bay,,suburb,Jumeirah Bay Island,0.0,55.236584,25.213668,point only,node/11799361791
+Jumeirah Bay Island,,island,Jumeirah,0.814,55.236197,25.215549,yes,relation/9807652
+Jumeirah Beach Residence,,development (residential),Dubai Marina,0.317,55.135181,25.077802,yes,way/1011430642
+Jumeirah Golf Estates,,admin 10,Me’aisem 1,3.858,55.198121,25.02191,yes,relation/18471779
+Jumeirah Heights,,development (residential),Emirates Hills,0.577,55.14557,25.065537,yes,way/1154263932
+Jumeirah Island 2,,suburb,,0.0,55.225824,25.197624,point only,node/11799361794
+Jumeirah Islands,,neighbourhood,Emirates Hills,2.415,55.156146,25.057059,yes,relation/18471847
+Jumeirah Lakes Towers,,suburb,Emirates Hills,2.052,55.143743,25.072383,yes,way/433279682
+Jumeirah Park,,neighbourhood,Emirates Hills,3.98,55.154818,25.046941,yes,relation/18471690
+Jumeirah Village Circle,,neighbourhood,,9.763,55.205766,25.052752,yes,way/874795302
+Jumeirah Village Triangle,,neighbourhood,Block 5B,0.0,55.190701,25.049843,point only,node/11800596710
+Karama,,suburb,Al Karama,0.0,55.305061,25.248214,point only,node/11799343462
+La Avenida 1,,admin 11,Wadi Al Safa 6,0.031,55.272976,25.052828,yes,way/365020712
+La Avenida 2,,admin 11,Wadi Al Safa 6,0.036,55.270518,25.051786,yes,way/359668901
+Lahbab,,town,,0.0,55.592377,25.041542,point only,node/1487267662
+Lake District,,neighbourhood,Warsan 1,0.231,55.415852,25.152823,yes,way/285436205
+Le Hemaira,,admin 10,,36.641,55.509795,25.040714,yes,relation/18471813
+Legends,,development (residential),Al Barari,2.597,55.302485,25.086075,yes,way/1012401583
+Lehbab 1,,suburb,,0.0,55.607277,25.044519,point only,node/11799803584
+Lehbab 2,,suburb,,0.0,55.565936,25.030303,point only,node/11799809579
+Lehbab Palace,,neighbourhood,,43.001,55.573877,25.104366,yes,relation/8101411
+Lila Village,,neighbourhood,Arabian Ranches 2,0.148,55.273412,25.04024,yes,way/360103620
+Lillia,,neighbourhood,The Valley,0.137,55.447649,25.007186,yes,way/1494508284
+Lime Tree Valley,,neighbourhood,Jumeirah Golf Estates,0.139,55.200416,25.015696,yes,way/146628690
+Living Legends,,neighbourhood,"Living Legends, Dubai",0.0,55.298122,25.085079,point only,node/1623893740
+"Living Legends, Dubai",,suburb,Legends,1.592,55.298759,25.086198,yes,way/1148072110
+Liwan,,neighbourhood,Wadi Al Safa 2,2.378,55.373203,25.105894,yes,way/365756486
+"Lootah Avenue, The Fold and Rabdan Building",,development (residential),Business Park Motor City,0.261,55.228519,25.045937,yes,way/1068482225
+Madinat Al Mataar,,suburb,,134.511,55.141167,24.895658,yes,way/1148691725
+Madinat Hind 1,,suburb,Umm Nahad 1/Madinat Hind 1,0.0,55.385632,25.070031,point only,node/11799914687
+Madinat Hind 2,,suburb,Umm Nahad 2/Madinat Hind 2,0.0,55.336762,25.057235,point only,node/11799914688
+Madinat Hind 3,,suburb,Umm Nahad 3/Madinat Hind 3,0.0,55.425457,25.029488,point only,node/11799914689
+Madinat Hind 4,,suburb,,0.0,55.363706,25.007751,point only,node/11799914690
+Madinat Latifa,,suburb,Al Selal/Madinat Latifa,0.0,55.278586,24.899039,point only,node/11799922407
+Maeen,,admin 10,The Lakes,0.189,55.169816,25.082379,yes,way/360092887
+Mai Dubai Bottling & Manufacturing Facility,,development (commercial),Al Yalayis 2,0.518,55.273541,24.999101,yes,relation/7458076
+Majan,,development (residential),Wadi Al Safa 3,1.924,55.316098,25.090076,yes,way/1012399700
+Maple 1,,neighbourhood,"Maple, Dubai Hills Estate",0.282,55.253903,25.09209,yes,way/508546082
+"Maple 1, Dubai Hills Estate",,development (residential),"Maple, Dubai Hills Estate",0.309,55.253988,25.092587,yes,way/1130776143
+Maple 2,,development (residential),"Maple, Dubai Hills Estate",0.313,55.25386,25.098861,yes,way/1130776746
+Maple 3,,development (residential),"Maple, Dubai Hills Estate",0.264,55.255624,25.104362,yes,way/1130777046
+"Maple, Dubai Hills Estate",,development (residential),Dubai Hills Estate,0.983,55.25394,25.098721,yes,way/1130775589
+Margab,,suburb,,0.0,55.609065,24.807592,point only,node/11799790901
+Margham,,admin 10,,140.389,55.579045,24.948308,yes,relation/18471845
+Marqab,,village,,0.0,55.58654,24.820809,point only,node/1487267659
+Marsa Al Khor,,neighbourhood,Dubai Festival City,0.49,55.346463,25.23116,yes,way/396538880
+MBR- Al Merkad,,admin 10,,11.298,55.290001,25.167117,yes,relation/18471803
+Me'aisem 1,,suburb,Me’aisem 1,0.0,55.185912,25.016,point only,node/11799777228
+Me'aisem 2,,suburb,,10.765,55.217701,24.99516,yes,relation/18471838
+Meadows 1,,neighbourhood,The Meadows,0.481,55.154974,25.073426,yes,way/192772434
+Meadows 2,,neighbourhood,The Meadows,0.433,55.15144,25.069485,yes,way/360092884
+Meadows 3,,neighbourhood,The Meadows,0.067,55.157376,25.070652,yes,way/89567057
+Meadows 4,,neighbourhood,The Meadows,0.138,55.157039,25.067208,yes,way/89567007
+Meadows 5,,neighbourhood,The Meadows,0.235,55.161519,25.062397,yes,way/89565067
+Meadows 6,,neighbourhood,The Meadows,0.156,55.170211,25.058895,yes,way/89565047
+Meadows 7,,admin 10,The Meadows,0.112,55.178976,25.062016,yes,way/89565058
+Meadows 9,,neighbourhood,Emirates Hills,0.434,55.17384,25.045442,yes,way/89565062
+Mereiyeel,,suburb,,0.0,55.515035,25.10174,point only,node/11799807467
+Meydan,,neighbourhood,Nad Al Sheba,19.369,55.314297,25.16293,yes,way/1159907277
+Meydan Avenue,,development (commercial),MBR- Al Merkad,1.109,55.296136,25.159142,yes,way/1012439641
+Meydan Gated Community,,suburb,Nad Al Sheba 1,1.089,55.292649,25.145728,yes,way/1149180209
+Meydan Heights Villas,,admin,Nad Al Sheba 1,0.28,55.315204,25.144684,yes,way/364177206
+Meydan One Mall,,development (construction),MBR- Al Merkad,0.597,55.287132,25.172559,yes,way/519273032
+Me’aisem 1,,suburb,,16.342,55.186276,25.019984,yes,way/874795300
+Midtown by Deyaar,,neighbourhood,Dubai Production City,0.118,55.182215,25.02569,yes,way/568682342
+Millenium Estates,,admin,Meydan Gated Community,0.326,55.295585,25.144641,yes,way/364191024
+Mina Bazaar,,neighbourhood,Al Souk Al Kabeer,0.0,55.294109,25.261532,point only,node/5240802883
+Mira,,quarter,Reem,1.374,55.305536,25.00866,yes,way/474775750
+Mira 1,,neighbourhood,Mira,0.161,55.303149,25.004292,yes,way/474775746
+Mira 2,,neighbourhood,Mira,0.187,55.306837,25.002633,yes,way/474775749
+Mira 3,,neighbourhood,Mira,0.238,55.310404,25.007808,yes,way/474775748
+Mira 4,,neighbourhood,Mira,0.347,55.305038,25.013111,yes,way/474775747
+Mira 5,,neighbourhood,Mira,0.173,55.306036,25.007055,yes,way/474775745
+Mira Oasis,,admin,Reem,0.878,55.298261,25.013373,yes,way/566134543
+Mirador,,admin 10,Wadi Al Safa 6,0.351,55.285477,25.055064,yes,way/359668887
+Mirador La Colección 1,,neighbourhood,Wadi Al Safa 6,0.109,55.261317,25.046106,yes,way/365020710
+Mirador La Colección 2,,neighbourhood,Wadi Al Safa 6,0.146,55.256833,25.045716,yes,way/365020711
+Mirdif,,suburb,,10.038,55.423,25.220229,yes,relation/18471716
+Mohammed Bin Rashid City,,development (residential),MBR- Al Merkad,4.998,55.285661,25.164059,yes,way/1154572974
+Mohammed Bin Rashid City District 11,,development (residential),Al Barari,0.949,55.35081,25.122234,yes,way/390865008
+Morella Village,,admin 10,Al Hebiah 4,0.052,55.207354,25.037951,yes,way/359697104
+Morocco Cluster,,neighbourhood,Warsan 1,0.207,55.418549,25.162312,yes,way/285430258
+Motor City,,neighbourhood,,2.915,55.238209,25.04769,yes,way/1090402642
+Mudon,,merged from 2 mapped parts (may be partial),Al Hebiah 6,0.526,55.27425,25.023992,yes,way/1131415756;way/1131416194
+Mugatrah,,suburb,,0.0,55.195184,24.792346,point only,node/11799922412
+Muhaisanah 1,,suburb,Muhaisnah 1,0.0,55.418105,25.244504,point only,node/13706209535
+Muhaisanah 2,,suburb,Muhaisnah 2,0.0,55.422353,25.264066,point only,node/13706209538
+Muhaisanah 3,,suburb,Muhaisnah 3,0.0,55.404876,25.271056,point only,node/13706209529
+Muhaisanah 4,,suburb,Muhaisnah 4,0.0,55.407911,25.279048,point only,node/13706209530
+Muhaisanah 5,,suburb,Muhaisnah,0.0,55.434062,25.279379,point only,node/13706209541
+Muhaisnah,,suburb,,16.617,55.419681,25.260745,yes,relation/18471781
+Muhaisnah 1,,neighbourhood,Muhaisnah,4.742,55.417469,25.245354,yes,way/1046090305
+Muhaisnah 2,,neighbourhood,Muhaisnah,5.207,55.42295,25.265311,yes,way/1134749305
+Muhaisnah 3,,neighbourhood,Muhaisnah,1.636,55.404122,25.271877,yes,way/1046087043
+Muhaisnah 4,,neighbourhood,Muhaisnah,2.195,55.410171,25.279199,yes,way/1046087842
+Muhaisnah 5,,neighbourhood,Muhaisnah,0.0,55.436716,25.277387,point only,node/11799298542
+Murooj Al Furjan,,development (construction),Al Furjan,0.554,55.143828,25.028364,yes,way/1058301801
+Mushrif,,admin 10,,9.859,55.448544,25.21095,yes,relation/18471728
+Mydan District 7,,development (construction),Hadaeq Sheikh Mohammed Bin Rashid,0.414,55.284908,25.144467,yes,way/1112479145
+Nad Al Sheba,,suburb,,32.4,55.364275,25.14563,yes,relation/18471683
+Nad Al Sheba 1,,neighbourhood,Meydan,12.424,55.312832,25.15584,yes,way/1124388387
+Nad Al Sheba Club Staff Accomodation,,neighbourhood,Tonino Lamborghini Residences,0.0,55.332495,25.156015,point only,node/3943632950
+Nad Shamma,,suburb,Al Rashidiya,0.784,55.383844,25.217776,yes,way/1149315329
+Nadd Al Hamar,,admin 10,,8.31,55.385652,25.197932,yes,relation/18471802
+Nadd Al Sheba 1,,suburb,Al Barari,0.0,55.319475,25.142124,point only,node/11799732268
+Nadd Al Sheba 2,,admin 10,Nad Al Sheba,7.48,55.348776,25.156725,yes,relation/18471707
+Nadd Al Sheba 3,,admin 10,Nad Al Sheba,6.278,55.375413,25.153833,yes,relation/18471747
+Nadd Al Sheba 4,,admin 10,Nad Al Sheba,6.158,55.366,25.135587,yes,relation/18471836
+Nadd Hessa,,admin 10,International City,8.423,55.386024,25.122186,yes,relation/18471700
+Nadd Shamma,,suburb,Nad Shamma,0.0,55.385689,25.215956,point only,node/13706209516
+Naia Island,,island,,0.1,55.202476,25.180403,yes,relation/19600197
+Naif,,admin 10,,0.747,55.31068,25.272903,yes,relation/18471792
+Nakheel 1000 Villas,,development (residential),Nadd Al Sheba 3,1.016,55.38025,25.157842,yes,way/519072294
+Nakhlat Jabal Ali,,suburb,Al Wajeha Al Bahriya,47.432,54.989189,25.00671,yes,relation/18471743
+Nakhlat Jumeira,,suburb,Palm Jumeirah,0.0,55.135097,25.117327,point only,node/13706973538
+Nara,,neighbourhood,The Valley,0.129,55.451825,25.012722,yes,way/1468552795
+Nazwa,,town,Nazwah,0.0,55.661728,25.005299,point only,node/1487267663
+Nazwah,,admin 10,,15.151,55.645707,25.018781,yes,relation/18471632
+New Ras Al Khor Community,,development (residential),,27.664,55.359326,25.200846,yes,way/1155295902
+Nima,,neighbourhood,The Valley,0.229,55.454376,25.00311,yes,way/1494508287
+"Noor Townhouses, Town Square, Dubai",,development (residential),Town Square Dubai,0.314,55.295906,24.995827,yes,way/1131312147
+Novelia Village,,admin 10,Al Hebiah 4,0.096,55.210574,25.03258,yes,way/145567598
+Oasis Village,,admin 8,Al Quoz Community,0.155,55.245759,25.14388,yes,way/87376671
+Olive Point,,admin 10,Jumeirah Golf Estates,0.059,55.195998,25.025425,yes,way/359714008
+Omran Labour Camp,,development (residential),Hessyan 2,0.274,54.972813,24.926845,yes,relation/7382214
+Orange Grove,,village,Jumeirah Golf Estates,0.024,55.207639,25.025311,yes,way/360197403
+Orange Lake,,neighbourhood,Jumeirah Golf Estates,0.068,55.202903,25.027783,yes,way/359697125
+Orania,,neighbourhood,The Valley,0.113,55.445167,25.011005,yes,way/1468553485
+Oud Al Muteena,,suburb,,7.427,55.454671,25.267861,yes,relation/18471758
+Oud Metha,,admin 10,Bur Dubai,1.498,55.311324,25.238296,yes,relation/18471798
+Palace of His Highness Sheikh Ahmed the Emir of Qatar,,development (residential),Umm Hurair 1,0.343,55.315016,25.253289,yes,way/542024350
+Palm Deira,,admin 10,,18.907,55.326274,25.317998,yes,relation/18471810
+Palm Jumeirah,,suburb,,19.975,55.13288,25.119589,yes,way/874795235
+Palm Jumeirah - The Crescent,,island,Palm Jumeirah,0.513,55.153515,25.127805,yes,relation/9290758
+Palm Springs,Palm Springs by Nakheel,"traced (traced from user marked screenshot 2026-11-02, approximate, official master plan not published)",Hessyan 1,8.155,55.038113,24.952461,yes,manual
+Palma Village,,neighbourhood,Arabian Ranches 2,0.082,55.269707,25.038474,yes,way/360103619
+Palmera 1,,admin 11,Wadi Al Safa 6,0.097,55.26554,25.042044,yes,way/365020695
+Palmera 2,,admin 11,Wadi Al Safa 6,0.116,55.262304,25.040321,yes,way/365020696
+Palmera 3,,admin 11,Wadi Al Safa 6,0.09,55.258017,25.039561,yes,way/365020697
+Palmera 4,,admin 11,Wadi Al Safa 6,0.081,55.256779,25.041793,yes,way/365020698
+"Parkway Vistas, Dubai Hills Estate",,development (residential),Dubai Hills Estate,0.328,55.263874,25.126891,yes,way/1130773786
+Pearl Jumeirah,,island,Jumeirah,0.723,55.25896,25.244474,yes,way/509578432
+Persia Cluster,,neighbourhood,Warsan 1,0.159,55.408359,25.159851,yes,way/264254137
+"Phase 2, Al Furjan, Dubai",,development (residential),Al Furjan,0.567,55.148653,25.026859,yes,way/1133115730
+Phase 6,,development (construction),Saih Shua'Alah,12.244,55.445037,24.70806,yes,way/1366377718
+Polo Homes,,neighbourhood,Wadi Al Safa 6,0.58,55.253033,25.036745,yes,way/1012047289
+Polo Residence,,admin 10,Nad Al Sheba 1,0.158,55.295415,25.151925,yes,way/364038303
+Ponderosa,,neighbourhood,The Villa,0.672,55.34896,25.080506,yes,way/360215638
+Port Rashid,,suburb,Al Mina,4.359,55.265831,25.270931,yes,way/1148760943
+Port Saeed,,admin 10,,2.693,55.332622,25.249367,yes,relation/12431735
+Qaraytaysah,,town,Grayteesah,0.0,55.549594,24.869457,point only,node/3649765991
+Qimah,,village,,0.0,56.141603,24.78648,point only,node/12253428479
+Queen Meadows,,admin 10,Al Hebiah 3,0.077,55.259987,25.032456,yes,way/360100843
+Rahat,,admin 10,Al Hebiah 6,0.271,55.269328,25.023136,yes,way/360100827
+Ras Al Khor,,suburb,New Ras Al Khor Community,0.0,55.339245,25.193963,point only,node/8143204820
+Ras Al Khor Ind 2,,suburb,Ras Al Khor Industrial 2,0.0,55.358524,25.177757,point only,node/13708185495
+Ras Al Khor Industrial 1,,suburb,New Ras Al Khor Community,0.0,55.3393,25.176801,point only,node/11799732262
+Ras Al Khor Industrial 2,,neighbourhood,New Ras Al Khor Community,4.277,55.357342,25.177081,yes,way/1270299999
+Ras Al Khor Industrial 3,,suburb,New Ras Al Khor Community,0.0,55.381357,25.173743,point only,node/11799732264
+Ras Al Khor Industrial Area,,suburb,Ras Al Khor Industrial 2,0.0,55.363026,25.176282,point only,node/8143204818
+Rasha Villas,,neighbourhood,Arabian Ranches 2,0.143,55.269934,25.035197,yes,relation/9917296
+Reem,,development (residential),Al Yalayis 1,2.479,55.301566,25.010653,yes,way/1180530961
+Remah,,suburb,,0.0,55.676776,24.83837,point only,node/11799790900
+Remraam,,admin,Al Hebiah 5,2.394,55.24886,25.001365,yes,way/359949337
+Remraam 1,,admin 10,Remraam,0.352,55.249595,25.005596,yes,way/359856450
+Remraam 2,,admin 10,Remraam,0.469,55.253318,25.002136,yes,way/359949339
+Remraam 3,,admin 10,Remraam,0.439,55.24802,24.997594,yes,way/359949340
+Remraam 4,,admin 10,Remraam,0.427,55.242772,25.001335,yes,way/359949338
+Riggat Al Buteen,,suburb,,0.651,55.321701,25.258835,yes,relation/14506836
+Rivana,,neighbourhood,The Valley,0.328,55.455241,25.008435,yes,way/1468640340
+Riverside,,neighbourhood,Wadi Al Safa 7,0.232,55.278433,25.041159,yes,way/360166207
+Rosa Village,,neighbourhood,Arabian Ranches 2,0.15,55.273699,25.036125,yes,relation/9917297
+Rukan,,neighbourhood,Wadi Al Safa 7,0.297,55.288093,25.042348,yes,way/360166213
+Russia Cluster,,neighbourhood,Warsan 1,0.237,55.402287,25.170564,yes,way/285445442
+Saheel,,admin 10,Wadi Al Safa 6,0.954,55.258512,25.051964,yes,way/360095191
+Saih Al Dahal,Community No. 971,suburb,,76.814,55.361932,24.745043,yes,relation/7760905
+Saih Al Salam,,admin 10,,89.133,55.376222,24.88065,yes,relation/18471725
+Saih Shua'Alah,,suburb,,84.41,55.429441,24.689293,yes,relation/7760904
+Saih Shuaib 1,,suburb,Al Wajeha Al Bahriya,40.677,54.996087,24.899059,yes,relation/18471796
+Saih Shuaib 2,,suburb,,22.626,55.058874,24.86976,yes,way/1270429067
+Saih Shuaib 3,,suburb,,16.028,55.076475,24.844733,yes,way/1270429919
+Saih Shuaib 4,,suburb,,19.753,55.095241,24.823142,yes,way/1270549899
+Samara,,neighbourhood,Arabian Ranches 2,0.123,55.267877,25.032047,yes,way/360103618
+Sanctuary Falls,,neighbourhood,Jumeirah Golf Estates,0.117,55.187358,25.02187,yes,way/360203588
+Savannah,,admin 10,Wadi Al Safa 6,0.256,55.275757,25.055529,yes,way/359668890
+Semmer Villas A & C,,neighbourhood,DSO Semmer Villas,0.0,55.379744,25.112453,point only,node/3684910564
+Semmer Villas B & D,,neighbourhood,DSO Semmer Villas,0.0,55.383874,25.115448,point only,node/3684910565
+Serena,,neighbourhood,Wadi Al Safa 7,0.977,55.285904,25.03538,yes,way/365020701
+Sheikh Saeed bin Mohammed bin Rashid Al Maktoum Palace - Jebel Ali,,development (residential),Jabal Ali,2.573,55.034902,24.987597,yes,relation/7392547
+Sheikh Zayed Road,,neighbourhood,Trade Centre,1.266,55.278283,25.217623,yes,way/1012358324
+Shorooq,,neighbourhood,Mirdif,0.736,55.428185,25.214495,yes,way/202639581
+Sidra 1,,development (residential),"Sidra 1, Dubai Hills Estate",0.237,55.248858,25.096247,yes,relation/9986797
+"Sidra 1, Dubai Hills Estate",,development (residential),"Sidra Villas, Dubai Hills Estate",0.464,55.248441,25.093694,yes,way/1130770248
+Sidra 2,,neighbourhood,"Sidra 2, Dubai Hills Estate",0.0,55.247923,25.100471,point only,node/6763697437
+"Sidra 2, Dubai Hills Estate",,development (residential),"Sidra Villas, Dubai Hills Estate",0.367,55.248191,25.100567,yes,way/1130770710
+Sidra 3,,neighbourhood,"Sidra 3, Dubai Hills Estate",0.0,55.253184,25.107124,point only,node/6763697438
+"Sidra 3, Dubai Hills Estate",,development (residential),"Sidra Villas, Dubai Hills Estate",0.271,55.253306,25.10714,yes,way/1130771113
+"Sidra Villas, Dubai Hills Estate",,development (residential),Dubai Hills Estate,1.222,55.247993,25.099722,yes,way/1130772434
+Sienna Lake,,neighbourhood,Jumeirah Golf Estates,0.084,55.211813,25.014655,yes,way/360173935
+Sienna Views,,neighbourhood,Jumeirah Golf Estates,0.048,55.210596,25.017605,yes,way/360173939
+"Silk Leaf, Al Barari Residences, Dubai",,development (residential),Al Barari Residences,0.224,55.305226,25.099053,yes,way/1132777257
+Silver Springs,,admin 10,Al Hebiah 3,0.136,55.256387,25.031102,yes,way/360100842
+Skydive Dubai,,development (commercial),Margham,0.255,55.546286,24.888479,yes,way/360430338
+Sobha Hartland,,development (residential),MBR- Al Merkad,0.806,55.307954,25.177431,yes,way/1012390465
+Spain Cluster,,neighbourhood,Warsan 1,0.236,55.400839,25.164823,yes,way/285423903
+Springs 1,,neighbourhood,The Springs,0.113,55.161373,25.061232,yes,way/89565046
+Springs 10,,neighbourhood,The Springs,0.141,55.18133,25.057912,yes,way/89565056
+Springs 11,,neighbourhood,The Springs,0.207,55.177403,25.055802,yes,way/89565051
+Springs 12,,neighbourhood,The Springs,0.13,55.182737,25.054401,yes,way/89565064
+Springs 14,,neighbourhood,The Springs,0.179,55.173659,25.052155,yes,way/89565061
+Springs 15,,neighbourhood,The Springs,0.211,55.179268,25.051107,yes,way/89565057
+Springs 2,,neighbourhood,The Springs,0.213,55.167019,25.057409,yes,way/89565053
+Springs 3,,neighbourhood,The Springs,0.208,55.176046,25.057884,yes,way/89565050
+Springs 4,,neighbourhood,The Springs,0.16,55.179542,25.061047,yes,way/89565063
+Springs 5,,neighbourhood,The Springs,0.132,55.187041,25.064057,yes,way/89565066
+Springs 6,,neighbourhood,The Springs,0.101,55.189337,25.068207,yes,way/89565069
+Springs 7,,neighbourhood,The Springs,0.11,55.191514,25.063872,yes,way/89565052
+Springs 8,,neighbourhood,The Springs,0.124,55.18759,25.06039,yes,way/89565076
+Springs 9,,neighbourhood,The Springs,0.134,55.18508,25.058944,yes,way/89565059
+Staff Accommodation,,development (residential),Nadd Hessa,0.232,55.38977,25.134223,yes,way/364840301
+Sufayri,,suburb,,0.0,56.126213,24.811649,point only,node/12153460994
+Sufouh Gardens,,neighbourhood,Al Sufouh 1,0.224,55.178461,25.110609,yes,way/433775600
+Suhaylah,,village,,0.0,56.18258,24.808124,point only,node/5951094171
+Talia,,neighbourhood,The Valley,0.116,55.453632,25.011236,yes,way/1468554687
+Terra Nova,,admin 10,Wadi Al Safa 6,0.132,55.280412,25.050854,yes,way/359668885
+The Aldea,,neighbourhood,The Villa,0.838,55.35855,25.083237,yes,way/360215696
+The Centro,,neighbourhood,The Villa,0.842,55.369899,25.091289,yes,way/360213684
+The Gardens,,suburb,Jabal Ali 1,1.064,55.127911,25.042666,yes,way/1200969772
+The Greens,,development (residential),Dubai Media City 2,0.684,55.170622,25.092862,yes,way/1004755897
+The Island,,development (construction),Umm Suqeim,0.247,55.194213,25.153316,yes,relation/9514607
+The Island District,,neighbourhood,Dubai Creek Harbour,0.0,55.346344,25.206086,point only,node/4982364289
+The Lakes,,neighbourhood,Emirates Hills,1.157,55.169241,25.080863,yes,way/936737587
+The Layan Community,,neighbourhood,Wadi Al Safa 7,0.287,55.282572,25.027532,yes,way/149865426
+The Meadows,,neighbourhood,Emirates Hills,2.63,55.156791,25.067142,yes,relation/18471657
+The Meadows 8,,admin 10,The Meadows,0.123,55.18183,25.064182,yes,way/89565071
+The Oasis,,suburb,,10.816,55.219804,24.994367,yes,way/1201625233
+The Palm Jebel Ali Waterhomes - Show Village,,neighbourhood,Nakhlat Jabal Ali,0.0,55.00579,24.984814,point only,node/4922055946
+The Plantation Equestrian & Polo Club,,neighbourhood,Wadi Al Safa 7,1.879,55.297943,25.04822,yes,way/360166203
+The Springs,,neighbourhood,Emirates Hills,3.213,55.182405,25.059971,yes,relation/18471656
+The Sundials,,neighbourhood,Jumeirah Golf Estates,0.065,55.19113,25.018508,yes,way/360197431
+The Valley,,neighbourhood,,16.735,55.43059,24.999898,yes,way/1191736311
+The Views,,development (residential),The Greens,0.298,55.170057,25.09125,yes,way/916889762
+The Villa,,neighbourhood,Wadi Al Safa 5,3.673,55.360904,25.086465,yes,way/360213675
+Tonino Lamborghini Residences,,development (residential),Nad Al Sheba 1,1.579,55.330216,25.156521,yes,way/1150102148
+Town Square Dubai,,development (residential),Al Yalayis 2,4.263,55.287812,25.007639,yes,way/514153297
+Trade Centre,,admin 10,Bur Dubai,2.118,55.281484,25.217665,yes,relation/18471719
+Trade Centre 1,,suburb,Sheikh Zayed Road,0.0,55.278147,25.219579,point only,node/11799460869
+Trade Centre 2,,suburb,Dubai World Trade Centre,0.0,55.286345,25.219146,point only,node/11799464869
+Umm Al Daman,,admin 10,,35.379,55.458224,25.058402,yes,relation/18471846
+Umm Al Mo'meneen,,admin 10,,30.574,55.510561,24.986463,yes,relation/18471842
+Umm Al Sheif,,admin 10,,1.851,55.20484,25.131015,yes,relation/18471804
+Umm Eselay,,admin 10,,22.638,55.586308,24.863261,yes,relation/18471691
+Umm Hurair,,admin 10,Bur Dubai,4.348,55.321399,25.242873,yes,relation/18471718
+Umm Hurair 1,,admin 10,Umm Hurair,0.885,55.311148,25.253965,yes,relation/18471648
+Umm Hurair 2,,development (residential),Bur Dubai,3.085,55.323695,25.23661,yes,way/1130754203
+Umm Nahad 1/Madinat Hind 1,,suburb,,14.352,55.38311,25.068287,yes,relation/18471646
+Umm Nahad 2/Madinat Hind 2,,suburb,,7.455,55.337952,25.05633,yes,relation/18471714
+Umm Nahad 3/Madinat Hind 3,,suburb,,17.04,55.425011,25.030369,yes,relation/18471670
+Umm Ramool,,suburb,,3.737,55.365591,25.228966,yes,relation/18471720
+Umm Suqeim,,admin 10,,8.083,55.206166,25.152316,yes,relation/18471749
+Umm Suqeim 1,,development (residential),Umm Suqeim,2.34,55.216148,25.164768,yes,way/89658619
+Umm Suqeim 2,,development (residential),Umm Suqeim,2.474,55.206111,25.152035,yes,way/89660897
+Umm Suqeim 3,,admin 11,Umm Suqeim,2.245,55.195575,25.1381,yes,way/360092895
+Up Town Motor City,,neighbourhood,Motor City,0.39,55.24583,25.045447,yes,way/175395050
+Urbana,,development (residential),Emaar South Golf District,0.504,55.145243,24.863548,yes,way/1151629139
+Urbana I,,neighbourhood,Urbana,0.099,55.15058,24.860656,yes,way/955696820
+Urbana II,,suburb,Urbana,0.0,55.139896,24.866991,point only,node/8843374927
+Urbana III,,suburb,Urbana,0.0,55.147323,24.862796,point only,node/8843374926
+Velora,,neighbourhood,The Valley,0.192,55.436536,25.005383,yes,way/1494508288
+Velora 2,,neighbourhood,The Valley,0.149,55.434369,24.999336,yes,way/1494508290
+Venera,,neighbourhood,The Valley,0.321,55.443831,24.998384,yes,way/1494508291
+Veneto Residence,,suburb,Hessyan 1,0.334,55.011707,24.960343,yes,way/435884114
+Victory Heights II,,admin 10,Al Hebiah 4,0.028,55.209914,25.036061,yes,way/149737218
+Victory Heights Villages,,neighbourhood,Al Hebiah 4,0.0,55.210679,25.037926,point only,node/3647768898
+Villa Lantana 1,,neighbourhood,Dubiotech,0.201,55.236895,25.074665,yes,way/362291140
+Villanova,,development (residential),Dubai Land,2.071,55.359539,25.075004,yes,way/1012464390
+Wadi Al Amardi,,suburb,,34.633,55.493838,25.196451,yes,relation/18471729
+Wadi Al Safa,,suburb,Wadi Al Safa 2,0.0,55.340846,25.082538,point only,node/13263889496
+Wadi Al Safa 2,,neighbourhood,City of Arabia,10.67,55.351402,25.098793,yes,way/1148748553
+Wadi Al Safa 3,,neighbourhood,,40.125,55.316535,25.105713,yes,way/1148737786
+Wadi Al Safa 4,,neighbourhood,City of Arabia,6.785,55.322322,25.078317,yes,relation/18471837
+Wadi Al Safa 5,,neighbourhood,,16.308,55.353525,25.076232,yes,relation/18471694
+Wadi Al Safa 6,,suburb,,8.326,55.267275,25.048762,yes,relation/18471658
+Wadi Al Safa 7,,admin 10,,8.464,55.284505,25.040491,yes,relation/18471833
+Wadi Al Shabak,,suburb,Wadi Al Amardi,10.56,55.488098,25.176925,yes,way/1270572064
+Warsan,,admin 10,,33.489,55.447732,25.14739,yes,relation/18471741
+Warsan 1,,neighbourhood,Warsan,7.9,55.409509,25.163636,yes,way/100108364
+Warsan 2,,neighbourhood,Warsan,8.399,55.437548,25.156947,yes,way/1154503843
+Warsan 3,,development (residential),Warsan,10.391,55.465512,25.153714,yes,way/1270573515
+Warsan 4,,suburb,International City,9.263,55.403282,25.143885,yes,relation/18471655
+Wasl Gate,,neighbourhood,Jebel Ali Village,1.965,55.107554,25.025804,yes,way/545696367
+West Terminal construction,,development (construction),Al Maktoum International Airport Extension,0.59,55.139051,24.941394,yes,way/797929933
+Whispering Pines,,neighbourhood,Jumeirah Golf Estates,0.126,55.19877,25.024787,yes,way/359709988
+Whitefield,,admin 10,Al Hebiah 3,0.05,55.249065,25.027071,yes,way/360100846
+Wildflower,,neighbourhood,Jumeirah Golf Estates,0.141,55.194768,25.017372,yes,way/360197430
+World Islands,,suburb,,0.0,55.169354,25.211047,point only,node/11799361792
+Yaraah,,suburb,,0.0,55.678495,24.768483,point only,node/11799790902
+Yasmin Village,,neighbourhood,Arabian Ranches 2,0.106,55.273272,25.032788,yes,relation/9917299
+Za'abeel,,neighbourhood,Bur Dubai,11.699,55.300116,25.216833,yes,way/1012117105
+Za'abeel 2,,suburb,Za'abeel,0.0,55.297292,25.204956,point only,node/11799464870
+Zabeel,,admin 10,Bur Dubai,15.69,55.295113,25.210404,yes,relation/18471721
+Zabeel Palace,,development (residential),Za'abeel,0.615,55.299608,25.209703,yes,way/213204581
+Za’abeel 1,,suburb,Za'abeel,0.0,55.308387,25.218657,point only,node/11799398884
+Zulal,,admin 10,The Lakes,0.174,55.172212,25.079111,yes,way/359543953
