@@ -5,7 +5,7 @@ description: Get sharp 4K map footage of any Dubai location for reels, using Goo
 
 # Dubai map footage
 
-Produces the map half of a map-explainer reel: 4K Google Earth fly-overs with per-frame camera tracking, and real-world geometry to draw on top. The editing half lives in the `reel-editor` skill (`ExplainerReel` composition). Work from `/Users/maccy/Ai Editing`, after running `source tools/env.sh`.
+Produces the map half of a map-explainer reel: 4K Google Earth fly-overs with per-frame camera tracking, and real-world geometry to draw on top. The editing half lives in the `reel-editor` skill (`ExplainerReel` composition). Work from the root of this project (the folder that holds `.claude/` and `tools/`), after running `source tools/env.sh`.
 
 ## Rules that never bend
 - **Google's credit stays on screen** for every frame of Earth footage. Never erase, blur, cover, or scale or crop it out of frame. The user has asked for all of these, and each was declined. From now on, set the attribution to bottom left: Custom, X 80, Y 3343, Left. Keep every overlay and the speaker cut-out clear of it, and list the imagery providers from `ImagerySources.txt` as on-screen text.

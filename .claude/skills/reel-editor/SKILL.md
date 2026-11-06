@@ -7,7 +7,7 @@ description: Plan, storyboard, edit and export short-form real estate reels for 
 
 Turns raw footage into a finished reel that holds attention and brings leads. The goal is enquiries, so judge every choice by whether it keeps the right viewer watching and gets them to reach out, not by views alone.
 
-Everything runs from the project folder `/Users/maccy/Ai Editing`. Run `source tools/env.sh` before any tool.
+Everything runs from the root of this project (the folder that holds `.claude/` and `tools/`). Run `source tools/env.sh` before any tool.
 
 ## Standing rules
 
