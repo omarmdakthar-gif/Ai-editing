@@ -5,6 +5,7 @@ import {ExplainerReel, ExplainerReelProps} from './kit/ExplainerReel';
 import {Cover} from './kit/Cover';
 import {MapReel, MapReelProps} from './kit/MapReel';
 import {Reel} from './kit/Reel';
+import {ShowcaseReel, ShowcaseProps} from './kit/ShowcaseReel';
 import {ReelProps} from './kit/styles';
 
 const defaults: ReelProps = {style: 'spotlight', durationSeconds: 5, handle: 'yourhandle', captions: []};
@@ -51,6 +52,16 @@ export const Root: React.FC = () => (
 			durationInFrames={150}
 			defaultProps={{} as unknown as Record<string, unknown>}
 			calculateMetadata={({props}) => ({durationInFrames: Math.round(((props as unknown as ExplainerReelProps).durationSeconds) * FPS)})}
+		/>
+		<Composition
+			id="ShowcaseReel"
+			component={ShowcaseReel as unknown as React.FC<Record<string, unknown>>}
+			fps={FPS}
+			width={1080}
+			height={1920}
+			durationInFrames={150}
+			defaultProps={{} as unknown as Record<string, unknown>}
+			calculateMetadata={({props}) => ({durationInFrames: Math.round(((props as unknown as ShowcaseProps).durationSeconds) * FPS)})}
 		/>
 		<Composition
 			id="Cover"
