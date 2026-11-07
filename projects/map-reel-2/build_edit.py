@@ -43,7 +43,7 @@ OTHERS = [[55.21, 25.06], [55.27, 25.05], [55.25, 25.02], [55.30, 25.08], [55.16
 
 # ---------- Camera (source time, lon, lat, visible km, tilt, bearing) ----------
 cam_src = [
-    (120.10, 55.18, 25.12, 70, 30, -25), (124.45, 55.15, 25.08, 52, 38, -10), (112.70, 55.10, 25.05, 40, 42, 8),
+    (31.70, 55.18, 25.12, 70, 30, -25), (35.60, 55.15, 25.08, 52, 38, -10), (112.70, 55.10, 25.05, 40, 42, 8),
     (180.00, 55.06, 25.06, 26, 45, 20), (181.90, 55.04, 24.975, 13, 46, 30), (184.00, 55.02, 24.985, 15, 46, 32), (187.60, 55.015, 24.99, 14, 46, 38),
     (189.30, 55.21, 25.06, 44, 36, 10), (191.20, 55.392, 25.114, 11, 46, -10), (195.40, 55.392, 25.114, 9, 47, -24),
     (196.80, 55.22, 25.04, 52, 40, 0), (209.40, 55.20, 25.04, 46, 42, 14),
@@ -110,7 +110,7 @@ captions_src = [
     (188.20, 190.90, "And Abu Dhabi's government-backed *Aldar"), (190.90, 192.54, 'is launching next to *Silicon *Oasis'),
     (192.54, 195.70, 'a brand-new *40 *million sq ft community.'), (195.70, 198.08, 'Both have 3 & 4-bedroom *townhouses'),
     (198.08, 200.00, 'and 3, 4 & 5-bedroom *villas.'), (200.00, 203.96, 'Prices are expected to start around *AED *3 *million for a 3-bed townhouse,'),
-    (203.96, 209.50, 'with around *10% down payment and flexible payment plans for both projects.'),
+    (205.22, 209.50, 'with around *10% down payment and flexible payment plans for both projects.'),
     (286.50, 291.48, 'Getting a unit in either of these projects'), (291.48, 293.44, 'will be a very, very *tough task,'),
     (293.44, 295.22, "especially in *Nakheel's project, because the launch"), (295.22, 297.82, 'price per square foot is very, very *attractive'),
     (297.82, 300.14, 'compared to even other private developers in Dubai.'), (300.98, 303.84, "And Nakheel's project is in Dubai's *growth *corridor:"),
@@ -139,7 +139,7 @@ def H(a, b, lines, kicker=None, y=250, align='left'):
 
 
 headlines = [
-    {'start': 0.15, 'end': T(124.40), 'lines': ["DON'T BUY", 'PROPERTY IN', '*DUBAI'], 'kicker': 'WATCH THIS FIRST', 'y': 250, 'align': 'left'},
+    {'start': 0.15, 'end': T(35.60), 'lines': ["DON'T BUY", 'PROPERTY IN', '*DUBAI'], 'kicker': 'WATCH THIS FIRST', 'y': 250, 'align': 'left'},
     H(108.60, 110.55, ['2 DEVELOPERS', '*govt-backed'], 'A MAJOR CHANGE'),
     H(188.20, 190.80, ['ALDAR', '*Abu Dhabi'], 'GOVERNMENT-BACKED'),
     H(295.25, 300.10, ['PRICE PER', 'SQ FT', '*attractive'], 'LAUNCH PRICING'),
@@ -161,7 +161,7 @@ cards = [
          {'at': T(195.80), 'label': 'TOWNHOUSES', 'value': '3 & 4 bedrooms'},
          {'at': T(198.10), 'label': 'VILLAS', 'value': '3, 4 & 5 bedrooms'},
          {'at': T(200.10), 'label': 'EXPECTED FROM', 'value': '~ AED 3 million', 'note': '3-bedroom townhouse'},
-         {'at': T(204.00), 'label': 'DOWN PAYMENT', 'value': '~ 10%', 'note': 'flexible payment plans'},
+         {'at': T(205.30), 'label': 'DOWN PAYMENT', 'value': '~ 10%', 'note': 'flexible payment plans'},
      ]},
     {'type': 'stamp', 'start': T(291.40), 'end': T(293.40), 'text': 'HIGH DEMAND', 'sub': 'UNITS WILL BE HARD TO GET', 'color': RED, 'y': 600},
     {'type': 'meter', 'start': T(309.60), 'end': T(313.55), 'label': 'VILLA & TOWNHOUSE SUPPLY', 'level': 0.22, 'color': RED, 'caption': 'on this side of Dubai'},
@@ -174,10 +174,10 @@ cards = [
 
 S = lambda f, src, v=0.4: {'file': f'sfx/{f}.wav', 'at': T(src), 'volume': v}
 sounds = sorted([
-    {'file': 'sfx/impact.wav', 'at': 0.15, 'volume': 0.35}, S('tick', 123.6, 0.4), S('whoosh', 108.4, 0.3), S('impact', 108.7, 0.3), S('pop', 108.85), S('pop', 109.0),
+    {'file': 'sfx/impact.wav', 'at': 0.15, 'volume': 0.35}, S('tick', 34.6, 0.4), S('whoosh', 108.4, 0.3), S('impact', 108.7, 0.3), S('pop', 108.85), S('pop', 109.0),
     S('whoosh', 179.7, 0.35), S('shimmer', 180.0, 0.25), S('whoosh_soft', 181.6, 0.25), S('shimmer', 182.5, 0.3), S('tick', 184.1, 0.4),
     S('whoosh', 188.3, 0.35), S('riser', 189.4, 0.2), S('impact', 192.6, 0.3), S('pop', 191.7),
-    S('whoosh', 195.6, 0.3), S('tick', 195.8, 0.45), S('tick', 198.1, 0.45), S('pop', 200.1, 0.45), S('pop', 204.0, 0.45),
+    S('whoosh', 195.6, 0.3), S('tick', 195.8, 0.45), S('tick', 198.1, 0.45), S('pop', 200.1, 0.45), S('pop', 205.3, 0.45),
     S('impact', 291.4, 0.35), S('whoosh', 293.4, 0.3), S('shimmer', 293.6, 0.25), S('whoosh_soft', 295.3, 0.25),
     *[S('tick', 297.9 + 0.15 * i, 0.3) for i in range(6)], S('riser', 298.4, 0.2),
     S('impact', 301.0, 0.3), S('whoosh_soft', 301.2, 0.25), S('pop', 303.9), S('pop', 304.7), S('pop', 305.9), S('pop', 306.8),

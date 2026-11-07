@@ -17,10 +17,10 @@ PUBLIC = HERE.parent.parent / 'tools' / 'remotion' / 'public' / 'mr2'
 PUBLIC.mkdir(parents=True, exist_ok=True)
 
 TAKES = [
-    ('hook-1', 120.10, 122.26),   # Nilathoda mattum Dubai-la oru veedu vangadheenga
-    ('hook-2', 123.55, 124.45),   # indha video-va paakama
+    ('hook-1', 31.60, 35.66),     # Nilathoda mattum Dubai-la oru veedu vangadheenga, indha video-va paakama (to camera)
     ('hook-3', 108.55, 112.75),   # Yenna Dubai-la rendu government-backed developers ... kondu vara poraanga
-    ('projects', 179.80, 209.50), # Nakheel, Aldar, homes, prices
+    ('projects', 179.80, 204.00), # Nakheel, Aldar, homes, prices ... for a 3-bedroom townhouse
+    ('projects', 205.22, 209.50), # and around oru 10% ... (skips the "and arou" stammer at 204.37-204.75)
     ('demand', 286.50, 313.58),   # tough task, price per sq ft, growth corridor, supply
     ('nakheel', 364.85, 373.45),  # Ok so talking about Nakheel ...
     ('aldar', 486.25, 498.55),    # Talking about Aldar ...
