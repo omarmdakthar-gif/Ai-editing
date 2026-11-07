@@ -3,3 +3,10 @@ node_modules/
 tools/venv/
 tools/bin/
 __pycache__/
+
+# Footage and working media (large; kept out of git)
+projects/*/raw/
+projects/*/work/
+export/
+references/*.mp4
+references/*.mov
