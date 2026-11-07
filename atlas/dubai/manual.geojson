@@ -1,0 +1,44 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       55.016697,
+       24.956986
+      ],
+      [
+       55.034599,
+       24.964358
+      ],
+      [
+       55.045746,
+       24.963067
+      ],
+      [
+       55.061512,
+       24.947937
+      ],
+      [
+       55.029236,
+       24.936218
+      ],
+      [
+       55.016697,
+       24.956986
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "name": "Palm Springs",
+    "also": "Palm Springs by Nakheel",
+    "source": "traced from user marked screenshot 2026-11-02, approximate, official master plan not published"
+   }
+  }
+ ]
+}

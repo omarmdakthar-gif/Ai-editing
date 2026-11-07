@@ -1,0 +1,797 @@
+# Dubai atlas A to Z
+
+718 named places from OpenStreetMap (582 with boundaries). Data (c) OpenStreetMap contributors, ODbL. Community-mapped, not official DLD boundaries.
+
+
+## A
+
+- **Abu Hail** · 1.28 km² · 25.285558, 55.329902
+- **Academic City** · 13.01 km² · 25.112412, 55.409999
+- **Akoya Aquilegia, Damac Hills 2, Dubai** · 0.20 km² · in Damac Hills 2 · 24.991815, 55.38829
+- **Akoya Vardon, Damac Hills 2, Dubai** · 0.22 km² · in Damac Hills 2 · 24.991512, 55.379157
+- **Al Athbah** · point only · in Wadi Al Shabak · 25.175974, 55.478478
+- **Al Awir** · 70.64 km² · 25.184095, 55.56467
+- **Al Awir 1** · 41.55 km² · in Al Awir · 25.198852, 55.586816
+- **Al Awir 2** · point only · in Al Awir · 25.170464, 55.590766
+- **Al Bada'a** · 1.98 km² · in Bur Dubai · 25.22451, 55.268642
+- **Al Baraha** · 1.03 km² · 25.282269, 55.319765
+- **Al Barari** · 36.41 km² · 25.108277, 55.31877
+- **Al Barari Residences** · 0.44 km² · in Al Barari · 25.099329, 55.306104
+- **Al Barsha** · 35.98 km² · 25.087543, 55.210872
+- **Al Barsha 1** · 3.17 km² · in Al Barsha North · 25.108971, 55.194309
+- **Al Barsha 2** · 4.69 km² · in Al Barsha North · 25.101998, 55.216899
+- **Al Barsha 3** · 4.10 km² · in Al Barsha North · 25.09187, 55.197651
+- **Al Barsha North** · 13.43 km² · in Al Barsha · 25.098637, 55.203451
+- **Al Barsha South** · 13.13 km² · in Al Barsha · 25.077363, 55.231132
+- **Al Barsha South 1** · 5.81 km² · in Al Barsha South · 25.085855, 55.2336
+- **Al Barsha South 2** · 4.62 km² · in Al Barsha South · 25.071843, 55.233746
+- **Al Barsha South 3** · 3.90 km² · in Al Barsha South · 25.059205, 55.235581
+- **Al Barsha South 4** · 6.78 km² · 25.060156, 55.208987
+- **Al Barsha South 5** · 2.99 km² · in Jumeirah Village Circle · 25.046763, 55.190171
+- **Al Bateen** · 0.14 km² · 25.268962, 55.299725
+- **Al Buteen** · point only · in Al Bateen · 25.269361, 55.299871
+- **Al Corniche** · point only · in Corniche Deira · 25.277573, 55.303192
+- **Al Daghaya** · point only · in Al Dhagaya · 25.272528, 55.300116
+- **Al Dhagaya** · 0.17 km² · 25.272717, 55.300383
+- **Al Fagaa** · point only · in Al Fagaa' · 24.750896, 55.575521
+- **Al Fagaa'** · 208.07 km² · 24.736692, 55.52917
+- **Al Fahidi** · point only · in Al Souk Al Kabeer · 25.264137, 55.288951
+- **Al Furjan** · 2.70 km² · in Jabal Ali 1 · 25.02669, 55.148423
+- **Al Garhoud** · 3.80 km² · 25.243504, 55.348888
+- **Al Hamriya** · 0.76 km² · in Bur Dubai · 25.260033, 55.304061
+- **Al Hamriya Port** · 0.77 km² · 25.30075, 55.33632
+- **Al Hathmah** · point only · 24.776555, 55.409504
+- **Al Hebiah 1** · 4.08 km² · 25.045178, 55.238601
+- **Al Hebiah 2** · 2.20 km² · 25.035867, 55.240719
+- **Al Hebiah 3** · 4.61 km² · 25.021693, 55.253625
+- **Al Hebiah 4** · 8.52 km² · 25.033613, 55.219298
+- **Al Hebiah 5** · 7.75 km² · 25.008317, 55.236843
+- **Al Hebiah 6** · 2.93 km² · 25.015994, 55.268897
+- **Al Hudaiba** · 0.85 km² · in Bur Dubai · 25.242545, 55.279289
+- **Al Jadaf** · point only · in Al Jaddaf · 25.214294, 55.324569
+- **Al Jaddaf** · 10.13 km² · in Bur Dubai · 25.206294, 55.323387
+- **Al Jaffiliya** · point only · in Al Jafiliya · 25.237631, 55.286937
+- **Al Jafiliya** · 1.67 km² · in Bur Dubai · 25.237929, 55.28715
+- **Al Karama** · 2.11 km² · in Bur Dubai · 25.244678, 55.304903
+- **Al Khabisi** · 1.23 km² · 25.268565, 55.336296
+- **Al Khail Gate Residential** · 0.61 km² · in Al Quoz Community · 25.139913, 55.252353
+- **Al Khail Heights** · 0.29 km² · in Al Qouz 4 · 25.15586, 55.253688
+- **Al Khawaneej 1** · point only · in Al-Khawaneej 1 · 25.240711, 55.48902
+- **Al Khawaneej 2** · point only · in Al-Khawaneej 2 · 25.226975, 55.521561
+- **Al Kheeran** · point only · in Dubai Festival City · 25.21524, 55.36392
+- **Al Kheeran 1** · point only · in Dubai Creek Harbour · 25.197915, 55.359302
+- **Al Kifaf** · 0.86 km² · in Za'abeel · 25.234627, 55.298597
+- **Al Layan 1** · 32.11 km² · 24.790419, 55.125385
+- **Al Layan 2** · point only · 24.75084, 55.169096
+- **Al Lesaily** · 111.48 km² · 24.912706, 55.445672
+- **Al Lisaili** · point only · in Al Lesaily · 24.930673, 55.473254
+- **Al Maha** · point only · 24.898695, 55.661437
+- **Al Mahra** · 0.17 km² · in Wadi Al Safa 6 · 25.048742, 55.275803
+- **Al Maktoum International Airport Extension** · 40.85 km² · in Madinat Al Mataar · 24.921729, 55.173054
+- **Al Mamzar** · 8.57 km² · 25.304432, 55.363279
+- **Al Manara** · 2.19 km² · 25.144797, 55.214661
+- **Al Mankhool** · 1.96 km² · in Bur Dubai · 25.249005, 55.294166
+- **Al Marmoom** · 28.15 km² · 24.980447, 55.451365
+- **Al Meryal** · point only · 25.063662, 55.652123
+- **Al Mina** · 6.65 km² · in Bur Dubai · 25.263393, 55.262932
+- **Al Mizhar** · 11.17 km² · 25.242615, 55.448058
+- **Al Mizhar 1** · 6.69 km² · in Al Mizhar · 25.244696, 55.441714
+- **Al Mizhar 2** · 4.17 km² · in Al Mizhar · 25.243342, 55.460553
+- **Al Mizhar 3** · 2.42 km² · in Oud Al Muteena · 25.264926, 55.464454
+- **Al Mizhar 4** · 3.63 km² · in Oud Al Muteena · 25.263962, 55.445374
+- **Al Muraqqabat** · 1.50 km² · 25.264576, 55.322131
+- **Al Murar** · 0.39 km² · 25.276739, 55.310133
+- **Al Muteena** · 1.11 km² · 25.274337, 55.322561
+- **Al Nahda** · 3.90 km² · 25.28845, 55.3715
+- **Al Nahda 1** · 1.45 km² · in Al Nahda · 25.288351, 55.363138
+- **Al Nahda 2** · point only · in Al Nahda · 25.291304, 55.374458
+- **Al Naseem, Mudon, Dubai** · 0.29 km² · in Mudon · 25.022028, 55.27597
+- **Al Nassem** · 0.25 km² · in Mudon · 25.021733, 55.275935
+- **Al O'shoosh** · 69.61 km² · 24.678694, 55.348368
+- **Al Qouz 1** · 3.32 km² · in Al Quoz · 25.169091, 55.252966
+- **Al Qouz 3** · 2.24 km² · in Al Quoz · 25.1602, 55.24192
+- **Al Qouz 4** · 2.04 km² · in Al Quoz · 25.151856, 55.252681
+- **Al Quoz** · 10.16 km² · 25.162671, 55.253666
+- **Al Quoz 1** · point only · in Al Qouz 1 · 25.16812, 55.254308
+- **Al Quoz 3** · point only · in Al Qouz 3 · 25.158752, 55.242817
+- **Al Quoz 4** · point only · in Al Qouz 4 · 25.150874, 55.254084
+- **Al Quoz Community** · 27.20 km² · 25.139999, 55.239379
+- **Al Quoz Industrial 1** · point only · in Al Quoz Industrial Area 1 · 25.143714, 55.232981
+- **Al Quoz Industrial 2** · point only · in Al Quoz Industrial Area 2 · 25.133977, 55.247928
+- **Al Quoz Industrial 3** · point only · in Al Quoz Industrial Area 3 · 25.125063, 55.21836
+- **Al Quoz Industrial 4** · point only · in Al Quoz Industrial Area 4 · 25.116089, 55.233182
+- **Al Quoz Industrial Area** · point only · in Al Quoz Industrial Area 1 · 25.131687, 55.233507
+- **Al Quoz Industrial Area 1** · 4.60 km² · in Al Quoz Community · 25.14206, 55.231168
+- **Al Quoz Industrial Area 2** · 2.99 km² · in Al Quoz Community · 25.132636, 55.244895
+- **Al Quoz Industrial Area 3** · 4.19 km² · in Al Quoz Community · 25.126366, 55.218655
+- **Al Quoz Industrial Area 4** · 3.73 km² · in Al Quoz Community · 25.116968, 55.231661
+- **Al Qusais** · 6.78 km² · 25.270144, 55.385939
+- **Al Qusais Ind 1** · point only · in Al Qusais Industrial Area · 25.286895, 55.387107
+- **Al Qusais Ind 2** · point only · in Al Qusais Industrial 2 · 25.282812, 55.394459
+- **Al Qusais Ind 3** · point only · in Al Qusais Industrial Area · 25.2981, 55.390132
+- **Al Qusais Ind 4** · point only · in Al Qusais Industrial Area · 25.293399, 55.400542
+- **Al Qusais Ind 5** · point only · in Al Qusais Industrial Area · 25.286926, 55.414125
+- **Al Qusais Industrial 1** · point only · in Al Qusais Industrial Area · 25.285531, 55.386058
+- **Al Qusais Industrial 2** · 0.72 km² · in Al Qusais Industrial Area · 25.28682, 55.395423
+- **Al Qusais Industrial 3** · point only · in Al Qusais Industrial Area · 25.297331, 55.390233
+- **Al Qusais Industrial 4** · point only · in Al Qusais Industrial Area · 25.292331, 55.399379
+- **Al Qusais Industrial 5** · point only · in Al Qusais Industrial Area · 25.287038, 55.413684
+- **Al Qusais Industrial Area** · 7.32 km² · 25.286732, 55.415848
+- **Al Raffa** · 1.23 km² · in Bur Dubai · 25.253014, 55.287373
+- **Al Ras** · 0.32 km² · 25.270038, 55.296435
+- **Al Rashidiya** · 5.93 km² · 25.223952, 55.390646
+- **Al Reem 1** · 0.22 km² · in Wadi Al Safa 6 · 25.059689, 55.295787
+- **Al Reem 2** · 0.17 km² · in Wadi Al Safa 6 · 25.055825, 55.289758
+- **Al Reem 3** · 0.15 km² · in Wadi Al Safa 6 · 25.059399, 55.289156
+- **Al Rigga** · 0.64 km² · 25.265998, 55.311207
+- **Al Rowaiyah 1** · point only · in Al Ruwayyah 1 · 25.125763, 55.433174
+- **Al Rowaiyah 2** · point only · in Al Ruwayyah 2 · 25.103491, 55.400399
+- **Al Rowaiyah 3** · point only · in Al Ruwayyah 3 · 25.114278, 55.477811
+- **Al Ruwayya** · point only · in Al Ruwayyah 1 · 25.114415, 55.419853
+- **Al Ruwayyah 1** · 10.36 km² · 25.120294, 55.425681
+- **Al Ruwayyah 2** · 7.58 km² · in Academic City · 25.106212, 55.397118
+- **Al Ruwayyah 3** · 58.79 km² · 25.121414, 55.476862
+- **Al Sabkha** · 0.07 km² · 25.269395, 55.302432
+- **Al Safa** · 4.33 km² · 25.168081, 55.23238
+- **Al Safa 1** · 2.44 km² · in Al Safa · 25.175466, 55.238474
+- **Al Safa 2** · 1.90 km² · in Al Safa · 25.161296, 55.226645
+- **Al Salam, Mudon** · 0.23 km² · in Mudon · 25.026595, 55.26994
+- **Al Satwa** · 2.70 km² · in Bur Dubai · 25.220255, 55.273245
+- **Al Selal/Madinat Latifa** · 168.62 km² · 24.891414, 55.272423
+- **Al Seyouh** · 51.14 km² · 25.24539, 55.612017
+- **Al Shindagha** · 0.29 km² · in Bur Dubai · 25.266579, 55.288889
+- **Al Souk Al Kabeer** · 0.86 km² · in Bur Dubai · 25.261923, 55.29295
+- **Al Souq Al Kabeer** · point only · in Al Souk Al Kabeer · 25.262046, 55.293631
+- **Al Sufouh** · 10.05 km² · 25.111842, 55.173926
+- **Al Sufouh 1** · 6.18 km² · in Al Sufouh · 25.122557, 55.186433
+- **Al Sufouh 2** · 4.06 km² · in Al Sufouh · 25.101019, 55.164772
+- **Al Thanyah 1** · 1.08 km² · in Dubai Media City 2 · 25.098234, 55.175154
+- **Al Thanyah 2** · 6.25 km² · in Al Barsha · 25.080667, 55.19026
+- **Al Thanyah 3** · point only · in Emirates Golf Club · 25.085917, 55.164938
+- **Al Thanyah 4** · point only · in Emirates Hills · 25.064373, 55.175188
+- **Al Thanyah 5** · point only · in Jumeirah Heights · 25.063654, 55.141112
+- **Al Ttay** · 3.27 km² · 25.24039, 55.542479
+- **Al Twar** · 6.62 km² · 25.259948, 55.384556
+- **Al Twar 1** · 2.39 km² · in Al Twar · 25.27187, 55.361485
+- **Al Twar 2** · 1.01 km² · in Al Twar · 25.261322, 55.382104
+- **Al Twar 3** · 2.88 km² · in Al Twar · 25.248431, 55.396052
+- **Al Twar 4** · 2.04 km² · in Al Qusais · 25.261658, 55.399217
+- **Al Twar 5** · 1.67 km² · in Al Qusais · 25.269279, 55.387098
+- **Al Waha Villas** · 0.14 km² · in Wadi Al Safa 7 · 25.029016, 55.28587
+- **Al Waheda** · 1.43 km² · 25.291327, 55.336611
+- **Al Wajeha Al Bahriya** · 254.86 km² · 24.953702, 54.967033
+- **Al Wajeha Al Bahriya (Dubai Waterfront)** · 3.30 km² · in Al Wajeha Al Bahriya · 24.944335, 54.909042
+- **Al Warqa** · 21.55 km² · 25.190296, 55.429249
+- **Al Warqa 1** · 1.94 km² · in Al Warqa · 25.188983, 55.403376
+- **Al Warqa 2** · 3.26 km² · in Al Warqa · 25.200975, 55.408048
+- **Al Warqa 3** · 5.68 km² · in Al Warqa · 25.191657, 55.419019
+- **Al Warqa 4** · 4.56 km² · in Al Warqa · 25.18712, 55.437364
+- **Al Warqa 5** · 4.20 km² · in Al Warqa · 25.180479, 55.452973
+- **Al Warqa'a 1** · point only · in Al Warqa 1 · 25.188383, 55.403439
+- **Al Warqa'a 2** · point only · in Al Warqa 2 · 25.201618, 55.409689
+- **Al Warqa'a 3** · point only · in Al Warqa 3 · 25.188354, 55.418229
+- **Al Warqa'a 4** · point only · in Al Warqa 4 · 25.187454, 55.43766
+- **Al Warqa'a 5** · point only · in Al Warqa 5 · 25.180072, 55.453815
+- **Al Wasl** · 4.88 km² · in Bur Dubai · 25.195949, 55.255077
+- **Al Wohoosh** · point only · 25.120115, 55.62594
+- **Al Yalayis 1** · 18.44 km² · 25.019379, 55.306044
+- **Al Yalayis 2** · 14.60 km² · 24.998263, 55.286744
+- **Al Yalayis 3** · 12.11 km² · 24.975174, 55.34647
+- **Al Yalayis 4** · 13.31 km² · 24.968866, 55.319007
+- **Al Yalayis 5** · 24.79 km² · 24.975347, 55.270839
+- **Al Yufrah 1** · point only · in The Valley · 25.002988, 55.438739
+- **Al Yufrah 2** · point only · in Al Yufrah 4 · 24.959855, 55.383744
+- **Al Yufrah 4** · 11.83 km² · 24.967728, 55.392314
+- **Al-Khawaneej** · point only · in Al-Khawaneej 2 · 25.238252, 55.509796
+- **Al-Khawaneej 1** · 15.14 km² · 25.244152, 55.488225
+- **Al-Khawaneej 2** · 12.11 km² · 25.230076, 55.524719
+- **Alana** · 0.24 km² · in The Valley · 25.004477, 55.450019
+- **Aleyas** · 10.50 km² · 25.211903, 55.536144
+- **Alma 1** · 0.12 km² · in Wadi Al Safa 6 · 25.053494, 55.268474
+- **Alma 2** · 0.03 km² · in Wadi Al Safa 6 · 25.054371, 55.272525
+- **Alvorada 1** · 0.09 km² · in Wadi Al Safa 6 · 25.043338, 55.257464
+- **Alvorada 2** · 0.15 km² · in Wadi Al Safa 6 · 25.043232, 55.261531
+- **Alvorada 3** · 0.09 km² · in Wadi Al Safa 6 · 25.044205, 55.264577
+- **Alvorada 4** · 0.12 km² · in Wadi Al Safa 6 · 25.044206, 55.268966
+- **Amber Way** · 0.08 km² · in Jumeirah Golf Estates · 25.022561, 55.206774
+- **Antarctica** · 0.35 km² · 25.214396, 55.189318
+- **Arabella 1** · 0.31 km² · in Arabella Townhouses, Dubai · 25.017465, 55.271322
+- **Arabella Townhouses, Dubai** · 0.84 km² · in Al Hebiah 6 · 25.013026, 55.26654
+- **Arabian Ranches** · 8.33 km² · 25.048762, 55.267275
+- **Arabian Ranches 2** · 1.96 km² · in Wadi Al Safa 7 · 25.035289, 55.270064
+- **Arabian Ranches 3** · 1.35 km² · in Wadi Al Safa 5 · 25.065163, 55.322786
+- **Area 2** · 0.24 km² · in Al Mizhar 4 · 25.267235, 55.455394
+- **Area 3** · 0.20 km² · in Al Mizhar 4 · 25.268945, 55.450385
+- **Arjan** · 3.91 km² · in Al Barsha South · 25.060331, 55.235486
+- **Australia** · 0.36 km² · 25.231477, 55.194351
+- **Avena** · 0.23 km² · in The Valley · 25.007672, 55.441443
+- **Avena 2** · 0.21 km² · in The Valley · 25.003663, 55.444858
+- **Axel Heiberg Island** · 0.66 km² · 25.215807, 55.134242
+- **Ayal Nasir** · 0.17 km² · 25.274318, 55.304047
+- **Azalea** · 0.07 km² · in Arabian Ranches 2 · 25.029082, 55.273328
+
+## B
+
+- **Badrah** · point only · in Palm Springs · 24.951501, 55.050505
+- **Barsha Heights** · point only · in Al Thanyah 1 · 25.098284, 55.175782
+- **Block 12K** · 0.03 km² · in District 12 · 25.05348, 55.216777
+- **Block 5A** · 0.01 km² · in District 5 · 25.047207, 55.190534
+- **Block 5B** · 0.03 km² · in District 5 · 25.049074, 55.19043
+- **Block 5C** · 0.01 km² · in District 5 · 25.050393, 55.192163
+- **Block 5D** · 0.01 km² · in District 5 · 25.047359, 55.191681
+- **Block 5E** · 0.02 km² · in District 5 · 25.04889, 55.191211
+- **Block 5F** · 0.01 km² · in District 5 · 25.04855, 55.192498
+- **Block 5G** · 0.02 km² · in District 5 · 25.049048, 55.193103
+- **Block 7C** · 0.01 km² · in District 7, Jumeirah Village Triangle · 25.054356, 55.190857
+- **Block 8D** · 0.02 km² · in District 8 · 25.050927, 55.188085
+- **Bluewaters** · 0.38 km² · 25.079548, 55.121704
+- **Brookfield** · 0.11 km² · in Al Hebiah 3 · 25.02479, 55.24654
+- **Bukadra** · 1.80 km² · in Meydan · 25.177389, 55.325069
+- **Bur Dubai** · 64.45 km² · 25.23559, 55.29672
+- **Burj Khalifa** · point only · in Downtown Dubai · 25.191821, 55.272338
+- **Business Bay** · 6.71 km² · 25.183865, 55.273481
+- **Business Park Motor City** · 0.69 km² · in Motor City · 25.046874, 55.23202
+
+## C
+
+- **Calida Village** · 0.11 km² · in Al Hebiah 4 · 25.040361, 55.209617
+- **Camelia 2** · 0.06 km² · in Arabian Ranches 2 · 25.037607, 55.27599
+- **Camelia I** · 0.08 km² · in Arabian Ranches 2 · 25.034486, 55.278007
+- **Canal Cove Village** · 0.21 km² · in Palm Jumeirah · 25.120835, 55.130562
+- **Carmen Village** · 0.10 km² · in Al Hebiah 4 · 25.034703, 55.214892
+- **Carmen Village North** · 0.01 km² · in Al Hebiah 4 · 25.037888, 55.213627
+- **Casa Dora** · 0.28 km² · in Serena · 25.033798, 55.285256
+- **Casa Villas** · 0.18 km² · in Arabian Ranches 2 · 25.035662, 55.265777
+- **Casa Viva** · 0.21 km² · in Serena · 25.036365, 55.282934
+- **Cedre Villas A-D** · 0.26 km² · in Nadd Hessa · 25.122834, 55.392774
+- **Cedre Villas E-J** · 0.52 km² · in Nadd Hessa · 25.128298, 55.397609
+- **Central District** · 0.36 km² · in Warsan 1 · 25.16597, 55.406782
+- **China Cluster** · 0.54 km² · in Warsan 1 · 25.166746, 55.414148
+- **City of Arabia** · 17.45 km² · 25.088969, 55.337371
+- **City Walk** · 0.84 km² · in Al Wasl · 25.205426, 55.26345
+- **Club Villas, Dubai Hills Estate** · 0.20 km² · in Dubai Hills Estate · 25.121125, 55.262128
+- **Clubhouse Area** · 0.04 km² · in The Lakes · 25.078653, 55.167197
+- **Commercial Offices** · 0.23 km² · in Nadd Hessa · 25.133149, 55.381427
+- **Corniche Deira** · 1.52 km² · 25.284015, 55.3136
+- **Crescent Moon Island  ♡𓆝** · 0.87 km² · 25.30692, 54.651651
+- **Culture Village** · 0.79 km² · in Al Jaddaf · 25.226332, 55.338098
+
+## D
+
+- **Damac Hills** · point only · in Al Hebiah 3 · 25.026438, 55.251228
+- **Damac Hills 2** · 5.46 km² · 24.987561, 55.386791
+- **Deema 1** · 0.07 km² · in The Lakes · 25.076382, 55.167927
+- **Deema 2** · 0.06 km² · in The Lakes · 25.076601, 55.171167
+- **Deema 3** · 0.06 km² · in The Lakes · 25.077185, 55.174308
+- **Deema 4** · 0.06 km² · in The Lakes · 25.078346, 55.177002
+- **Deira** · point only · in Naif · 25.272794, 55.305334
+- **Deira Island** · 16.64 km² · 25.317917, 55.326318
+- **Deira Island Mall** · 0.39 km² · in Deira Island · 25.296263, 55.30107
+- **Desert Leaf, Al Barari Residences, Dubai** · 0.20 km² · in Al Barari Residences · 25.100868, 55.310057
+- **Desert Spring Village** · 0.06 km² · in Al Thanyah 1 · 25.10187, 55.175677
+- **DIC Village 3** · 0.22 km² · in Saih Shuaib 4 · 24.828731, 55.079094
+- **Discovery Gardens** · 2.23 km² · in Jabal Ali 1 · 25.038271, 55.145696
+- **District 1** · 0.21 km² · in Al Barsha South 5 · 25.034439, 55.173981
+- **District 10** · 0.82 km² · in Al Barsha South 4 · 25.064059, 55.20542
+- **District 11** · 0.87 km² · in Al Barsha South 4 · 25.063514, 55.214391
+- **District 12** · 0.72 km² · in Al Barsha South 4 · 25.054249, 55.215901
+- **District 13** · 0.62 km² · in Al Barsha South 4 · 25.0509, 55.210927
+- **District 14** · 0.72 km² · in Al Barsha South 4 · 25.050577, 55.20198
+- **District 15** · 0.55 km² · in Al Barsha South 4 · 25.058924, 55.201281
+- **District 16, Jumeirah Village Circle** · 0.28 km² · in Al Barsha South 4 · 25.071164, 55.210889
+- **District 2** · 0.25 km² · in Al Barsha South 5 · 25.038996, 55.178699
+- **District 2, Jumeirah Park** · 0.35 km² · in Jumeirah Park · 25.056289, 55.14676
+- **District 3, Jumeirah Park** · 0.29 km² · in Jumeirah Park · 25.050297, 55.147901
+- **District 4** · 0.28 km² · in Al Barsha South 5 · 25.044526, 55.192788
+- **District 4, Jumeirah Park** · 0.40 km² · in Jumeirah Park · 25.051222, 55.153008
+- **District 5** · 0.24 km² · in Al Barsha South 5 · 25.048431, 55.192779
+- **District 5, Jumeirah Park** · 0.39 km² · in Jumeirah Park · 25.045918, 55.153149
+- **District 6, Jumeirah Park** · 0.61 km² · in Jumeirah Park · 25.045848, 55.161964
+- **District 7, Jumeirah Park** · 0.40 km² · in Jumeirah Park · 25.040064, 55.163406
+- **District 7, Jumeirah Village Triangle** · 0.13 km² · in Al Barsha South 5 · 25.055783, 55.192223
+- **District 8** · 0.40 km² · in Al Barsha South 5 · 25.049332, 55.187457
+- **District 8, Jumeirah Park** · 0.41 km² · in Jumeirah Park · 25.037716, 55.165911
+- **District 9** · 0.31 km² · in Al Barsha South 5 · 25.043971, 55.184854
+- **District 9, Jumeirah Park** · 0.41 km² · in Jumeirah Park · 25.046118, 55.169398
+- **Downtown Dubai** · 9.24 km² · in Bur Dubai · 25.186684, 55.274705
+- **Downtown Jebel Ali** · 3.96 km² · in Jabal Ali Industrial 2 · 24.954518, 55.07783
+- **Downtown Jebel Ali 3** · 0.59 km² · in Downtown Jebel Ali · 24.940535, 55.049518
+- **Downtown Jebel Ali 4** · 0.76 km² · in Downtown Jebel Ali · 24.928472, 55.016253
+- **Dragon Mart 1** · 0.43 km² · in Warsan 1 · 25.173705, 55.41604
+- **DSO Semmer Villas** · 0.55 km² · in Nadd Hessa · 25.113984, 55.381734
+- **Dubai** · 1.33 km² · in Umm Nahad 1/Madinat Hind 1 · 25.06526, 55.406034
+- **Dubai Airport Free Zone** · point only · in Dubai International Airport · 25.261045, 55.372926
+- **Dubai Birds & Pet Market** · 0.44 km² · in Warsan 3 · 25.145763, 55.460082
+- **Dubai Creek Harbour** · 7.04 km² · in New Ras Al Khor Community · 25.197978, 55.36038
+- **Dubai Design District** · 2.13 km² · in Zabeel · 25.189933, 55.302017
+- **Dubai Festival City** · 6.03 km² · in New Ras Al Khor Community · 25.2217, 55.359178
+- **Dubai Golf City** · 5.37 km² · 25.011316, 55.234267
+- **Dubai Harbour** · 0.95 km² · in Emaar Beachfront · 25.095619, 55.138001
+- **Dubai Healthcare City** · 0.46 km² · in Umm Hurair 2 · 25.231819, 55.322504
+- **Dubai Hills** · 4.77 km² · in Hadaeq Sheikh Mohammed Bin Rashid · 25.102254, 55.246363
+- **Dubai Hills Estate** · 3.51 km² · in Hadaeq Sheikh Mohammed Bin Rashid · 25.099907, 55.251188
+- **Dubai Industrial City** · point only · in Saih Shuaib 3 · 24.839901, 55.066293
+- **Dubai Int'l Airport** · point only · in Dubai International Airport · 25.260045, 55.368747
+- **Dubai International Airport** · 14.42 km² · 25.252671, 55.365276
+- **Dubai International Financial Centre** · 0.64 km² · in Zabeel · 25.208824, 55.277639
+- **Dubai Internet City** · 1.10 km² · in Al Sufouh 2 · 25.095591, 55.161716
+- **Dubai Investment Park 1** · 8.93 km² · in Dubai Investments Park · 24.982434, 55.160475
+- **Dubai Investment Park 2** · 17.41 km² · in Dubai Investments Park · 24.974446, 55.211914
+- **Dubai Investments Park** · 35.78 km² · 24.985679, 55.184738
+- **Dubai Knowledge Park** · point only · in Al Sufouh 2 · 25.103133, 55.163622
+- **Dubai Land** · 3.91 km² · in Wadi Al Safa 5 · 25.077675, 55.366141
+- **Dubai Lifestyle City** · 0.38 km² · in Wadi Al Safa 7 · 25.042603, 55.282163
+- **Dubai Marina** · 3.67 km² · 25.08131, 55.137555
+- **Dubai Maritime City** · point only · in Al Mina · 25.249626, 55.276165
+- **Dubai Media City** · 0.51 km² · in Al Sufouh 2 · 25.094973, 55.154627
+- **Dubai Media City 2** · 1.76 km² · 25.096257, 55.173567
+- **Dubai Parks and Resorts** · point only · in Dubai Techno Park · 24.919855, 55.00868
+- **Dubai Police Training Village** · 0.25 km² · in Umm Nahad 1/Madinat Hind 1 · 25.079459, 55.390851
+- **Dubai Production City** · 4.38 km² · in Me’aisem 1 · 25.032128, 55.191273
+- **Dubai Residence Complex** · 2.63 km² · in Wadi Al Safa 5 · 25.093104, 55.380324
+- **Dubai Silicon Oasis** · 8.50 km² · in International City · 25.121706, 55.385505
+- **Dubai South** · point only · in Al Maktoum International Airport Extension · 24.914439, 55.161513
+- **Dubai South Residential District** · 6.63 km² · in Madinat Al Mataar · 24.943556, 55.219926
+- **Dubai Sports City** · point only · in Al Hebiah 4 · 25.032138, 55.219353
+- **Dubai Studio City** · point only · in Al Hebiah 2 · 25.041564, 55.252259
+- **Dubai Studio City 1** · point only · in Al Hebiah 2 · 25.03509, 55.237378
+- **Dubai Sustainable City** · 0.61 km² · in Wadi Al Safa 7 · 25.02962, 55.27886
+- **Dubai Techno Park** · 40.61 km² · in Al Wajeha Al Bahriya · 24.919197, 55.042559
+- **Dubai Textile Zone** · 0.47 km² · in Warsan 1 · 25.168351, 55.420715
+- **Dubai Waterfront** · 58.88 km² · in Al Wajeha Al Bahriya · 24.944817, 54.998449
+- **Dubai World Trade Centre** · 0.63 km² · in Trade Centre · 25.223803, 55.287722
+- **Dubiotech** · 2.03 km² · in Al Barsha South 2 · 25.074827, 55.24251
+
+## E
+
+- **Eastern Residence North, Falcon City of Wonders, Dubai** · 0.28 km² · in Falcon City of Wonders · 25.093656, 55.351091
+- **Eastern Residence South, Falcon City of Wonders, Dubai** · 0.32 km² · in Falcon City of Wonders · 25.090325, 55.346688
+- **Eden** · 0.12 km² · in The Valley · 25.013785, 55.449428
+- **Elora** · 0.14 km² · in The Valley · 25.009177, 55.446582
+- **Emaar Beachfront** · 1.58 km² · 25.096804, 55.140933
+- **Emaar South Golf District** · 6.88 km² · in Madinat Al Mataar · 24.85472, 55.147066
+- **Emerald Hills, Dubai Hills Estate** · 0.34 km² · in Dubai Hills Estate · 25.126994, 55.271291
+- **Emirates Cluster** · 0.15 km² · in Warsan 1 · 25.162012, 55.422726
+- **Emirates Golf Club** · 2.01 km² · in Emirates Hills · 25.084772, 55.160309
+- **Emirates Hills** · 23.96 km² · 25.06292, 55.166369
+- **England Cluster** · 0.35 km² · in Warsan 1 · 25.172446, 55.407134
+- **Enkhali** · point only · in Lehbab Palace · 25.11183, 55.571142
+- **Esmeralda Village** · 0.15 km² · in Al Hebiah 4 · 25.029631, 55.217824
+- **Estella Village** · 0.16 km² · in Al Hebiah 4 · 25.035674, 55.218357
+- **Etihad Rail** · 0.86 km² · in Dubai Investment Park 2 · 24.974619, 55.228539
+- **Ewan Residences** · 0.21 km² · in Dubai Investments Park · 24.994921, 55.180182
+- **Expo 2020 District** · 5.20 km² · 24.960132, 55.151093
+- **Expo City Dubai** · 6.46 km² · 24.961764, 55.159344
+- **Expo Valley** · 0.67 km² · in Expo 2020 District · 24.963387, 55.16957
+
+## F
+
+- **Fairbanks** · 0.32 km² · 25.202003, 55.135144
+- **Fairways 1** · 0.22 km² · in Hadaeq Sheikh Mohammed Bin Rashid · 25.115242, 55.260391
+- **Fairways 2** · point only · in Hadaeq Sheikh Mohammed Bin Rashid · 25.111414, 55.268391
+- **Falcon City of Wonders** · 4.74 km² · in Wadi Al Safa 2 · 25.096786, 55.343605
+- **Falcon City of Wonders 1** · 0.36 km² · in Falcon City of Wonders · 25.099591, 55.339423
+- **Falcon City of Wonders 2** · 0.26 km² · in Falcon City of Wonders · 25.102023, 55.344302
+- **Farm Gardens** · 0.24 km² · in The Valley · 25.015592, 55.442625
+- **Farm Gardens 2** · 0.38 km² · in The Valley · 25.013106, 55.437685
+- **Fireside** · 0.13 km² · in Jumeirah Golf Estates · 25.019982, 55.204786
+- **Flame Tree Ridge** · 0.11 km² · in Jumeirah Golf Estates · 25.016666, 55.204499
+- **Forat** · 0.05 km² · in The Lakes · 25.078298, 55.168369
+- **Forbidden City** · 0.35 km² · in Warsan 1 · 25.161342, 55.411966
+- **France Cluster** · 0.38 km² · in Warsan 1 · 25.161417, 55.401717
+
+## G
+
+- **Gardenia Townhomes** · 0.17 km² · in Wasl Gate · 25.025114, 55.110421
+- **Ghadeer** · 0.14 km² · in The Lakes · 25.08212, 55.172764
+- **Ghadeer Al Tair** · 4.85 km² · in Al Quoz · 25.151667, 55.271368
+- **Ghadeer Barashy** · 75.69 km² · 24.803024, 55.324131
+- **Ghoroob Mirdif** · 0.31 km² · in Mirdif · 25.212007, 55.416717
+- **Global Village** · 1.80 km² · in Wadi Al Safa 4 · 25.068753, 55.306833
+- **Golf Homes** · 0.05 km² · in Wadi Al Safa 6 · 25.048743, 55.258844
+- **Golf Links** · point only · in Emaar South Golf District · 24.860367, 55.138868
+- **Golf Place, Dubai Hills Estate** · 0.28 km² · in Dubai Hills Estate · 25.122615, 55.27512
+- **Grand Views** · 0.41 km² · in Meydan Gated Community · 25.145686, 55.300144
+- **Grayteesah** · 92.62 km² · 24.866087, 55.506199
+- **Greece Cluster** · 0.18 km² · in Warsan 1 · 25.156279, 55.408825
+- **Green Community** · 2.66 km² · in Dubai Investments Park · 24.998579, 55.163709
+- **Green Community East** · 0.50 km² · in Green Community · 25.005584, 55.160547
+- **Green Community Motor City** · 0.63 km² · in Al Hebiah 1 · 25.037621, 55.233735
+- **Green Community West** · 1.04 km² · in Green Community · 24.996418, 55.165338
+- **Greenwoods** · 0.11 km² · in Al Hebiah 3 · 25.030722, 55.263123
+
+## H
+
+- **Hacienda** · 0.63 km² · in The Villa · 25.087566, 55.361839
+- **Hadaeq Sheikh Mohammed Bin Rashid** · 42.02 km² · 25.104342, 55.263592
+- **Hattan** · 0.16 km² · in Wadi Al Safa 6 · 25.046671, 55.266835
+- **Hattan 1** · 0.10 km² · in The Lakes · 25.076984, 55.165032
+- **Hattan 2** · 0.21 km² · in The Lakes · 25.082889, 55.166989
+- **Hayat Townhouses, Town Square, Dubai** · 0.24 km² · in Town Square Dubai · 24.99997, 55.300843
+- **Hayl** · point only · 24.789303, 56.113943
+- **Hefair** · 146.68 km² · 24.676533, 55.250063
+- **Hessyan 1** · 24.54 km² · in Dubai Waterfront · 24.957349, 55.024513
+- **Hessyan 2** · 44.15 km² · in Al Wajeha Al Bahriya · 24.942216, 54.970915
+- **Hills Grove** · 0.11 km² · in Hadaeq Sheikh Mohammed Bin Rashid · 25.121032, 55.267887
+- **Hills View** · 0.31 km² · in Hadaeq Sheikh Mohammed Bin Rashid · 25.11611, 55.267767
+- **Hor Al Anz** · 3.13 km² · 25.280464, 55.343081
+- **Hor Al Anz East** · 1.38 km² · in Hor Al Anz · 25.282502, 55.34716
+
+## I
+
+- **International City** · 17.75 km² · 25.132274, 55.398141
+- **Italy Cluster** · 0.15 km² · in Warsan 1 · 25.167776, 55.400711
+
+## J
+
+- **Jabal Ali** · 121.66 km² · 24.995326, 55.114105
+- **Jabal Ali 1** · 21.38 km² · in Jabal Ali · 25.041619, 55.13364
+- **Jabal Ali 2** · point only · in Jabal Ali · 25.054362, 55.117629
+- **Jabal Ali 3** · point only · in Jabal Ali · 25.031404, 55.09549
+- **Jabal Ali Industrial 1** · point only · in Jebel Ali Industrial Area · 24.998575, 55.121504
+- **Jabal Ali Industrial 2** · 32.57 km² · in Jabal Ali · 24.95406, 55.104707
+- **Jabal Ali Industrial 3** · 30.27 km² · in Al Wajeha Al Bahriya · 24.918492, 55.060697
+- **JAFZA Liu 1 - 2 - 3** · 0.34 km² · in Jebel Ali North Free Zone · 24.963747, 55.060831
+- **JAFZA Liu 4 - 5** · 0.38 km² · in Jebel Ali North Free Zone · 24.962575, 55.065035
+- **Jasmine Leaf, Al Barari Residence, Dubai** · 0.34 km² · in Al Barari · 25.096262, 55.310262
+- **Jebel Ali Hills** · 6.22 km² · in Saih Shuaib 1 · 24.90019, 54.971222
+- **Jebel Ali Industrial Area** · 22.15 km² · in Jabal Ali · 24.996833, 55.12081
+- **Jebel Ali North Free Zone** · 26.25 km² · in Jabal Ali · 24.986473, 55.08201
+- **Jebel Ali Port** · point only · 24.980458, 55.059888
+- **Jebel Ali Show Village** · point only · in Nakhlat Jabal Ali · 25.017223, 54.990743
+- **Jebel Ali Village** · 4.29 km² · in Jabal Ali 1 · 25.030177, 55.112699
+- **JLT cluster Q** · point only · in Jumeirah Lakes Towers · 25.076552, 55.145772
+- **Johannesburg** · 0.01 km² · 25.214812, 55.183042
+- **Jumeirah** · 12.21 km² · in Bur Dubai · 25.206318, 55.246841
+- **Jumeirah 1** · point only · in Jumeirah · 25.219343, 55.257818
+- **Jumeirah 2** · point only · in Jumeirah · 25.200831, 55.245202
+- **Jumeirah 3** · 2.66 km² · in Jumeirah · 25.181502, 55.229076
+- **Jumeirah Bay** · point only · in Jumeirah Bay Island · 25.213668, 55.236584
+- **Jumeirah Bay Island** · 0.81 km² · in Jumeirah · 25.215549, 55.236197
+- **Jumeirah Beach Residence** · 0.32 km² · in Dubai Marina · 25.077802, 55.135181
+- **Jumeirah Golf Estates** · 3.86 km² · in Me’aisem 1 · 25.02191, 55.198121
+- **Jumeirah Heights** · 0.58 km² · in Emirates Hills · 25.065537, 55.14557
+- **Jumeirah Island 2** · point only · 25.197624, 55.225824
+- **Jumeirah Islands** · 2.41 km² · in Emirates Hills · 25.057059, 55.156146
+- **Jumeirah Lakes Towers** · 2.05 km² · in Emirates Hills · 25.072383, 55.143743
+- **Jumeirah Park** · 3.98 km² · in Emirates Hills · 25.046941, 55.154818
+- **Jumeirah Village Circle** · 9.76 km² · 25.052752, 55.205766
+- **Jumeirah Village Triangle** · point only · in Block 5B · 25.049843, 55.190701
+
+## K
+
+- **Karama** · point only · in Al Karama · 25.248214, 55.305061
+
+## L
+
+- **La Avenida 1** · 0.03 km² · in Wadi Al Safa 6 · 25.052828, 55.272976
+- **La Avenida 2** · 0.04 km² · in Wadi Al Safa 6 · 25.051786, 55.270518
+- **Lahbab** · point only · 25.041542, 55.592377
+- **Lake District** · 0.23 km² · in Warsan 1 · 25.152823, 55.415852
+- **Le Hemaira** · 36.64 km² · 25.040714, 55.509795
+- **Legends** · 2.60 km² · in Al Barari · 25.086075, 55.302485
+- **Lehbab 1** · point only · 25.044519, 55.607277
+- **Lehbab 2** · point only · 25.030303, 55.565936
+- **Lehbab Palace** · 43.00 km² · 25.104366, 55.573877
+- **Lila Village** · 0.15 km² · in Arabian Ranches 2 · 25.04024, 55.273412
+- **Lillia** · 0.14 km² · in The Valley · 25.007186, 55.447649
+- **Lime Tree Valley** · 0.14 km² · in Jumeirah Golf Estates · 25.015696, 55.200416
+- **Living Legends** · point only · in Living Legends, Dubai · 25.085079, 55.298122
+- **Living Legends, Dubai** · 1.59 km² · in Legends · 25.086198, 55.298759
+- **Liwan** · 2.38 km² · in Wadi Al Safa 2 · 25.105894, 55.373203
+- **Lootah Avenue, The Fold and Rabdan Building** · 0.26 km² · in Business Park Motor City · 25.045937, 55.228519
+
+## M
+
+- **Madinat Al Mataar** · 134.51 km² · 24.895658, 55.141167
+- **Madinat Hind 1** · point only · in Umm Nahad 1/Madinat Hind 1 · 25.070031, 55.385632
+- **Madinat Hind 2** · point only · in Umm Nahad 2/Madinat Hind 2 · 25.057235, 55.336762
+- **Madinat Hind 3** · point only · in Umm Nahad 3/Madinat Hind 3 · 25.029488, 55.425457
+- **Madinat Hind 4** · point only · 25.007751, 55.363706
+- **Madinat Latifa** · point only · in Al Selal/Madinat Latifa · 24.899039, 55.278586
+- **Maeen** · 0.19 km² · in The Lakes · 25.082379, 55.169816
+- **Mai Dubai Bottling & Manufacturing Facility** · 0.52 km² · in Al Yalayis 2 · 24.999101, 55.273541
+- **Majan** · 1.92 km² · in Wadi Al Safa 3 · 25.090076, 55.316098
+- **Maple 1** · 0.28 km² · in Maple, Dubai Hills Estate · 25.09209, 55.253903
+- **Maple 1, Dubai Hills Estate** · 0.31 km² · in Maple, Dubai Hills Estate · 25.092587, 55.253988
+- **Maple 2** · 0.31 km² · in Maple, Dubai Hills Estate · 25.098861, 55.25386
+- **Maple 3** · 0.26 km² · in Maple, Dubai Hills Estate · 25.104362, 55.255624
+- **Maple, Dubai Hills Estate** · 0.98 km² · in Dubai Hills Estate · 25.098721, 55.25394
+- **Margab** · point only · 24.807592, 55.609065
+- **Margham** · 140.39 km² · 24.948308, 55.579045
+- **Marqab** · point only · 24.820809, 55.58654
+- **Marsa Al Khor** · 0.49 km² · in Dubai Festival City · 25.23116, 55.346463
+- **MBR- Al Merkad** · 11.30 km² · 25.167117, 55.290001
+- **Me'aisem 1** · point only · in Me’aisem 1 · 25.016, 55.185912
+- **Me'aisem 2** · 10.76 km² · 24.99516, 55.217701
+- **Meadows 1** · 0.48 km² · in The Meadows · 25.073426, 55.154974
+- **Meadows 2** · 0.43 km² · in The Meadows · 25.069485, 55.15144
+- **Meadows 3** · 0.07 km² · in The Meadows · 25.070652, 55.157376
+- **Meadows 4** · 0.14 km² · in The Meadows · 25.067208, 55.157039
+- **Meadows 5** · 0.24 km² · in The Meadows · 25.062397, 55.161519
+- **Meadows 6** · 0.16 km² · in The Meadows · 25.058895, 55.170211
+- **Meadows 7** · 0.11 km² · in The Meadows · 25.062016, 55.178976
+- **Meadows 9** · 0.43 km² · in Emirates Hills · 25.045442, 55.17384
+- **Mereiyeel** · point only · 25.10174, 55.515035
+- **Meydan** · 19.37 km² · in Nad Al Sheba · 25.16293, 55.314297
+- **Meydan Avenue** · 1.11 km² · in MBR- Al Merkad · 25.159142, 55.296136
+- **Meydan Gated Community** · 1.09 km² · in Nad Al Sheba 1 · 25.145728, 55.292649
+- **Meydan Heights Villas** · 0.28 km² · in Nad Al Sheba 1 · 25.144684, 55.315204
+- **Meydan One Mall** · 0.60 km² · in MBR- Al Merkad · 25.172559, 55.287132
+- **Me’aisem 1** · 16.34 km² · 25.019984, 55.186276
+- **Midtown by Deyaar** · 0.12 km² · in Dubai Production City · 25.02569, 55.182215
+- **Millenium Estates** · 0.33 km² · in Meydan Gated Community · 25.144641, 55.295585
+- **Mina Bazaar** · point only · in Al Souk Al Kabeer · 25.261532, 55.294109
+- **Mira** · 1.37 km² · in Reem · 25.00866, 55.305536
+- **Mira 1** · 0.16 km² · in Mira · 25.004292, 55.303149
+- **Mira 2** · 0.19 km² · in Mira · 25.002633, 55.306837
+- **Mira 3** · 0.24 km² · in Mira · 25.007808, 55.310404
+- **Mira 4** · 0.35 km² · in Mira · 25.013111, 55.305038
+- **Mira 5** · 0.17 km² · in Mira · 25.007055, 55.306036
+- **Mira Oasis** · 0.88 km² · in Reem · 25.013373, 55.298261
+- **Mirador** · 0.35 km² · in Wadi Al Safa 6 · 25.055064, 55.285477
+- **Mirador La Colección 1** · 0.11 km² · in Wadi Al Safa 6 · 25.046106, 55.261317
+- **Mirador La Colección 2** · 0.15 km² · in Wadi Al Safa 6 · 25.045716, 55.256833
+- **Mirdif** · 10.04 km² · 25.220229, 55.423
+- **Mohammed Bin Rashid City** · 5.00 km² · in MBR- Al Merkad · 25.164059, 55.285661
+- **Mohammed Bin Rashid City District 11** · 0.95 km² · in Al Barari · 25.122234, 55.35081
+- **Morella Village** · 0.05 km² · in Al Hebiah 4 · 25.037951, 55.207354
+- **Morocco Cluster** · 0.21 km² · in Warsan 1 · 25.162312, 55.418549
+- **Motor City** · 2.91 km² · 25.04769, 55.238209
+- **Mudon** · 0.53 km² · in Al Hebiah 6 · 25.023992, 55.27425
+- **Mugatrah** · point only · 24.792346, 55.195184
+- **Muhaisanah 1** · point only · in Muhaisnah 1 · 25.244504, 55.418105
+- **Muhaisanah 2** · point only · in Muhaisnah 2 · 25.264066, 55.422353
+- **Muhaisanah 3** · point only · in Muhaisnah 3 · 25.271056, 55.404876
+- **Muhaisanah 4** · point only · in Muhaisnah 4 · 25.279048, 55.407911
+- **Muhaisanah 5** · point only · in Muhaisnah · 25.279379, 55.434062
+- **Muhaisnah** · 16.62 km² · 25.260745, 55.419681
+- **Muhaisnah 1** · 4.74 km² · in Muhaisnah · 25.245354, 55.417469
+- **Muhaisnah 2** · 5.21 km² · in Muhaisnah · 25.265311, 55.42295
+- **Muhaisnah 3** · 1.64 km² · in Muhaisnah · 25.271877, 55.404122
+- **Muhaisnah 4** · 2.19 km² · in Muhaisnah · 25.279199, 55.410171
+- **Muhaisnah 5** · point only · in Muhaisnah · 25.277387, 55.436716
+- **Murooj Al Furjan** · 0.55 km² · in Al Furjan · 25.028364, 55.143828
+- **Mushrif** · 9.86 km² · 25.21095, 55.448544
+- **Mydan District 7** · 0.41 km² · in Hadaeq Sheikh Mohammed Bin Rashid · 25.144467, 55.284908
+
+## N
+
+- **Nad Al Sheba** · 32.40 km² · 25.14563, 55.364275
+- **Nad Al Sheba 1** · 12.42 km² · in Meydan · 25.15584, 55.312832
+- **Nad Al Sheba Club Staff Accomodation** · point only · in Tonino Lamborghini Residences · 25.156015, 55.332495
+- **Nad Shamma** · 0.78 km² · in Al Rashidiya · 25.217776, 55.383844
+- **Nadd Al Hamar** · 8.31 km² · 25.197932, 55.385652
+- **Nadd Al Sheba 1** · point only · in Al Barari · 25.142124, 55.319475
+- **Nadd Al Sheba 2** · 7.48 km² · in Nad Al Sheba · 25.156725, 55.348776
+- **Nadd Al Sheba 3** · 6.28 km² · in Nad Al Sheba · 25.153833, 55.375413
+- **Nadd Al Sheba 4** · 6.16 km² · in Nad Al Sheba · 25.135587, 55.366
+- **Nadd Hessa** · 8.42 km² · in International City · 25.122186, 55.386024
+- **Nadd Shamma** · point only · in Nad Shamma · 25.215956, 55.385689
+- **Naia Island** · 0.10 km² · 25.180403, 55.202476
+- **Naif** · 0.75 km² · 25.272903, 55.31068
+- **Nakheel 1000 Villas** · 1.02 km² · in Nadd Al Sheba 3 · 25.157842, 55.38025
+- **Nakhlat Jabal Ali** · 47.43 km² · in Al Wajeha Al Bahriya · 25.00671, 54.989189
+- **Nakhlat Jumeira** · point only · in Palm Jumeirah · 25.117327, 55.135097
+- **Nara** · 0.13 km² · in The Valley · 25.012722, 55.451825
+- **Nazwa** · point only · in Nazwah · 25.005299, 55.661728
+- **Nazwah** · 15.15 km² · 25.018781, 55.645707
+- **New Ras Al Khor Community** · 27.66 km² · 25.200846, 55.359326
+- **Nima** · 0.23 km² · in The Valley · 25.00311, 55.454376
+- **Noor Townhouses, Town Square, Dubai** · 0.31 km² · in Town Square Dubai · 24.995827, 55.295906
+- **Novelia Village** · 0.10 km² · in Al Hebiah 4 · 25.03258, 55.210574
+
+## O
+
+- **Oasis Village** · 0.15 km² · in Al Quoz Community · 25.14388, 55.245759
+- **Olive Point** · 0.06 km² · in Jumeirah Golf Estates · 25.025425, 55.195998
+- **Omran Labour Camp** · 0.27 km² · in Hessyan 2 · 24.926845, 54.972813
+- **Orange Grove** · 0.02 km² · in Jumeirah Golf Estates · 25.025311, 55.207639
+- **Orange Lake** · 0.07 km² · in Jumeirah Golf Estates · 25.027783, 55.202903
+- **Orania** · 0.11 km² · in The Valley · 25.011005, 55.445167
+- **Oud Al Muteena** · 7.43 km² · 25.267861, 55.454671
+- **Oud Metha** · 1.50 km² · in Bur Dubai · 25.238296, 55.311324
+
+## P
+
+- **Palace of His Highness Sheikh Ahmed the Emir of Qatar** · 0.34 km² · in Umm Hurair 1 · 25.253289, 55.315016
+- **Palm Deira** · 18.91 km² · 25.317998, 55.326274
+- **Palm Jumeirah** · 19.97 km² · 25.119589, 55.13288
+- **Palm Jumeirah - The Crescent** · 0.51 km² · in Palm Jumeirah · 25.127805, 55.153515
+- **Palm Springs** · 8.15 km² · in Hessyan 1 · 24.952461, 55.038113
+- **Palma Village** · 0.08 km² · in Arabian Ranches 2 · 25.038474, 55.269707
+- **Palmera 1** · 0.10 km² · in Wadi Al Safa 6 · 25.042044, 55.26554
+- **Palmera 2** · 0.12 km² · in Wadi Al Safa 6 · 25.040321, 55.262304
+- **Palmera 3** · 0.09 km² · in Wadi Al Safa 6 · 25.039561, 55.258017
+- **Palmera 4** · 0.08 km² · in Wadi Al Safa 6 · 25.041793, 55.256779
+- **Parkway Vistas, Dubai Hills Estate** · 0.33 km² · in Dubai Hills Estate · 25.126891, 55.263874
+- **Pearl Jumeirah** · 0.72 km² · in Jumeirah · 25.244474, 55.25896
+- **Persia Cluster** · 0.16 km² · in Warsan 1 · 25.159851, 55.408359
+- **Phase 2, Al Furjan, Dubai** · 0.57 km² · in Al Furjan · 25.026859, 55.148653
+- **Phase 6** · 12.24 km² · in Saih Shua'Alah · 24.70806, 55.445037
+- **Polo Homes** · 0.58 km² · in Wadi Al Safa 6 · 25.036745, 55.253033
+- **Polo Residence** · 0.16 km² · in Nad Al Sheba 1 · 25.151925, 55.295415
+- **Ponderosa** · 0.67 km² · in The Villa · 25.080506, 55.34896
+- **Port Rashid** · 4.36 km² · in Al Mina · 25.270931, 55.265831
+- **Port Saeed** · 2.69 km² · 25.249367, 55.332622
+
+## Q
+
+- **Qaraytaysah** · point only · in Grayteesah · 24.869457, 55.549594
+- **Qimah** · point only · 24.78648, 56.141603
+- **Queen Meadows** · 0.08 km² · in Al Hebiah 3 · 25.032456, 55.259987
+
+## R
+
+- **Rahat** · 0.27 km² · in Al Hebiah 6 · 25.023136, 55.269328
+- **Ras Al Khor** · point only · in New Ras Al Khor Community · 25.193963, 55.339245
+- **Ras Al Khor Ind 2** · point only · in Ras Al Khor Industrial 2 · 25.177757, 55.358524
+- **Ras Al Khor Industrial 1** · point only · in New Ras Al Khor Community · 25.176801, 55.3393
+- **Ras Al Khor Industrial 2** · 4.28 km² · in New Ras Al Khor Community · 25.177081, 55.357342
+- **Ras Al Khor Industrial 3** · point only · in New Ras Al Khor Community · 25.173743, 55.381357
+- **Ras Al Khor Industrial Area** · point only · in Ras Al Khor Industrial 2 · 25.176282, 55.363026
+- **Rasha Villas** · 0.14 km² · in Arabian Ranches 2 · 25.035197, 55.269934
+- **Reem** · 2.48 km² · in Al Yalayis 1 · 25.010653, 55.301566
+- **Remah** · point only · 24.83837, 55.676776
+- **Remraam** · 2.39 km² · in Al Hebiah 5 · 25.001365, 55.24886
+- **Remraam 1** · 0.35 km² · in Remraam · 25.005596, 55.249595
+- **Remraam 2** · 0.47 km² · in Remraam · 25.002136, 55.253318
+- **Remraam 3** · 0.44 km² · in Remraam · 24.997594, 55.24802
+- **Remraam 4** · 0.43 km² · in Remraam · 25.001335, 55.242772
+- **Riggat Al Buteen** · 0.65 km² · 25.258835, 55.321701
+- **Rivana** · 0.33 km² · in The Valley · 25.008435, 55.455241
+- **Riverside** · 0.23 km² · in Wadi Al Safa 7 · 25.041159, 55.278433
+- **Rosa Village** · 0.15 km² · in Arabian Ranches 2 · 25.036125, 55.273699
+- **Rukan** · 0.30 km² · in Wadi Al Safa 7 · 25.042348, 55.288093
+- **Russia Cluster** · 0.24 km² · in Warsan 1 · 25.170564, 55.402287
+
+## S
+
+- **Saheel** · 0.95 km² · in Wadi Al Safa 6 · 25.051964, 55.258512
+- **Saih Al Dahal** · 76.81 km² · 24.745043, 55.361932
+- **Saih Al Salam** · 89.13 km² · 24.88065, 55.376222
+- **Saih Shua'Alah** · 84.41 km² · 24.689293, 55.429441
+- **Saih Shuaib 1** · 40.68 km² · in Al Wajeha Al Bahriya · 24.899059, 54.996087
+- **Saih Shuaib 2** · 22.63 km² · 24.86976, 55.058874
+- **Saih Shuaib 3** · 16.03 km² · 24.844733, 55.076475
+- **Saih Shuaib 4** · 19.75 km² · 24.823142, 55.095241
+- **Samara** · 0.12 km² · in Arabian Ranches 2 · 25.032047, 55.267877
+- **Sanctuary Falls** · 0.12 km² · in Jumeirah Golf Estates · 25.02187, 55.187358
+- **Savannah** · 0.26 km² · in Wadi Al Safa 6 · 25.055529, 55.275757
+- **Semmer Villas A & C** · point only · in DSO Semmer Villas · 25.112453, 55.379744
+- **Semmer Villas B & D** · point only · in DSO Semmer Villas · 25.115448, 55.383874
+- **Serena** · 0.98 km² · in Wadi Al Safa 7 · 25.03538, 55.285904
+- **Sheikh Saeed bin Mohammed bin Rashid Al Maktoum Palace - Jebel Ali** · 2.57 km² · in Jabal Ali · 24.987597, 55.034902
+- **Sheikh Zayed Road** · 1.27 km² · in Trade Centre · 25.217623, 55.278283
+- **Shorooq** · 0.74 km² · in Mirdif · 25.214495, 55.428185
+- **Sidra 1** · 0.24 km² · in Sidra 1, Dubai Hills Estate · 25.096247, 55.248858
+- **Sidra 1, Dubai Hills Estate** · 0.46 km² · in Sidra Villas, Dubai Hills Estate · 25.093694, 55.248441
+- **Sidra 2** · point only · in Sidra 2, Dubai Hills Estate · 25.100471, 55.247923
+- **Sidra 2, Dubai Hills Estate** · 0.37 km² · in Sidra Villas, Dubai Hills Estate · 25.100567, 55.248191
+- **Sidra 3** · point only · in Sidra 3, Dubai Hills Estate · 25.107124, 55.253184
+- **Sidra 3, Dubai Hills Estate** · 0.27 km² · in Sidra Villas, Dubai Hills Estate · 25.10714, 55.253306
+- **Sidra Villas, Dubai Hills Estate** · 1.22 km² · in Dubai Hills Estate · 25.099722, 55.247993
+- **Sienna Lake** · 0.08 km² · in Jumeirah Golf Estates · 25.014655, 55.211813
+- **Sienna Views** · 0.05 km² · in Jumeirah Golf Estates · 25.017605, 55.210596
+- **Silk Leaf, Al Barari Residences, Dubai** · 0.22 km² · in Al Barari Residences · 25.099053, 55.305226
+- **Silver Springs** · 0.14 km² · in Al Hebiah 3 · 25.031102, 55.256387
+- **Skydive Dubai** · 0.26 km² · in Margham · 24.888479, 55.546286
+- **Sobha Hartland** · 0.81 km² · in MBR- Al Merkad · 25.177431, 55.307954
+- **Spain Cluster** · 0.24 km² · in Warsan 1 · 25.164823, 55.400839
+- **Springs 1** · 0.11 km² · in The Springs · 25.061232, 55.161373
+- **Springs 10** · 0.14 km² · in The Springs · 25.057912, 55.18133
+- **Springs 11** · 0.21 km² · in The Springs · 25.055802, 55.177403
+- **Springs 12** · 0.13 km² · in The Springs · 25.054401, 55.182737
+- **Springs 14** · 0.18 km² · in The Springs · 25.052155, 55.173659
+- **Springs 15** · 0.21 km² · in The Springs · 25.051107, 55.179268
+- **Springs 2** · 0.21 km² · in The Springs · 25.057409, 55.167019
+- **Springs 3** · 0.21 km² · in The Springs · 25.057884, 55.176046
+- **Springs 4** · 0.16 km² · in The Springs · 25.061047, 55.179542
+- **Springs 5** · 0.13 km² · in The Springs · 25.064057, 55.187041
+- **Springs 6** · 0.10 km² · in The Springs · 25.068207, 55.189337
+- **Springs 7** · 0.11 km² · in The Springs · 25.063872, 55.191514
+- **Springs 8** · 0.12 km² · in The Springs · 25.06039, 55.18759
+- **Springs 9** · 0.13 km² · in The Springs · 25.058944, 55.18508
+- **Staff Accommodation** · 0.23 km² · in Nadd Hessa · 25.134223, 55.38977
+- **Sufayri** · point only · 24.811649, 56.126213
+- **Sufouh Gardens** · 0.22 km² · in Al Sufouh 1 · 25.110609, 55.178461
+- **Suhaylah** · point only · 24.808124, 56.18258
+
+## T
+
+- **Talia** · 0.12 km² · in The Valley · 25.011236, 55.453632
+- **Terra Nova** · 0.13 km² · in Wadi Al Safa 6 · 25.050854, 55.280412
+- **The Aldea** · 0.84 km² · in The Villa · 25.083237, 55.35855
+- **The Centro** · 0.84 km² · in The Villa · 25.091289, 55.369899
+- **The Gardens** · 1.06 km² · in Jabal Ali 1 · 25.042666, 55.127911
+- **The Greens** · 0.68 km² · in Dubai Media City 2 · 25.092862, 55.170622
+- **The Island** · 0.25 km² · in Umm Suqeim · 25.153316, 55.194213
+- **The Island District** · point only · in Dubai Creek Harbour · 25.206086, 55.346344
+- **The Lakes** · 1.16 km² · in Emirates Hills · 25.080863, 55.169241
+- **The Layan Community** · 0.29 km² · in Wadi Al Safa 7 · 25.027532, 55.282572
+- **The Meadows** · 2.63 km² · in Emirates Hills · 25.067142, 55.156791
+- **The Meadows 8** · 0.12 km² · in The Meadows · 25.064182, 55.18183
+- **The Oasis** · 10.82 km² · 24.994367, 55.219804
+- **The Palm Jebel Ali Waterhomes - Show Village** · point only · in Nakhlat Jabal Ali · 24.984814, 55.00579
+- **The Plantation Equestrian & Polo Club** · 1.88 km² · in Wadi Al Safa 7 · 25.04822, 55.297943
+- **The Springs** · 3.21 km² · in Emirates Hills · 25.059971, 55.182405
+- **The Sundials** · 0.06 km² · in Jumeirah Golf Estates · 25.018508, 55.19113
+- **The Valley** · 16.73 km² · 24.999898, 55.43059
+- **The Views** · 0.30 km² · in The Greens · 25.09125, 55.170057
+- **The Villa** · 3.67 km² · in Wadi Al Safa 5 · 25.086465, 55.360904
+- **Tonino Lamborghini Residences** · 1.58 km² · in Nad Al Sheba 1 · 25.156521, 55.330216
+- **Town Square Dubai** · 4.26 km² · in Al Yalayis 2 · 25.007639, 55.287812
+- **Trade Centre** · 2.12 km² · in Bur Dubai · 25.217665, 55.281484
+- **Trade Centre 1** · point only · in Sheikh Zayed Road · 25.219579, 55.278147
+- **Trade Centre 2** · point only · in Dubai World Trade Centre · 25.219146, 55.286345
+
+## U
+
+- **Umm Al Daman** · 35.38 km² · 25.058402, 55.458224
+- **Umm Al Mo'meneen** · 30.57 km² · 24.986463, 55.510561
+- **Umm Al Sheif** · 1.85 km² · 25.131015, 55.20484
+- **Umm Eselay** · 22.64 km² · 24.863261, 55.586308
+- **Umm Hurair** · 4.35 km² · in Bur Dubai · 25.242873, 55.321399
+- **Umm Hurair 1** · 0.89 km² · in Umm Hurair · 25.253965, 55.311148
+- **Umm Hurair 2** · 3.08 km² · in Bur Dubai · 25.23661, 55.323695
+- **Umm Nahad 1/Madinat Hind 1** · 14.35 km² · 25.068287, 55.38311
+- **Umm Nahad 2/Madinat Hind 2** · 7.45 km² · 25.05633, 55.337952
+- **Umm Nahad 3/Madinat Hind 3** · 17.04 km² · 25.030369, 55.425011
+- **Umm Ramool** · 3.74 km² · 25.228966, 55.365591
+- **Umm Suqeim** · 8.08 km² · 25.152316, 55.206166
+- **Umm Suqeim 1** · 2.34 km² · in Umm Suqeim · 25.164768, 55.216148
+- **Umm Suqeim 2** · 2.47 km² · in Umm Suqeim · 25.152035, 55.206111
+- **Umm Suqeim 3** · 2.24 km² · in Umm Suqeim · 25.1381, 55.195575
+- **Up Town Motor City** · 0.39 km² · in Motor City · 25.045447, 55.24583
+- **Urbana** · 0.50 km² · in Emaar South Golf District · 24.863548, 55.145243
+- **Urbana I** · 0.10 km² · in Urbana · 24.860656, 55.15058
+- **Urbana II** · point only · in Urbana · 24.866991, 55.139896
+- **Urbana III** · point only · in Urbana · 24.862796, 55.147323
+
+## V
+
+- **Velora** · 0.19 km² · in The Valley · 25.005383, 55.436536
+- **Velora 2** · 0.15 km² · in The Valley · 24.999336, 55.434369
+- **Venera** · 0.32 km² · in The Valley · 24.998384, 55.443831
+- **Veneto Residence** · 0.33 km² · in Hessyan 1 · 24.960343, 55.011707
+- **Victory Heights II** · 0.03 km² · in Al Hebiah 4 · 25.036061, 55.209914
+- **Victory Heights Villages** · point only · in Al Hebiah 4 · 25.037926, 55.210679
+- **Villa Lantana 1** · 0.20 km² · in Dubiotech · 25.074665, 55.236895
+- **Villanova** · 2.07 km² · in Dubai Land · 25.075004, 55.359539
+
+## W
+
+- **Wadi Al Amardi** · 34.63 km² · 25.196451, 55.493838
+- **Wadi Al Safa** · point only · in Wadi Al Safa 2 · 25.082538, 55.340846
+- **Wadi Al Safa 2** · 10.67 km² · in City of Arabia · 25.098793, 55.351402
+- **Wadi Al Safa 3** · 40.13 km² · 25.105713, 55.316535
+- **Wadi Al Safa 4** · 6.79 km² · in City of Arabia · 25.078317, 55.322322
+- **Wadi Al Safa 5** · 16.31 km² · 25.076232, 55.353525
+- **Wadi Al Safa 6** · 8.33 km² · 25.048762, 55.267275
+- **Wadi Al Safa 7** · 8.46 km² · 25.040491, 55.284505
+- **Wadi Al Shabak** · 10.56 km² · in Wadi Al Amardi · 25.176925, 55.488098
+- **Warsan** · 33.49 km² · 25.14739, 55.447732
+- **Warsan 1** · 7.90 km² · in Warsan · 25.163636, 55.409509
+- **Warsan 2** · 8.40 km² · in Warsan · 25.156947, 55.437548
+- **Warsan 3** · 10.39 km² · in Warsan · 25.153714, 55.465512
+- **Warsan 4** · 9.26 km² · in International City · 25.143885, 55.403282
+- **Wasl Gate** · 1.97 km² · in Jebel Ali Village · 25.025804, 55.107554
+- **West Terminal construction** · 0.59 km² · in Al Maktoum International Airport Extension · 24.941394, 55.139051
+- **Whispering Pines** · 0.13 km² · in Jumeirah Golf Estates · 25.024787, 55.19877
+- **Whitefield** · 0.05 km² · in Al Hebiah 3 · 25.027071, 55.249065
+- **Wildflower** · 0.14 km² · in Jumeirah Golf Estates · 25.017372, 55.194768
+- **World Islands** · point only · 25.211047, 55.169354
+
+## Y
+
+- **Yaraah** · point only · 24.768483, 55.678495
+- **Yasmin Village** · 0.11 km² · in Arabian Ranches 2 · 25.032788, 55.273272
+
+## Z
+
+- **Za'abeel** · 11.70 km² · in Bur Dubai · 25.216833, 55.300116
+- **Za'abeel 2** · point only · in Za'abeel · 25.204956, 55.297292
+- **Zabeel** · 15.69 km² · in Bur Dubai · 25.210404, 55.295113
+- **Zabeel Palace** · 0.62 km² · in Za'abeel · 25.209703, 55.299608
+- **Za’abeel 1** · point only · in Za'abeel · 25.218657, 55.308387
+- **Zulal** · 0.17 km² · in The Lakes · 25.079111, 55.172212

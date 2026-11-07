@@ -1,0 +1,5 @@
+# Installed dependencies (recreate with the steps in README.md)
+node_modules/
+tools/venv/
+tools/bin/
+__pycache__/
