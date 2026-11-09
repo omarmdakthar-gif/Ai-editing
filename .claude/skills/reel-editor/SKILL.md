@@ -17,6 +17,12 @@ Everything runs from the root of this project (the folder that holds `.claude/` 
 - **Folders.** Reference reels go in `references/`, working files in `projects/<reel-name>/`, finished videos in `export/`.
 - **Real sources only.** Never recreate, alter or invent a tweet, headline, statistic or document. If a claim can't be verified, flag it in the storyboard instead of showing it.
 - **Dubai advertising.** A reel promoting a property generally needs a Trakheesi permit shown on the ad, and off-plan listings may need more. Ask for the permit number and put it on the end card. If it's missing, flag it before export.
+- **The user's house preferences (set 2026-11-09, apply to every reel):**
+  - **Sound effects sparingly.** Use them only on the essential moments: scene changes, the one or two big reveals, a number landing, the call to action. Never a sound for every card, label or pop. About 30 effects in a 60-second reel is the ceiling; a short burst of ticks counts as one moment, not twenty.
+  - **Big face for the hook.** Open full-screen on the speaker for the hook line, sharp from the original footage (never an enlarged corner box), then shrink smoothly into the small corner box for the rest of the reel. `StoryReel`'s `speakerIntro` does this.
+  - **Brands named in the hook appear behind the speaker.** When the speaker names companies in the opening (for example "not Apple, not Nvidia"), show their logos behind the cut-out speaker as each name is said (`StoryReel`'s `hookLogos` with a `tools/matte.py` cut-out).
+  - **Keep the speaker's own words.** Don't rewrite their script. Captions follow what they actually said; flag doubtful claims in the notes and keep unverified numbers off the graphic cards.
+  - **Deliver through a download page.** Attachments can't be saved from the Claude app on iPhone or iPad, so publish the finished MP4 on a private artifact page with the `downloads` capability and a Save video button.
 
 ## Workflow
 

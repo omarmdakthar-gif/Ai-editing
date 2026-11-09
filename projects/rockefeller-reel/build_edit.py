@@ -47,7 +47,7 @@ captions = [{'start': a, 'end': b, 'text': t} for a, b, t in captions_src]
 
 H = lambda a, b, lines, kicker, y=250: {'start': a, 'end': b, 'lines': lines, 'kicker': kicker, 'y': y, 'align': 'left'}
 headlines = [
-    H(0.15, 5.4, ['WHICH', '*company?'], 'QUICK QUESTION'),
+    H(0.15, 1.65, ['WHICH', '*company?'], 'QUICK QUESTION'),
     H(22.0, 26.2, ['A BRIDGE', '*for money'], 'THE NETWORK'),
     H(28.8, 32.5, ['BILLIONS OF', '*transactions'], 'EVERY DAY'),
     H(32.6, 36.2, ['COMMERCIAL', '*property'], "DUBAI'S SILENT OPPORTUNITY"),
@@ -90,6 +90,11 @@ edit = {
     'cards': cards,
     'speaker': {'video': 'rk/speaker.mp4', 'hide': [[0, 5.9]]},
     'speakerIntro': {'video': 'rk/speaker_intro.mp4', 'end': 5.45},
+    'hookLogos': {'person': 'rk/person.webm', 'items': [
+        {'src': 'rk/apple.svg', 'at': 1.80, 'x': 300, 'y': 720, 'width': 230, 'strike': True},
+        {'src': 'rk/nvidia.svg', 'at': 2.62, 'x': 885, 'y': 760, 'width': 320, 'strike': True},
+        {'src': 'oil', 'at': 4.35, 'x': 540, 'y': 470, 'width': 180, 'strike': True},
+    ]},
     'voice': 'rk/voice.wav',
     'music': {'file': 'rk/music.wav', 'volume': 0.12},
     'sounds': sounds,

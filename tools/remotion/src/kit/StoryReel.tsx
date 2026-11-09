@@ -38,6 +38,8 @@ export type StoryProps = {
 	speaker: {video: string; hide?: number[][]};
 	// Full-screen speaker at the start; it shrinks into the corner box over 0.45 s from `end`.
 	speakerIntro?: {video: string; end: number};
+	// Logos that appear behind the cut-out speaker during the full-screen hook. `src` 'oil' draws an oil-drop icon.
+	hookLogos?: {person: string; items: {src: string; at: number; x: number; y: number; width: number; strike?: boolean}[]};
 	voice: string;
 	music?: {file: string; volume: number};
 	sounds?: Sound[];
@@ -302,7 +304,34 @@ export const StoryReel: React.FC<StoryProps> = (props) => {
 				return (
 					<div style={{position: 'absolute', left: mix(0, W - 56 - 250), top: mix(0, 270), width: mix(W, 250), height: mix(H, 230), borderRadius: mix(0, 26),
 						overflow: 'hidden', border: `${mix(0, 3)}px solid rgba(255,255,255,${0.88 * p})`, boxShadow: `0 16px 40px rgba(0,0,0,${0.55 * p})`}}>
-						<OffthreadVideo src={staticFile(props.speakerIntro.video)} muted style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 38%'}} />
+						<OffthreadVideo src={staticFile(props.speakerIntro.video)} muted style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 38%'}} />
+						{props.hookLogos ? (
+							<>
+								{props.hookLogos.items.map((it, i) => {
+									const pop = easeOut(interpolate(time, [it.at, it.at + 0.35], [0, 1], clamp));
+									const strike = easeOut(interpolate(time, [it.at + 0.3, it.at + 0.6], [0, 1], clamp));
+									const out = 1 - p;
+									if (time < it.at) return null;
+									return (
+										<div key={i} style={{position: 'absolute', left: it.x, top: it.y, width: it.width, transform: `translate(-50%, -50%) scale(${0.7 + 0.3 * pop})`, opacity: pop * out}}>
+											{it.src === 'oil' ? (
+												<svg viewBox="0 0 100 130" width={it.width} style={{display: 'block', filter: 'drop-shadow(0 10px 30px rgba(0,0,0,0.5))'}}>
+													<path d="M50 4 C50 4 10 58 10 84 a40 40 0 0 0 80 0 C90 58 50 4 50 4Z" fill="#14161C" stroke="#E8C15A" strokeWidth="4" />
+													<text x="50" y="96" textAnchor="middle" fontFamily={SANS} fontWeight={700} fontSize="20" fill="#E8C15A">OIL</text>
+												</svg>
+											) : (
+												<Img src={staticFile(it.src)} style={{width: '100%', display: 'block', filter: 'drop-shadow(0 10px 30px rgba(0,0,0,0.55))'}} />
+											)}
+											{it.strike ? (
+												<div style={{position: 'absolute', left: '-12%', top: '50%', height: 12, width: `${124 * strike}%`, background: '#FF3B4E', borderRadius: 6,
+													transform: 'rotate(-18deg)', transformOrigin: '0 50%', boxShadow: '0 0 20px rgba(255,59,78,0.7)'}} />
+											) : null}
+										</div>
+									);
+								})}
+								<OffthreadVideo src={staticFile(props.hookLogos.person)} muted transparent style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover'}} />
+							</>
+						) : null}
 						<div style={{position: 'absolute', inset: 0, background: 'linear-gradient(rgba(3,6,13,0.45), rgba(3,6,13,0) 28%, rgba(3,6,13,0) 55%, rgba(3,6,13,0.55))', opacity: 1 - p}} />
 					</div>
 				);
