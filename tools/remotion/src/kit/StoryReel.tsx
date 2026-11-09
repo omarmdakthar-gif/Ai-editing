@@ -23,7 +23,7 @@ const easeInOut = (x: number) => (x < 0.5 ? 4 * x * x * x : 1 - (-2 * x + 2) ** 
 
 type WorldCam = {t: number; lon: number; lat: number; zoom: number};
 export type Scene =
-	| {kind: 'world'; start: number; end: number; camera: WorldCam[]; busy?: number[]; fees?: number[]}
+	| {kind: 'world'; start: number; end: number; camera: WorldCam[]; busy?: number[]; fees?: number[]; cy?: number}
 	| {kind: 'wallet'; start: number; end: number; revealAt: number}
 	| {kind: 'profit'; start: number; end: number; source: string}
 	| {kind: 'bank'; start: number; end: number; steps: number[]}
@@ -35,7 +35,12 @@ export type StoryProps = {
 	captions: CaptionLine[];
 	headlines?: Headline[];
 	cards?: Card[];
-	speaker: {video: string; hide?: number[][]};
+	speaker?: {video: string; hide?: number[][]};
+	// Centre layout: the speaker stays full-size in the middle as a cut-out (`person`, alpha video), scenes play behind,
+	// graphics sit above the head. `scale` is the settled size after the hook; `hide` ranges step aside for a full picture.
+	center?: {person: string; scale: number; hide?: number[][]};
+	// Per-scene placement in the centre layout: [scale, translateY px], origin top centre.
+	fit?: Record<string, number[]>;
 	// Full-screen speaker at the start; it shrinks into the corner box over 0.45 s from `end`.
 	speakerIntro?: {video: string; end: number};
 	// Logos that appear behind the cut-out speaker during the full-screen hook. `src` 'oil' draws an oil-drop icon.
@@ -76,7 +81,7 @@ const worldCamAt = (keys: WorldCam[], t: number) => {
 const WorldScene: React.FC<{scene: Extract<Scene, {kind: 'world'}>; rings: number[][][]; time: number}> = ({scene, rings, time}) => {
 	const cam = worldCamAt(scene.camera, time);
 	const k = (W / 360) * cam.zoom; // pixels per degree
-	const proj = (p: number[]) => [W / 2 + (p[0] - cam.lon) * k, H * 0.46 - (p[1] - cam.lat) * k * 1.12];
+	const proj = (p: number[]) => [W / 2 + (p[0] - cam.lon) * k, H * (scene.cy ?? 0.46) - (p[1] - cam.lat) * k * 1.12];
 	const land = rings.map((r) => 'M' + r.map((p) => proj(p).map((v) => v.toFixed(1)).join(' ')).join('L') + 'Z').join('');
 	// How many routes are live: grows with the 'busy' ramp [t0, t1].
 	const busy = scene.busy ? interpolate(time, scene.busy, [3, ROUTES.length], clamp) : 3;
@@ -295,15 +300,21 @@ export const StoryReel: React.FC<StoryProps> = (props) => {
 						<OffthreadVideo src={staticFile(s.src)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
 					</Sequence>
 				);
-				return <AbsoluteFill key={i} style={{opacity: o}}>{body}</AbsoluteFill>;
+				const fit = props.fit?.[s.kind];
+				return (
+					<AbsoluteFill key={i} style={{opacity: o}}>
+						{fit ? <AbsoluteFill style={{transform: `translateY(${fit[1]}px) scale(${fit[0]})`, transformOrigin: '50% 0%'}}>{body}</AbsoluteFill> : body}
+					</AbsoluteFill>
+				);
 			})}
 			{props.speakerIntro && time < props.speakerIntro.end + 0.5 ? (() => {
 				const e = props.speakerIntro.end;
 				const p = easeInOut(interpolate(time, [e, e + 0.45], [0, 1], clamp));
-				const mix = (a: number, b: number) => a + (b - a) * p;
+				const mix = (a: number, b: number) => (props.center ? a : a + (b - a) * p);
+				const roomFade = props.center ? 1 - p : 1;
 				return (
 					<div style={{position: 'absolute', left: mix(0, W - 56 - 250), top: mix(0, 270), width: mix(W, 250), height: mix(H, 230), borderRadius: mix(0, 26),
-						overflow: 'hidden', border: `${mix(0, 3)}px solid rgba(255,255,255,${0.88 * p})`, boxShadow: `0 16px 40px rgba(0,0,0,${0.55 * p})`}}>
+						overflow: 'hidden', opacity: roomFade, border: props.center ? 'none' : `${mix(0, 3)}px solid rgba(255,255,255,${0.88 * p})`, boxShadow: props.center ? 'none' : `0 16px 40px rgba(0,0,0,${0.55 * p})`}}>
 						<OffthreadVideo src={staticFile(props.speakerIntro.video)} muted style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 38%'}} />
 						{props.hookLogos ? (
 							<>
@@ -338,15 +349,36 @@ export const StoryReel: React.FC<StoryProps> = (props) => {
 			})() : null}
 			<div style={{position: 'absolute', inset: 0, background: 'radial-gradient(120% 85% at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%)'}} />
 			<div style={{position: 'absolute', inset: 0, opacity: 0.05, backgroundImage: `url(${staticFile('mr1/grain.png')})`, backgroundPosition: `${grain}px ${grain * 1.7}px`}} />
+			{props.center ? (
+				<>
+					<AbsoluteFill style={{transform: 'translateY(-300px) scale(0.82)', transformOrigin: '50% 0%'}}>
+						<EndCard e={props.endCard} time={time} />
+					</AbsoluteFill>
+					{(() => {
+						const c = props.center;
+						const e = props.speakerIntro?.end ?? 0;
+						if (time < e) return null;
+						const settle = easeInOut(interpolate(time, [e, e + 0.6], [0, 1], clamp));
+						const sc = 1 + (c.scale - 1) * settle;
+						let vis = 1;
+						for (const [a, b] of c.hide ?? []) vis = Math.min(vis, interpolate(time, [a - 0.3, a, b, b + 0.3], [1, 0, 0, 1], clamp));
+						return (
+							<AbsoluteFill style={{transform: `scale(${sc})`, transformOrigin: '50% 100%', opacity: vis}}>
+								<OffthreadVideo src={staticFile(c.person)} muted transparent style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+							</AbsoluteFill>
+						);
+					})()}
+				</>
+			) : null}
 			{props.headlines?.map((h, i) => <HeadlineView key={i} h={h} time={time} />)}
 			{props.cards?.map((c, i) => <CardView key={i} card={c} time={time} />)}
-			<EndCard e={props.endCard} time={time} />
+			{props.center ? null : <EndCard e={props.endCard} time={time} />}
 			<div style={{position: 'absolute', left: 0, right: 0, top: 1180, height: 520, background: 'linear-gradient(rgba(3,6,13,0), rgba(3,6,13,0.72) 40%, rgba(3,6,13,0.72) 70%, rgba(3,6,13,0))'}} />
 			<Captions captions={props.captions} time={time} />
 			{props.credits?.filter((c) => time >= c.start && time < c.end).map((c, i) => (
 				<div key={i} style={{position: 'absolute', bottom: 70, left: 60, right: 60, fontFamily: SANS, fontWeight: 500, fontSize: 15, color: 'rgba(255,255,255,0.55)'}}>{c.text}</div>
 			))}
-			<Speaker video={props.speaker.video} hide={props.speaker.hide} time={time} fps={fps} />
+			{props.speaker ? <Speaker video={props.speaker.video} hide={props.speaker.hide} time={time} fps={fps} /> : null}
 			<Audio src={staticFile(props.voice)} />
 			{props.music ? <Audio src={staticFile(props.music.file)} volume={props.music.volume} /> : null}
 			{props.sounds?.map((s, i) => (
