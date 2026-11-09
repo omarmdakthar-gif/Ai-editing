@@ -44,11 +44,12 @@ export type ShowcaseProps = {
 	captions: CaptionLine[];
 	headlines?: Headline[];
 	cards?: Card[];
-	speaker: {video: string; hide?: number[][]};
-	voice: string;
+	speaker?: {video: string; hide?: number[][]};
+	voice?: string;
 	music?: {file: string; volume: number};
 	sounds?: Sound[];
-	endCard: {start: number; keyword: string; phone: string; detail: string};
+	endCard?: {start: number; keyword: string; phone: string; detail: string};
+	hideBase?: boolean;
 	credit: string;
 	disclaimer?: {start: number; end: number; text: string}[];
 };
@@ -289,7 +290,7 @@ const LabelPin: React.FC<{f: Feature; proj: ReturnType<typeof makeProjector>; ti
 };
 
 // ---------- Type ----------
-const Captions: React.FC<{captions: CaptionLine[]; time: number}> = ({captions, time}) => {
+export const Captions: React.FC<{captions: CaptionLine[]; time: number}> = ({captions, time}) => {
 	const c = captions.find((x) => time >= x.start && time < x.end);
 	if (!c) return null;
 	const words = c.text.split(' ');
@@ -314,7 +315,7 @@ const Captions: React.FC<{captions: CaptionLine[]; time: number}> = ({captions, 
 	);
 };
 
-const HeadlineView: React.FC<{h: Headline; time: number}> = ({h, time}) => {
+export const HeadlineView: React.FC<{h: Headline; time: number}> = ({h, time}) => {
 	if (time < h.start || time > h.end + 0.4) return null;
 	const out = interpolate(time, [h.end, h.end + 0.35], [1, 0], clamp);
 	const align = h.align ?? 'left';
@@ -342,13 +343,13 @@ const HeadlineView: React.FC<{h: Headline; time: number}> = ({h, time}) => {
 	);
 };
 
-const glass: React.CSSProperties = {
+export const glass: React.CSSProperties = {
 	background: 'linear-gradient(160deg, rgba(30,40,66,0.88), rgba(8,12,24,0.92))',
 	border: '1.5px solid rgba(255,255,255,0.14)', borderRadius: 30,
 	boxShadow: '0 30px 80px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.18)',
 };
 
-const CardView: React.FC<{card: Card; time: number}> = ({card, time}) => {
+export const CardView: React.FC<{card: Card; time: number}> = ({card, time}) => {
 	if (time < card.start || time > card.end + 0.4) return null;
 	const inP = easeOut(interpolate(time, [card.start, card.start + 0.45], [0, 1], clamp));
 	const out = interpolate(time, [card.end, card.end + 0.3], [1, 0], clamp);
@@ -459,7 +460,7 @@ const CardView: React.FC<{card: Card; time: number}> = ({card, time}) => {
 	);
 };
 
-const EndCard: React.FC<{e: ShowcaseProps['endCard']; time: number}> = ({e, time}) => {
+export const EndCard: React.FC<{e: NonNullable<ShowcaseProps['endCard']>; time: number}> = ({e, time}) => {
 	if (time < e.start) return null;
 	const p = easeOut(interpolate(time, [e.start, e.start + 0.6], [0, 1], clamp));
 	const typed = Math.floor(interpolate(time, [e.start + 1.4, e.start + 2.4], [0, e.keyword.length], clamp));
@@ -489,7 +490,7 @@ const EndCard: React.FC<{e: ShowcaseProps['endCard']; time: number}> = ({e, time
 };
 
 // ---------- Speaker ----------
-const Speaker: React.FC<{video: string; hide?: number[][]; time: number; fps: number}> = ({video, hide, time, fps}) => {
+export const Speaker: React.FC<{video: string; hide?: number[][]; time: number; fps: number}> = ({video, hide, time, fps}) => {
 	let vis = 1;
 	for (const [a, b] of hide ?? []) {
 		vis = Math.min(vis, a <= time && time < b ? 0 : 1);
@@ -549,16 +550,16 @@ export const ShowcaseReel: React.FC<ShowcaseProps> = (props) => {
 			<div style={{position: 'absolute', inset: 0, opacity: 0.05, backgroundImage: `url(${staticFile('mr1/grain.png')})`, backgroundPosition: `${grain}px ${grain * 1.7}px`}} />
 			{props.headlines?.map((h, i) => <HeadlineView key={i} h={h} time={time} />)}
 			{props.cards?.map((c, i) => <CardView key={i} card={c} time={time} />)}
-			<EndCard e={props.endCard} time={time} />
+			{props.endCard ? <EndCard e={props.endCard} time={time} /> : null}
 			<div style={{position: 'absolute', left: 0, right: 0, top: 1180, height: 520, background: 'linear-gradient(rgba(3,6,13,0), rgba(3,6,13,0.72) 40%, rgba(3,6,13,0.72) 70%, rgba(3,6,13,0))', pointerEvents: 'none'}} />
 			<Captions captions={props.captions} time={time} />
 			{props.disclaimer?.filter((d) => time >= d.start && time < d.end).map((d, i) => (
 				<div key={i} style={{position: 'absolute', top: 1530, left: 120, right: 120, textAlign: 'center', fontFamily: SANS, fontWeight: 700, fontSize: 20,
 					letterSpacing: '0.08em', color: 'rgba(255,255,255,0.7)'}}>{d.text}</div>
 			))}
-			<Speaker video={props.speaker.video} hide={props.speaker.hide} time={time} fps={fps} />
+			{props.speaker ? <Speaker video={props.speaker.video} hide={props.speaker.hide} time={time} fps={fps} /> : null}
 			<div style={{position: 'absolute', bottom: 70, left: 60, fontFamily: SANS, fontWeight: 500, fontSize: 15, color: 'rgba(255,255,255,0.5)'}}>{props.credit}</div>
-			<Audio src={staticFile(props.voice)} />
+			{props.voice ? <Audio src={staticFile(props.voice)} /> : null}
 			{props.music ? <Audio src={staticFile(props.music.file)} volume={props.music.volume} /> : null}
 			{props.sounds?.map((s, i) => (
 				<Sequence key={i} from={Math.round(s.at * fps)}>
