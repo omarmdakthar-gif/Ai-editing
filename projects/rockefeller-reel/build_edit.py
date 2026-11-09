@@ -66,16 +66,20 @@ cards = [
 ]
 
 S = lambda f, at, v=0.4: {'file': f'sfx/{f}.wav', 'at': at, 'volume': v}
+# Essential moments only (about half of the first cut): scene changes, the card and tower reveals, the dial landing,
+# a few swipe-fee ticks and a short typing burst on the comment card.
 sounds = sorted([
-    S('impact', 0.15, 0.3), S('tick', 1.8, 0.4), S('tick', 2.6, 0.4), S('tick', 4.3, 0.4), S('whoosh', 5.5, 0.3), S('whoosh_soft', 6.0, 0.25),
-    S('riser', 7.6, 0.2), S('impact', 9.0, 0.4), S('shimmer', 9.1, 0.3), S('whoosh', 10.1, 0.3), S('riser', 10.4, 0.15), S('pop', 11.8, 0.45),
-    S('whoosh', 14.5, 0.3), S('pop', 15.1, 0.4), S('pop', 17.0, 0.4), S('impact', 19.6, 0.3), S('shimmer', 20.2, 0.25),
-    S('whoosh', 21.9, 0.35), S('shimmer', 22.4, 0.25), *[S('tick', 26.5 + 0.42 * i, 0.22) for i in range(14)],
-    S('riser', 31.0, 0.2), S('whoosh', 32.5, 0.35), S('impact', 32.7, 0.3), S('pop', 33.9, 0.35), S('pop', 34.5, 0.35),
-    S('whoosh', 40.0, 0.35), S('impact', 40.15, 0.35), S('shimmer', 40.4, 0.3), S('whoosh', 41.7, 0.3), S('pop', 42.0, 0.4), S('pop', 42.9, 0.4), S('pop', 44.0, 0.4),
-    S('whoosh_soft', 44.8, 0.25), S('pop', 45.4, 0.4), S('whoosh_soft', 47.0, 0.25), S('impact', 48.6, 0.25), S('whoosh_soft', 51.2, 0.25),
-    S('pop', 51.7, 0.4), S('pop', 52.2, 0.4), S('whoosh_soft', 53.0, 0.25), S('pop', 53.3, 0.4), S('whoosh_soft', 54.7, 0.25), S('shimmer', 56.7, 0.25),
-    S('whoosh', 59.0, 0.35), *[S('tick', 60.4 + 0.12 * i, 0.3) for i in range(11)], S('pop', 61.8, 0.45), S('shimmer', 62.1, 0.3),
+    S('impact', 0.15, 0.3),
+    S('whoosh', 5.5, 0.3),
+    S('riser', 7.6, 0.2), S('impact', 9.0, 0.4), S('shimmer', 9.1, 0.3),
+    S('whoosh', 10.1, 0.3), S('pop', 11.8, 0.45),
+    S('whoosh', 14.5, 0.3), S('impact', 19.6, 0.3),
+    S('whoosh', 21.9, 0.35), *[S('tick', 26.5 + 0.84 * i, 0.2) for i in range(5)],
+    S('riser', 31.0, 0.2), S('whoosh', 32.5, 0.35),
+    S('whoosh', 40.0, 0.35), S('impact', 40.15, 0.35),
+    S('pop', 42.9, 0.4), S('whoosh_soft', 44.8, 0.25), S('whoosh_soft', 47.0, 0.25), S('impact', 48.6, 0.25),
+    S('whoosh_soft', 51.2, 0.25), S('whoosh_soft', 54.7, 0.25),
+    S('whoosh', 59.0, 0.35), *[S('tick', 60.5 + 0.2 * i, 0.3) for i in range(4)], S('pop', 61.8, 0.45),
 ], key=lambda s: s['at'])
 
 edit = {
@@ -84,7 +88,8 @@ edit = {
     'captions': captions,
     'headlines': headlines,
     'cards': cards,
-    'speaker': {'video': 'rk/speaker.mp4'},
+    'speaker': {'video': 'rk/speaker.mp4', 'hide': [[0, 5.9]]},
+    'speakerIntro': {'video': 'rk/speaker_intro.mp4', 'end': 5.45},
     'voice': 'rk/voice.wav',
     'music': {'file': 'rk/music.wav', 'volume': 0.12},
     'sounds': sounds,

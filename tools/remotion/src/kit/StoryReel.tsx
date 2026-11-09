@@ -35,7 +35,9 @@ export type StoryProps = {
 	captions: CaptionLine[];
 	headlines?: Headline[];
 	cards?: Card[];
-	speaker: {video: string};
+	speaker: {video: string; hide?: number[][]};
+	// Full-screen speaker at the start; it shrinks into the corner box over 0.45 s from `end`.
+	speakerIntro?: {video: string; end: number};
 	voice: string;
 	music?: {file: string; volume: number};
 	sounds?: Sound[];
@@ -293,6 +295,18 @@ export const StoryReel: React.FC<StoryProps> = (props) => {
 				);
 				return <AbsoluteFill key={i} style={{opacity: o}}>{body}</AbsoluteFill>;
 			})}
+			{props.speakerIntro && time < props.speakerIntro.end + 0.5 ? (() => {
+				const e = props.speakerIntro.end;
+				const p = easeInOut(interpolate(time, [e, e + 0.45], [0, 1], clamp));
+				const mix = (a: number, b: number) => a + (b - a) * p;
+				return (
+					<div style={{position: 'absolute', left: mix(0, W - 56 - 250), top: mix(0, 270), width: mix(W, 250), height: mix(H, 230), borderRadius: mix(0, 26),
+						overflow: 'hidden', border: `${mix(0, 3)}px solid rgba(255,255,255,${0.88 * p})`, boxShadow: `0 16px 40px rgba(0,0,0,${0.55 * p})`}}>
+						<OffthreadVideo src={staticFile(props.speakerIntro.video)} muted style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 38%'}} />
+						<div style={{position: 'absolute', inset: 0, background: 'linear-gradient(rgba(3,6,13,0.45), rgba(3,6,13,0) 28%, rgba(3,6,13,0) 55%, rgba(3,6,13,0.55))', opacity: 1 - p}} />
+					</div>
+				);
+			})() : null}
 			<div style={{position: 'absolute', inset: 0, background: 'radial-gradient(120% 85% at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%)'}} />
 			<div style={{position: 'absolute', inset: 0, opacity: 0.05, backgroundImage: `url(${staticFile('mr1/grain.png')})`, backgroundPosition: `${grain}px ${grain * 1.7}px`}} />
 			{props.headlines?.map((h, i) => <HeadlineView key={i} h={h} time={time} />)}
@@ -303,7 +317,7 @@ export const StoryReel: React.FC<StoryProps> = (props) => {
 			{props.credits?.filter((c) => time >= c.start && time < c.end).map((c, i) => (
 				<div key={i} style={{position: 'absolute', bottom: 70, left: 60, right: 60, fontFamily: SANS, fontWeight: 500, fontSize: 15, color: 'rgba(255,255,255,0.55)'}}>{c.text}</div>
 			))}
-			<Speaker video={props.speaker.video} time={time} fps={fps} />
+			<Speaker video={props.speaker.video} hide={props.speaker.hide} time={time} fps={fps} />
 			<Audio src={staticFile(props.voice)} />
 			{props.music ? <Audio src={staticFile(props.music.file)} volume={props.music.volume} /> : null}
 			{props.sounds?.map((s, i) => (
