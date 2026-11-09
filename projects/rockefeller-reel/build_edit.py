@@ -68,18 +68,18 @@ cards = [
 S = lambda f, at, v=0.4: {'file': f'sfx/{f}.wav', 'at': at, 'volume': v}
 # Essential moments only (about half of the first cut): scene changes, the card and tower reveals, the dial landing,
 # a few swipe-fee ticks and a short typing burst on the comment card.
+# Ten effects only, kept soft so they never compete with the voice (the user's ceiling: about 10 per reel).
 sounds = sorted([
-    S('impact', 0.15, 0.3),
-    S('whoosh', 5.5, 0.3),
-    S('riser', 7.6, 0.2), S('impact', 9.0, 0.4), S('shimmer', 9.1, 0.3),
-    S('whoosh', 10.1, 0.3), S('pop', 11.8, 0.45),
-    S('whoosh', 14.5, 0.3), S('impact', 19.6, 0.3),
-    S('whoosh', 21.9, 0.35), *[S('tick', 26.5 + 0.84 * i, 0.2) for i in range(5)],
-    S('riser', 31.0, 0.2), S('whoosh', 32.5, 0.35),
-    S('whoosh', 40.0, 0.35), S('impact', 40.15, 0.35),
-    S('pop', 42.9, 0.4), S('whoosh_soft', 44.8, 0.25), S('whoosh_soft', 47.0, 0.25), S('impact', 48.6, 0.25),
-    S('whoosh_soft', 51.2, 0.25), S('whoosh_soft', 54.7, 0.25),
-    S('whoosh', 59.0, 0.35), *[S('tick', 60.5 + 0.2 * i, 0.3) for i in range(4)], S('pop', 61.8, 0.45),
+    S('impact', 0.15, 0.2),        # open
+    S('whoosh', 5.45, 0.18),       # face shrinks into the box
+    S('impact', 9.0, 0.25),        # Visa card reveal
+    S('whoosh', 10.1, 0.15),       # to the profit dial
+    S('whoosh', 21.9, 0.18),       # the bridge
+    S('whoosh', 32.5, 0.2),        # cut to Dubai
+    S('impact', 40.15, 0.25),      # tower reveal
+    S('whoosh_soft', 47.0, 0.15),  # Rockefeller legacy
+    S('whoosh', 59.0, 0.18),       # end card
+    S('pop', 61.8, 0.25),          # phone number
 ], key=lambda s: s['at'])
 
 edit = {
