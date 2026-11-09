@@ -303,7 +303,12 @@ export const StoryReel: React.FC<StoryProps> = (props) => {
 				const fit = props.fit?.[s.kind];
 				return (
 					<AbsoluteFill key={i} style={{opacity: o}}>
-						{fit ? <AbsoluteFill style={{transform: `translateY(${fit[1]}px) scale(${fit[0]})`, transformOrigin: '50% 0%'}}>{body}</AbsoluteFill> : body}
+						{fit ? (
+							<AbsoluteFill style={{background: `radial-gradient(90% 60% at 50% 30%, #14223F 0%, ${SEA} 75%)`}}>
+								<AbsoluteFill style={{transform: `translateY(${fit[1]}px) scale(${fit[0]})`, transformOrigin: '50% 0%',
+									WebkitMaskImage: 'radial-gradient(75% 65% at 50% 50%, #000 62%, transparent 100%)', maskImage: 'radial-gradient(75% 65% at 50% 50%, #000 62%, transparent 100%)'}}>{body}</AbsoluteFill>
+							</AbsoluteFill>
+						) : body}
 					</AbsoluteFill>
 				);
 			})}

@@ -14,7 +14,7 @@ edit.pop('speaker', None)
 reveal = next(s for s in edit['scenes'] if s['kind'] == 'image' and s.get('title'))
 edit['center'] = {'person': 'rk/person_full.webm', 'scale': 0.86, 'hide': [[reveal['start'], reveal['end']]]}
 # Foreground of these scenes moves above the head: [scale, translateY px], origin top centre.
-edit['fit'] = {'wallet': [0.7, -236], 'profit': [0.62, -170], 'bank': [0.6, -120], 'video': [1.2, -692]}
+edit['fit'] = {'wallet': [0.62, -250], 'profit': [0.62, -170], 'bank': [0.7, -230], 'video': [1.2, -480]}
 for s in edit['scenes']:
     if s['kind'] == 'world':
         s['cy'] = 0.30
