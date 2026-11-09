@@ -27,7 +27,7 @@ export type Feature = {
 	pulse?: boolean;
 	dim?: boolean;
 };
-export type CaptionLine = {start: number; end: number; text: string};
+export type CaptionLine = {start: number; end: number; text: string; speech?: number};
 export type Headline = {start: number; end: number; kicker?: string; lines: string[]; y?: number; align?: 'left' | 'center'};
 export type Card =
 	| {type: 'badges'; start: number; end: number; items: {name: string; sub: string; color: string}[]}
@@ -294,7 +294,8 @@ export const Captions: React.FC<{captions: CaptionLine[]; time: number}> = ({cap
 	const c = captions.find((x) => time >= x.start && time < x.end);
 	if (!c) return null;
 	const words = c.text.split(' ');
-	const span = (c.end - c.start) * 0.85;
+	// Reveal words across the time the line is actually spoken (speech end), not the time it stays on screen.
+	const span = ((c.speech ?? c.end) - c.start) * 0.9;
 	const fadeOut = interpolate(time, [c.end - 0.12, c.end], [1, 0], clamp);
 	return (
 		<div style={{position: 'absolute', top: 1335, left: 70, right: 70, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4px 16px', opacity: fadeOut}}>
