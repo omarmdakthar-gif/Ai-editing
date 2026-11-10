@@ -19,4 +19,4 @@ Comment PALM SPRINGS for the price list, floor plans and EOI details.
 - Palm Jebel Ali villa entry price of about AED 18M (2026 broker listings; Nakheel-linked pages quote higher).
 - Dubai Holding merger, March 2024 (The National); AED 30 billion refinancing of Nakheel and Meydan debt by Emirates NBD and Mashreq, April 2024 (Bloomberg).
 - No public figure exists for Nakheel's land bank size, so the slide names its islands instead.
-- Comparison starting prices (2026 listings): The Oasis villa ~AED 8.5M, Expo Valley townhouse ~AED 3.5M, Emaar South townhouse ~AED 2.9M, Heights Country Club townhouse ~AED 2.4M.
+- Price per sq ft: Palm Springs 3-bed townhouse AED 3.8M / 2,326 sq ft (floor-plan size from listing sites) = ~AED 1,634. Emirates Hills ~3,500 (REIDIN index, early 2026; other sites quote far higher). The Springs ~2,300 (Property Monitor; Bayut ~2,060). Dubai villa average 2,241 (Engel & Völkers, June 2026). Damac Islands townhouse resales 1,600-1,960 (DLD, May 2026; launch was ~1,240). The Oasis ~1,650 (Palmiera ~1,622, Mirage ~1,716).
