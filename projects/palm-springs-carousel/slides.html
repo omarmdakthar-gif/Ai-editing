@@ -10,7 +10,9 @@ body { background: #111; font-family: Outfit, sans-serif; }
 .card { position: absolute; left: 84px; right: 84px; bottom: 120px; background: #fff; border-radius: 34px; padding: 46px 52px 50px; color: #111; }
 .who { display: flex; align-items: center; gap: 26px; margin-bottom: 30px; }
 .who img { width: 128px; height: 128px; border-radius: 50%; }
-.name { font-weight: 700; font-size: 44px; letter-spacing: -0.01em; }
+.name { font-weight: 700; font-size: 44px; letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; }
+.tick { width: 40px; height: 40px; flex: none; }
+.body p.gap { margin-top: 0.8em; }
 .handle { font-weight: 400; font-size: 32px; color: #5B6470; margin-top: 2px; }
 .body { font-size: var(--fs); line-height: 1.24; font-weight: 400; }
 .body p { text-wrap: pretty; }
@@ -35,98 +37,87 @@ li::marker { color: #111; }
   <div class="fade"></div>
   <div class="swipe">Swipe &rarr;</div>
   <div class="card" style="--fs:50px">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Sanjay Ram</div><div class="handle">@sanjayram.dxb</div></div></div>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
     <div class="body"><p>Nakheel&#x27;s new villas next to <b>Palm Jebel Ali</b> start at <u>AED 3.8M</u>.</p><p>And you only need <i>10%</i> to lock one in.</p><p>Here&#x27;s what to know <b>before the best units go.</b></p></div>
   </div>
   <div class="note">Renders: Nakheel, artist&#x27;s impressions</div>
-  <div class="count">1/9</div>
+  <div class="count">1/8</div>
 </section>
 <section class="slide" id="s2">
-  <div class="photo" style="background-image:url('img/aerial_entrance.jpg')"></div>
+  <div class="photo" style="background-image:url('img/aerial_night.jpg')"></div>
   <div class="fade"></div>
   
   <div class="card" style="--fs:46px">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Sanjay Ram</div><div class="handle">@sanjayram.dxb</div></div></div>
-    <div class="body"><p><b>Palm Springs</b> is Nakheel&#x27;s new townhouse and villa community in Jebel Ali.</p><p>It sits right beside <u>Palm Jebel Ali</u>, with access from Sheikh Zayed Road.</p></div>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>Where is it?</b></p><p>Palm Springs is in <u>Jebel Ali</u>, right beside Palm Jebel Ali, with access from Sheikh Zayed Road.</p></div>
   </div>
   <div class="note">Renders: Nakheel, artist&#x27;s impressions</div>
-  <div class="count">2/9</div>
+  <div class="count">2/8</div>
 </section>
 <section class="slide" id="s3">
   <div class="photo" style="background-image:url('img/villa_front.jpg')"></div>
   <div class="fade"></div>
   
   <div class="card" style="--fs:40px">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Sanjay Ram</div><div class="handle">@sanjayram.dxb</div></div></div>
-    <div class="body"><p><b>Starting prices</b> (AED)</p><div class="table"><div class="row"><span>3-bed townhouse · G+1</span><b>3.8M</b></div><div class="row"><span>4-bed townhouse · G+1</span><b>4.6M</b></div><div class="row"><span>4-bed townhouse · G+2</span><b>5.2M</b></div><div class="row"><span>4-bed villa · G+2</span><b>7.0M</b></div><div class="row"><span>5-bed villa · G+2</span><b>8.9M</b></div></div></div>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>What&#x27;s on offer:</b> townhouses and villas from <u>AED 3.8M</u> to <u>AED 8.9M</u>.</p><div class="table"><div class="row"><span>3-bed townhouse · G+1</span><b>3.8M</b></div><div class="row"><span>4-bed townhouse · G+1</span><b>4.6M</b></div><div class="row"><span>4-bed townhouse · G+2</span><b>5.2M</b></div><div class="row"><span>4-bed villa · G+2</span><b>7.0M</b></div><div class="row"><span>5-bed villa · G+2</span><b>8.9M</b></div></div></div>
   </div>
   <div class="note">Prices and payment plan: Nakheel launch brochure</div>
-  <div class="count">3/9</div>
+  <div class="count">3/8</div>
 </section>
 <section class="slide" id="s4">
   <div class="photo" style="background-image:url('img/living_pool.jpg')"></div>
   <div class="fade"></div>
   
   <div class="card" style="--fs:44px">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Sanjay Ram</div><div class="handle">@sanjayram.dxb</div></div></div>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
     <div class="body"><p><b>60%</b> during construction. <b>40%</b> on handover in <u>October 2030</u>.</p><div class="table"><div class="row"><span>On booking</span><b>10%</b></div><div class="row"><span>6 instalments · Apr 2027 to May 2029</span><b>50%</b></div><div class="row"><span>On handover · Oct 2030</span><b>40%</b></div></div></div>
   </div>
   <div class="note">Prices and payment plan: Nakheel launch brochure</div>
-  <div class="count">4/9</div>
+  <div class="count">4/8</div>
 </section>
 <section class="slide" id="s5">
-  <div class="photo" style="background-image:url('img/villas_dusk.jpg')"></div>
-  <div class="fade"></div>
-  
-  <div class="card" style="--fs:46px">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Sanjay Ram</div><div class="handle">@sanjayram.dxb</div></div></div>
-    <div class="body"><p>On the AED 3.8M townhouse:</p><p><b>AED 380,000</b> on booking, plus the 4% DLD fee.</p><p>Then <i>nothing</i> until <u>April 2027</u>.</p></div>
-  </div>
-  <div class="note">Prices and payment plan: Nakheel launch brochure · DLD fee is Dubai&#x27;s standard 4%</div>
-  <div class="count">5/9</div>
-</section>
-<section class="slide" id="s6">
-  <div class="photo" style="background-image:url('img/aerial_night.jpg')"></div>
+  <div class="photo" style="background-image:url('img/aerial_entrance.jpg')"></div>
   <div class="fade"></div>
   
   <div class="card" style="--fs:44px">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Sanjay Ram</div><div class="handle">@sanjayram.dxb</div></div></div>
-    <div class="body"><p><b>Why this location?</b></p><p>Next to Palm Jebel Ali, close to <u>Jebel Ali Free Zone</u>, Jebel Ali Port and Al Maktoum Airport.</p><p>This is <i>Dubai&#x27;s next growth corridor.</i></p></div>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>Why the location matters</b></p><p>Palm Jebel Ali next door. <u>Jebel Ali Free Zone</u>, Jebel Ali Port and Al Maktoum Airport close by.</p><p>This is <i>Dubai&#x27;s next growth corridor.</i></p></div>
   </div>
   <div class="note">Renders: Nakheel, artist&#x27;s impressions</div>
-  <div class="count">6/9</div>
+  <div class="count">5/8</div>
 </section>
-<section class="slide" id="s7">
-  <div class="photo" style="background-image:url('img/lagoon_fountain.jpg')"></div>
-  <div class="fade"></div>
-  
-  <div class="card" style="--fs:46px">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Sanjay Ram</div><div class="handle">@sanjayram.dxb</div></div></div>
-    <div class="body"><p>Lagoons, parks and landscaped walking trails.</p><p>A <b>resort-style community</b> built for <i>families</i>.</p></div>
-  </div>
-  <div class="note">Renders: Nakheel, artist&#x27;s impressions</div>
-  <div class="count">7/9</div>
-</section>
-<section class="slide" id="s8">
-  <div class="photo" style="background-image:url('img/villas_lagoon.jpg')"></div>
+<section class="slide" id="s6">
+  <div class="photo" style="background-image:url('img/garden_lagoon.jpg')"></div>
   <div class="fade"></div>
   
   <div class="card" style="--fs:42px">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Sanjay Ram</div><div class="handle">@sanjayram.dxb</div></div></div>
-    <div class="body"><p><b>Best for:</b></p><ul><li>Families upgrading to a villa</li><li>Buyers who want Palm Jebel Ali next door, without island prices</li><li>Investors happy to hold until 2030</li></ul></div>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>How the EOI works</b></p><p>An EOI (Expression of Interest) holds your place in line <i>before</i> units are released.</p><p>Units are <b>very limited</b>, so the earlier you register, the better your choice.</p><p>Want the EOI amount and the steps? <u>Text me.</u></p></div>
   </div>
   <div class="note">Renders: Nakheel, artist&#x27;s impressions</div>
-  <div class="count">8/9</div>
+  <div class="count">6/8</div>
 </section>
-<section class="slide" id="s9">
+<section class="slide" id="s7">
+  <div class="photo" style="background-image:url('img/villas_lagoon.jpg')"></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:38px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>It suits:</b></p><ul><li>Families upgrading to a villa</li><li>Buyers who want Palm Jebel Ali next door, without island prices</li><li>Investors happy to hold until 2030</li></ul><p class="gap"><b>Skip it if:</b></p><ul><li>You need rental income now (handover is 2030)</li><li>You want a ready home</li><li>Your budget is under AED 3.8M</li></ul></div>
+  </div>
+  <div class="note">Renders: Nakheel, artist&#x27;s impressions</div>
+  <div class="count">7/8</div>
+</section>
+<section class="slide" id="s8">
   <div class="photo" style="background-image:url('img/pool_club.jpg')"></div>
   <div class="fade"></div>
   
-  <div class="card" style="--fs:46px">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Sanjay Ram</div><div class="handle">@sanjayram.dxb</div></div></div>
-    <div class="body"><p>Want the floor plans and the full price list?</p><p>Comment <b>PALM SPRINGS</b> or WhatsApp me on <u>+971 56 837 6676</u>.</p><p>I&#x27;ll send you everything.</p></div>
+  <div class="card" style="--fs:52px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p>Want the floor plans, the full price list and the EOI details?</p><p>Comment <b>PALM SPRINGS</b>.</p></div>
   </div>
   <div class="note">Renders: Nakheel, artist&#x27;s impressions</div>
-  <div class="count">9/9</div>
+  <div class="count">8/8</div>
 </section>
 </body></html>
