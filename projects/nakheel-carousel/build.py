@@ -31,8 +31,8 @@ SOURCES = "Nakheel facts: public company records and press coverage"
 SLIDES = [
     {'img': 'aerial_sunset', 'size': 48, 'swipe': True, 'note': RENDERS,
      'paras': ["**One of Dubai's hottest launches right now.**",
-               "A government-backed developer. Villas next to __Palm Jebel Ali__. And a price per sq ft *most people won't believe.*",
-               "Busy? **Save or share this now** so you can come back to it later."]},
+               "A government-backed developer. Villas next to __Palm Jebel Ali__. And a price per sq ft *most people won't believe.*"],
+     'alert': "Busy? **Save or share this now** so you can come back to it later."},
     {'img': 'map_coast', 'size': 46, 'note': MAPS,
      'paras': ["**Who is Nakheel?**",
                "The government-owned developer that *built new land* off Dubai's coast.",
@@ -69,6 +69,9 @@ PLAN = [(10, 'Booking'), (10, 'Apr 27'), (10, 'Sep 27'), (10, 'Feb 28'), (10, 'J
 
 def slide_html(i, s):
     body = ''.join(f'<p>{md(p)}</p>' for p in s['paras'])
+    if s.get('alert'):
+        icon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M6 2h12a1 1 0 0 1 1 1v19l-7-4.5L5 22V3a1 1 0 0 1 1-1z"/></svg>'
+        body += f'<div class="alert">{icon}<p>{md(s["alert"])}</p></div>'
     if s.get('table'):
         rows = ''.join(f'<div class="row{" hi" if a.startswith("**") else ""}"><span>{md(a)}</span><b>{b}</b></div>' for a, b in s['table'])
         body += f'<div class="table">{rows}</div>'
@@ -114,6 +117,11 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .who img {{ width: 128px; height: 128px; border-radius: 50%; }}
 .name {{ font-weight: 700; font-size: 44px; letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; }}
 .tick {{ width: 40px; height: 40px; flex: none; }}
+.alert {{ margin-top: 30px; display: flex; align-items: center; gap: 22px; padding: 24px 30px; border-radius: 26px;
+  background: linear-gradient(135deg, #FF3B3B, #E0115F); color: #fff; box-shadow: 0 14px 34px rgba(224, 17, 95, 0.38); }}
+.alert svg {{ width: 50px; height: 50px; flex: none; }}
+.alert p {{ font-size: 0.9em; line-height: 1.22; }}
+.alert b {{ font-weight: 700; }}
 .body p.gap {{ margin-top: 0.8em; }}
 .handle {{ font-weight: 400; font-size: 32px; color: #5B6470; margin-top: 2px; }}
 .body {{ font-size: var(--fs); line-height: 1.24; font-weight: 400; }}
