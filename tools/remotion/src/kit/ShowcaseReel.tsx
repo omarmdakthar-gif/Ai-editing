@@ -50,6 +50,7 @@ export type ShowcaseProps = {
 	sounds?: Sound[];
 	endCard?: {start: number; keyword: string; phone: string; detail: string};
 	hideBase?: boolean;
+	noScrim?: boolean;
 	credit: string;
 	disclaimer?: {start: number; end: number; text: string}[];
 };
@@ -552,7 +553,7 @@ export const ShowcaseReel: React.FC<ShowcaseProps> = (props) => {
 			{props.headlines?.map((h, i) => <HeadlineView key={i} h={h} time={time} />)}
 			{props.cards?.map((c, i) => <CardView key={i} card={c} time={time} />)}
 			{props.endCard ? <EndCard e={props.endCard} time={time} /> : null}
-			<div style={{position: 'absolute', left: 0, right: 0, top: 1180, height: 520, background: 'linear-gradient(rgba(3,6,13,0), rgba(3,6,13,0.72) 40%, rgba(3,6,13,0.72) 70%, rgba(3,6,13,0))', pointerEvents: 'none'}} />
+			{props.noScrim ? null : <div style={{position: 'absolute', left: 0, right: 0, top: 1180, height: 520, background: 'linear-gradient(rgba(3,6,13,0), rgba(3,6,13,0.72) 40%, rgba(3,6,13,0.72) 70%, rgba(3,6,13,0))', pointerEvents: 'none'}} />}
 			<Captions captions={props.captions} time={time} />
 			{props.disclaimer?.filter((d) => time >= d.start && time < d.end).map((d, i) => (
 				<div key={i} style={{position: 'absolute', top: 1530, left: 120, right: 120, textAlign: 'center', fontFamily: SANS, fontWeight: 700, fontSize: 20,
