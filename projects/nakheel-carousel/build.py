@@ -31,7 +31,7 @@ SOURCES = "Nakheel facts: public company records and press coverage"
 SLIDES = [
     {'img': 'aerial_sunset', 'size': 44, 'swipe': True, 'note': RENDERS,
      'paras': ["**One of Dubai's hottest launches right now.**",
-               "A government-backed developer. Townhouses and villas next to __Palm\u00a0Jebel\u00a0Ali__, starting at just **AED 3.8M** with just **10% down**.", "And a price per sq ft *most people won't believe.*"],
+               "A government-backed developer. Townhouses and villas next to __Palm\u00a0Jebel\u00a0Ali__, starting at just **AED 3.8M** with just **10% down payment**, and a price per sq ft *most people won't believe.*"],
      'alert': "**Busy? Save or share this now** so you can come back to it later."},
     {'img': 'map_coast', 'size': 46, 'note': MAPS,
      'paras': ["**Who is Nakheel?**",
