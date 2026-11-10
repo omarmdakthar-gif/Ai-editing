@@ -35,21 +35,25 @@ SLIDES = [
                "Since __2003__, it has shaped Dubai's skyline and shoreline. Today it is part of **Dubai Holding**."]},
     {'img': 'map_communities', 'size': 40, 'note': MAPS,
      'paras': ["**What they've built**"],
-     'bullets': ["**Palm Jumeirah** and The World Islands", "Jumeirah Islands, Jumeirah Park, Jumeirah Village",
-                 "Ibn Battuta Mall and Dragon Mart", "Now building: **Palm Jebel Ali** and Dubai Islands"]},
-    {'img': 'living_dining', 'size': 44, 'note': RENDERS,
-     'paras': ["**What kind of developer?**",
-               "Waterfront. Master-planned. Iconic. Nakheel doesn't just build homes, it builds *addresses*.",
-               "Palm Jebel Ali alone will add __1,700 villas__ and 6,000 apartments."]},
+     'bullets': ["**Palm Jumeirah**, The World Islands, Dubai Islands", "Jumeirah Islands, Jumeirah Park, Jumeirah Village",
+                 "Ibn Battuta Mall, Dragon Mart",
+                 "Now building: **Palm Jebel Ali**, Palm Springs, Como Residences and much more"]},
+    {'img': 'aerial_night', 'size': 40,
+     'note': "Sources: The National (Mar 2024), Bloomberg (Apr 2024)",
+     'paras': ["**Who's behind them?**",
+               "Owned by the Government of Dubai through **Dubai Holding**, the Ruler's investment group.",
+               "In 2024, Dubai Holding refinanced __AED 30 billion__ of Nakheel and Meydan debt with Emirates NBD and Mashreq.",
+               "Their land bank includes *entire islands*: Palm Jebel Ali and Dubai Islands."]},
     {'img': 'aerial_sunset', 'size': 44, 'note': RENDERS,
      'paras': ["**Now: Palm Springs.**",
                "Nakheel's new townhouse and villa community in Jebel Ali, right beside __Palm Jebel Ali__.",
-               "3 and 4-bed townhouses, 4 and 5-bed villas. Handover *October 2030*."]},
-    {'img': 'villas_dusk', 'size': 40, 'note': "Palm Jebel Ali: reported entry price, 2026 listings · Palm Springs: Nakheel launch brochure",
-     'paras': ["**How the pricing compares** (AED)"],
-     'table': [('Palm Jebel Ali villa', 'from ~18M'), ('Palm Springs 5-bed villa', '8.9M'), ('Palm Springs 4-bed villa', '7.0M'),
-               ('Palm Springs 3-bed townhouse', '3.8M')],
-     'paras2': ["Same developer. Same neighbourhood. *A fraction of the price.*"]},
+               "3 and 4-bed townhouses, 4 and 5-bed villas, on an easy **60/40** payment plan."]},
+    {'img': 'villas_dusk', 'size': 36,
+     'note': "Palm Springs: Nakheel launch brochure · Others: reported starting prices, 2026 listings",
+     'paras': ["**How the pricing compares** (AED, from)"],
+     'table': [('Palm Jebel Ali villa', '~18M'), ('Emaar The Oasis villa', '~8.5M'), ('**Palm Springs 3-bed townhouse**', '3.8M'),
+               ('Expo Valley townhouse', '~3.5M'), ('Emaar South townhouse', '~2.9M'), ('Heights Country Club townhouse', '~2.4M')],
+     'paras2': ["Beside Palm Jebel Ali, for about *the price of an inland townhouse.*"]},
     {'img': 'pool_club', 'size': 50, 'note': RENDERS,
      'paras': ["Want the Palm Springs price list, floor plans and EOI details?", "Comment **PALM SPRINGS**."]},
 ]
@@ -59,7 +63,7 @@ PLAN = [(10, 'Booking'), (10, 'Apr 27'), (10, 'Sep 27'), (10, 'Feb 28'), (10, 'J
 def slide_html(i, s):
     body = ''.join(f'<p>{md(p)}</p>' for p in s['paras'])
     if s.get('table'):
-        rows = ''.join(f'<div class="row"><span>{html.escape(a)}</span><b>{b}</b></div>' for a, b in s['table'])
+        rows = ''.join(f'<div class="row{" hi" if a.startswith("**") else ""}"><span>{md(a)}</span><b>{b}</b></div>' for a, b in s['table'])
         body += f'<div class="table">{rows}</div>'
     if s.get('bullets'):
         body += '<ul>' + ''.join(f'<li>{md(b)}</li>' for b in s['bullets']) + '</ul>'
@@ -110,6 +114,7 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .table {{ margin-top: 22px; display: grid; gap: 14px; }}
 .row {{ display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1.5px solid #E6E8EC; padding-bottom: 12px; font-size: 36px; }}
 .row b {{ font-size: 44px; font-variant-numeric: tabular-nums; }}
+.row.hi {{ background: #FFF6D6; margin: 0 -14px; padding: 8px 14px 12px; border-radius: 10px; border-bottom: none; }}
 ul {{ margin-top: 18px; padding-left: 1.1em; display: grid; gap: 14px; }}
 li::marker {{ color: #111; }}
 .plan {{ display: flex; gap: 6px; margin-top: 30px; height: 110px; }}
