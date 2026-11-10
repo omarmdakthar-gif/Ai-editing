@@ -2,7 +2,7 @@
 
 Writes slides.html; render.js screenshots each slide at 2x and the PNGs are downscaled to 1080x1350.
 Every price and date comes from Nakheel's launch brochure (src/prices.jpg, src/payment.jpg).
-Text markup: **bold**, __underline__, *italic*.
+Text markup: **bold**, __underline__, *italic*, ==highlight==.
 """
 import html
 import re
@@ -23,6 +23,7 @@ def md(text):
     t = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', t)
     t = re.sub(r'__(.+?)__', r'<u>\1</u>', t)
     t = re.sub(r'\*(.+?)\*', r'<i>\1</i>', t)
+    t = re.sub(r'==(.+?)==', r'<mark>\1</mark>', t)
     return t.replace('\n', '<br>')
 
 
@@ -30,7 +31,7 @@ MAPS = "Map: OpenStreetMap contributors"
 SOURCES = "Nakheel facts: public company records and press coverage"
 SLIDES = [
     {'img': 'aerial_sunset', 'size': 40, 'cls': 'airy', 'swipe': True, 'note': RENDERS,
-     'paras': ["**One of Dubai's hottest launches right now.**\nA government-backed developer. Townhouses\nand villas next to __Palm\u00a0Jebel\u00a0Ali__,\nstarting at just **AED\u00a03.8M**, only **10%**\n**down payment**, and a price per sq ft\n*most people won't believe.*"],
+     'paras': ["**One of Dubai's hottest launches right now.**\nA government-backed developer. Townhouses\nand villas next to __Palm\u00a0Jebel\u00a0Ali__, starting\nat just **AED\u00a03.8M**, only **10% down payment**,\nand a price per sq ft *most people*\n==*won't believe.*=="],
      'alert': "**Busy? Save or share this now** so you can come back to it later."},
     {'img': 'map_coast', 'size': 46, 'note': MAPS,
      'paras': ["**Who is Nakheel?**",
@@ -122,6 +123,7 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .alert p {{ font-size: 0.9em; line-height: 1.22; }}
 .alert b {{ font-weight: 700; }}
 .body.airy > p {{ line-height: 1.5; white-space: nowrap; }} .body.airy p + p {{ margin-top: 0.7em; }}
+.body mark {{ background: #FFD43B; color: #111; font-weight: 700; padding: 2px 12px; border-radius: 8px; }}
 .body p.gap {{ margin-top: 0.8em; }}
 .handle {{ font-weight: 400; font-size: 32px; color: #5B6470; margin-top: 2px; }}
 .body {{ font-size: var(--fs); line-height: 1.24; font-weight: 400; }}
