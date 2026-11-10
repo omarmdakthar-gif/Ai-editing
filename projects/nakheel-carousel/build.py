@@ -42,7 +42,7 @@ SLIDES = [
      'note': "Source: The National (Mar 2024)",
      'paras': ["**Who's behind them?**",
                "Owned by the Government of Dubai through **Dubai Holding**, the Ruler's investment group.",
-               "Their land bank includes *entire islands*."]},
+               "Their land bank includes *entire islands* and a total of __752 million sq ft__ across Dubai."]},
     {'img': 'aerial_sunset', 'size': 44, 'note': RENDERS,
      'paras': ["**Now: Palm Springs.**",
                "Nakheel's new townhouse and villa community in Jebel Ali, right beside __Palm Jebel Ali__.",
