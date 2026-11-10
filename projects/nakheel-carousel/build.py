@@ -23,15 +23,15 @@ def md(text):
     t = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', t)
     t = re.sub(r'__(.+?)__', r'<u>\1</u>', t)
     t = re.sub(r'\*(.+?)\*', r'<i>\1</i>', t)
-    return t
+    return t.replace('\n', '<br>')
 
 
 MAPS = "Map: OpenStreetMap contributors"
 SOURCES = "Nakheel facts: public company records and press coverage"
 SLIDES = [
-    {'img': 'aerial_sunset', 'size': 44, 'swipe': True, 'note': RENDERS,
+    {'img': 'aerial_sunset', 'size': 42, 'cls': 'airy', 'swipe': True, 'note': RENDERS,
      'paras': ["**One of Dubai's hottest launches right now.**",
-               "A government-backed developer. Townhouses and villas next to __Palm\u00a0Jebel\u00a0Ali__, starting at just **AED 3.8M** with just **10% down payment**, and a price per sq ft *most people won't believe.*"],
+               "A government-backed developer.", "Townhouses and villas\nnext to __Palm\u00a0Jebel\u00a0Ali__,\nstarting at just **AED\u00a03.8M**,\nonly **10% down payment**,\nand a price per sq ft\n*most people won't believe.*"],
      'alert': "**Busy? Save or share this now** so you can come back to it later."},
     {'img': 'map_coast', 'size': 46, 'note': MAPS,
      'paras': ["**Who is Nakheel?**",
@@ -95,7 +95,7 @@ def slide_html(i, s):
   {swipe}
   <div class="card" style="--fs:{s['size']}px">
     <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">{HANDLE}</div></div></div>
-    <div class="body">{body}</div>
+    <div class="body {s.get('cls', '')}">{body}</div>
   </div>
   <div class="note">{html.escape(s['note'])}</div>
   <div class="count">{i + 1}/{len(SLIDES)}</div>
@@ -122,6 +122,7 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .alert svg {{ width: 50px; height: 50px; flex: none; }}
 .alert p {{ font-size: 0.9em; line-height: 1.22; }}
 .alert b {{ font-weight: 700; }}
+.body.airy p {{ line-height: 1.38; }} .body.airy p + p {{ margin-top: 0.7em; }}
 .body p.gap {{ margin-top: 0.8em; }}
 .handle {{ font-weight: 400; font-size: 32px; color: #5B6470; margin-top: 2px; }}
 .body {{ font-size: var(--fs); line-height: 1.24; font-weight: 400; }}
