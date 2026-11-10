@@ -26,6 +26,7 @@ export type Feature = {
 	side?: 'up' | 'down';
 	pulse?: boolean;
 	dim?: boolean;
+	fill?: number;
 };
 export type CaptionLine = {start: number; end: number; text: string; speech?: number};
 export type Headline = {start: number; end: number; kicker?: string; lines: string[]; y?: number; align?: 'left' | 'center'};
@@ -228,7 +229,7 @@ const FeatureLayer: React.FC<{f: Feature; prepared: Prepared; proj: ReturnType<t
 		}
 		return s + (closed ? 'Z' : '');
 	});
-	const fill = closed ? interpolate(draw, [0.6, 1], [0, 0.22], clamp) * leave : 0;
+	const fill = closed ? interpolate(draw, [0.6, 1], [0, f.fill ?? 0.22], clamp) * leave : 0;
 	const pulse = 0.75 + 0.25 * Math.sin(time * 5);
 	const stroke = (width: number, color: string, opacity: number) =>
 		d.map((p, i) => <path key={i} d={p} pathLength={1} fill="none" stroke={color} strokeOpacity={opacity * leave} strokeWidth={width} strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 1" strokeDashoffset={1 - draw} />);
