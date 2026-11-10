@@ -29,30 +29,38 @@ def md(text):
 MAPS = "Map: OpenStreetMap contributors"
 SOURCES = "Nakheel facts: public company records and press coverage"
 SLIDES = [
-    {'img': 'map_coast', 'size': 46, 'swipe': True, 'note': MAPS,
+    {'img': 'aerial_sunset', 'size': 48, 'swipe': True, 'note': RENDERS,
+     'paras': ["**One of Dubai's hottest launches right now.**",
+               "A government-backed developer. Villas next to __Palm Jebel Ali__. And a price per sq ft *most people won't believe.*",
+               "Busy? **Save or share this now** so you can come back to it later."]},
+    {'img': 'map_coast', 'size': 46, 'note': MAPS,
      'paras': ["**Who is Nakheel?**",
                "The government-owned developer that *built new land* off Dubai's coast.",
                "Since __2003__, it has shaped Dubai's skyline and shoreline. Today it is part of **Dubai Holding**."]},
-    {'img': 'map_communities', 'size': 40, 'note': MAPS,
-     'paras': ["**What they've built**"],
-     'bullets': ["**Palm Jumeirah**, The World Islands, Dubai Islands", "Jumeirah Islands, Jumeirah Park, Jumeirah Village",
-                 "Ibn Battuta Mall, Dragon Mart",
-                 "Now building: **Palm Jebel Ali**, Palm Springs, Como Residences and much more"]},
     {'img': 'map_landbank', 'size': 46,
      'note': "Highlighted: Dubai Holding Real Estate communities · Map: OpenStreetMap contributors",
      'paras': ["**Who's behind them?**",
                "Owned by the Government of Dubai through **Dubai Holding**, the Ruler's investment group.",
                "Their land bank includes *entire islands* and a total of __752 million sq ft__ across Dubai."]},
-    {'img': 'aerial_sunset', 'size': 44, 'note': RENDERS,
+    {'img': 'map_communities', 'size': 40, 'note': MAPS,
+     'paras': ["**What they've built**"],
+     'bullets': ["**Palm Jumeirah**, The World Islands, Dubai Islands", "Jumeirah Islands, Jumeirah Park, Jumeirah Village",
+                 "Ibn Battuta Mall, Dragon Mart",
+                 "Now building: **Palm Jebel Ali**, Palm Springs, Como Residences and much more"]},
+    {'img': 'map_location', 'size': 42, 'note': MAPS,
      'paras': ["**Now: Palm Springs.**",
                "Nakheel's new townhouse and villa community in Jebel Ali, right beside __Palm Jebel Ali__.",
-               "3 and 4-bed townhouses, 4 and 5-bed villas, on an easy **60/40** payment plan."]},
+               "In Dubai's growth corridor, next to **Al Maktoum Airport** and Jebel Ali Port."]},
     {'img': 'villas_dusk', 'size': 36,
      'note': "Palm Springs: brochure price ÷ published floor-plan size (2,326 sq ft) · Others: 2026 market data and recent releases",
      'paras': ["**Price per sq ft** (AED)"],
      'table': [('Emirates Hills', '~3,500'), ('Palm Jebel Ali', '~2,650'), ('The Springs', '~2,300'), ('Dubai villa average', '2,241'),
                ('Damac Islands', '~1,850'), ('**Palm Springs 3-bed townhouse**', '~1,634')],
      'paras2': ["Beside Palm Jebel Ali, for *less per sq ft than The Springs.*"]},
+    {'img': 'living_pool', 'size': 34,
+     'note': "1 AED = ₹25.57 (10 Nov 2026) · Rupee amounts move with the exchange rate · Excludes 4% DLD fee",
+     'paras': ["**3-bed townhouse: AED 3.8M** (≈ ₹9.72 Cr)"],
+     'rows3': [('On booking · **10%**', '380K', '₹97.2 L'), ('April 2027 · **10%**', '380K', '₹97.2 L'), ('September 2027 · **10%**', '380K', '₹97.2 L'), ('February 2028 · **10%**', '380K', '₹97.2 L'), ('July 2028 · **10%**', '380K', '₹97.2 L'), ('December 2028 · **5%**', '190K', '₹48.6 L'), ('May 2029 · **5%**', '190K', '₹48.6 L'), ('On handover · **40%**', '1.52M', '₹3.89 Cr')]},
     {'img': 'pool_club', 'size': 50, 'note': RENDERS,
      'paras': ["Want the Palm Springs price list, floor plans and EOI details?", "Comment **PALM SPRINGS**."]},
 ]
@@ -64,6 +72,9 @@ def slide_html(i, s):
     if s.get('table'):
         rows = ''.join(f'<div class="row{" hi" if a.startswith("**") else ""}"><span>{md(a)}</span><b>{b}</b></div>' for a, b in s['table'])
         body += f'<div class="table">{rows}</div>'
+    if s.get('rows3'):
+        r3 = ''.join(f'<div class="r3"><span>{md(a)}</span><b>{b}</b><em>{c}</em></div>' for a, b, c in s['rows3'])
+        body += f'<div class="t3"><div class="r3 h"><span>Instalment</span><b>AED</b><em>INR</em></div>{r3}</div>'
     if s.get('bullets'):
         body += '<ul>' + ''.join(f'<li>{md(b)}</li>' for b in s['bullets']) + '</ul>'
     if s.get('paras2'):
@@ -113,6 +124,12 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .table {{ margin-top: 22px; display: grid; gap: 14px; }}
 .row {{ display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1.5px solid #E6E8EC; padding-bottom: 12px; font-size: 36px; }}
 .row b {{ font-size: 44px; font-variant-numeric: tabular-nums; }}
+.t3 {{ margin-top: 16px; display: grid; gap: 0; }}
+.r3 {{ display: grid; grid-template-columns: 1fr auto 150px; gap: 18px; align-items: baseline; padding: 9px 0; border-bottom: 1.5px solid #E6E8EC; font-size: 29px; }}
+.r3 b {{ font-size: 32px; font-variant-numeric: tabular-nums; text-align: right; }}
+.r3 em {{ font-style: normal; color: #4A5260; font-variant-numeric: tabular-nums; text-align: right; }}
+.r3.h {{ font-size: 18px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A9099; padding-top: 0; }}
+.r3.h b {{ font-size: 18px; }} .r3.h em {{ color: #8A9099; }}
 .row.hi {{ background: #FFF6D6; margin: 0 -14px; padding: 8px 14px 12px; border-radius: 10px; border-bottom: none; }}
 ul {{ margin-top: 18px; padding-left: 1.1em; display: grid; gap: 14px; }}
 li::marker {{ color: #111; }}

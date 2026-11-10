@@ -20,3 +20,8 @@ Comment PALM SPRINGS for the price list, floor plans and EOI details.
 - Dubai Holding merger, March 2024 (The National); AED 30 billion refinancing of Nakheel and Meydan debt by Emirates NBD and Mashreq, April 2024 (Bloomberg).
 - Slide 3: land map of Dubai Holding Real Estate's communities, plus the line "752 million sq ft across Dubai" (figure supplied by Omar; not found in public sources checked, so confirm its source before posting).
 - Price per sq ft: Palm Springs 3-bed townhouse AED 3.8M / 2,326 sq ft (floor-plan size from listing sites) = ~AED 1,634. Emirates Hills ~3,500 (REIDIN index, early 2026). Palm Jebel Ali ~2,650 (recent releases reported at AED 2,600-2,700). The Springs ~2,300 (Property Monitor). Dubai villa average 2,241 (Engel & Völkers, June 2026). Damac Islands ~1,850 (figure supplied by Omar; DLD resales registered at 1,600-1,960 in May 2026).
+- Slide 5: location map (OpenStreetMap) of Palm Jebel Ali, Palm Springs, Jebel Ali Port and Al Maktoum Airport.
+- Slide 7: 3-bed townhouse AED 3.8M and payment plan from Nakheel's launch brochure (10% booking; 10% Apr 2027, Sep 2027, Feb 2028, Jul 2028; 5% Dec 2028, May 2029; 40% on handover). Rupee amounts at 1 AED = ₹25.57 (open.er-api.com, 10 Nov 2026); update them if the rate moves before posting. Excludes 4% DLD fee.
+
+## Before posting
+- Add the Trakheesi permit number if this promotes a specific listing.

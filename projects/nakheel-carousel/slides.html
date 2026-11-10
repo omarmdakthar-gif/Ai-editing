@@ -22,6 +22,12 @@ body { background: #111; font-family: Outfit, sans-serif; }
 .table { margin-top: 22px; display: grid; gap: 14px; }
 .row { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1.5px solid #E6E8EC; padding-bottom: 12px; font-size: 36px; }
 .row b { font-size: 44px; font-variant-numeric: tabular-nums; }
+.t3 { margin-top: 16px; display: grid; gap: 0; }
+.r3 { display: grid; grid-template-columns: 1fr auto 150px; gap: 18px; align-items: baseline; padding: 9px 0; border-bottom: 1.5px solid #E6E8EC; font-size: 29px; }
+.r3 b { font-size: 32px; font-variant-numeric: tabular-nums; text-align: right; }
+.r3 em { font-style: normal; color: #4A5260; font-variant-numeric: tabular-nums; text-align: right; }
+.r3.h { font-size: 18px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A9099; padding-top: 0; }
+.r3.h b { font-size: 18px; } .r3.h em { color: #8A9099; }
 .row.hi { background: #FFF6D6; margin: 0 -14px; padding: 8px 14px 12px; border-radius: 10px; border-bottom: none; }
 ul { margin-top: 18px; padding-left: 1.1em; display: grid; gap: 14px; }
 li::marker { color: #111; }
@@ -34,26 +40,26 @@ li::marker { color: #111; }
 </style></head><body>
 
 <section class="slide" id="s1">
-  <div class="photo" style="background-image:url('img/map_coast.jpg')"></div>
+  <div class="photo" style="background-image:url('img/aerial_sunset.jpg')"></div>
   <div class="fade"></div>
   <div class="swipe">Swipe &rarr;</div>
+  <div class="card" style="--fs:48px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>One of Dubai&#x27;s hottest launches right now.</b></p><p>A government-backed developer. Villas next to <u>Palm Jebel Ali</u>. And a price per sq ft <i>most people won&#x27;t believe.</i></p><p>Busy? <b>Save or share this now</b> so you can come back to it later.</p></div>
+  </div>
+  <div class="note">Renders: Nakheel, artist&#x27;s impressions</div>
+  <div class="count">1/8</div>
+</section>
+<section class="slide" id="s2">
+  <div class="photo" style="background-image:url('img/map_coast.jpg')"></div>
+  <div class="fade"></div>
+  
   <div class="card" style="--fs:46px">
     <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
     <div class="body"><p><b>Who is Nakheel?</b></p><p>The government-owned developer that <i>built new land</i> off Dubai&#x27;s coast.</p><p>Since <u>2003</u>, it has shaped Dubai&#x27;s skyline and shoreline. Today it is part of <b>Dubai Holding</b>.</p></div>
   </div>
   <div class="note">Map: OpenStreetMap contributors</div>
-  <div class="count">1/6</div>
-</section>
-<section class="slide" id="s2">
-  <div class="photo" style="background-image:url('img/map_communities.jpg')"></div>
-  <div class="fade"></div>
-  
-  <div class="card" style="--fs:40px">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
-    <div class="body"><p><b>What they&#x27;ve built</b></p><ul><li><b>Palm Jumeirah</b>, The World Islands, Dubai Islands</li><li>Jumeirah Islands, Jumeirah Park, Jumeirah Village</li><li>Ibn Battuta Mall, Dragon Mart</li><li>Now building: <b>Palm Jebel Ali</b>, Palm Springs, Como Residences and much more</li></ul></div>
-  </div>
-  <div class="note">Map: OpenStreetMap contributors</div>
-  <div class="count">2/6</div>
+  <div class="count">2/8</div>
 </section>
 <section class="slide" id="s3">
   <div class="photo" style="background-image:url('img/map_landbank.jpg')"></div>
@@ -64,20 +70,31 @@ li::marker { color: #111; }
     <div class="body"><p><b>Who&#x27;s behind them?</b></p><p>Owned by the Government of Dubai through <b>Dubai Holding</b>, the Ruler&#x27;s investment group.</p><p>Their land bank includes <i>entire islands</i> and a total of <u>752 million sq ft</u> across Dubai.</p></div>
   </div>
   <div class="note">Highlighted: Dubai Holding Real Estate communities · Map: OpenStreetMap contributors</div>
-  <div class="count">3/6</div>
+  <div class="count">3/8</div>
 </section>
 <section class="slide" id="s4">
-  <div class="photo" style="background-image:url('img/aerial_sunset.jpg')"></div>
+  <div class="photo" style="background-image:url('img/map_communities.jpg')"></div>
   <div class="fade"></div>
   
-  <div class="card" style="--fs:44px">
+  <div class="card" style="--fs:40px">
     <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
-    <div class="body"><p><b>Now: Palm Springs.</b></p><p>Nakheel&#x27;s new townhouse and villa community in Jebel Ali, right beside <u>Palm Jebel Ali</u>.</p><p>3 and 4-bed townhouses, 4 and 5-bed villas, on an easy <b>60/40</b> payment plan.</p></div>
+    <div class="body"><p><b>What they&#x27;ve built</b></p><ul><li><b>Palm Jumeirah</b>, The World Islands, Dubai Islands</li><li>Jumeirah Islands, Jumeirah Park, Jumeirah Village</li><li>Ibn Battuta Mall, Dragon Mart</li><li>Now building: <b>Palm Jebel Ali</b>, Palm Springs, Como Residences and much more</li></ul></div>
   </div>
-  <div class="note">Renders: Nakheel, artist&#x27;s impressions</div>
-  <div class="count">4/6</div>
+  <div class="note">Map: OpenStreetMap contributors</div>
+  <div class="count">4/8</div>
 </section>
 <section class="slide" id="s5">
+  <div class="photo" style="background-image:url('img/map_location.jpg')"></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:42px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>Now: Palm Springs.</b></p><p>Nakheel&#x27;s new townhouse and villa community in Jebel Ali, right beside <u>Palm Jebel Ali</u>.</p><p>In Dubai&#x27;s growth corridor, next to <b>Al Maktoum Airport</b> and Jebel Ali Port.</p></div>
+  </div>
+  <div class="note">Map: OpenStreetMap contributors</div>
+  <div class="count">5/8</div>
+</section>
+<section class="slide" id="s6">
   <div class="photo" style="background-image:url('img/villas_dusk.jpg')"></div>
   <div class="fade"></div>
   
@@ -86,9 +103,20 @@ li::marker { color: #111; }
     <div class="body"><p><b>Price per sq ft</b> (AED)</p><div class="table"><div class="row"><span>Emirates Hills</span><b>~3,500</b></div><div class="row"><span>Palm Jebel Ali</span><b>~2,650</b></div><div class="row"><span>The Springs</span><b>~2,300</b></div><div class="row"><span>Dubai villa average</span><b>2,241</b></div><div class="row"><span>Damac Islands</span><b>~1,850</b></div><div class="row hi"><span><b>Palm Springs 3-bed townhouse</b></span><b>~1,634</b></div></div><p class="gap">Beside Palm Jebel Ali, for <i>less per sq ft than The Springs.</i></p></div>
   </div>
   <div class="note">Palm Springs: brochure price ÷ published floor-plan size (2,326 sq ft) · Others: 2026 market data and recent releases</div>
-  <div class="count">5/6</div>
+  <div class="count">6/8</div>
 </section>
-<section class="slide" id="s6">
+<section class="slide" id="s7">
+  <div class="photo" style="background-image:url('img/living_pool.jpg')"></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:34px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>3-bed townhouse: AED 3.8M</b> (≈ ₹9.72 Cr)</p><div class="t3"><div class="r3 h"><span>Instalment</span><b>AED</b><em>INR</em></div><div class="r3"><span>On booking · <b>10%</b></span><b>380K</b><em>₹97.2 L</em></div><div class="r3"><span>April 2027 · <b>10%</b></span><b>380K</b><em>₹97.2 L</em></div><div class="r3"><span>September 2027 · <b>10%</b></span><b>380K</b><em>₹97.2 L</em></div><div class="r3"><span>February 2028 · <b>10%</b></span><b>380K</b><em>₹97.2 L</em></div><div class="r3"><span>July 2028 · <b>10%</b></span><b>380K</b><em>₹97.2 L</em></div><div class="r3"><span>December 2028 · <b>5%</b></span><b>190K</b><em>₹48.6 L</em></div><div class="r3"><span>May 2029 · <b>5%</b></span><b>190K</b><em>₹48.6 L</em></div><div class="r3"><span>On handover · <b>40%</b></span><b>1.52M</b><em>₹3.89 Cr</em></div></div></div>
+  </div>
+  <div class="note">1 AED = ₹25.57 (10 Nov 2026) · Rupee amounts move with the exchange rate · Excludes 4% DLD fee</div>
+  <div class="count">7/8</div>
+</section>
+<section class="slide" id="s8">
   <div class="photo" style="background-image:url('img/pool_club.jpg')"></div>
   <div class="fade"></div>
   
@@ -97,6 +125,6 @@ li::marker { color: #111; }
     <div class="body"><p>Want the Palm Springs price list, floor plans and EOI details?</p><p>Comment <b>PALM SPRINGS</b>.</p></div>
   </div>
   <div class="note">Renders: Nakheel, artist&#x27;s impressions</div>
-  <div class="count">6/6</div>
+  <div class="count">8/8</div>
 </section>
 </body></html>
