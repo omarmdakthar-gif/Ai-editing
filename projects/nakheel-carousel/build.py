@@ -32,7 +32,7 @@ SLIDES = [
     {'img': 'aerial_sunset', 'size': 48, 'swipe': True, 'note': RENDERS,
      'paras': ["**One of Dubai's hottest launches right now.**",
                "A government-backed developer. Villas next to __Palm Jebel Ali__. And a price per sq ft *most people won't believe.*"],
-     'alert': "Busy? **Save or share this now** so you can come back to it later."},
+     'alert': "**Busy? Save or share this now** so you can come back to it later."},
     {'img': 'map_coast', 'size': 46, 'note': MAPS,
      'paras': ["**Who is Nakheel?**",
                "The government-owned developer that *built new land* off Dubai's coast.",
@@ -76,7 +76,7 @@ def slide_html(i, s):
         rows = ''.join(f'<div class="row{" hi" if a.startswith("**") else ""}"><span>{md(a)}</span><b>{b}</b></div>' for a, b in s['table'])
         body += f'<div class="table">{rows}</div>'
     if s.get('rows3'):
-        r3 = ''.join(f'<div class="r3"><span>{md(a)}</span><b>{b}</b><em>{c}</em></div>' for a, b, c in s['rows3'])
+        r3 = ''.join(f'<div class="r3{" hi" if a.startswith(("On booking", "On handover")) else ""}"><span>{md(a)}</span><b>{b}</b><em>{c}</em></div>' for a, b, c in s['rows3'])
         body += f'<div class="t3"><div class="r3 h"><span>Instalment</span><b>AED</b><em>INR</em></div>{r3}</div>'
     if s.get('bullets'):
         body += '<ul>' + ''.join(f'<li>{md(b)}</li>' for b in s['bullets']) + '</ul>'
@@ -136,6 +136,10 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .r3 {{ display: grid; grid-template-columns: 1fr auto 150px; gap: 18px; align-items: baseline; padding: 9px 0; border-bottom: 1.5px solid #E6E8EC; font-size: 29px; }}
 .r3 b {{ font-size: 32px; font-variant-numeric: tabular-nums; text-align: right; }}
 .r3 em {{ font-style: normal; color: #4A5260; font-variant-numeric: tabular-nums; text-align: right; }}
+.r3:not(.h):not(.hi) {{ font-size: 25px; padding: 7px 0; color: #3A414C; }}
+.r3:not(.h):not(.hi) b {{ font-size: 27px; }}
+.r3.hi {{ font-size: 34px; background: #FFF6D6; margin: 6px -14px; padding: 12px 14px; border-radius: 12px; border-bottom: none; }}
+.r3.hi b {{ font-size: 40px; }} .r3.hi em {{ color: #111; font-weight: 600; }}
 .r3.h {{ font-size: 18px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A9099; padding-top: 0; }}
 .r3.h b {{ font-size: 18px; }} .r3.h em {{ color: #8A9099; }}
 .row.hi {{ background: #FFF6D6; margin: 0 -14px; padding: 8px 14px 12px; border-radius: 10px; border-bottom: none; }}
