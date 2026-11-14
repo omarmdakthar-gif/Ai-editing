@@ -1,0 +1,151 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Outfit;font-weight:400;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-400-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:500;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-500-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:600;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-600-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:700;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-700-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:800;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-800-normal.woff2') format('woff2')}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #111; font-family: Outfit, sans-serif; }
+.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: #000; }
+.photo { position: absolute; left: 0; right: 0; top: 0; height: 800px; background-size: cover; background-position: center; }
+.fade { position: absolute; left: 0; right: 0; top: 480px; height: 340px; background: linear-gradient(rgba(0,0,0,0), #000); }
+.swipe { position: absolute; right: 44px; top: 40px; background: rgba(0,0,0,0.45); color: #fff; font-weight: 600; font-size: 26px;
+  padding: 10px 22px; border-radius: 40px; letter-spacing: 0.02em; }
+.card { position: absolute; left: 84px; right: 84px; bottom: 120px; background: #fff; border-radius: 34px; padding: 46px 52px 50px; color: #111; }
+.who { display: flex; align-items: center; gap: 26px; margin-bottom: 30px; }
+.who img { width: 128px; height: 128px; border-radius: 50%; }
+.name { font-weight: 700; font-size: 44px; letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; }
+.tick { width: 40px; height: 40px; flex: none; }
+.handle { font-weight: 400; font-size: 32px; color: #5B6470; margin-top: 2px; }
+.body { font-size: var(--fs); line-height: 1.26; font-weight: 400; }
+.body p { text-wrap: pretty; }
+.body p + p { margin-top: 0.55em; }
+.body p.gap { margin-top: 0.7em; }
+.body b { font-weight: 700; }
+.body u { text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.body mark { background: #FFD43B; color: #111; font-weight: 600; padding: 0 8px; border-radius: 8px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.alert { margin-top: 30px; display: flex; align-items: center; gap: 22px; padding: 24px 30px; border-radius: 26px;
+  background: linear-gradient(135deg, #FF3B3B, #E0115F); color: #fff; box-shadow: 0 14px 34px rgba(224, 17, 95, 0.38); }
+.alert svg { width: 50px; height: 50px; flex: none; }
+.alert p { font-size: 0.9em; line-height: 1.22; }
+ol { list-style: none; margin-top: 22px; display: grid; gap: 20px; }
+ol li { display: flex; gap: 20px; align-items: flex-start; }
+ol .n { flex: none; width: 54px; height: 54px; border-radius: 50%; background: #111; color: #fff; font-weight: 700; font-size: 28px;
+  display: grid; place-items: center; margin-top: -4px; }
+.wa { margin-top: 22px; display: flex; align-items: center; gap: 20px; padding: 22px 30px; border-radius: 24px; background: #25D366; color: #fff;
+  box-shadow: 0 14px 34px rgba(37, 211, 102, 0.35); }
+.wa svg { width: 58px; height: 58px; flex: none; }
+.wa b { font-size: 50px; letter-spacing: 0.01em; font-variant-numeric: tabular-nums; }
+/* blueprint art */
+.bp { position: absolute; inset: 0; background-color: #0B2F6B;
+  background-image: linear-gradient(rgba(214,230,255,0.10) 2px, transparent 2px), linear-gradient(90deg, rgba(214,230,255,0.10) 2px, transparent 2px),
+    linear-gradient(rgba(214,230,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(214,230,255,0.05) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px; }
+.bp-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.rl { fill: #D6E6FF; font: 600 19px Outfit, sans-serif; letter-spacing: 0.16em; text-anchor: middle; opacity: 0.85; }
+.dim { fill: #D6E6FF; font: 600 22px Outfit, sans-serif; letter-spacing: 0.22em; text-anchor: middle; }
+.dim.red { fill: #FF6B78; }
+.arr { stroke: #FF4D5E; stroke-width: 6; fill: none; }
+.pills { position: absolute; left: 0; right: 0; top: 528px; display: flex; justify-content: center; gap: 16px; }
+.pill { display: flex; align-items: center; gap: 10px; padding: 10px 24px 10px 12px; border-radius: 40px; font-weight: 600; font-size: 28px;
+  background: rgba(255,255,255,0.12); color: #fff; border: 2px solid rgba(214,230,255,0.35); }
+.pill b { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; font-size: 24px; }
+.pill.ok b { background: #2ECC71; } .pill.q b { background: #FFC940; color: #111; } .pill.bad { border-color: #FF4D5E; background: rgba(255,77,94,0.18); }
+.pill.bad b { background: #FF4D5E; }
+.tags { display: flex; justify-content: center; align-items: flex-start; gap: 34px; padding-top: 60px; }
+.tag { width: 330px; background: #fff; border-radius: 26px; padding: 26px 30px 28px; color: #111; position: relative; box-shadow: 0 20px 40px rgba(0,0,0,0.35); }
+.tag::before { content: ''; position: absolute; top: 18px; right: 22px; width: 22px; height: 22px; border-radius: 50%; border: 4px solid #C9D2E0; }
+.tn { font-size: 22px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5B6470; }
+.tp { font-size: 54px; font-weight: 800; margin-top: 6px; letter-spacing: -0.01em; }
+.ts { font-size: 28px; color: #4A5260; }
+.tline { height: 2px; background: #E6E8EC; margin: 16px 0 12px; }
+.tq { font-size: 36px; font-weight: 700; } .tq span { font-size: 22px; font-weight: 500; color: #5B6470; margin-left: 6px; }
+.tv { display: inline-block; margin-top: 12px; padding: 6px 16px; border-radius: 30px; font-size: 22px; font-weight: 700; }
+.tag.bad .tv { background: #FFE3E6; color: #C8102E; } .tag.good .tv { background: #DDF7E7; color: #128A43; }
+.tag.good { outline: 5px solid #2ECC71; }
+.vs { align-self: center; margin-top: -40px; color: #fff; font-size: 34px; font-weight: 700; opacity: 0.8; }
+.note { position: absolute; left: 84px; right: 84px; bottom: 62px; color: #8A9099; font-size: 20px; text-align: center; }
+.count { position: absolute; right: 44px; bottom: 60px; color: #5B6470; font-size: 20px; font-weight: 600; }
+</style></head><body>
+
+<section class="slide" id="s1">
+  <div class="photo" style="background-image:url('img/skyline.jpg');background-position:center"></div>
+  <div class="fade"></div>
+  <div class="swipe">Swipe &rarr;</div>
+  <div class="card" style="--fs:46px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p>Yesterday I bought a car from an <b>architect in Dubai</b>.</p><p>What he told me about Dubai apartments changed how I look at floor plans, <b>and showed me a massive opportunity.</b></p><div class="alert"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M6 2h12a1 1 0 0 1 1 1v19l-7-4.5L5 22V3a1 1 0 0 1 1-1z"/></svg><p><b>Busy? Save this for later.</b></p></div></div>
+  </div>
+  <div class="note">Photo: Unsplash</div>
+  <div class="count">1/6</div>
+</section>
+<section class="slide" id="s2">
+  <div class="photo" style="background-image:url('img/map_south.jpg');background-position:center top"></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:46px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p>His firm designs for Dubai&#x27;s biggest developers: <b>Emaar, Ellington, Sobha and Meraki.</b></p><p>Right now, he&#x27;s working on a project in <u>Dubai South</u>.</p></div>
+  </div>
+  <div class="note">Map: OpenStreetMap contributors · Dubai South area approximate</div>
+  <div class="count">2/6</div>
+</section>
+<section class="slide" id="s3">
+  <div class="photo"><div class="bp"><svg viewBox="0 0 1080 800" class="bp-svg">
+    <rect x="300" y="110" width="480" height="320" stroke="#D6E6FF" stroke-width="7" fill="none" stroke-linecap="square"/>
+    <path d="M520 110 V200 M520 250 V430 M520 270 H600 M650 270 H780 M300 215 H360 M410 215 H520 M420 110 V215" stroke="#D6E6FF" stroke-width="7" fill="none" stroke-linecap="square"/>
+    <rect x="300" y="430" width="220" height="56" stroke="#D6E6FF" stroke-width="4" stroke-dasharray="12 10" fill="none"/>
+    <path d="M360 215 A50 50 0 0 0 410 215" stroke="#D6E6FF" stroke-width="3" fill="none" opacity="0.7"/>
+    <text x="360" y="170" class="rl">KITCHEN</text><text x="470" y="170" class="rl">BATH</text><text x="410" y="340" class="rl">LIVING</text><text x="650" y="195" class="rl">BED 1</text><text x="650" y="360" class="rl">BED 2</text><text x="410" y="466" class="rl">BALCONY</text><path d="M300 80 H780" stroke="#D6E6FF" stroke-width="2"/><path d="M300 70 V90 M780 70 V90" stroke="#D6E6FF" stroke-width="2"/><text x="540" y="64" class="dim">GENEROUS LAYOUT</text></svg><div class="pills"><span class="pill ok"><b>✓</b>Quality</span><span class="pill ok"><b>✓</b>Comfort</span><span class="pill q"><b>?</b>Size</span></div></div></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:46px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p>The project is from a developer <b>well known for quality, comfort and generous sizes.</b></p><p>But on this one, they&#x27;re letting go of something, <mark><i>and that&#x27;s where the opportunity lies.</i></mark></p></div>
+  </div>
+  <div class="note">Illustration, not an actual floor plan</div>
+  <div class="count">3/6</div>
+</section>
+<section class="slide" id="s4">
+  <div class="photo"><div class="bp"><svg viewBox="0 0 1080 800" class="bp-svg">
+      <defs><marker id="h" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+        <path d="M0 0 L10 5 L0 10 z" fill="#FF4D5E"/></marker></defs>
+      <rect x="300" y="110" width="480" height="320" stroke="#D6E6FF" stroke-width="4" stroke-dasharray="14 12" fill="none" opacity="0.45"/>
+      <g transform="translate(540 298) scale(0.78) translate(-540 -298)">
+    <rect x="300" y="110" width="480" height="320" stroke="#D6E6FF" stroke-width="7" fill="none" stroke-linecap="square"/>
+    <path d="M520 110 V200 M520 250 V430 M520 270 H600 M650 270 H780 M300 215 H360 M410 215 H520 M420 110 V215" stroke="#D6E6FF" stroke-width="7" fill="none" stroke-linecap="square"/>
+    <rect x="300" y="430" width="220" height="56" stroke="#D6E6FF" stroke-width="4" stroke-dasharray="12 10" fill="none"/>
+    <path d="M360 215 A50 50 0 0 0 410 215" stroke="#D6E6FF" stroke-width="3" fill="none" opacity="0.7"/>
+    <text x="360" y="170" class="rl">KITCHEN</text><text x="470" y="170" class="rl">BATH</text><text x="410" y="340" class="rl">LIVING</text><text x="650" y="195" class="rl">BED 1</text><text x="650" y="360" class="rl">BED 2</text><text x="410" y="466" class="rl">BALCONY</text></g>
+      <path d="M292 102 L345 142" class="arr" marker-end="url(#h)"/><path d="M788 102 L735 142" class="arr" marker-end="url(#h)"/><path d="M292 438 L345 398" class="arr" marker-end="url(#h)"/><path d="M788 438 L735 398" class="arr" marker-end="url(#h)"/>
+      <text x="540" y="78" class="dim red">SAME STANDARD · FEWER SQ FT</text></svg><div class="pills"><span class="pill ok"><b>✓</b>Quality</span><span class="pill ok"><b>✓</b>Comfort</span><span class="pill bad"><b>↓</b>Size</span></div></div></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:42px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p>Construction costs keep rising.</p><p>To protect their margins and keep prices affordable, the developer is <b>making each apartment smaller</b>, while keeping the same quality and comfort.</p></div>
+  </div>
+  <div class="note">Illustration, not an actual floor plan</div>
+  <div class="count">4/6</div>
+</section>
+<section class="slide" id="s5">
+  <div class="photo"><div class="bp tags"><div class="tag bad"><div class="tn">Launch A</div><div class="tp">AED 1.2M</div><div class="ts">600 sq ft</div>
+      <div class="tline"></div><div class="tq">AED 2,000<span>/ sq ft</span></div><div class="tv">Cheaper tag</div></div><div class="vs">vs</div><div class="tag good"><div class="tn">Launch B</div><div class="tp">AED 1.4M</div><div class="ts">850 sq ft</div>
+      <div class="tline"></div><div class="tq">AED 1,647<span>/ sq ft</span></div><div class="tv">Better value</div></div></div></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:36px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>What this means for you</b></p><ol><li><span class="n">1</span><span>Units with bigger sizes and layouts will become <b>scarce, and face more demand.</b></span></li><li><span class="n">2</span><span>When comparing new launches, <b>check the price per sq ft</b>, not just the price tag.</span></li><li><span class="n">3</span><span>A lower price tag can hide a <b>smaller home.</b></span></li></ol></div>
+  </div>
+  <div class="note">Illustrative numbers, not real listings</div>
+  <div class="count">5/6</div>
+</section>
+<section class="slide" id="s6">
+  <div class="photo" style="background-image:url('img/skyline.jpg');background-position:85% center"></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:44px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p>For a transparent, <b>free consultation</b> on Dubai real estate, contact me:</p><div class="wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg><b>+971 56 837 6676</b></div><p class="gap"><b>Follow me</b> for more insights like this.</p></div>
+  </div>
+  <div class="note">Photo: Unsplash</div>
+  <div class="count">6/6</div>
+</section>
+</body></html>
