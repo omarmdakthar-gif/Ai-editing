@@ -35,35 +35,39 @@ def grid_html(g):
     rows = ''.join(f'<div class="gr{" hi" if k in g["hi"] else ""}"><span>{md(a)}</span><em>{b}</em><b>{c}</b></div>'
                    for k, (a, b, c) in enumerate(g['rows']))
     h = g['head']
-    return f'<div class="grid{" compact" if g.get("compact") else ""}"><div class="gr h"><span>{h[0]}</span><em>{h[1]}</em><b>{h[2]}</b></div>{rows}</div>'
+    return f'<div class="grid{" compact" if g.get("compact") else ""} {g.get('cls', '')}"><div class="gr h"><span>{h[0]}</span><em>{h[1]}</em><b>{h[2]}</b></div>{rows}</div>'
 
 
+RATE = "1 AED = ₹25.67 (15 Nov 2026) · Rupee amounts move with the exchange rate · Excludes 4% DLD fee"
 SLIDES = [
     {'img': 'forest_skyline', 'pos': '30% center', 'size': 46, 'swipe': True, 'note': RENDERS,
-     'paras': ["It's been a long time since I found a project around **AED 1 million** that's actually worth it.",
-               "==**This is the one.**=="],
-     'alert': "**Busy? Save or share this now** so you can come back to it later."},
+     'paras': ["I've looked at a lot of projects around **AED 1 million** (≈ ₹2.57 Cr) lately.",
+               "Most weren't worth it.",
+               "==**This one finally is.**=="],
+     'alert': "**Know someone looking around AED\u00a01M?** Send this to them."},
     {'img': 'aerial_day', 'size': 42, 'note': RENDERS,
-     'paras': ["**Lyra at Ghaf Woods**",
-               "A new tower of __348 homes__ by Majid Al Futtaim, inside *Dubai's first forest-living community* in Dubailand.",
-               "Pool lounge, sky garden, sky lounge, gym, sports court and a podcast studio. **20 mins** to DXB and Mall of the Emirates."]},
+     'paras': ["**Ghaf Woods by Majid Al Futtaim**",
+               "*Dubai's first forest-living community:* apartments amidst __30,000 trees__ in the centre of Dubai.",
+               "Its new tower, **Lyra**, has 348 homes with a pool lounge, sky garden, sky lounge, gym and sports court."]},
+    {'img': 'pool', 'size': 34, 'note': RATE,
+     'paras': ["**50/50 payment plan** · 1 bed: AED 1.19M (≈ ₹3.05 Cr)"],
+     'grid': {'head': ('Instalment', 'AED', 'INR'), 'hi': [0, 8], 'compact': True, 'cls': 'pay',
+              'rows': [('On booking · **10%**', '119K', '₹30.5 L'), ('March 2027 · **5%**', '59.5K', '₹15.3 L'),
+                       ('July 2027 · **5%**', '59.5K', '₹15.3 L'), ('December 2027 · **5%**', '59.5K', '₹15.3 L'),
+                       ('May 2028 · **10%**', '119K', '₹30.5 L'), ('October 2028 · **5%**', '59.5K', '₹15.3 L'),
+                       ('March 2029 · **5%**', '59.5K', '₹15.3 L'), ('July 2029 · **5%**', '59.5K', '₹15.3 L'),
+                       ('On completion · **50%**', '595K', '₹1.53 Cr')]}},
     {'img': 'living', 'size': 42, 'note': FACTS,
      'paras': ["**Prices start at __AED 1.19M__.**"],
      'grid': {'head': ('Unit', 'Size', 'From'), 'hi': [0],
               'rows': [('1 bed', '638 sq ft', 'AED 1.19M'), ('1 bed + garden', '859 sq ft', 'AED 1.47M'),
                        ('2 bed', '967 sq ft', 'AED 1.94M'), ('2 bed + garden', '1,325 sq ft', 'AED 2.38M')]}},
-    {'img': 'pool', 'size': 34, 'note': FACTS,
-     'paras': ["**50/50 payment plan** · 1 bed from AED 1.19M"],
-     'grid': {'head': ('Instalment', '%', '1 bed'), 'hi': [0, 8], 'compact': True,
-              'rows': [('On booking · Nov 2026', '10%', 'AED 119K'), ('March 2027', '5%', 'AED 59.5K'), ('July 2027', '5%', 'AED 59.5K'),
-                       ('December 2027', '5%', 'AED 59.5K'), ('May 2028', '10%', 'AED 119K'), ('October 2028', '5%', 'AED 59.5K'),
-                       ('March 2029', '5%', 'AED 59.5K'), ('July 2029', '5%', 'AED 59.5K'), ('On completion', '50%', 'AED 595K')]}},
-    {'img': 'aerial_night', 'size': 42, 'note': "Developer facts: Majid Al Futtaim · " + RENDERS.split(': ')[1],
+    {'img': 'aerial_night', 'size': 42, 'note': RENDERS,
      'paras': ["**Who's behind it?**",
-               "**Majid Al Futtaim**, the group behind **Mall of the Emirates**, the **City Centre** malls, **Ski Dubai** and **VOX Cinemas**.",
-               "Since __1992__. Their communities are already home to **2,500+ families** across the UAE, Oman and Lebanon."]},
+               "**Majid Al Futtaim**, the group behind **Mall of the Emirates**, the **City Centre** malls, **Ski Dubai**, **VOX Cinemas** and **Carrefour** in the region.",
+               "In real estate: **Tilal Al Ghaf**, and now __Ghaf Woods__."]},
     {'img': 'terrace', 'size': 44, 'note': RENDERS,
-     'paras': ["Want the floor plans, the full price list and the payment plan?", "Comment **LYRA**, or WhatsApp me:"],
+     'paras': ["Want the price list, floor plans and payment plan?", "Comment **GHAF WOODS**\nor WhatsApp me:"],
      'cta': PHONE},
 ]
 
@@ -147,6 +151,9 @@ ol .n {{ flex: none; width: 54px; height: 54px; border-radius: 50%; background: 
 .grid.compact .gr b {{ font-size: 27px; }}
 .grid.compact .gr.hi {{ font-size: 32px; color: #111; padding: 12px 14px; margin: 6px -14px; }} .grid.compact .gr.hi b {{ font-size: 38px; }} .grid.compact .gr.hi em {{ color: #111; font-weight: 600; }}
 .grid.compact .gr.h {{ font-size: 17px; padding: 0 0 6px; }} .grid.compact .gr.h b {{ font-size: 17px; }}
+.grid.pay .gr em {{ color: #111; font-weight: 700; text-align: right; }} .grid.pay .gr b {{ font-weight: 400; color: #4A5260; }}
+.grid.pay .gr.hi b {{ color: #111; font-weight: 700; }} .grid.compact.pay .gr.hi em {{ font-size: 38px; font-weight: 700; }} .grid.pay .gr.h em {{ color: #8A9099; font-weight: 600; }}
+.grid.compact.pay .gr {{ grid-template-columns: 1fr 130px 170px; }}
 /* blueprint art */
 .bp {{ position: absolute; inset: 0; background-color: #0B2F6B;
   background-image: linear-gradient(rgba(214,230,255,0.10) 2px, transparent 2px), linear-gradient(90deg, rgba(214,230,255,0.10) 2px, transparent 2px),
