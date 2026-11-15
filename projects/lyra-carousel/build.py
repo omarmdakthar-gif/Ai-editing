@@ -48,7 +48,7 @@ SLIDES = [
     {'img': 'aerial_day', 'size': 42, 'note': RENDERS,
      'paras': ["**Ghaf Woods by Majid Al Futtaim**",
                "*Dubai's first forest-living community:* apartments amidst __30,000 trees__ in the centre of Dubai.",
-               "Its new tower, **Lyra**, has 348 homes with a pool lounge, sky garden, sky lounge, gym and sports court."]},
+               "Its new tower, **Lyra**, has 348 homes, within walking distance of the new **Ghaf\u00a0Woods\u00a0Mall**."]},
     {'img': 'pool', 'size': 34, 'note': RATE,
      'paras': ["**50/50 payment plan** · 1 bed: AED 1.19M (≈ ₹3.05 Cr)"],
      'grid': {'head': ('Instalment', 'AED', 'INR'), 'hi': [0, 8], 'compact': True, 'cls': 'pay',
