@@ -12,7 +12,7 @@ The UAE Golden Visa gives you:
 
 One way to get it: own property worth AED 2M (≈ ₹5.14 Cr) in Dubai.
 
-Comment GOLDEN VISA for a free consultation, and I'll send the details to your DMs.
+Comment GOLDEN VISA for a free consultation, and I'll get in touch.
 
 *Eligibility is subject to DLD valuation and GDRFA approval. Rupee amount at 1 AED = ₹25.70 (16 Nov 2026).*
 
