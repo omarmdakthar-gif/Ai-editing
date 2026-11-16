@@ -1,0 +1,195 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Outfit;font-weight:400;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-400-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:500;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-500-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:600;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-600-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:700;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-700-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:800;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-800-normal.woff2') format('woff2')}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #111; font-family: Outfit, sans-serif; }
+.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: #000; }
+.photo { position: absolute; left: 0; right: 0; top: 0; height: 800px; background-size: cover; background-position: center; }
+.fade { position: absolute; left: 0; right: 0; top: 480px; height: 340px; background: linear-gradient(rgba(0,0,0,0), #000); }
+.swipe { position: absolute; right: 44px; top: 40px; background: rgba(0,0,0,0.45); color: #fff; font-weight: 600; font-size: 26px;
+  padding: 10px 22px; border-radius: 40px; letter-spacing: 0.02em; }
+.card { position: absolute; left: 84px; right: 84px; bottom: 120px; background: #fff; border-radius: 34px; padding: 46px 52px 50px; color: #111; }
+.who { display: flex; align-items: center; gap: 26px; margin-bottom: 30px; }
+.who img { width: 128px; height: 128px; border-radius: 50%; }
+.name { font-weight: 700; font-size: 44px; letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; }
+.tick { width: 40px; height: 40px; flex: none; }
+.handle { font-weight: 400; font-size: 32px; color: #5B6470; margin-top: 2px; }
+.body { font-size: var(--fs); line-height: 1.26; font-weight: 400; }
+.body p { text-wrap: pretty; }
+.body p + p { margin-top: 0.55em; }
+.body p.gap { margin-top: 0.7em; }
+.body b { font-weight: 700; }
+.body u { text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.body mark { background: #FFD43B; color: #111; font-weight: 600; padding: 0 8px; border-radius: 8px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.alert { margin-top: 30px; display: flex; align-items: center; gap: 22px; padding: 24px 30px; border-radius: 26px;
+  background: linear-gradient(135deg, #FF3B3B, #E0115F); color: #fff; box-shadow: 0 14px 34px rgba(224, 17, 95, 0.38); }
+.alert svg { width: 50px; height: 50px; flex: none; }
+.alert p { font-size: 0.9em; line-height: 1.22; }
+ol { list-style: none; margin-top: 22px; display: grid; gap: 20px; }
+ol li { display: flex; gap: 20px; align-items: flex-start; }
+ol .n { flex: none; width: 54px; height: 54px; border-radius: 50%; background: #111; color: #fff; font-weight: 700; font-size: 28px;
+  display: grid; place-items: center; margin-top: -4px; }
+.wa { margin-top: 22px; display: flex; align-items: center; gap: 20px; padding: 22px 30px; border-radius: 24px; background: #25D366; color: #fff;
+  box-shadow: 0 14px 34px rgba(37, 211, 102, 0.35); }
+.wa svg { width: 58px; height: 58px; flex: none; }
+.wa b { font-size: 50px; letter-spacing: 0.01em; font-variant-numeric: tabular-nums; }
+.gv { position: absolute; inset: 0; background: radial-gradient(90% 75% at 50% 30%, #1A2F5E 0%, #0A1430 60%, #050A1A 100%); }
+.gv::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(255,201,64,0.16) 1.5px, transparent 1.5px); background-size: 34px 34px; opacity: 0.6; }
+.gv-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.q { fill: #0A1430; font: 800 130px Outfit, sans-serif; text-anchor: middle; }
+.mins { fill: #FFC940; font: 800 44px Outfit, sans-serif; text-anchor: middle; letter-spacing: 0.04em; }
+.big { fill: #FFC940; font: 800 84px Outfit, sans-serif; text-anchor: middle; }
+.ten { fill: #FFC940; font: 800 150px Outfit, sans-serif; text-anchor: middle; }
+.yrs { fill: #FFC940; font: 700 34px Outfit, sans-serif; text-anchor: middle; letter-spacing: 0.3em; }
+.chip { position: absolute; left: 50%; top: 506px; transform: translateX(-50%); white-space: nowrap; padding: 12px 28px; border-radius: 40px;
+  background: rgba(255,201,64,0.14); border: 2px solid rgba(255,201,64,0.55); color: #FFE7A6; font-weight: 600; font-size: 28px; }
+.checks { list-style: none; margin-top: 20px; display: grid; gap: 14px; }
+.checks li { display: flex; gap: 18px; align-items: flex-start; }
+.checks .ck { flex: none; width: 46px; height: 46px; border-radius: 50%; background: #2ECC71; color: #fff; font-weight: 800; font-size: 26px; display: grid; place-items: center; margin-top: -2px; }
+/* blueprint art */
+.bp { position: absolute; inset: 0; background-color: #0B2F6B;
+  background-image: linear-gradient(rgba(214,230,255,0.10) 2px, transparent 2px), linear-gradient(90deg, rgba(214,230,255,0.10) 2px, transparent 2px),
+    linear-gradient(rgba(214,230,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(214,230,255,0.05) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px; }
+.bp-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.rl { fill: #D6E6FF; font: 600 19px Outfit, sans-serif; letter-spacing: 0.16em; text-anchor: middle; opacity: 0.85; }
+.dim { fill: #D6E6FF; font: 600 22px Outfit, sans-serif; letter-spacing: 0.22em; text-anchor: middle; }
+.dim.red { fill: #FF6B78; }
+.arr { stroke: #FF4D5E; stroke-width: 6; fill: none; }
+.pills { position: absolute; left: 0; right: 0; top: 528px; display: flex; justify-content: center; gap: 16px; }
+.pill { display: flex; align-items: center; gap: 10px; padding: 10px 24px 10px 12px; border-radius: 40px; font-weight: 600; font-size: 28px;
+  background: rgba(255,255,255,0.12); color: #fff; border: 2px solid rgba(214,230,255,0.35); }
+.pill b { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; font-size: 24px; }
+.pill.ok b { background: #2ECC71; } .pill.q b { background: #FFC940; color: #111; } .pill.bad { border-color: #FF4D5E; background: rgba(255,77,94,0.18); }
+.pill.bad b { background: #FF4D5E; }
+.tags { display: flex; justify-content: center; align-items: flex-start; gap: 34px; padding-top: 60px; }
+.tag { width: 330px; background: #fff; border-radius: 26px; padding: 26px 30px 28px; color: #111; position: relative; box-shadow: 0 20px 40px rgba(0,0,0,0.35); }
+.tag::before { content: ''; position: absolute; top: 18px; right: 22px; width: 22px; height: 22px; border-radius: 50%; border: 4px solid #C9D2E0; }
+.tn { font-size: 22px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5B6470; }
+.tp { font-size: 54px; font-weight: 800; margin-top: 6px; letter-spacing: -0.01em; }
+.ts { font-size: 28px; color: #4A5260; }
+.tline { height: 2px; background: #E6E8EC; margin: 16px 0 12px; }
+.tq { font-size: 36px; font-weight: 700; } .tq span { font-size: 22px; font-weight: 500; color: #5B6470; margin-left: 6px; }
+.tv { display: inline-block; margin-top: 12px; padding: 6px 16px; border-radius: 30px; font-size: 22px; font-weight: 700; }
+.tag.bad .tv { background: #FFE3E6; color: #C8102E; } .tag.good .tv { background: #DDF7E7; color: #128A43; }
+.tag.good { outline: 5px solid #2ECC71; }
+.vs { align-self: center; margin-top: -40px; color: #fff; font-size: 34px; font-weight: 700; opacity: 0.8; }
+.note { position: absolute; left: 84px; right: 84px; bottom: 62px; color: #8A9099; font-size: 20px; text-align: center; }
+.count { position: absolute; right: 44px; bottom: 60px; color: #5B6470; font-size: 20px; font-weight: 600; }
+</style></head><body>
+
+<section class="slide" id="s1">
+  <div class="photo"><div class="gv"><svg viewBox="0 0 1080 800" class="gv-svg"><g transform="translate(430 300) rotate(-8) scale(1.05)">
+      <rect x="-120" y="-165" width="240" height="330" rx="22" fill="#0E1E3F" stroke="#FFC940" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="0" cy="-20" r="62" stroke="#FFC940" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="0" cy="-20" rx="26" ry="62" stroke="#FFC940" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-62 -20 H62 M-55 -50 H55 M-55 10 H55" stroke="#FFC940" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="-60" y="78" width="120" height="16" rx="8" fill="#FFC940" opacity="0.8"/>
+      <rect x="-40" y="108" width="80" height="10" rx="5" fill="#FFC940" opacity="0.45"/></g><circle cx="680" cy="250" r="105" fill="#FFC940"/><text x="680" y="292" class="q">?</text></svg></div></div>
+  <div class="fade"></div>
+  <div class="swipe">Swipe &rarr;</div>
+  <div class="card" style="--fs:48px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>India doesn&#x27;t allow dual citizenship.</b></p><p>So smart Indians are doing <mark><b>this</b></mark> instead.</p><div class="alert"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M6 2h12a1 1 0 0 1 1 1v19l-7-4.5L5 22V3a1 1 0 0 1 1-1z"/></svg><p><b>Save this,</b> you&#x27;ll need it later.</p></div></div>
+  </div>
+  <div class="note"> </div>
+  <div class="count">1/8</div>
+</section>
+<section class="slide" id="s2">
+  <div class="photo"><div class="gv"><svg viewBox="0 0 1080 800" class="gv-svg"><circle cx="540" cy="300" r="190" stroke="#FFC940" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+      <ellipse cx="540" cy="300" rx="80" ry="190" stroke="#FFC940" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/><ellipse cx="540" cy="300" rx="150" ry="190" stroke="#FFC940" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/>
+      <path d="M350 300 H730 M380 200 H700 M380 400 H700" stroke="#FFC940" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+      <path d="M300 420 Q540 40 800 300" stroke="#FFC940" stroke-width="6" fill="none" stroke-dasharray="4 18" stroke-linecap="round"/>
+      <circle cx="300" cy="420" r="16" fill="#FFC940"/>
+      <g transform="translate(800 300) rotate(60)"><path d="M0 -46 L10 -12 L46 6 L46 16 L10 8 L8 34 L20 44 L20 52 L0 46 L-20 52 L-20 44 L-8 34 L-10 8 L-46 16 L-46 6 L-10 -12 Z" fill="#FFC940"/></g></svg><div class="chip">Included in emergency evacuation plans</div></div></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:44px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>Stuck in another country during a war, disaster or crisis?</b></p><p>This country includes you in its <u>emergency evacuation plans</u>, through its embassies around the world.</p><p><i>Even though you&#x27;re not their citizen.</i></p></div>
+  </div>
+  <div class="note">Source: UAE Ministry of Foreign Affairs, consular services for Golden Visa holders</div>
+  <div class="count">2/8</div>
+</section>
+<section class="slide" id="s3">
+  <div class="photo"><div class="gv"><svg viewBox="0 0 1080 800" class="gv-svg"><g transform="translate(420 300) rotate(-6) scale(1.0)">
+      <rect x="-120" y="-165" width="240" height="330" rx="22" fill="#0E1E3F" stroke="#FFC940" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="0" cy="-20" r="62" stroke="#FFC940" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="0" cy="-20" rx="26" ry="62" stroke="#FFC940" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-62 -20 H62 M-55 -50 H55 M-55 10 H55" stroke="#FFC940" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="-60" y="78" width="120" height="16" rx="8" fill="#FFC940" opacity="0.8"/>
+      <rect x="-40" y="108" width="80" height="10" rx="5" fill="#FFC940" opacity="0.45"/></g>
+      <circle cx="680" cy="300" r="130" fill="#0E1E3F" stroke="#FFC940" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M680 300 V215 M680 300 L740 335" stroke="#FFC940" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="660" y="148" width="40" height="22" rx="6" fill="#FFC940"/>
+      <text x="680" y="400" class="mins">30 MIN</text></svg><div class="chip">Free return document</div></div></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:44px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>Lost your passport abroad? Damaged it?</b></p><p>This country issues you a <b>free return document</b> in just <u>30 minutes</u>, so you can fly back home to that country.</p></div>
+  </div>
+  <div class="note">Source: UAE Ministry of Foreign Affairs, consular services for Golden Visa holders</div>
+  <div class="count">3/8</div>
+</section>
+<section class="slide" id="s4">
+  <div class="photo"><div class="gv"><svg viewBox="0 0 1080 800" class="gv-svg">
+      <rect x="440" y="90" width="200" height="380" rx="36" fill="#0E1E3F" stroke="#FFC940" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="510" y="112" width="60" height="10" rx="5" fill="#FFC940" opacity="0.7"/>
+      <text x="540" y="300" class="big">24/7</text>
+      <path d="M690 210 q30 70 0 140 M730 180 q50 100 0 200 M390 210 q-30 70 0 140 M350 180 q-50 100 0 200" stroke="#FFC940" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/></svg><div class="chip">Direct line to the Foreign Ministry</div></div></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:44px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p><b>A 24/7 government hotline, just for you.</b></p><p>Wherever you are in the world, one call gets you direct help from the country&#x27;s <u>Ministry of Foreign Affairs</u>.</p></div>
+  </div>
+  <div class="note">Source: UAE Ministry of Foreign Affairs, consular services for Golden Visa holders</div>
+  <div class="count">4/8</div>
+</section>
+<section class="slide" id="s5">
+  <div class="photo"><div class="gv"><svg viewBox="0 0 1080 800" class="gv-svg">
+      <rect x="380" y="110" width="320" height="320" rx="30" fill="#0E1E3F" stroke="#FFC940" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M380 190 H700" stroke="#FFC940" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M460 80 V140 M620 80 V140" stroke="#FFC940" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="540" y="360" class="ten">10</text><text x="540" y="410" class="yrs">YEARS</text></svg><div class="chip">No employer · No sponsor · No job needed</div></div></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:40px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p>It&#x27;s valid for <b>10 years</b>, and renewable as long as you meet the requirements.</p><p><b>No employer. No sponsor. No job needed.</b></p><p>And unlike normal visas, it <u>doesn&#x27;t get cancelled</u> if you stay outside the country for more than 6 months.</p></div>
+  </div>
+  <div class="note"> </div>
+  <div class="count">5/8</div>
+</section>
+<section class="slide" id="s6">
+  <div class="photo"><div class="gv"><svg viewBox="0 0 1080 800" class="gv-svg">
+      <path d="M540 70 L780 150 V290 C780 410 680 470 540 500 C400 470 300 410 300 290 V150 Z" fill="rgba(255,201,64,0.08)" stroke="#FFC940" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <g transform="translate(455 330) scale(1.0)"><circle cx="0" cy="-70" r="34" fill="#FFC940"/><path d="M-55 40 Q-55 -25 0 -25 Q55 -25 55 40 Z" fill="#FFC940"/></g><g transform="translate(625 330) scale(1.0)"><circle cx="0" cy="-70" r="34" fill="#FFC940"/><path d="M-55 40 Q-55 -25 0 -25 Q55 -25 55 40 Z" fill="#FFC940"/></g><g transform="translate(540 390) scale(0.62)"><circle cx="0" cy="-70" r="34" fill="#FFC940"/><path d="M-55 40 Q-55 -25 0 -25 Q55 -25 55 40 Z" fill="#FFC940"/></g></svg><div class="chip">You, your spouse and your children</div></div></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:44px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p>It lets you <b>sponsor your spouse and children</b> too.</p><p>And this protection abroad covers your <u>registered family members</u> as well.</p></div>
+  </div>
+  <div class="note">Source: UAE Ministry of Foreign Affairs, consular services for Golden Visa holders</div>
+  <div class="count">6/8</div>
+</section>
+<section class="slide" id="s7">
+  <div class="photo" style="background-image:url('img/skyline.jpg');background-position:center"></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:38px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p>This is the <mark><b>UAE Golden Visa.</b></mark></p><p>One way to get it: own property worth <b>AED 2M</b> (≈ ₹5.14 Cr) in Dubai.</p><ul class="checks"><li><span class="ck">✓</span><span>You&#x27;re eligible the moment you <b>complete the down payment</b> on an off-plan property</span></li><li><span class="ck">✓</span><span><b>Mortgaged</b> property works</span></li><li><span class="ck">✓</span><span><b>Multiple properties</b> can be combined</span></li></ul></div>
+  </div>
+  <div class="note">1 AED = ₹25.70 (16 Nov 2026) · Subject to DLD valuation and GDRFA approval</div>
+  <div class="count">7/8</div>
+</section>
+<section class="slide" id="s8">
+  <div class="photo" style="background-image:url('img/skyline.jpg');background-position:85% center"></div>
+  <div class="fade"></div>
+  
+  <div class="card" style="--fs:44px">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.210-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.790 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.990 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="body"><p>Want a <b>free consultation</b> on Dubai real estate and how to get a Golden Visa?</p><p>Comment <mark><b>GOLDEN VISA</b></mark> and I&#x27;ll send it to your DMs.</p></div>
+  </div>
+  <div class="note"> </div>
+  <div class="count">8/8</div>
+</section>
+</body></html>
