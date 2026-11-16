@@ -213,6 +213,9 @@ ol .n {{ flex: none; width: 54px; height: 54px; border-radius: 50%; background: 
 .checks {{ list-style: none; margin-top: 20px; display: grid; gap: 14px; }}
 .checks li {{ display: flex; gap: 18px; align-items: flex-start; }}
 .checks .ck {{ flex: none; width: 46px; height: 46px; border-radius: 50%; background: #2ECC71; color: #fff; font-weight: 800; font-size: 26px; display: grid; place-items: center; margin-top: -2px; }}
+.note {{ display: none; }}
+.alert {{ background: linear-gradient(135deg, #FFD84D, #FFB800); color: #111; box-shadow: 0 14px 34px rgba(255, 184, 0, 0.38); }}
+.alert svg path {{ fill: #111; }}
 /* blueprint art */
 .bp {{ position: absolute; inset: 0; background-color: #0B2F6B;
   background-image: linear-gradient(rgba(214,230,255,0.10) 2px, transparent 2px), linear-gradient(90deg, rgba(214,230,255,0.10) 2px, transparent 2px),
