@@ -50,6 +50,15 @@ SLIDES = [
      'paras': ["They've handed over __multiple projects on or before the promised\u00a0date__.",
                "Their newest one is in **Dubai Science Park**:"],
      'times': [('15', 'Palm Jumeirah'), ('20', 'Downtown Dubai'), ('15', 'Mall of the Emirates')]},
+    {'kind': 'why',
+     'title': "Why ==**Dubai Science Park?**==",
+     'lead': "It already hosts major companies like **Pfizer**.",
+     'stats': [('90+', 'Labs'), ('500+', 'Companies'), ('6,500+', 'Professionals')],
+     'statnote': "in pharma, life sciences and energy",
+     'rows': [('hosp', "**American Hospital** opened here in 2026 with 100 beds, and __2 more hospitals__ are on the way."),
+              ('school', "Top schools: **Repton, Brighton College, GEMS World Academy, Dubai Schools** and **Safa Community School**."),
+              ('park', "A green escape park with a **1 km jogging track**.")],
+     'close': "For the **high-earning medical professionals** working here, it's the perfect community to live in."},
 ]
 
 TICK = '''<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg>'''
@@ -61,6 +70,30 @@ def photo(img, num, cls, stamp_html):
 
 def stamp(is_render):
     return '<div class="stamp render">RENDER</div>' if is_render else '<div class="stamp real">REAL ✓</div>'
+
+
+ICONS = {
+    'hosp': '<svg viewBox="0 0 24 24"><path fill="#111" d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg>',
+    'school': '<svg viewBox="0 0 24 24"><path fill="#111" d="M12 3 1 9l11 6 9-4.9V17h2V9zM5 13.2v3.6C5 18.6 8.1 20 12 20s7-1.4 7-3.2v-3.6l-7 3.8z"/></svg>',
+    'park': '<svg viewBox="0 0 24 24"><path fill="#111" d="M12 2 5 12h4l-4 6h6v4h2v-4h6l-4-6h4z"/></svg>',
+}
+
+
+def why_slide(s):
+    stats = ''.join(f'<div class="st"><b>{n}</b><span>{l}</span></div>' for n, l in s['stats'])
+    rows = ''.join(f'<div class="wr"><i>{ICONS[k]}</i><p>{md(t)}</p></div>' for k, t in s['rows'])
+    return f'''
+<section class="slide why">
+  <header class="whyh">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE} · Spot the render</div></div><div class="pill">The location</div></div>
+    <h1>{md(s['title'])}</h1>
+    <p class="lead">{md(s['lead'])}</p>
+  </header>
+  <div class="stats">{stats}</div>
+  <p class="statnote">{md(s['statnote'])}</p>
+  <div class="rows">{rows}</div>
+  <div class="close">{md(s['close'])}</div>
+</section>'''
 
 
 def map_slide(s):
@@ -91,6 +124,8 @@ def map_slide(s):
 def slide_html(i, s):
     if s.get('kind') == 'map':
         return map_slide(s)
+    if s.get('kind') == 'why':
+        return why_slide(s)
     r = ROUNDS[s['round']]
     st1 = stamp(r['render'] == 1) if s['answer'] else ''
     st2 = stamp(r['render'] == 2) if s['answer'] else ''
@@ -134,6 +169,21 @@ header.tall {{ height: 552px; }} header.tall h1 {{ font-size: 52px; margin-top: 
 .tm {{ flex: 1; background: #FFD43B; color: #111; border-radius: 16px; padding: 12px 18px 14px; }}
 .tm b {{ display: block; font-size: 40px; font-weight: 800; color: #111; line-height: 1; }} .tm b small {{ font-size: 24px; font-weight: 700; }}
 .tm span {{ display: block; margin-top: 6px; font-size: 22px; font-weight: 600; color: #111; white-space: nowrap; }}
+.whyh {{ height: auto; padding-bottom: 0; }} .whyh h1 {{ font-size: 60px; margin-top: 26px; }}
+.lead {{ margin-top: 18px; font-size: 40px; color: #2A2F38; }} .lead b {{ color: #111; }}
+.stats {{ display: flex; gap: 16px; padding: 52px 44px 0; }}
+.st {{ flex: 1; background: #111; border-radius: 22px; padding: 28px 24px 24px; }}
+.st b {{ display: block; font-size: 74px; font-weight: 800; color: #FFC940; line-height: 1; }}
+.st span {{ display: block; margin-top: 10px; font-size: 30px; font-weight: 600; color: #fff; }}
+.statnote {{ padding: 14px 44px 0; font-size: 29px; color: #5B6470; }}
+.rows {{ padding: 64px 44px 0; display: grid; gap: 56px; }}
+.wr {{ display: flex; gap: 22px; align-items: flex-start; }}
+.wr i {{ flex: none; width: 76px; height: 76px; border-radius: 50%; background: #FFD43B; display: grid; place-items: center; }}
+.wr i svg {{ width: 40px; height: 40px; }}
+.wr p {{ font-size: 36px; line-height: 1.3; color: #2A2F38; padding-top: 6px; }} .wr b {{ color: #111; font-weight: 700; }}
+.wr u {{ text-decoration-thickness: 2px; text-underline-offset: 5px; }}
+.close {{ position: absolute; left: 44px; right: 44px; bottom: 52px; background: #FFD43B; border-radius: 22px; padding: 28px 34px; font-size: 38px; line-height: 1.28; color: #111; }}
+.close b {{ font-weight: 800; }}
 .map {{ position: relative; width: 1080px; height: 790px; background-size: cover; background-position: center top; }}
 .ml {{ position: absolute; padding: 7px 16px; border-radius: 10px; background: rgba(10,16,32,0.85); border: 1.5px solid rgba(120,200,230,0.6); color: #fff;
   font-weight: 600; font-size: 24px; letter-spacing: 0.02em; white-space: nowrap; }}
