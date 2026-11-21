@@ -47,3 +47,15 @@ Interested? Comment INFO and I'll send you the details.
 
 ## Before posting
 - Add the Trakheesi permit number if this promotes a specific listing.
+
+## Per-slide captions
+1. Round 1 of 3: one of these lobbies is a 3D render, the other is the finished building. Which one is the render, 1 or 2?
+2. Round 1 answer: photo 2 is the render. The real lobby gives itself away with the luggage trolley by the door.
+3. Round 2 of 3: same game, harder this time. Render: 1 or 2?
+4. Round 2 answer: photo 1 is the render. The lighting is just a touch too perfect.
+5. Final round: one render, one real photo. Got the first two right? This one decides it.
+6. Round 3 answer: photo 2 is the render. Real marble reflects the room around it; the render's floor is spotless.
+7. All 3 lobbies are by the same boutique developer. Their newest project is in Dubai Science Park, 15 min from Palm Jumeirah and Mall of the Emirates and 20 min from Downtown Dubai.
+8. Why Dubai Science Park: pharma and life sciences companies like Pfizer, the new American Hospital, top schools nearby, a park with a 1 km jogging track and easy access to Umm Suqeim Road, Al Khail Road and Mohammed Bin Zayed Road.
+9. Prices: studios from AED 684K, 1 bed from AED 1.06M, 2 bed from AED 1.59M, 3 bed with pool from AED 2.65M. 50/50 payment plan: 20% on booking, 10% in 90 days, 10% at 40% and 60% construction, 50% on completion.
+10. Interested? Comment INFO and I'll send you the details.
