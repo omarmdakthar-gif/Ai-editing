@@ -25,6 +25,13 @@ header.tall { height: 525px; }
 .rl { position: absolute; color: #C9D6F2; font-weight: 600; font-size: 21px; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap;
   text-shadow: 0 0 6px #0A1020, 0 0 12px #0A1020; }
 .rl.szr { color: #FFC58A; }
+.gold { position: absolute; inset: 0; width: 100%; height: 100%; }
+.gold path { fill: none; stroke: #FFD43B; stroke-width: 7; stroke-dasharray: 22 12; stroke-linecap: round; filter: drop-shadow(0 0 6px rgba(255,212,59,0.7)); }
+.legend { position: absolute; display: flex; align-items: center; gap: 14px; padding: 9px 18px; border-radius: 12px; background: rgba(10,16,32,0.88);
+  border: 1.5px solid rgba(255,212,59,0.6); color: #FFE7A6; font-weight: 700; font-size: 22px; letter-spacing: 0.04em; white-space: nowrap; }
+.legend i { width: 54px; height: 0; border-top: 6px dashed #FFD43B; }
+.gl { position: absolute; padding: 5px 14px; border-radius: 8px; background: #FFD43B; color: #111; font-weight: 700; font-size: 20px; letter-spacing: 0.06em;
+  text-transform: uppercase; white-space: nowrap; }
 .dsp { position: absolute; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .dsp b { padding: 8px 18px; border-radius: 12px; background: #FFC940; color: #111; font-weight: 800; font-size: 28px; white-space: nowrap; box-shadow: 0 8px 24px rgba(0,0,0,0.45); }
 .dsp span { padding: 4px 14px; border-radius: 8px; background: rgba(10,16,32,0.85); color: #FFE7A6; font-weight: 600; font-size: 21px; border: 1.5px solid rgba(255,201,64,0.6); }
@@ -104,6 +111,8 @@ header.tall { height: 525px; }
   </header>
   <div class="bar"></div>
   <div class="map" style="background-image:url('img/map_dsp.jpg')">
+    <svg class="gold" viewBox="0 0 1080 817"><path d="M1090 368 C 940 384, 780 396, 640 428 S 470 480, 390 510 S 230 590, 60 700" /></svg>
+    <div class="legend" style="left:690px;top:668px"><i></i>Metro Gold Line · planned</div>
     <div class="ml" style="left:470px;top:44px">Palm Jumeirah</div>
     <div class="rl szr" style="left:300px;top:220px;transform:translate(-50%,-50%) rotate(-2deg)">Sheikh Zayed Road</div>
     <div class="ml" style="right:540px;top:288px">Mall of the Emirates</div>
