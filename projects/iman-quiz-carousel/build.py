@@ -46,6 +46,10 @@ SLIDES = [
      'sub': "Got the first two right? This one decides it."},
     {'round': 2, 'answer': True, 'title': "**Photo 2 was the render.**",
      'sub': "Real marble reflects the room around it. How many did you get? Now see who built all three."},
+    {'kind': 'map', 'title': "All 3 are by the same ==**boutique developer.**==",
+     'paras': ["They've handed over __multiple projects on or before the promised\u00a0date__.",
+               "Their newest one is in **Dubai Science Park**, on land owned by **TECOM**, part of Dubai Holding.",
+               "Like JVC, different developers build here, but it's far more **organised and liveable**."]},
 ]
 
 TICK = '''<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg>'''
@@ -59,7 +63,23 @@ def stamp(is_render):
     return '<div class="stamp render">RENDER</div>' if is_render else '<div class="stamp real">REAL ✓</div>'
 
 
+def map_slide(s):
+    body = ''.join(f'<p>{md(p)}</p>' for p in s['paras'])
+    return f'''
+<section class="slide">
+  <header class="tall">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE} · Spot the render</div></div><div class="pill">The reveal</div></div>
+    <h1>{md(s['title'])}</h1>
+    <div class="paras">{body}</div>
+  </header>
+  <div class="bar"></div>
+  <div class="map" style="background-image:url('img/map_dsp.jpg')"></div>
+</section>'''
+
+
 def slide_html(i, s):
+    if s.get('kind') == 'map':
+        return map_slide(s)
     r = ROUNDS[s['round']]
     st1 = stamp(r['render'] == 1) if s['answer'] else ''
     st2 = stamp(r['render'] == 2) if s['answer'] else ''
@@ -96,6 +116,10 @@ h1 mark {{ background: #FFD43B; color: #111; padding: 0 10px; border-radius: 10p
 .sub {{ margin-top: 10px; font-size: 27px; line-height: 1.3; color: #4A5260; }}
 .ph {{ position: relative; width: 1080px; height: 537px; background-size: cover; background-position: center; }}
 .bar {{ height: 8px; background: #FFC940; }}
+header.tall {{ height: 525px; }}
+.paras {{ margin-top: 16px; font-size: 33px; line-height: 1.3; color: #2A2F38; }}
+.paras p + p {{ margin-top: 0.5em; }} .paras b {{ font-weight: 700; color: #111; }} .paras u {{ text-decoration-thickness: 2px; text-underline-offset: 5px; }}
+.map {{ width: 1080px; height: 817px; background-size: cover; background-position: center top; }}
 .num {{ position: absolute; left: 28px; top: 24px; width: 88px; height: 88px; border-radius: 50%; background: #FFC940; color: #111; font-weight: 800; font-size: 52px;
   display: grid; place-items: center; box-shadow: 0 8px 22px rgba(0,0,0,0.35); }}
 .stamp {{ position: absolute; right: 54px; bottom: 50px; transform: rotate(-8deg); padding: 10px 28px; border: 7px solid; border-radius: 16px;

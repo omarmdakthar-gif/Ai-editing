@@ -6,5 +6,10 @@ Three rounds of a render-vs-real quiz, each a question slide and an answer slide
 - Photos: IMAN Developers' own render and real-life marketing images (per Omar, from IMAN's Instagram), cropped from screenshots in src/ so no third-party labels remain.
 - Photos now from the full IMAN comparison images Omar sent (src/full*); design: white header, full-width photos, gold badges, stamps, not the reference carousel's layout or wording.
 
-## Slides 7-8
-Waiting for Omar's content: the reveal (developer and track record) and the project pitch.
+## Slide 7 (done): the reveal
+- Developer and project deliberately not named ("a boutique developer"); no prices on this slide.
+- Map: OpenStreetMap, rendered with the Remotion kit (map7.json). Dubai Science Park outline is approximate.
+- Claims to confirm before posting: "handed over multiple projects on or before the promised date"; DSP land owned by TECOM (part of Dubai Holding).
+
+## Slide 8
+Waiting for Omar's content: the project and prices.
