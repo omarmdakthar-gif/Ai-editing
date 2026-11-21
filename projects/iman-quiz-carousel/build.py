@@ -74,8 +74,6 @@ def map_slide(s):
   </header>
   <div class="bar"></div>
   <div class="map" style="background-image:url('img/map_dsp.jpg')">
-    <svg class="gold" viewBox="0 0 1080 817"><path d="M1090 368 C 940 384, 780 396, 640 428 S 470 480, 390 510 S 230 590, 60 700" /></svg>
-    <div class="legend" style="left:690px;top:668px"><i></i>Metro Gold Line · planned</div>
     <div class="ml" style="left:470px;top:44px">Palm Jumeirah</div>
     <div class="rl szr" style="left:300px;top:220px;transform:translate(-50%,-50%) rotate(-2deg)">Sheikh Zayed Road</div>
     <div class="ml" style="right:540px;top:288px">Mall of the Emirates</div>

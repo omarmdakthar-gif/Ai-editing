@@ -9,7 +9,6 @@ Three rounds of a render-vs-real quiz, each a question slide and an answer slide
 ## Slide 7 (done): the reveal
 - Developer and project deliberately not named ("a boutique developer"); no prices on this slide.
 - Map: OpenStreetMap base, rendered with the Remotion kit without labels (map7_nolabel.json); labels are HTML overlays in build.py. Roads identified from the base layer: SZR, Umm Suqeim Rd (from Mall of the Emirates past DSP), Al Khail Rd (ends at JVC), Mohammed Bin Zayed Rd.
-- Metro Gold Line: dashed line is indicative only. Approved April 2026, opening Sept 2032, official corridor Meydan / Al Barsha South / JVC / Jumeirah Golf Estates; RTA has not published the exact alignment or stations, so no station is marked.
 - Claims to confirm before posting: "handed over multiple projects on or before the promised date"; DSP land owned by TECOM (part of Dubai Holding).
 
 ## Slide 8
