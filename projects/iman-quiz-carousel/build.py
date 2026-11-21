@@ -73,7 +73,17 @@ def map_slide(s):
     <div class="paras">{body}</div>
   </header>
   <div class="bar"></div>
-  <div class="map" style="background-image:url('img/map_dsp.jpg')"></div>
+  <div class="map" style="background-image:url('img/map_dsp.jpg')">
+    <div class="ml" style="left:470px;top:44px">Palm Jumeirah</div>
+    <div class="rl szr" style="left:300px;top:220px;transform:translate(-50%,-50%) rotate(-2deg)">Sheikh Zayed Road</div>
+    <div class="ml" style="right:540px;top:288px">Mall of the Emirates</div>
+    <div class="rl" style="left:648px;top:318px;transform:translate(-50%,-50%) rotate(81deg)">Umm Suqeim Rd</div>
+    <div class="rl" style="left:790px;top:346px;transform:translate(-50%,-50%) rotate(-27deg)">Al Khail Road</div>
+    <div class="ml" style="left:668px;top:432px">Dubai Hills Mall</div>
+    <div class="ml" style="left:236px;top:430px">JVC</div>
+    <div class="rl" style="left:690px;top:760px">Mohammed Bin Zayed Rd</div>
+    <div class="dsp" style="left:624px;top:530px"><b>Dubai Science Park</b><span>Their newest project</span></div>
+  </div>
 </section>'''
 
 
@@ -119,7 +129,15 @@ h1 mark {{ background: #FFD43B; color: #111; padding: 0 10px; border-radius: 10p
 header.tall {{ height: 525px; }}
 .paras {{ margin-top: 16px; font-size: 33px; line-height: 1.3; color: #2A2F38; }}
 .paras p + p {{ margin-top: 0.5em; }} .paras b {{ font-weight: 700; color: #111; }} .paras u {{ text-decoration-thickness: 2px; text-underline-offset: 5px; }}
-.map {{ width: 1080px; height: 817px; background-size: cover; background-position: center top; }}
+.map {{ position: relative; width: 1080px; height: 817px; background-size: cover; background-position: center top; }}
+.ml {{ position: absolute; padding: 7px 16px; border-radius: 10px; background: rgba(10,16,32,0.85); border: 1.5px solid rgba(120,200,230,0.6); color: #fff;
+  font-weight: 600; font-size: 24px; letter-spacing: 0.02em; white-space: nowrap; }}
+.rl {{ position: absolute; color: #C9D6F2; font-weight: 600; font-size: 21px; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap;
+  text-shadow: 0 0 6px #0A1020, 0 0 12px #0A1020; }}
+.rl.szr {{ color: #FFC58A; }}
+.dsp {{ position: absolute; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }}
+.dsp b {{ padding: 8px 18px; border-radius: 12px; background: #FFC940; color: #111; font-weight: 800; font-size: 28px; white-space: nowrap; box-shadow: 0 8px 24px rgba(0,0,0,0.45); }}
+.dsp span {{ padding: 4px 14px; border-radius: 8px; background: rgba(10,16,32,0.85); color: #FFE7A6; font-weight: 600; font-size: 21px; border: 1.5px solid rgba(255,201,64,0.6); }}
 .num {{ position: absolute; left: 28px; top: 24px; width: 88px; height: 88px; border-radius: 50%; background: #FFC940; color: #111; font-weight: 800; font-size: 52px;
   display: grid; place-items: center; box-shadow: 0 8px 22px rgba(0,0,0,0.35); }}
 .stamp {{ position: absolute; right: 54px; bottom: 50px; transform: rotate(-8deg); padding: 10px 28px; border: 7px solid; border-radius: 16px;

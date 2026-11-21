@@ -8,7 +8,7 @@ Three rounds of a render-vs-real quiz, each a question slide and an answer slide
 
 ## Slide 7 (done): the reveal
 - Developer and project deliberately not named ("a boutique developer"); no prices on this slide.
-- Map: OpenStreetMap, rendered with the Remotion kit (map7.json). Dubai Science Park outline is approximate.
+- Map: OpenStreetMap base, rendered with the Remotion kit without labels (map7_nolabel.json); labels are HTML overlays in build.py. Roads identified from the base layer: SZR, Umm Suqeim Rd (from Mall of the Emirates past DSP), Al Khail Rd (ends at JVC), Mohammed Bin Zayed Rd.
 - Claims to confirm before posting: "handed over multiple projects on or before the promised date"; DSP land owned by TECOM (part of Dubai Holding).
 
 ## Slide 8
