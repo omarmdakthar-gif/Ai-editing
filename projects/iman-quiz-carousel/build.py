@@ -63,7 +63,8 @@ SLIDES = [
     {'kind': 'price',
      'title': "Prices start at ==**AED 684K.**==",
      'rows': [('Studio', 'AED 684K'), ('1 bed', 'AED 1.06M'), ('2 bed', 'AED 1.59M'), ('3 bed with pool', 'AED 2.65M')],
-     'cta': "Interested? Comment **INFO**\nand I'll send you the details."},
+    },
+    {'kind': 'cta'},
 ]
 
 TICK = '''<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg>'''
@@ -115,7 +116,19 @@ def price_slide(s):
     <div class="ptitle"><b>50/50</b> payment plan</div>
     <div class="steps">{''.join(f'<div class="sp {c}"><b>{pc}</b><span>{l}</span></div>' for pc, l, c in [('20%', 'On booking', 'y'), ('10%', 'In 90 days', ''), ('10%', 'At 40% construction', ''), ('10%', 'At 60% construction', ''), ('50%', 'On completion', 'k')])}</div>
   </div>
-  <div class="close cta">{md(s['cta'])}</div>
+</section>'''
+
+
+def cta_slide(s):
+    return f'''
+<section class="slide ctas" style="background-image:url('img/f3_top.jpg')">
+  <div class="ctashade"></div>
+  <div class="ctabox">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
+    <div class="ctaq">Interested?</div>
+    <div class="ctac">Comment <mark>INFO</mark></div>
+    <div class="ctad">and I'll send you the details.</div>
+  </div>
 </section>'''
 
 
@@ -151,6 +164,8 @@ def slide_html(i, s):
         return why_slide(s)
     if s.get('kind') == 'price':
         return price_slide(s)
+    if s.get('kind') == 'cta':
+        return cta_slide(s)
     r = ROUNDS[s['round']]
     st1 = stamp(r['render'] == 1) if s['answer'] else ''
     st2 = stamp(r['render'] == 2) if s['answer'] else ''
@@ -210,11 +225,11 @@ header.tall {{ height: 552px; }} header.tall h1 {{ font-size: 52px; margin-top: 
 .close {{ position: absolute; left: 44px; right: 44px; bottom: 52px; background: #FFD43B; border-radius: 22px; padding: 28px 34px; font-size: 38px; line-height: 1.28; color: #111; }}
 .close b {{ font-weight: 800; }}
 .ptable {{ padding: 34px 44px 0; }}
-.pr {{ display: grid; grid-template-columns: 1fr auto 280px; gap: 18px; align-items: baseline; padding: 30px 0; border-bottom: 2px solid #E6E8EC; font-size: 42px; }}
+.pr {{ display: grid; grid-template-columns: 1fr auto 280px; gap: 18px; align-items: baseline; padding: 40px 0; border-bottom: 2px solid #E6E8EC; font-size: 44px; }}
 .pr em {{ font-style: normal; font-size: 26px; color: #8A9099; }}
 .pr b {{ text-align: right; font-size: 48px; font-weight: 800; white-space: nowrap; }}
-.pr.hi {{ background: #FFF6D6; margin: 0 -18px; padding: 30px 18px; border-radius: 16px; border-bottom: none; }}
-.plan {{ margin: 56px 44px 0; }}
+.pr.hi {{ background: #FFF6D6; margin: 0 -18px; padding: 40px 18px; border-radius: 16px; border-bottom: none; }}
+.plan {{ margin: 80px 44px 0; }}
 .ptitle {{ font-size: 40px; margin-bottom: 18px; }} .ptitle b {{ font-weight: 800; }}
 .pbar {{ display: flex; gap: 10px; }}
 .pbar div {{ flex: 1; background: #FFD43B; border-radius: 18px; padding: 24px 26px; }}
@@ -223,8 +238,16 @@ header.tall {{ height: 552px; }} header.tall h1 {{ font-size: 52px; margin-top: 
 .pbar span {{ display: block; margin-top: 6px; font-size: 26px; font-weight: 600; }}
 .down {{ margin-top: 34px; font-size: 62px; font-weight: 600; text-align: center; }}
 .down mark {{ background: #FFD43B; color: #111; padding: 0 18px; border-radius: 14px; }} .down b {{ font-weight: 800; }}
+.ctas {{ background-size: cover; background-position: center; }}
+.ctashade {{ position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.8) 100%); }}
+.ctabox {{ position: absolute; left: 60px; right: 60px; bottom: 90px; background: #fff; border-radius: 36px; padding: 44px 50px 54px; text-align: center; }}
+.ctabox .who {{ justify-content: center; margin-bottom: 30px; }}
+.ctaq {{ font-size: 64px; font-weight: 800; }}
+.ctac {{ margin-top: 18px; font-size: 76px; font-weight: 700; }}
+.ctac mark {{ background: #FFD43B; color: #111; padding: 0 20px; border-radius: 16px; font-weight: 800; }}
+.ctad {{ margin-top: 18px; font-size: 42px; color: #3A414C; }}
 .steps {{ display: flex; gap: 10px; }}
-.sp {{ flex: 1; background: #EEF0F3; border-radius: 20px; padding: 40px 12px 36px; text-align: center; }}
+.sp {{ flex: 1; background: #EEF0F3; border-radius: 20px; padding: 78px 12px 74px; text-align: center; }}
 .sp b {{ display: block; font-size: 60px; font-weight: 800; line-height: 1; }}
 .sp span {{ display: block; margin-top: 14px; font-size: 25px; font-weight: 600; line-height: 1.2; color: #3A414C; }}
 .sp.y {{ background: #FFD43B; }} .sp.y span {{ color: #111; }}
