@@ -107,7 +107,7 @@ def price_slide(s):
     rows = ''.join(f'<div class="pr{" hi" if k == 0 else ""}"><span>{html.escape(a)}</span><em>from</em><b>{b}</b></div>' for k, (a, b) in enumerate(s['rows']))
     return f'''
 <section class="slide why">
-  <header class="whyh">
+  <header class="whyh big">
     <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE} · Spot the render</div></div><div class="pill">The price</div></div>
     <h1>{md(s['title'])}</h1>
   </header>
@@ -224,6 +224,12 @@ header.tall {{ height: 552px; }} header.tall h1 {{ font-size: 52px; margin-top: 
 .wr u {{ text-decoration-thickness: 2px; text-underline-offset: 5px; }}
 .close {{ position: absolute; left: 44px; right: 44px; bottom: 52px; background: #FFD43B; border-radius: 22px; padding: 28px 34px; font-size: 38px; line-height: 1.28; color: #111; }}
 .close b {{ font-weight: 800; }}
+.whyh.big {{ padding-top: 40px; }}
+.whyh.big .who img {{ width: 116px; height: 116px; }}
+.whyh.big .name {{ font-size: 46px; gap: 10px; }} .whyh.big .tick {{ width: 40px; height: 40px; }}
+.whyh.big .handle {{ font-size: 31px; }}
+.whyh.big .pill {{ font-size: 27px; padding: 10px 24px; }}
+.whyh.big h1 {{ font-size: 66px; margin-top: 34px; }}
 .ptable {{ padding: 34px 44px 0; }}
 .pr {{ display: grid; grid-template-columns: 1fr auto 280px; gap: 18px; align-items: baseline; padding: 40px 0; border-bottom: 2px solid #E6E8EC; font-size: 44px; }}
 .pr em {{ font-style: normal; font-size: 26px; color: #8A9099; }}
