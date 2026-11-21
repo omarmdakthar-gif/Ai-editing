@@ -23,3 +23,27 @@ Three rounds of a render-vs-real quiz, each a question slide and an answer slide
 
 ## Slide 10 (done): CTA
 - "Interested? Comment INFO and I'll send you the details." Over the real lobby photo (round 3).
+
+## Caption
+Can you spot the render? 👀 3 rounds, 1 render and 1 real photo in each. Keep score and tell me yours in the comments.
+
+The twist: all 3 lobbies are by the same boutique developer, one that has handed over multiple projects on or before the promised date.
+
+Their newest project is in Dubai Science Park 📍
+🚗 15 min to Palm Jumeirah and Mall of the Emirates, 20 min to Downtown Dubai
+🧪 Home to major pharma and life sciences companies like Pfizer
+🏥 American Hospital opened here in 2026, with more hospitals on the way
+🎓 Top schools nearby: Repton, Brighton College, GEMS World Academy
+
+💰 Studios from AED 684K · 1 bed from AED 1.06M · 2 bed from AED 1.59M · 3 bed with pool from AED 2.65M
+📅 50/50 payment plan with 20% on booking
+
+Interested? Comment INFO and I'll send you the details.
+
+*Prices and payment plan subject to availability and change.*
+
+## Hashtags
+#DubaiSciencePark #DubaiRealEstate #OffPlanDubai #DubaiProperty #DubaiInvestment #DubaiApartments #RenderVsReality #BoutiqueDeveloper #AlBarshaSouth #DubaiHomes
+
+## Before posting
+- Add the Trakheesi permit number if this promotes a specific listing.
