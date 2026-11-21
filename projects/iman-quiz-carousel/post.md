@@ -1,4 +1,4 @@
-# IMAN "Spot the render" carousel: notes
+# IMAN "Spot the render" carousel: notes (9 slides)
 
 ## Slides 1-6 (done)
 Three rounds of a render-vs-real quiz, each a question slide and an answer slide.
@@ -17,5 +17,7 @@ Three rounds of a render-vs-real quiz, each a question slide and an answer slide
 - Verified: American Hospital Dubai opened its Dubai Science Park hospital in February 2026 (Gulf News, Khaleej Times); it has announced more facilities at DSP.
 - Not verified: the 100-bed figure; the 90+/500+/6,500+ stats (a 2021 source said 400+ companies and 4,000 professionals); Pfizer's presence. Confirm against Dubai Science Park's latest official figures before posting.
 
-## Slide 9
-Waiting for Omar's content: the project and prices.
+## Slide 9 (done): price, payment plan, CTA
+- Studio from AED 684K, 1 bed from AED 1.06M, 2 bed from AED 1.59M, 3 bed with pool from AED 2.65M (Omar). Note: Omar said "1,006,000, that is 1.06 million"; slide uses 1.06M.
+- 50/50 payment plan, shown as 50% during construction / 50% on handover.
+- CTA: Comment INFO.

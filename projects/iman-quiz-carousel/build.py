@@ -60,6 +60,10 @@ SLIDES = [
               ('park', "A green escape park with a **1 km jogging track**."),
               ('road', "Easy access to **Umm Suqeim Road, Al Khail Road** and **Mohammed Bin Zayed Road**.")],
      'close': "For the **high-earning medical professionals** working here, it's the perfect community to live in."},
+    {'kind': 'price',
+     'title': "Prices start at ==**AED 684K.**==",
+     'rows': [('Studio', 'AED 684K'), ('1 bed', 'AED 1.06M'), ('2 bed', 'AED 1.59M'), ('3 bed with pool', 'AED 2.65M')],
+     'cta': "Interested? Comment **INFO**\nand I'll send you the details."},
 ]
 
 TICK = '''<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg>'''
@@ -98,6 +102,23 @@ def why_slide(s):
 </section>'''
 
 
+def price_slide(s):
+    rows = ''.join(f'<div class="pr{" hi" if k == 0 else ""}"><span>{html.escape(a)}</span><em>from</em><b>{b}</b></div>' for k, (a, b) in enumerate(s['rows']))
+    return f'''
+<section class="slide why">
+  <header class="whyh">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE} · Spot the render</div></div><div class="pill">The price</div></div>
+    <h1>{md(s['title'])}</h1>
+  </header>
+  <div class="ptable">{rows}</div>
+  <div class="plan">
+    <div class="ptitle"><b>50/50</b> payment plan</div>
+    <div class="pbar"><div><b>50%</b><span>during construction</span></div><div class="dark"><b>50%</b><span>on handover</span></div></div>
+  </div>
+  <div class="close cta">{md(s['cta'])}</div>
+</section>'''
+
+
 def map_slide(s):
     body = ''.join(f'<p>{md(p)}</p>' for p in s['paras'])
     return f'''
@@ -128,6 +149,8 @@ def slide_html(i, s):
         return map_slide(s)
     if s.get('kind') == 'why':
         return why_slide(s)
+    if s.get('kind') == 'price':
+        return price_slide(s)
     r = ROUNDS[s['round']]
     st1 = stamp(r['render'] == 1) if s['answer'] else ''
     st2 = stamp(r['render'] == 2) if s['answer'] else ''
@@ -186,6 +209,19 @@ header.tall {{ height: 552px; }} header.tall h1 {{ font-size: 52px; margin-top: 
 .wr u {{ text-decoration-thickness: 2px; text-underline-offset: 5px; }}
 .close {{ position: absolute; left: 44px; right: 44px; bottom: 52px; background: #FFD43B; border-radius: 22px; padding: 28px 34px; font-size: 38px; line-height: 1.28; color: #111; }}
 .close b {{ font-weight: 800; }}
+.ptable {{ padding: 34px 44px 0; }}
+.pr {{ display: grid; grid-template-columns: 1fr auto 280px; gap: 18px; align-items: baseline; padding: 30px 0; border-bottom: 2px solid #E6E8EC; font-size: 42px; }}
+.pr em {{ font-style: normal; font-size: 26px; color: #8A9099; }}
+.pr b {{ text-align: right; font-size: 48px; font-weight: 800; white-space: nowrap; }}
+.pr.hi {{ background: #FFF6D6; margin: 0 -18px; padding: 30px 18px; border-radius: 16px; border-bottom: none; }}
+.plan {{ margin: 56px 44px 0; }}
+.ptitle {{ font-size: 36px; margin-bottom: 14px; }} .ptitle b {{ font-weight: 800; }}
+.pbar {{ display: flex; gap: 10px; }}
+.pbar div {{ flex: 1; background: #FFD43B; border-radius: 18px; padding: 24px 26px; }}
+.pbar div.dark {{ background: #111; color: #fff; }}
+.pbar b {{ display: block; font-size: 52px; font-weight: 800; line-height: 1; }} .pbar div.dark b {{ color: #FFC940; }}
+.pbar span {{ display: block; margin-top: 6px; font-size: 26px; font-weight: 600; }}
+.close.cta {{ background: #111; color: #fff; font-size: 40px; text-align: center; }} .close.cta b {{ color: #111; background: #FFD43B; padding: 0 12px; border-radius: 10px; }}
 .map {{ position: relative; width: 1080px; height: 790px; background-size: cover; background-position: center top; }}
 .ml {{ position: absolute; padding: 7px 16px; border-radius: 10px; background: rgba(10,16,32,0.85); border: 1.5px solid rgba(120,200,230,0.6); color: #fff;
   font-weight: 600; font-size: 24px; letter-spacing: 0.02em; white-space: nowrap; }}
