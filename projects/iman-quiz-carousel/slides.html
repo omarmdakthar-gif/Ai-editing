@@ -2,122 +2,86 @@
 @font-face{font-family:Outfit;font-weight:400;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-400-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:500;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-500-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:600;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-600-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:700;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-700-normal.woff2') format('woff2')}@font-face{font-family:Outfit;font-weight:800;src:url('file:///tmp/claude-0/-home-user-Ai-editing/8ddff90f-afa3-5ebe-a03c-5f12cab7e02e/scratchpad/fonts/node_modules/@fontsource/outfit/files/outfit-latin-800-normal.woff2') format('woff2')}
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: #111; font-family: Outfit, sans-serif; }
-.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden;
-  background: radial-gradient(80% 60% at 50% 28%, #2A2420 0%, #14110F 55%, #0A0908 100%); }
-.slide::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,0.05) 1.5px, transparent 1.5px); background-size: 30px 30px; }
-.title { position: absolute; left: 0; right: 0; top: 46px; text-align: center; color: #fff; font-weight: 800; font-size: 54px; letter-spacing: 0.08em; }
-.title span { color: #FFC940; }
-.pill { position: absolute; left: 50%; top: 122px; transform: translateX(-50%); padding: 8px 22px; border-radius: 30px; border: 2px solid rgba(255,201,64,0.6);
-  color: #FFE7A6; font-weight: 600; font-size: 24px; letter-spacing: 0.06em; white-space: nowrap; }
-.pol { position: absolute; top: 196px; width: 468px; background: #FBFAF7; padding: 18px 18px 0; border-radius: 6px;
-  box-shadow: 0 24px 50px rgba(0,0,0,0.55); }
-.pol.left { left: 52px; transform: rotate(-4deg); }
-.pol.right { right: 52px; transform: rotate(3.5deg); top: 214px; }
-.ph { width: 432px; height: 418px; background-size: cover; background-position: center; border-radius: 2px; }
-.pol figcaption { height: 74px; display: grid; place-items: center; font-weight: 800; font-size: 46px; color: #1B1B1B; }
-.pol.dim .ph { filter: saturate(0.85) brightness(0.92); }
-.stamp { position: absolute; left: 50%; top: 74%; transform: translate(-50%, -50%) rotate(-10deg); padding: 10px 26px; border: 7px solid; border-radius: 14px;
-  font-weight: 800; font-size: 58px; letter-spacing: 0.06em; background: rgba(255,255,255,0.86); white-space: nowrap; }
+.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: #fff; }
+header { height: 268px; padding: 26px 44px 0; color: #111; }
+.who { display: flex; align-items: center; gap: 18px; }
+.who img { width: 74px; height: 74px; border-radius: 50%; }
+.name { font-weight: 700; font-size: 32px; display: flex; align-items: center; gap: 8px; }
+.tick { width: 30px; height: 30px; }
+.handle { font-size: 23px; color: #5B6470; }
+.pill { margin-left: auto; padding: 8px 20px; border-radius: 30px; background: #111; color: #FFC940; font-weight: 700; font-size: 23px; letter-spacing: 0.04em; white-space: nowrap; }
+h1 { margin-top: 20px; font-size: 50px; font-weight: 600; line-height: 1.12; letter-spacing: -0.01em; }
+h1 b { font-weight: 800; }
+h1 mark { background: #FFD43B; color: #111; padding: 0 10px; border-radius: 10px; }
+.sub { margin-top: 10px; font-size: 27px; line-height: 1.3; color: #4A5260; }
+.ph { position: relative; width: 1080px; height: 537px; background-size: cover; background-position: center; }
+.bar { height: 8px; background: #FFC940; }
+.num { position: absolute; left: 28px; top: 24px; width: 88px; height: 88px; border-radius: 50%; background: #FFC940; color: #111; font-weight: 800; font-size: 52px;
+  display: grid; place-items: center; box-shadow: 0 8px 22px rgba(0,0,0,0.35); }
+.stamp { position: absolute; right: 54px; bottom: 50px; transform: rotate(-8deg); padding: 10px 28px; border: 7px solid; border-radius: 16px;
+  font-weight: 800; font-size: 64px; letter-spacing: 0.06em; background: rgba(255,255,255,0.9); white-space: nowrap; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
 .stamp.render { color: #D7263D; border-color: #D7263D; }
-.stamp.real { color: #138A4B; border-color: #138A4B; transform: translate(-50%, -50%) rotate(8deg); }
-.swipe { position: absolute; right: 44px; top: 54px; background: rgba(255,255,255,0.12); color: #fff; font-weight: 600; font-size: 24px; padding: 8px 18px; border-radius: 30px; }
-.card { position: absolute; left: 84px; right: 84px; bottom: 96px; background: #fff; border-radius: 34px; padding: 40px 52px 44px; color: #111; }
-.who { display: flex; align-items: center; gap: 24px; margin-bottom: 24px; }
-.who img { width: 112px; height: 112px; border-radius: 50%; }
-.name { font-weight: 700; font-size: 40px; letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; }
-.tick { width: 36px; height: 36px; flex: none; }
-.handle { font-weight: 400; font-size: 29px; color: #5B6470; margin-top: 2px; }
-.body { font-size: 38px; line-height: 1.26; }
-.body p { text-wrap: pretty; }
-.body p + p { margin-top: 0.5em; }
-.body b { font-weight: 700; }
-.body u { text-decoration-thickness: 2px; text-underline-offset: 6px; }
-.body mark { background: #FFD43B; color: #111; padding: 0 8px; border-radius: 8px; }
-.count { position: absolute; right: 44px; bottom: 44px; color: #6B6560; font-size: 20px; font-weight: 600; }
+.stamp.real { color: #138A4B; border-color: #138A4B; transform: rotate(6deg); }
 </style></head><body>
 
 <section class="slide">
-  <div class="title">SPOT THE <span>RENDER</span></div>
-  <div class="pill">Round 1 of 3</div>
-  <figure class="pol left"><div class="ph" style="background-image:url('img/r1a_bot.png')"></div>
-      <figcaption>1</figcaption></figure>
-  <figure class="pol right"><div class="ph" style="background-image:url('img/r1a_top.png')"></div>
-      <figcaption>2</figcaption></figure>
-  
-  <div class="card">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
-    <div class="body"><p><b>Spot the render.</b></p><p>One of these is a 3D render. The other is the finished building.</p><p>Which one is the render: <mark><b>1 or 2?</b></mark> Swipe to find out.</p></div>
-  </div>
-  <div class="count">1/8</div>
+  <header>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in · Spot the render</div></div><div class="pill">Round 1/3</div></div>
+    <h1>Which one is the <b>render</b>? <mark><b>1 or 2</b></mark></h1>
+    <p class="sub">One is a 3D render. The other is the finished lobby. Guess, then swipe.</p>
+  </header>
+  <div class="ph p1" style="background-image:url('img/f1_bot.jpg')"><div class="num">1</div></div>
+  <div class="bar"></div>
+  <div class="ph p2" style="background-image:url('img/f1_top.jpg')"><div class="num">2</div></div>
 </section>
 <section class="slide">
-  <div class="title">SPOT THE <span>RENDER</span></div>
-  <div class="pill">Answer · Round 1 of 3</div>
-  <figure class="pol left dim"><div class="ph" style="background-image:url('img/r1a_bot.png')"></div>
-      <figcaption>1</figcaption><div class="stamp real">REAL ✓</div></figure>
-  <figure class="pol right"><div class="ph" style="background-image:url('img/r1a_top.png')"></div>
-      <figcaption>2</figcaption><div class="stamp render">RENDER</div></figure>
-  
-  <div class="card">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
-    <div class="body"><p><b>Photo 2 was the render.</b></p><p>The giveaway: the real lobby has a luggage trolley by the door. Renders never bother with those.</p><p>Got it right? Keep score: <u>1 of 3</u>.</p></div>
-  </div>
-  <div class="count">2/8</div>
+  <header>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in · Spot the render</div></div><div class="pill">Answer · Round 1/3</div></div>
+    <h1><b>Photo 2 was the render.</b></h1>
+    <p class="sub">The giveaway: the real lobby has a luggage trolley by the door. Keep score: 1 of 3.</p>
+  </header>
+  <div class="ph p1" style="background-image:url('img/f1_bot.jpg')"><div class="num">1</div><div class="stamp real">REAL ✓</div></div>
+  <div class="bar"></div>
+  <div class="ph p2" style="background-image:url('img/f1_top.jpg')"><div class="num">2</div><div class="stamp render">RENDER</div></div>
 </section>
 <section class="slide">
-  <div class="title">SPOT THE <span>RENDER</span></div>
-  <div class="pill">Round 2 of 3</div>
-  <figure class="pol left"><div class="ph" style="background-image:url('img/r2a_bot.png')"></div>
-      <figcaption>1</figcaption></figure>
-  <figure class="pol right"><div class="ph" style="background-image:url('img/r2a_top.png')"></div>
-      <figcaption>2</figcaption></figure>
-  
-  <div class="card">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
-    <div class="body"><p><b>Round 2. A little harder.</b></p><p>Same game: one render, one real photo of the same lobby.</p><p>Make your guess: <mark><b>1 or 2?</b></mark></p></div>
-  </div>
-  <div class="count">3/8</div>
+  <header>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in · Spot the render</div></div><div class="pill">Round 2/3</div></div>
+    <h1>Round 2. Harder. <mark><b>1 or 2?</b></mark></h1>
+    <p class="sub">Same game: one render, one real photo of the same lobby.</p>
+  </header>
+  <div class="ph p1" style="background-image:url('img/f2_bot.jpg')"><div class="num">1</div></div>
+  <div class="bar"></div>
+  <div class="ph p2" style="background-image:url('img/f2_top.jpg')"><div class="num">2</div></div>
 </section>
 <section class="slide">
-  <div class="title">SPOT THE <span>RENDER</span></div>
-  <div class="pill">Answer · Round 2 of 3</div>
-  <figure class="pol left"><div class="ph" style="background-image:url('img/r2a_bot.png')"></div>
-      <figcaption>1</figcaption><div class="stamp render">RENDER</div></figure>
-  <figure class="pol right dim"><div class="ph" style="background-image:url('img/r2a_top.png')"></div>
-      <figcaption>2</figcaption><div class="stamp real">REAL ✓</div></figure>
-  
-  <div class="card">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
-    <div class="body"><p><b>Photo 1 was the render.</b></p><p>Tricky one. The render&#x27;s lighting is just a touch too perfect, with every vein of marble glowing evenly.</p><p>Keep score: <u>2 of 3</u>.</p></div>
-  </div>
-  <div class="count">4/8</div>
+  <header>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in · Spot the render</div></div><div class="pill">Answer · Round 2/3</div></div>
+    <h1><b>Photo 1 was the render.</b></h1>
+    <p class="sub">Tricky one. The render&#x27;s lighting is just a touch too perfect. Keep score: 2 of 3.</p>
+  </header>
+  <div class="ph p1" style="background-image:url('img/f2_bot.jpg')"><div class="num">1</div><div class="stamp render">RENDER</div></div>
+  <div class="bar"></div>
+  <div class="ph p2" style="background-image:url('img/f2_top.jpg')"><div class="num">2</div><div class="stamp real">REAL ✓</div></div>
 </section>
 <section class="slide">
-  <div class="title">SPOT THE <span>RENDER</span></div>
-  <div class="pill">Round 3 of 3</div>
-  <figure class="pol left"><div class="ph" style="background-image:url('img/r3a_top.png')"></div>
-      <figcaption>1</figcaption></figure>
-  <figure class="pol right"><div class="ph" style="background-image:url('img/r3a_bot.png')"></div>
-      <figcaption>2</figcaption></figure>
-  
-  <div class="card">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
-    <div class="body"><p><b>Final round.</b></p><p>Got the first two? This one decides it.</p><p>Which is the render: <mark><b>1 or 2?</b></mark></p></div>
-  </div>
-  <div class="count">5/8</div>
+  <header>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in · Spot the render</div></div><div class="pill">Round 3/3</div></div>
+    <h1>Final round. <mark><b>1 or 2?</b></mark></h1>
+    <p class="sub">Got the first two right? This one decides it.</p>
+  </header>
+  <div class="ph p1" style="background-image:url('img/f3_top.jpg')"><div class="num">1</div></div>
+  <div class="bar"></div>
+  <div class="ph p2" style="background-image:url('img/f3_bot.jpg')"><div class="num">2</div></div>
 </section>
 <section class="slide">
-  <div class="title">SPOT THE <span>RENDER</span></div>
-  <div class="pill">Answer · Round 3 of 3</div>
-  <figure class="pol left dim"><div class="ph" style="background-image:url('img/r3a_top.png')"></div>
-      <figcaption>1</figcaption><div class="stamp real">REAL ✓</div></figure>
-  <figure class="pol right"><div class="ph" style="background-image:url('img/r3a_bot.png')"></div>
-      <figcaption>2</figcaption><div class="stamp render">RENDER</div></figure>
-  
-  <div class="card">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
-    <div class="body"><p><b>Photo 2 was the render.</b></p><p>Real marble reflects the room around it. The render&#x27;s floor is spotless.</p><p>How many did you get? Now see who built all three.</p></div>
-  </div>
-  <div class="count">6/8</div>
+  <header>
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in · Spot the render</div></div><div class="pill">Answer · Round 3/3</div></div>
+    <h1><b>Photo 2 was the render.</b></h1>
+    <p class="sub">Real marble reflects the room around it. How many did you get? Now see who built all three.</p>
+  </header>
+  <div class="ph p1" style="background-image:url('img/f3_top.jpg')"><div class="num">1</div><div class="stamp real">REAL ✓</div></div>
+  <div class="bar"></div>
+  <div class="ph p2" style="background-image:url('img/f3_bot.jpg')"><div class="num">2</div><div class="stamp render">RENDER</div></div>
 </section>
 </body></html>
