@@ -13,7 +13,7 @@ Three rounds of a render-vs-real quiz, each a question slide and an answer slide
 - Claim to confirm before posting: "handed over multiple projects on or before the promised date".
 
 ## Slide 8 (done): why Dubai Science Park
-- Content from Omar: Pfizer; 90+ labs, 500+ companies, 6,500+ professionals in pharma, life sciences and energy; American Hospital opened 2026 with 100 beds, 2 more hospitals on the way; schools Repton, Brighton College, GEMS World Academy, Dubai Schools, Safa Community School; park with 1 km jogging track.
+- Content from Omar: Pfizer; 90+ labs, 500+ companies, 6,500+ professionals in pharma, life sciences and energy; American Hospital opened 2026 with 100 beds, 2 more hospitals on the way; schools Repton, Brighton College, GEMS World Academy, Dubai Schools, Safa Community School; park with 1 km jogging track; easy access to Umm Suqeim Rd, Al Khail Rd and Mohammed Bin Zayed Rd.
 - Verified: American Hospital Dubai opened its Dubai Science Park hospital in February 2026 (Gulf News, Khaleej Times); it has announced more facilities at DSP.
 - Not verified: the 100-bed figure; the 90+/500+/6,500+ stats (a 2021 source said 400+ companies and 4,000 professionals); Pfizer's presence. Confirm against Dubai Science Park's latest official figures before posting.
 

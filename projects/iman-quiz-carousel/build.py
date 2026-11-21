@@ -57,7 +57,8 @@ SLIDES = [
      'statnote': "in pharma, life sciences and energy",
      'rows': [('hosp', "**American Hospital** opened here in 2026 with 100 beds, and __2 more hospitals__ are on the way."),
               ('school', "Top schools: **Repton, Brighton College, GEMS World Academy, Dubai Schools** and **Safa Community School**."),
-              ('park', "A green escape park with a **1 km jogging track**.")],
+              ('park', "A green escape park with a **1 km jogging track**."),
+              ('road', "Easy access to **Umm Suqeim Road, Al Khail Road** and **Mohammed Bin Zayed Road**.")],
      'close': "For the **high-earning medical professionals** working here, it's the perfect community to live in."},
 ]
 
@@ -75,6 +76,7 @@ def stamp(is_render):
 ICONS = {
     'hosp': '<svg viewBox="0 0 24 24"><path fill="#111" d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg>',
     'school': '<svg viewBox="0 0 24 24"><path fill="#111" d="M12 3 1 9l11 6 9-4.9V17h2V9zM5 13.2v3.6C5 18.6 8.1 20 12 20s7-1.4 7-3.2v-3.6l-7 3.8z"/></svg>',
+    'road': '<svg viewBox="0 0 24 24"><path fill="#111" d="M9 2h2l-1 20H6zM13 2h2l3 20h-4zM11.2 4h1.6v3h-1.6zm0 5h1.6v3h-1.6zm0 5h1.6v3h-1.6z"/></svg>',
     'park': '<svg viewBox="0 0 24 24"><path fill="#111" d="M12 2 5 12h4l-4 6h6v4h2v-4h6l-4-6h4z"/></svg>',
 }
 
@@ -171,12 +173,12 @@ header.tall {{ height: 552px; }} header.tall h1 {{ font-size: 52px; margin-top: 
 .tm span {{ display: block; margin-top: 6px; font-size: 22px; font-weight: 600; color: #111; white-space: nowrap; }}
 .whyh {{ height: auto; padding-bottom: 0; }} .whyh h1 {{ font-size: 60px; margin-top: 26px; }}
 .lead {{ margin-top: 18px; font-size: 40px; color: #2A2F38; }} .lead b {{ color: #111; }}
-.stats {{ display: flex; gap: 16px; padding: 52px 44px 0; }}
+.stats {{ display: flex; gap: 16px; padding: 40px 44px 0; }}
 .st {{ flex: 1; background: #111; border-radius: 22px; padding: 28px 24px 24px; }}
 .st b {{ display: block; font-size: 74px; font-weight: 800; color: #FFC940; line-height: 1; }}
 .st span {{ display: block; margin-top: 10px; font-size: 30px; font-weight: 600; color: #fff; }}
 .statnote {{ padding: 14px 44px 0; font-size: 29px; color: #5B6470; }}
-.rows {{ padding: 64px 44px 0; display: grid; gap: 56px; }}
+.rows {{ padding: 44px 44px 0; display: grid; gap: 30px; }}
 .wr {{ display: flex; gap: 22px; align-items: flex-start; }}
 .wr i {{ flex: none; width: 76px; height: 76px; border-radius: 50%; background: #FFD43B; display: grid; place-items: center; }}
 .wr i svg {{ width: 40px; height: 40px; }}
