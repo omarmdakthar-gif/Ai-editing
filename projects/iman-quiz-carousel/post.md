@@ -19,5 +19,5 @@ Three rounds of a render-vs-real quiz, each a question slide and an answer slide
 
 ## Slide 9 (done): price, payment plan, CTA
 - Studio from AED 684K, 1 bed from AED 1.06M, 2 bed from AED 1.59M, 3 bed with pool from AED 2.65M (Omar). Note: Omar said "1,006,000, that is 1.06 million"; slide uses 1.06M.
-- 50/50 payment plan, shown as 50% during construction / 50% on handover.
+- 50/50 payment plan, shown as 50% during construction / 50% on handover; down payment just 20% (Omar).
 - CTA: Comment INFO.
