@@ -113,8 +113,7 @@ def price_slide(s):
   <div class="ptable">{rows}</div>
   <div class="plan">
     <div class="ptitle"><b>50/50</b> payment plan</div>
-    <div class="pbar"><div><b>50%</b><span>during construction</span></div><div class="dark"><b>50%</b><span>on handover</span></div></div>
-    <div class="down">Down payment: just <mark><b>20%</b></mark></div>
+    <div class="steps">{''.join(f'<div class="sp {c}"><b>{pc}</b><span>{l}</span></div>' for pc, l, c in [('20%', 'On booking', 'y'), ('10%', 'In 90 days', ''), ('10%', 'At 40% construction', ''), ('10%', 'At 60% construction', ''), ('50%', 'On completion', 'k')])}</div>
   </div>
   <div class="close cta">{md(s['cta'])}</div>
 </section>'''
@@ -216,7 +215,7 @@ header.tall {{ height: 552px; }} header.tall h1 {{ font-size: 52px; margin-top: 
 .pr b {{ text-align: right; font-size: 48px; font-weight: 800; white-space: nowrap; }}
 .pr.hi {{ background: #FFF6D6; margin: 0 -18px; padding: 30px 18px; border-radius: 16px; border-bottom: none; }}
 .plan {{ margin: 56px 44px 0; }}
-.ptitle {{ font-size: 36px; margin-bottom: 14px; }} .ptitle b {{ font-weight: 800; }}
+.ptitle {{ font-size: 40px; margin-bottom: 18px; }} .ptitle b {{ font-weight: 800; }}
 .pbar {{ display: flex; gap: 10px; }}
 .pbar div {{ flex: 1; background: #FFD43B; border-radius: 18px; padding: 24px 26px; }}
 .pbar div.dark {{ background: #111; color: #fff; }}
@@ -224,6 +223,12 @@ header.tall {{ height: 552px; }} header.tall h1 {{ font-size: 52px; margin-top: 
 .pbar span {{ display: block; margin-top: 6px; font-size: 26px; font-weight: 600; }}
 .down {{ margin-top: 34px; font-size: 62px; font-weight: 600; text-align: center; }}
 .down mark {{ background: #FFD43B; color: #111; padding: 0 18px; border-radius: 14px; }} .down b {{ font-weight: 800; }}
+.steps {{ display: flex; gap: 10px; }}
+.sp {{ flex: 1; background: #EEF0F3; border-radius: 20px; padding: 40px 12px 36px; text-align: center; }}
+.sp b {{ display: block; font-size: 60px; font-weight: 800; line-height: 1; }}
+.sp span {{ display: block; margin-top: 14px; font-size: 25px; font-weight: 600; line-height: 1.2; color: #3A414C; }}
+.sp.y {{ background: #FFD43B; }} .sp.y span {{ color: #111; }}
+.sp.k {{ background: #111; }} .sp.k b {{ color: #FFC940; }} .sp.k span {{ color: #fff; }}
 .close.cta {{ background: #111; color: #fff; font-size: 40px; text-align: center; }} .close.cta b {{ color: #111; background: #FFD43B; padding: 0 12px; border-radius: 10px; }}
 .map {{ position: relative; width: 1080px; height: 790px; background-size: cover; background-position: center top; }}
 .ml {{ position: absolute; padding: 7px 16px; border-radius: 10px; background: rgba(10,16,32,0.85); border: 1.5px solid rgba(120,200,230,0.6); color: #fff;
