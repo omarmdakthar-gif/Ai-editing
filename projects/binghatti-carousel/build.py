@@ -130,15 +130,16 @@ def slide3():
   <div class="s3head">
     <div class="who light"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div><div class="pill">The location</div></div>
     <h1>Next to <span>Dubai Silicon Oasis</span><br>&amp; <span>Academic City</span></h1>
+    <p class="s3sub">Dubai's next district for the arts, by Binghatti.</p>
   </div>
   <div class="map3" style="background-image:url('img/map_location.jpg')">
-    {chip('Downtown Dubai', 17, 700, 265)}
-    {chip('DXB Airport', 15, 760, 240, 'r')}
-    {chip('Dubai Creek Harbour', 14, 625, 362, 'r')}
-    {chip('Meydan', 10, 680, 424)}
-    <div class="mlab" style="right:556px;top:649px">Dubai Silicon Oasis</div>
-    <div class="mlab" style="right:492px;top:770px">Academic City</div>
-    <div class="proj" style="left:612px;top:709px">The Arts District</div>
+    {chip('Downtown Dubai', 17, 700, 135)}
+    {chip('DXB Airport', 15, 760, 110, 'r')}
+    {chip('Dubai Creek Harbour', 14, 625, 232, 'r')}
+    {chip('Meydan', 10, 680, 294)}
+    <div class="mlab" style="right:556px;top:519px">Dubai Silicon Oasis</div>
+    <div class="mlab" style="right:492px;top:640px">Academic City</div>
+    <div class="proj" style="left:612px;top:579px">The Arts District</div>
   </div>
 </section>'''
 
@@ -198,13 +199,14 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .body.big {{ margin-top: 24px; font-size: 32px; }}
 .deal.big .plus {{ font-size: 56px; }}
 .s3 {{ background: #0B1226; }}
-.s3head {{ height: 330px; padding: 34px 50px 0; background: linear-gradient(180deg, #1F7FD6, #4AA3EC); color: #fff; }}
+.s3head {{ height: 460px; padding: 44px 50px 0; background: linear-gradient(180deg, #1F7FD6, #4AA3EC); color: #fff; }}
 .who.light {{ margin-bottom: 20px; }} .who.light .handle {{ color: #DCEBFA; }}
 .who.light img {{ width: 84px; height: 84px; }} .who.light .name {{ font-size: 34px; }} .who.light .handle {{ font-size: 25px; }}
 .pill {{ margin-left: auto; padding: 8px 22px; border-radius: 30px; background: #FFD43B; color: #111; font-weight: 800; font-size: 24px; white-space: nowrap; }}
-.s3head h1 {{ font-size: 62px; font-weight: 800; line-height: 1.08; text-shadow: 0 4px 20px rgba(0,40,90,0.35); }}
+.s3head h1 {{ margin-top: 30px; font-size: 70px; font-weight: 800; line-height: 1.08; text-shadow: 0 4px 20px rgba(0,40,90,0.35); }}
 .s3head h1 span {{ color: #FFD43B; }}
-.map3 {{ position: relative; width: 1080px; height: 1020px; background-size: cover; background-position: center top; }}
+.s3sub {{ margin-top: 18px; font-size: 36px; font-weight: 500; color: #EAF4FF; }}
+.map3 {{ position: relative; width: 1080px; height: 890px; background-size: cover; background-position: center top; }}
 .mchip {{ position: absolute; display: flex; align-items: center; gap: 12px; padding: 8px 10px 8px 18px; border-radius: 14px; background: rgba(10,16,32,0.9);
   border: 1.5px solid rgba(120,200,230,0.6); color: #fff; font-weight: 600; font-size: 26px; white-space: nowrap; transform: translateY(-50%); }}
 .mchip b {{ background: #FFD43B; color: #111; border-radius: 9px; padding: 4px 12px; font-weight: 800; }}
