@@ -39,3 +39,22 @@ Map (OpenStreetMap, map3.json) with Dubai Silicon Oasis, Academic City, The Arts
 
 ## Slide 7 (done): CTA
 "Want more details? Comment ARTS DISTRICT or DM me." Over the brochure's aerial render.
+
+## Caption
+RIP 1% payment plans. RIP AED 800K studios. RIP "Dubai is too expensive". ⚰️
+
+Binghatti, the developer behind collaborations with Bugatti and Mercedes-Benz, just launched The Arts District:
+🏢 Studios from AED 499K · 1 bed from AED 799K · 2 bed from AED 1.2M
+💳 From AED 2,500 a month, on a 60/40 payment plan
+📍 Next to Dubai Silicon Oasis and Academic City: 15 min to DXB, 17 min to Downtown
+🚇 Metro Blue Line stations coming to DSO and Academic City by 2029
+🎓 38,500+ students and 70,000+ new jobs planned right next door
+
+EOI opens this weekend, with an extra 7% off for EOI bookings.
+
+Comment ARTS DISTRICT or DM me for the price list, floor plans and payment plan.
+
+*Prices, payment plan and offers are subject to change and availability. Renders are artist's impressions.*
+
+## Hashtags
+#Binghatti #TheArtsDistrict #DubaiSiliconOasis #AcademicCity #DubaiRealEstate #OffPlanDubai #DubaiProperty #DubaiInvestment #DubaiApartments #AffordableDubai
