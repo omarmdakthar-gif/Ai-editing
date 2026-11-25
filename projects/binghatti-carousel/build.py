@@ -122,6 +122,27 @@ def slide2():
 </section>'''
 
 
+def slide3():
+    chip = lambda name, mins, x, y, side='l': (f'<div class="mchip {side}" style="{"right" if side == "l" else "left"}:{x}px;top:{y}px">'
+                                              f'<span>{name}</span><b>{mins} min</b></div>')
+    return f'''
+<section class="slide s3">
+  <div class="s3head">
+    <div class="who light"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div><div class="pill">The location</div></div>
+    <h1>Next to <span>Dubai Silicon Oasis</span><br>&amp; <span>Academic City</span></h1>
+  </div>
+  <div class="map3" style="background-image:url('img/map_location.jpg')">
+    {chip('Downtown Dubai', 17, 700, 265)}
+    {chip('DXB Airport', 15, 760, 240, 'r')}
+    {chip('Dubai Creek Harbour', 14, 625, 362, 'r')}
+    {chip('Meydan', 10, 680, 424)}
+    <div class="mlab" style="right:556px;top:649px">Dubai Silicon Oasis</div>
+    <div class="mlab" style="right:492px;top:770px">Academic City</div>
+    <div class="proj" style="left:612px;top:709px">The Arts District</div>
+  </div>
+</section>'''
+
+
 face = lambda w: f"@font-face{{font-family:Outfit;font-weight:{w};src:url('file://{FONTS}/outfit-latin-{w}-normal.woff2') format('woff2')}}"
 page = f'''<!doctype html><html><head><meta charset="utf-8"><style>
 {face(400)}{face(500)}{face(600)}{face(700)}{face(800)}
@@ -176,6 +197,21 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .deal.big .plus {{ flex: none; background: none; padding: 0; font-size: 50px; font-weight: 800; color: #111; }}
 .body.big {{ margin-top: 24px; font-size: 32px; }}
 .deal.big .plus {{ font-size: 56px; }}
+.s3 {{ background: #0B1226; }}
+.s3head {{ height: 330px; padding: 34px 50px 0; background: linear-gradient(180deg, #1F7FD6, #4AA3EC); color: #fff; }}
+.who.light {{ margin-bottom: 20px; }} .who.light .handle {{ color: #DCEBFA; }}
+.who.light img {{ width: 84px; height: 84px; }} .who.light .name {{ font-size: 34px; }} .who.light .handle {{ font-size: 25px; }}
+.pill {{ margin-left: auto; padding: 8px 22px; border-radius: 30px; background: #FFD43B; color: #111; font-weight: 800; font-size: 24px; white-space: nowrap; }}
+.s3head h1 {{ font-size: 62px; font-weight: 800; line-height: 1.08; text-shadow: 0 4px 20px rgba(0,40,90,0.35); }}
+.s3head h1 span {{ color: #FFD43B; }}
+.map3 {{ position: relative; width: 1080px; height: 1020px; background-size: cover; background-position: center top; }}
+.mchip {{ position: absolute; display: flex; align-items: center; gap: 12px; padding: 8px 10px 8px 18px; border-radius: 14px; background: rgba(10,16,32,0.9);
+  border: 1.5px solid rgba(120,200,230,0.6); color: #fff; font-weight: 600; font-size: 26px; white-space: nowrap; transform: translateY(-50%); }}
+.mchip b {{ background: #FFD43B; color: #111; border-radius: 9px; padding: 4px 12px; font-weight: 800; }}
+.mlab {{ position: absolute; padding: 8px 18px; border-radius: 12px; background: rgba(40,20,60,0.9); border: 1.5px solid rgba(199,125,255,0.8); color: #fff;
+  font-weight: 700; font-size: 28px; white-space: nowrap; transform: translateY(-50%); }}
+.proj {{ position: absolute; padding: 12px 24px; border-radius: 14px; background: #FFD43B; color: #111; font-weight: 800; font-size: 36px; white-space: nowrap;
+  transform: translateY(-50%); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }}
 .card {{ position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }}
 .who {{ display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }}
 .who img {{ width: 70px; height: 70px; border-radius: 50%; }}
@@ -193,6 +229,7 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 </style></head><body>
 {slide1()}
 {slide2()}
+{slide3()}
 </body></html>'''
 (HERE / 'slides.html').write_text(page)
 print('slides.html')
