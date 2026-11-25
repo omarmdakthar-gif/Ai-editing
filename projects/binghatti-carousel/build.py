@@ -108,9 +108,8 @@ def slide2():
     return f'''
 <section class="slide s2">
   <div class="sun"></div>
-  {clouds}
   <div class="s2head">Because now,<br>from <span>Binghatti</span>&hellip;</div>
-  <p class="s2sub">The developer that has collaborated with <b>Bugatti</b> and <b>Mercedes&#8209;Benz</b>.</p>
+  <div class="s2sub">The developer that has collaborated with<div class="brands"><span>Bugatti</span><i>&amp;</i><span>Mercedes&#8209;Benz</span></div></div>
   <div class="card c2">
     <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
     <div class="prices big">
@@ -153,8 +152,12 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .cloud {{ position: absolute; width: 300px; height: 90px; background: #fff; border-radius: 60px; opacity: 0.9; transform-origin: left top; }}
 .cloud::before, .cloud::after {{ content: ''; position: absolute; background: #fff; border-radius: 50%; }}
 .cloud::before {{ width: 130px; height: 130px; left: 50px; top: -65px; }} .cloud::after {{ width: 100px; height: 100px; left: 150px; top: -45px; }}
-.s2sub {{ position: absolute; left: 70px; right: 70px; top: 320px; color: #fff; font-size: 40px; line-height: 1.25; font-weight: 500; text-shadow: 0 3px 16px rgba(0,40,90,0.45); }}
+.s2sub {{ position: absolute; left: 70px; right: 70px; top: 360px; color: #fff; font-size: 46px; line-height: 1.22; font-weight: 500; text-shadow: 0 3px 16px rgba(0,40,90,0.45); }}
 .s2sub b {{ font-weight: 800; }}
+.brands {{ display: flex; align-items: center; gap: 16px; margin-top: 30px; }}
+.brands span {{ background: #fff; color: #0B1530; border-radius: 20px; padding: 20px 34px; font-weight: 800; font-size: 64px; letter-spacing: 0.01em; text-shadow: none;
+  box-shadow: 0 10px 30px rgba(0,40,90,0.3); }}
+.brands i {{ font-style: normal; font-weight: 800; font-size: 60px; }}
 .s2head {{ position: absolute; left: 70px; right: 70px; top: 90px; color: #fff; font-weight: 800; font-size: 92px; line-height: 1.05; letter-spacing: -0.01em;
   text-shadow: 0 6px 24px rgba(0,40,90,0.45); }}
 .s2head span {{ color: #FFD43B; }}
