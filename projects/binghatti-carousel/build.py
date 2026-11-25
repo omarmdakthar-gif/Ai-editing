@@ -187,7 +187,7 @@ def slide5():
     </div>
     <p class="src5">Source: listed rents on a student-housing website, Nov 2026</p>
     <p class="body5">A basic room. <b>No pool, no gym, no community.</b></p>
-    <div class="imagine">Now imagine the demand for a <b>370 sq ft studio</b> by a top developer, with <b>world-class amenities</b>.</div>
+    <div class="imagine">Now imagine the demand for a <b>studio by a top developer</b>, in a community with <b>world-class amenities</b>.</div>
   </div>
 </section>'''
 
