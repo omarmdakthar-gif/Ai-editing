@@ -17,7 +17,7 @@ Morning sky. "Because now, from Binghatti... The developer that has collaborated
 - Payment plan: 60% during construction, 40% on completion. EOI opens Saturday 28 November 2026.
 - Sizes: studio 370 sq ft · 1 bed 756 sq ft · 2 bed 1,240 sq ft.
 - Drive times: Meydan 10 min, Dubai Creek Harbour 14, DXB 15, Downtown/Burj Khalifa 17, Museum of the Future 20, Palm Jumeirah 35.
-- NOTE: slide 2's prices (499K / 799K / 1.2M) and "20% down" do not match the brochure. Confirm with Omar.
+- Slide 2 prices (499K / 799K / 1.2M) are, per Omar, after the 7% EOI discount; fine print added on the slide. Brochure starting prices less 7% give about 488K / 791K / 1.21M, so the studio figure should be double-checked. "20% down" is Omar's figure; the brochure shows a 60/40 plan.
 
 ## Slide 3 (done): location
 Map (OpenStreetMap, map3.json) with Dubai Silicon Oasis, Academic City, The Arts District pin (position approximate), and drive-time chips from the brochure.
@@ -44,7 +44,7 @@ Map (OpenStreetMap, map3.json) with Dubai Silicon Oasis, Academic City, The Arts
 RIP 1% payment plans. RIP AED 800K studios. RIP "Dubai is too expensive". ⚰️
 
 Binghatti, the developer behind collaborations with Bugatti and Mercedes-Benz, just launched The Arts District:
-🏢 Studios from AED 499K · 1 bed from AED 799K · 2 bed from AED 1.2M
+🏢 Studios from AED 499K · 1 bed from AED 799K · 2 bed from AED 1.2M (after the 7% EOI discount)
 💳 From AED 2,500 a month, on a 60/40 payment plan
 📍 Next to Dubai Silicon Oasis and Academic City: 15 min to DXB, 17 min to Downtown
 🚇 Metro Blue Line stations coming to DSO and Academic City by 2029

@@ -118,6 +118,7 @@ def slide2():
       <div><span>2 bed</span><em>from</em><b>AED 1.2M</b></div>
     </div>
     <div class="deal big"><div><b>20%</b><span>down payment</span></div><div class="plus">&amp;</div><div><b>AED 2,500</b><span>a month</span></div></div>
+    <p class="fine">*Prices shown are after the 7% discount offered during the EOI stage.</p>
   </div>
 </section>'''
 
@@ -278,6 +279,7 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .deal.big b {{ display: block; font-size: 58px; font-weight: 800; line-height: 1; }}
 .deal.big span {{ display: block; margin: 8px 0 0; font-size: 26px; font-weight: 600; color: inherit; }}
 .deal.big .plus {{ flex: none; background: none; padding: 0; font-size: 50px; font-weight: 800; color: #111; }}
+.fine {{ margin-top: 16px; font-size: 22px; color: #6B7280; text-align: center; }}
 .body.big {{ margin-top: 24px; font-size: 32px; }}
 .deal.big .plus {{ font-size: 56px; }}
 .s3 {{ background: #0B1226; }}
