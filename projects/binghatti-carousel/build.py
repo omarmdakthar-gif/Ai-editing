@@ -24,30 +24,93 @@ def md(text):
 
 TICK = '''<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg>'''
 
+import math
+import random
 
-def tomb(x, rot, line1, line2, fs=84, cls=''):
-    return f'''<div class="tomb" style="left:{x}px;transform:rotate({rot}deg)"><div class="rip">RIP</div>
+
+def stars_svg(seed=7, n=150):
+    rnd = random.Random(seed)
+    out = []
+    for _ in range(n):
+        x, y = rnd.uniform(0, 1080), rnd.uniform(0, 760) ** 1.0
+        r = rnd.choice([1.2, 1.5, 1.8, 2.2, 2.8, 3.4])
+        o = rnd.uniform(0.45, 1)
+        out.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{r}" fill="#fff" opacity="{o:.2f}"/>')
+    for x, y, sz in [(150, 120, 16), (560, 70, 12), (930, 330, 14), (300, 230, 10)]:   # sparkle stars
+        out.append(f'<path d="M{x} {y-sz} L{x+sz*0.22} {y-sz*0.22} L{x+sz} {y} L{x+sz*0.22} {y+sz*0.22} L{x} {y+sz} L{x-sz*0.22} {y+sz*0.22} L{x-sz} {y} L{x-sz*0.22} {y-sz*0.22} Z" fill="#fff"/>')
+    out.append('<path d="M640 150 L820 60" stroke="url(#shoot)" stroke-width="4" stroke-linecap="round"/>')   # shooting star
+    return ('<svg class="stars" viewBox="0 0 1080 1350"><defs><linearGradient id="shoot" x1="0" y1="0" x2="1" y2="0">'
+            '<stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>'
+            + ''.join(out) + '</svg>')
+
+
+def splat_svg(seed, w=240, h=240):
+    """Blood splatter: a smooth irregular blob (Catmull-Rom through jittered points), droplets and drips."""
+    rnd = random.Random(seed)
+    cx, cy, R = w * 0.5, h * 0.42, 46
+    pts = []
+    n = 16
+    for k in range(n):
+        a = k / n * 2 * math.pi
+        r = R * rnd.uniform(0.82, 1.22)
+        pts.append((cx + r * math.cos(a), cy + r * 0.85 * math.sin(a)))
+    d = f'M{pts[0][0]:.1f} {pts[0][1]:.1f}'
+    for i in range(n):
+        p0, p1, p2, p3 = pts[i - 1], pts[i], pts[(i + 1) % n], pts[(i + 2) % n]
+        c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6)
+        c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
+        d += f' C{c1[0]:.1f} {c1[1]:.1f} {c2[0]:.1f} {c2[1]:.1f} {p2[0]:.1f} {p2[1]:.1f}'
+    drops = ''.join(f'<circle cx="{cx + math.cos(a) * dist:.0f}" cy="{cy + math.sin(a) * dist * 0.85:.0f}" r="{r:.1f}"/>'
+                    for a, dist, r in ((rnd.uniform(0, 6.28), rnd.uniform(62, 112), rnd.uniform(3, 10)) for _ in range(18)))
+    drips = ''.join(f'<path d="M{x-6} {cy+20} L{x-4} {cy+20+L} Q{x} {cy+32+L} {x+4} {cy+20+L} L{x+6} {cy+20} Z"/>'
+                    for x, L in ((cx + rnd.uniform(-30, 30), rnd.uniform(35, 80)) for _ in range(3)))
+    return f'<svg class="splat" viewBox="0 0 {w} {h}"><g fill="#A3101E"><path d="{d} Z"/>{drops}{drips}</g></svg>'
+
+
+SKULL = ('<svg viewBox="0 0 100 100"><path fill="#E9E4D8" d="M50 6C27 6 12 22 12 44c0 13 6 22 14 27v13c0 4 3 7 7 7h34c4 0 7-3 7-7V71c8-5 14-14 14-27C88 22 73 6 50 6z"/>'
+         '<ellipse cx="34" cy="48" rx="11" ry="12" fill="#1A1D26"/><ellipse cx="66" cy="48" rx="11" ry="12" fill="#1A1D26"/>'
+         '<path d="M50 60l-6 11h12z" fill="#1A1D26"/><path d="M36 84v7M44 84v8M52 84v8M60 84v7" stroke="#1A1D26" stroke-width="3"/></svg>')
+BONE = ('<svg viewBox="0 0 120 40"><g fill="#E9E4D8"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="28" r="10"/>'
+        '<circle cx="108" cy="12" r="10"/><circle cx="108" cy="28" r="10"/><rect x="12" y="13" width="96" height="14" rx="6"/></g></svg>')
+HAND = ('<svg viewBox="0 0 120 200"><g fill="#E9E4D8"><rect x="50" y="110" width="20" height="90" rx="8"/>'
+        '<rect x="30" y="70" width="60" height="50" rx="16"/><rect x="28" y="20" width="13" height="58" rx="6"/>'
+        '<rect x="46" y="8" width="13" height="68" rx="6"/><rect x="64" y="14" width="13" height="62" rx="6"/>'
+        '<rect x="82" y="32" width="12" height="48" rx="6"/><rect x="8" y="70" width="30" height="13" rx="6" transform="rotate(-35 20 76)"/></g></svg>')
+
+
+def tomb(x, rot, line1, line2, fs=84, cls='', seed=1):
+    return f'''<div class="tomb" style="left:{x}px;transform:rotate({rot}deg)">{splat_svg(seed)}<div class="rip">RIP</div>
       <div class="t1 {cls}" style="font-size:{fs}px">{line1}</div><div class="t2">{line2}</div></div>'''
 
 
 def slide1():
-    tombs = (tomb(28, -4, '1%', 'payment plans') + tomb(370, 1.5, 'AED 800K', 'for a studio', 66)
-             + tomb(712, 4, '&ldquo;Dubai is<br>too<br>expensive&rdquo;', '', 54, 'quote'))
+    tombs = (tomb(28, -4, '1%', 'payment plans', 110, '', 3) + tomb(370, 1.5, 'AED 800K', 'for a studio', 62, '', 11)
+             + tomb(712, 4, '&ldquo;Dubai is<br>too<br>expensive&rdquo;', '', 56, 'quote', 21))
+    bones = (f'<div class="skull" style="left:120px;top:1160px;transform:rotate(-12deg)">{SKULL}</div>'
+             f'<div class="skull sm" style="left:860px;top:1190px;transform:rotate(14deg)">{SKULL}</div>'
+             f'<div class="bone" style="left:250px;top:1235px;transform:rotate(18deg)">{BONE}</div>'
+             f'<div class="bone" style="left:700px;top:1250px;transform:rotate(-10deg)">{BONE}</div>'
+             f'')
     return f'''
 <section class="slide s1">
+  {stars_svg()}
   <div class="moon"></div>
   <div class="glow"></div>
   {tombs}
   <div class="ground"></div>
+  {bones}
   <div class="swipe">Swipe &rarr;</div>
 </section>'''
 
 
 def slide2():
+    clouds = ''.join(f'<div class="cloud" style="left:{x}px;top:{y}px;transform:scale({k})"></div>' for x, y, k in [(60, 470, 1), (700, 520, 0.8), (380, 600, 0.6)])
     return f'''
 <section class="slide s2">
   <div class="sun"></div>
+  {clouds}
   <div class="s2head">Because now,<br>from <span>Binghatti</span>&hellip;</div>
+  <p class="s2sub">The developer that has collaborated with <b>Bugatti</b> and <b>Mercedes&#8209;Benz</b>.</p>
   <div class="card c2">
     <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
     <div class="prices big">
@@ -55,8 +118,7 @@ def slide2():
       <div><span>1 bed</span><em>from</em><b>AED 799K</b></div>
       <div><span>2 bed</span><em>from</em><b>AED 1.2M</b></div>
     </div>
-    <div class="deal big"><div><b>10%</b><span>down payment</span></div><div class="plus">+</div><div><b>AED 2,500</b><span>a month</span></div></div>
-    <p class="body big">From the developer that has collaborated with <b>Bugatti</b> and <b>Mercedes&#8209;Benz</b>.</p>
+    <div class="deal big"><div><b>20%</b><span>down payment</span></div><div class="plus">&amp;</div><div><b>AED 2,500</b><span>a month</span></div></div>
   </div>
 </section>'''
 
@@ -68,23 +130,33 @@ page = f'''<!doctype html><html><head><meta charset="utf-8"><style>
 body {{ background: #111; font-family: Outfit, sans-serif; }}
 .slide {{ position: relative; width: 1080px; height: 1350px; overflow: hidden; }}
 .s1 {{ background: radial-gradient(70% 45% at 75% 8%, #3A4766 0%, #151B2C 45%, #07090F 100%); }}
-.s1::before {{ content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,0.5) 1px, transparent 1.5px); background-size: 120px 90px; opacity: 0.25; }}
+.s1::before {{ content: ''; position: absolute; inset: 0; background: none; }}
 .s1 .glow {{ position: absolute; left: 50%; top: 600px; width: 1200px; height: 700px; transform: translate(-50%,-50%); background: radial-gradient(closest-side, rgba(200,215,255,0.28), transparent); }}
 .moon {{ position: absolute; right: 110px; top: 70px; width: 120px; height: 120px; border-radius: 50%; background: #F3EBD3; box-shadow: 0 0 60px rgba(243,235,211,0.5); }}
 .tomb {{ position: absolute; top: 210px; width: 340px; height: 920px; border-radius: 170px 170px 12px 12px; background: linear-gradient(180deg, #E4E8EF, #A9B1BF);
   box-shadow: inset 0 -20px 40px rgba(0,0,0,0.25), 0 20px 40px rgba(0,0,0,0.5); text-align: center; padding-top: 200px; color: #1F2430; }}
-.rip {{ font-weight: 800; font-size: 112px; letter-spacing: 0.12em; color: #2A303C; }}
-.t1 {{ margin-top: 70px; font-weight: 800; font-size: 72px; line-height: 1.12; white-space: nowrap; color: #10131A; text-decoration: line-through; text-decoration-color: #E0182D; text-decoration-thickness: 9px; }}
-.t2 {{ margin-top: 18px; font-weight: 700; font-size: 42px; color: #1F2430; }}
+.rip {{ position: relative; font-weight: 800; font-size: 140px; line-height: 1; letter-spacing: 0.02em; text-shadow: 0 2px 0 rgba(255,255,255,0.6), 0 -2px 0 rgba(0,0,0,0.25); color: #1F232C; }}
+.t1 {{ position: relative; margin-top: 60px; font-weight: 800; font-size: 72px; line-height: 1.12; white-space: nowrap; color: #000; }}
+.t2 {{ position: relative; margin-top: 16px; font-weight: 800; font-size: 42px; line-height: 1.1; color: #000; }}
 .ground {{ position: absolute; left: 0; right: 0; top: 1080px; height: 280px; background: linear-gradient(180deg, #1B2A1E, #07090F); border-radius: 50% 50% 0 0 / 30px 30px 0 0; }}
-.t1.quote {{ text-decoration: none; font-style: italic; color: #B3121F; }}
+.t1.quote {{ font-style: italic; color: #000; }}
+.stars {{ position: absolute; inset: 0; width: 100%; height: 100%; }}
+.splat {{ position: absolute; left: 120px; top: 540px; width: 250px; height: 250px; opacity: 0.92; }}
+.skull, .bone, .hand {{ position: absolute; filter: drop-shadow(0 6px 10px rgba(0,0,0,0.6)); }}
+.skull {{ width: 110px; height: 110px; }} .skull.sm {{ width: 80px; height: 80px; }}
+.bone {{ width: 130px; height: 44px; }} .hand {{ width: 90px; height: 150px; }}
 .swipe {{ position: absolute; left: 50%; bottom: 70px; transform: translateX(-50%); padding: 14px 34px; border-radius: 40px; background: #FFD43B; color: #111;
   font-weight: 800; font-size: 34px; letter-spacing: 0.04em; }}
-.s2 {{ background: linear-gradient(180deg, #0B1530 0%, #3A2F5E 30%, #C2577A 55%, #F59E52 72%, #FFD27A 100%); }}
-.sun {{ position: absolute; left: 50%; top: 420px; width: 520px; height: 520px; transform: translateX(-50%); border-radius: 50%;
-  background: radial-gradient(circle, #FFF3C4 0%, #FFD27A 45%, rgba(255,210,122,0) 70%); }}
+.s2 {{ background: linear-gradient(180deg, #1F7FD6 0%, #4AA3EC 40%, #9FD3F7 75%, #D9F0FD 100%); }}
+.sun {{ position: absolute; right: -60px; top: -60px; width: 420px; height: 420px; border-radius: 50%;
+  background: radial-gradient(circle, #FFFBE6 0%, #FFE680 30%, rgba(255,230,128,0.35) 50%, rgba(255,230,128,0) 70%); }}
+.cloud {{ position: absolute; width: 300px; height: 90px; background: #fff; border-radius: 60px; opacity: 0.9; transform-origin: left top; }}
+.cloud::before, .cloud::after {{ content: ''; position: absolute; background: #fff; border-radius: 50%; }}
+.cloud::before {{ width: 130px; height: 130px; left: 50px; top: -65px; }} .cloud::after {{ width: 100px; height: 100px; left: 150px; top: -45px; }}
+.s2sub {{ position: absolute; left: 70px; right: 70px; top: 320px; color: #fff; font-size: 40px; line-height: 1.25; font-weight: 500; text-shadow: 0 3px 16px rgba(0,40,90,0.45); }}
+.s2sub b {{ font-weight: 800; }}
 .s2head {{ position: absolute; left: 70px; right: 70px; top: 90px; color: #fff; font-weight: 800; font-size: 92px; line-height: 1.05; letter-spacing: -0.01em;
-  text-shadow: 0 6px 30px rgba(0,0,0,0.35); }}
+  text-shadow: 0 6px 24px rgba(0,40,90,0.45); }}
 .s2head span {{ color: #FFD43B; }}
 .c2 {{ padding: 36px 44px 42px; }}
 .c2 .who img {{ width: 84px; height: 84px; }} .c2 .name {{ font-size: 34px; }} .c2 .handle {{ font-size: 25px; }}
@@ -100,6 +172,7 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .deal.big span {{ display: block; margin: 8px 0 0; font-size: 26px; font-weight: 600; color: inherit; }}
 .deal.big .plus {{ flex: none; background: none; padding: 0; font-size: 50px; font-weight: 800; color: #111; }}
 .body.big {{ margin-top: 24px; font-size: 32px; }}
+.deal.big .plus {{ font-size: 56px; }}
 .card {{ position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }}
 .who {{ display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }}
 .who img {{ width: 70px; height: 70px; border-radius: 50%; }}
