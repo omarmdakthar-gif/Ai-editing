@@ -151,7 +151,7 @@ def slide4():
   <div class="s4shade"></div>
   <div class="s3head s4head">
     <div class="who light"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div><div class="pill">The potential</div></div>
-    <h1>Why this location is<br><span>about to boom</span></h1>
+    <h1>Why this location is <span>about to boom</span></h1>
   </div>
   <div class="zone dso">
     <div class="zt"><i></i>Dubai Silicon Oasis</div>
@@ -263,8 +263,8 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
   transform: translateY(-50%); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }}
 .s4 {{ background-color: #0B1226; background-size: cover; background-position: center 60%; }}
 .s4shade {{ position: absolute; inset: 0; background: rgba(6,10,24,0.72); }}
-.s4head {{ position: relative; height: 290px; }} .s4head h1 {{ font-size: 60px; }}
-.zone {{ position: relative; margin: 18px 50px 0; background: #fff; border-radius: 24px; padding: 22px 30px 24px; color: #111; }}
+.s4head {{ position: relative; height: 250px; }} .s4head h1 {{ font-size: 52px; white-space: nowrap; margin-top: 20px; }}
+.zone {{ position: relative; margin: 28px 50px 0; background: #fff; border-radius: 24px; padding: 22px 30px 24px; color: #111; }}
 .zt {{ display: flex; align-items: center; gap: 14px; font-size: 38px; font-weight: 800; }}
 .zt i {{ width: 22px; height: 22px; border-radius: 50%; background: #C77DFF; box-shadow: 0 0 0 6px rgba(199,125,255,0.25); }}
 .zone p {{ margin-top: 8px; font-size: 27px; line-height: 1.3; color: #2A2F38; }} .zone p b {{ color: #111; font-weight: 700; }}
