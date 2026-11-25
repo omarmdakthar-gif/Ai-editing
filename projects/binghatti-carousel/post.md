@@ -31,3 +31,4 @@ Map (OpenStreetMap, map3.json) with Dubai Silicon Oasis, Academic City, The Arts
 - Student rooms near Academic City (KSK Homes website, screenshots from Omar, Nov 2026): single room AED 6,550/month, shared twin room (200 sq ft) AED 4,699/month, inclusive of VAT. Rooms include basic furniture, fridge, wardrobe, safe and Wi-Fi, so the slide says "no pool, no gym, no community" rather than "no amenities".
 - Studio at The Arts District: 370 sq ft (brochure). No specific return is promised on the slide.
 - Photo: plaza render from the Binghatti brochure (src/arts_district.pdf, page 1).
+- Room thumbnails cropped from the KSK Homes screenshots (src/ksk_single.jpg, src/ksk_twin.jpg) as proof of the listed rents; small source line on the slide.

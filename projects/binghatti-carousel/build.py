@@ -182,9 +182,10 @@ def slide5():
     <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
     <p class="lead5">Student rooms next to Academic City already rent for:</p>
     <div class="rooms">
-      <div><span>Single room</span><b>AED 6,550<small>/month</small></b></div>
-      <div><span>Shared twin room · 200 sq ft</span><b>AED 4,699<small>/month</small></b></div>
+      <div><i style="background-image:url('img/room_single.jpg')"></i><span>Single room</span><b>AED 6,550<small>/month</small></b></div>
+      <div><i style="background-image:url('img/room_twin.jpg')"></i><span>Shared twin room · 200 sq ft</span><b>AED 4,699<small>/month</small></b></div>
     </div>
+    <p class="src5">Source: listed rents on a student-housing website, Nov 2026</p>
     <p class="body5">A basic room. <b>No pool, no gym, no community.</b></p>
     <div class="imagine">Now imagine the demand for a <b>370 sq ft studio</b> by a top developer, with <b>world-class amenities</b>.</div>
   </div>
@@ -276,17 +277,19 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
   font-size: 30px; line-height: 1.25; text-align: center; font-weight: 500; }} .take b {{ font-weight: 800; }}
 .zone.metro .zt i {{ background: #2F7BFF; box-shadow: 0 0 0 6px rgba(47,123,255,0.25); }}
 .s5 {{ background: #0B1226; }}
-.s5photo {{ position: absolute; left: 0; right: 0; top: 0; height: 800px; background-size: cover; background-position: center; }}
-.s5fade {{ position: absolute; left: 0; right: 0; top: 560px; height: 260px; background: linear-gradient(rgba(11,18,38,0), #0B1226); }}
+.s5photo {{ position: absolute; left: 0; right: 0; top: 0; height: 640px; background-size: cover; background-position: center; }}
+.s5fade {{ position: absolute; left: 0; right: 0; top: 400px; height: 260px; background: linear-gradient(rgba(11,18,38,0), #0B1226); }}
 .s5tag {{ position: absolute; left: 50px; top: 50px; padding: 10px 22px; border-radius: 30px; background: rgba(10,16,32,0.75); color: #fff; font-weight: 700; font-size: 26px; }}
 .c5 {{ bottom: 50px; padding: 34px 42px 38px; }}
 .c5 .who img {{ width: 80px; height: 80px; }} .c5 .name {{ font-size: 32px; }} .c5 .handle {{ font-size: 24px; }}
 .lead5 {{ font-size: 34px; line-height: 1.25; font-weight: 600; }}
 .rooms {{ display: flex; gap: 12px; margin-top: 16px; }}
-.rooms div {{ flex: 1; background: #F1F2F5; border-radius: 16px; padding: 16px 20px; }}
+.rooms div {{ flex: 1; background: #F1F2F5; border-radius: 16px; padding: 16px 20px 14px; }}
+.rooms i {{ display: block; height: 170px; margin: -6px -10px 12px; border-radius: 12px; background-size: cover; background-position: center; }}
 .rooms span {{ display: block; font-size: 22px; font-weight: 600; color: #5B6470; }}
 .rooms b {{ display: block; margin-top: 6px; font-size: 46px; font-weight: 800; white-space: nowrap; }} .rooms small {{ font-size: 22px; font-weight: 600; color: #5B6470; }}
-.body5 {{ margin-top: 16px; font-size: 32px; color: #2A2F38; }} .body5 b {{ color: #111; }}
+.src5 {{ margin-top: 8px; font-size: 20px; color: #8A9099; }}
+.body5 {{ margin-top: 12px; font-size: 32px; color: #2A2F38; }} .body5 b {{ color: #111; }}
 .imagine {{ margin-top: 18px; background: #FFD43B; border-radius: 18px; padding: 20px 24px; font-size: 34px; line-height: 1.28; }} .imagine b {{ font-weight: 800; }}
 .card {{ position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }}
 .who {{ display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }}
