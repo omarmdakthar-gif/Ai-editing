@@ -113,6 +113,14 @@ body { background: #111; font-family: Outfit, sans-serif; }
 .facts6 span { display: block; margin-top: 8px; font-size: 26px; font-weight: 600; }
 .disc { margin-top: 14px; border: 3px dashed #E0182D; background: #FFF0F1; color: #111; border-radius: 18px; padding: 18px 24px; font-size: 34px; text-align: center; line-height: 1.25; }
 .disc b { color: #C8102E; font-weight: 800; }
+.s7 { background-size: cover; background-position: center; }
+.s7shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.75) 100%); }
+.s7box { position: absolute; left: 60px; right: 60px; bottom: 90px; background: #fff; border-radius: 36px; padding: 44px 46px 54px; text-align: center; color: #111; }
+.s7who { justify-content: center; margin-bottom: 28px; } .s7who img { width: 90px; height: 90px; } .s7who .name { font-size: 36px; } .s7who .handle { font-size: 26px; text-align: left; }
+.s7q { font-size: 60px; font-weight: 800; }
+.s7c { margin-top: 20px; font-size: 62px; font-weight: 700; white-space: nowrap; }
+.s7c mark { background: #FFD43B; color: #111; padding: 0 18px; border-radius: 16px; font-weight: 800; }
+.s7d { margin-top: 16px; font-size: 48px; font-weight: 600; color: #3A414C; }
 .card { position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }
 .who { display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }
 .who img { width: 70px; height: 70px; border-radius: 50%; }
@@ -230,6 +238,16 @@ body { background: #111; font-family: Outfit, sans-serif; }
       <div class="f k"><b>This weekend</b><span>EOI opens</span></div>
     </div>
     <div class="disc">Book at the EOI stage and get an <b>extra 7% discount</b></div>
+  </div>
+</section>
+
+<section class="slide s7" style="background-image:url('img/aerial.jpg')">
+  <div class="s7shade"></div>
+  <div class="s7box">
+    <div class="who s7who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="s7q">Want more details?</div>
+    <div class="s7c">Comment <mark>ARTS DISTRICT</mark></div>
+    <div class="s7d">or DM me</div>
   </div>
 </section>
 </body></html>

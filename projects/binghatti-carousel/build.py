@@ -213,6 +213,19 @@ def slide6():
 </section>'''
 
 
+def slide7():
+    return f'''
+<section class="slide s7" style="background-image:url('img/aerial.jpg')">
+  <div class="s7shade"></div>
+  <div class="s7box">
+    <div class="who s7who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
+    <div class="s7q">Want more details?</div>
+    <div class="s7c">Comment <mark>ARTS DISTRICT</mark></div>
+    <div class="s7d">or DM me</div>
+  </div>
+</section>'''
+
+
 face = lambda w: f"@font-face{{font-family:Outfit;font-weight:{w};src:url('file://{FONTS}/outfit-latin-{w}-normal.woff2') format('woff2')}}"
 page = f'''<!doctype html><html><head><meta charset="utf-8"><style>
 {face(400)}{face(500)}{face(600)}{face(700)}{face(800)}
@@ -329,6 +342,14 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .facts6 span {{ display: block; margin-top: 8px; font-size: 26px; font-weight: 600; }}
 .disc {{ margin-top: 14px; border: 3px dashed #E0182D; background: #FFF0F1; color: #111; border-radius: 18px; padding: 18px 24px; font-size: 34px; text-align: center; line-height: 1.25; }}
 .disc b {{ color: #C8102E; font-weight: 800; }}
+.s7 {{ background-size: cover; background-position: center; }}
+.s7shade {{ position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.75) 100%); }}
+.s7box {{ position: absolute; left: 60px; right: 60px; bottom: 90px; background: #fff; border-radius: 36px; padding: 44px 46px 54px; text-align: center; color: #111; }}
+.s7who {{ justify-content: center; margin-bottom: 28px; }} .s7who img {{ width: 90px; height: 90px; }} .s7who .name {{ font-size: 36px; }} .s7who .handle {{ font-size: 26px; text-align: left; }}
+.s7q {{ font-size: 60px; font-weight: 800; }}
+.s7c {{ margin-top: 20px; font-size: 62px; font-weight: 700; white-space: nowrap; }}
+.s7c mark {{ background: #FFD43B; color: #111; padding: 0 18px; border-radius: 16px; font-weight: 800; }}
+.s7d {{ margin-top: 16px; font-size: 48px; font-weight: 600; color: #3A414C; }}
 .card {{ position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }}
 .who {{ display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }}
 .who img {{ width: 70px; height: 70px; border-radius: 50%; }}
@@ -350,6 +371,7 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 {slide4()}
 {slide5()}
 {slide6()}
+{slide7()}
 </body></html>'''
 (HERE / 'slides.html').write_text(page)
 print('slides.html')

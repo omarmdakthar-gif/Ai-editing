@@ -36,3 +36,6 @@ Map (OpenStreetMap, map3.json) with Dubai Silicon Oasis, Academic City, The Arts
 ## Slide 6 (done): collage + offer
 - Collage from the shareable brochure only (plaza render, aerial in the mist, two crops of the plaza sculptures). The violin-performance and kids-at-the-elevator renders are only in the CONFIDENTIAL internal deck, so they are not used unless Binghatti confirms.
 - 60/40 payment plan (brochure). EOI opens this weekend (brochure: Saturday 28 November 2026). Extra 7% discount when booking at the EOI stage (Omar; not in the brochure).
+
+## Slide 7 (done): CTA
+"Want more details? Comment ARTS DISTRICT or DM me." Over the brochure's aerial render.
