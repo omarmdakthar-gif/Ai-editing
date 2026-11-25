@@ -96,6 +96,23 @@ body { background: #111; font-family: Outfit, sans-serif; }
 .src5 { margin-top: 8px; font-size: 20px; color: #8A9099; }
 .body5 { margin-top: 12px; font-size: 32px; color: #2A2F38; } .body5 b { color: #111; }
 .imagine { margin-top: 18px; background: #FFD43B; border-radius: 18px; padding: 20px 24px; font-size: 34px; line-height: 1.28; } .imagine b { font-weight: 800; }
+.s6 { background: #0B1226; }
+.collage { position: absolute; left: 30px; right: 30px; top: 30px; height: 860px; display: grid; grid-template-columns: 1.3fr 1fr 1fr; grid-template-rows: 1.15fr 1fr; gap: 12px; }
+.collage .t { background-size: cover; background-position: center; border-radius: 18px; }
+.collage .big { grid-column: 1 / 4; grid-row: 1; }
+.collage .a { grid-column: 1; grid-row: 2; }
+.collage .b { grid-column: 2; grid-row: 2; background-position: center 20%; }
+.collage .c { grid-column: 3; grid-row: 2; background-position: center 30%; }
+.tag6 { position: absolute; left: 20px; top: 20px; padding: 10px 22px; border-radius: 30px; background: rgba(10,16,32,0.78); color: #fff; font-weight: 700; font-size: 26px; }
+.c6 { left: 30px; right: 30px; bottom: 30px; padding: 26px 38px 30px; }
+.c6 .who { margin-bottom: 18px; } .c6 .who img { width: 76px; height: 76px; } .c6 .name { font-size: 32px; } .c6 .handle { font-size: 24px; }
+.facts6 { display: flex; gap: 12px; }
+.facts6 .f { flex: 1; background: #FFD43B; border-radius: 18px; padding: 18px 22px; }
+.facts6 .f.k { background: #111; color: #fff; } .facts6 .f.k b { color: #FFC940; }
+.facts6 b { display: block; font-size: 52px; font-weight: 800; line-height: 1; white-space: nowrap; }
+.facts6 span { display: block; margin-top: 8px; font-size: 26px; font-weight: 600; }
+.disc { margin-top: 14px; border: 3px dashed #E0182D; background: #FFF0F1; color: #111; border-radius: 18px; padding: 18px 24px; font-size: 34px; text-align: center; line-height: 1.25; }
+.disc b { color: #C8102E; font-weight: 800; }
 .card { position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }
 .who { display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }
 .who img { width: 70px; height: 70px; border-radius: 50%; }
@@ -195,6 +212,24 @@ body { background: #111; font-family: Outfit, sans-serif; }
     <p class="src5">Source: listed rents on a student-housing website, Nov 2026</p>
     <p class="body5">A basic room. <b>No pool, no gym, no community.</b></p>
     <div class="imagine">Now imagine the demand for a <b>studio by a top developer</b>, in a community with <b>world-class amenities</b>.</div>
+  </div>
+</section>
+
+<section class="slide s6">
+  <div class="collage">
+    <div class="t big" style="background-image:url('img/plaza-000.jpg')"></div>
+    <div class="t a" style="background-image:url('img/aerial.jpg')"></div>
+    <div class="t b" style="background-image:url('img/cloud_crop.jpg')"></div>
+    <div class="t c" style="background-image:url('img/bear_crop.jpg')"></div>
+    <div class="tag6">The Arts District by Binghatti</div>
+  </div>
+  <div class="card c6">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="facts6">
+      <div class="f"><b>60/40</b><span>payment plan</span></div>
+      <div class="f k"><b>This weekend</b><span>EOI opens</span></div>
+    </div>
+    <div class="disc">Book at the EOI stage and get an <b>extra 7% discount</b></div>
   </div>
 </section>
 </body></html>

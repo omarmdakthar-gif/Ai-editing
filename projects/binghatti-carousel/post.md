@@ -32,3 +32,7 @@ Map (OpenStreetMap, map3.json) with Dubai Silicon Oasis, Academic City, The Arts
 - Closing line: "Now imagine the demand for a studio by a top developer, in a community with world-class amenities." No size or return figure on the slide.
 - Photo: plaza render from the Binghatti brochure (src/arts_district.pdf, page 1).
 - Room thumbnails cropped from the KSK Homes screenshots (src/ksk_single.jpg, src/ksk_twin.jpg) as proof of the listed rents; small source line on the slide.
+
+## Slide 6 (done): collage + offer
+- Collage from the shareable brochure only (plaza render, aerial in the mist, two crops of the plaza sculptures). The violin-performance and kids-at-the-elevator renders are only in the CONFIDENTIAL internal deck, so they are not used unless Binghatti confirms.
+- 60/40 payment plan (brochure). EOI opens this weekend (brochure: Saturday 28 November 2026). Extra 7% discount when booking at the EOI stage (Omar; not in the brochure).

@@ -192,6 +192,27 @@ def slide5():
 </section>'''
 
 
+def slide6():
+    return f'''
+<section class="slide s6">
+  <div class="collage">
+    <div class="t big" style="background-image:url('img/plaza-000.jpg')"></div>
+    <div class="t a" style="background-image:url('img/aerial.jpg')"></div>
+    <div class="t b" style="background-image:url('img/cloud_crop.jpg')"></div>
+    <div class="t c" style="background-image:url('img/bear_crop.jpg')"></div>
+    <div class="tag6">The Arts District by Binghatti</div>
+  </div>
+  <div class="card c6">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
+    <div class="facts6">
+      <div class="f"><b>60/40</b><span>payment plan</span></div>
+      <div class="f k"><b>This weekend</b><span>EOI opens</span></div>
+    </div>
+    <div class="disc">Book at the EOI stage and get an <b>extra 7% discount</b></div>
+  </div>
+</section>'''
+
+
 face = lambda w: f"@font-face{{font-family:Outfit;font-weight:{w};src:url('file://{FONTS}/outfit-latin-{w}-normal.woff2') format('woff2')}}"
 page = f'''<!doctype html><html><head><meta charset="utf-8"><style>
 {face(400)}{face(500)}{face(600)}{face(700)}{face(800)}
@@ -291,6 +312,23 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .src5 {{ margin-top: 8px; font-size: 20px; color: #8A9099; }}
 .body5 {{ margin-top: 12px; font-size: 32px; color: #2A2F38; }} .body5 b {{ color: #111; }}
 .imagine {{ margin-top: 18px; background: #FFD43B; border-radius: 18px; padding: 20px 24px; font-size: 34px; line-height: 1.28; }} .imagine b {{ font-weight: 800; }}
+.s6 {{ background: #0B1226; }}
+.collage {{ position: absolute; left: 30px; right: 30px; top: 30px; height: 860px; display: grid; grid-template-columns: 1.3fr 1fr 1fr; grid-template-rows: 1.15fr 1fr; gap: 12px; }}
+.collage .t {{ background-size: cover; background-position: center; border-radius: 18px; }}
+.collage .big {{ grid-column: 1 / 4; grid-row: 1; }}
+.collage .a {{ grid-column: 1; grid-row: 2; }}
+.collage .b {{ grid-column: 2; grid-row: 2; background-position: center 20%; }}
+.collage .c {{ grid-column: 3; grid-row: 2; background-position: center 30%; }}
+.tag6 {{ position: absolute; left: 20px; top: 20px; padding: 10px 22px; border-radius: 30px; background: rgba(10,16,32,0.78); color: #fff; font-weight: 700; font-size: 26px; }}
+.c6 {{ left: 30px; right: 30px; bottom: 30px; padding: 26px 38px 30px; }}
+.c6 .who {{ margin-bottom: 18px; }} .c6 .who img {{ width: 76px; height: 76px; }} .c6 .name {{ font-size: 32px; }} .c6 .handle {{ font-size: 24px; }}
+.facts6 {{ display: flex; gap: 12px; }}
+.facts6 .f {{ flex: 1; background: #FFD43B; border-radius: 18px; padding: 18px 22px; }}
+.facts6 .f.k {{ background: #111; color: #fff; }} .facts6 .f.k b {{ color: #FFC940; }}
+.facts6 b {{ display: block; font-size: 52px; font-weight: 800; line-height: 1; white-space: nowrap; }}
+.facts6 span {{ display: block; margin-top: 8px; font-size: 26px; font-weight: 600; }}
+.disc {{ margin-top: 14px; border: 3px dashed #E0182D; background: #FFF0F1; color: #111; border-radius: 18px; padding: 18px 24px; font-size: 34px; text-align: center; line-height: 1.25; }}
+.disc b {{ color: #C8102E; font-weight: 800; }}
 .card {{ position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }}
 .who {{ display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }}
 .who img {{ width: 70px; height: 70px; border-radius: 50%; }}
@@ -311,6 +349,7 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 {slide3()}
 {slide4()}
 {slide5()}
+{slide6()}
 </body></html>'''
 (HERE / 'slides.html').write_text(page)
 print('slides.html')
