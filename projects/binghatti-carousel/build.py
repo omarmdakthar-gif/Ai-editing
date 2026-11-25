@@ -43,6 +43,24 @@ def slide1():
 </section>'''
 
 
+def slide2():
+    return f'''
+<section class="slide s2">
+  <div class="sun"></div>
+  <div class="s2head">Because now,<br>from <span>Binghatti</span>&hellip;</div>
+  <div class="card c2">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
+    <div class="prices big">
+      <div><span>Studio</span><em>from</em><b>AED 499K</b></div>
+      <div><span>1 bed</span><em>from</em><b>AED 799K</b></div>
+      <div><span>2 bed</span><em>from</em><b>AED 1.2M</b></div>
+    </div>
+    <div class="deal big"><div><b>10%</b><span>down payment</span></div><div class="plus">+</div><div><b>AED 2,500</b><span>a month</span></div></div>
+    <p class="body big">From the developer that has collaborated with <b>Bugatti</b> and <b>Mercedes&#8209;Benz</b>.</p>
+  </div>
+</section>'''
+
+
 face = lambda w: f"@font-face{{font-family:Outfit;font-weight:{w};src:url('file://{FONTS}/outfit-latin-{w}-normal.woff2') format('woff2')}}"
 page = f'''<!doctype html><html><head><meta charset="utf-8"><style>
 {face(400)}{face(500)}{face(600)}{face(700)}{face(800)}
@@ -62,6 +80,26 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .t1.quote {{ text-decoration: none; font-style: italic; color: #B3121F; }}
 .swipe {{ position: absolute; left: 50%; bottom: 70px; transform: translateX(-50%); padding: 14px 34px; border-radius: 40px; background: #FFD43B; color: #111;
   font-weight: 800; font-size: 34px; letter-spacing: 0.04em; }}
+.s2 {{ background: linear-gradient(180deg, #0B1530 0%, #3A2F5E 30%, #C2577A 55%, #F59E52 72%, #FFD27A 100%); }}
+.sun {{ position: absolute; left: 50%; top: 420px; width: 520px; height: 520px; transform: translateX(-50%); border-radius: 50%;
+  background: radial-gradient(circle, #FFF3C4 0%, #FFD27A 45%, rgba(255,210,122,0) 70%); }}
+.s2head {{ position: absolute; left: 70px; right: 70px; top: 90px; color: #fff; font-weight: 800; font-size: 92px; line-height: 1.05; letter-spacing: -0.01em;
+  text-shadow: 0 6px 30px rgba(0,0,0,0.35); }}
+.s2head span {{ color: #FFD43B; }}
+.c2 {{ padding: 36px 44px 42px; }}
+.c2 .who img {{ width: 84px; height: 84px; }} .c2 .name {{ font-size: 34px; }} .c2 .handle {{ font-size: 25px; }}
+.prices.big {{ flex-direction: column; gap: 0; margin-top: 8px; }}
+.prices.big div {{ display: grid; grid-template-columns: 1fr auto 260px; align-items: baseline; gap: 14px; background: none; border-radius: 0; padding: 18px 0; border-bottom: 2px solid #E6E8EC; }}
+.prices.big span {{ font-size: 40px; color: #111; font-weight: 500; }}
+.prices.big em {{ font-style: normal; font-size: 24px; color: #8A9099; }}
+.prices.big b {{ font-size: 50px; text-align: right; color: #111; }}
+.deal.big {{ display: flex; align-items: center; gap: 14px; background: none; padding: 0; margin-top: 26px; }}
+.deal.big > div {{ flex: 1; background: #FFD43B; border-radius: 20px; padding: 20px 22px; text-align: center; }}
+.deal.big > div:last-child {{ background: #111; color: #fff; }} .deal.big > div:last-child b {{ color: #FFC940; }}
+.deal.big b {{ display: block; font-size: 58px; font-weight: 800; line-height: 1; }}
+.deal.big span {{ display: block; margin: 8px 0 0; font-size: 26px; font-weight: 600; color: inherit; }}
+.deal.big .plus {{ flex: none; background: none; padding: 0; font-size: 50px; font-weight: 800; color: #111; }}
+.body.big {{ margin-top: 24px; font-size: 32px; }}
 .card {{ position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }}
 .who {{ display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }}
 .who img {{ width: 70px; height: 70px; border-radius: 50%; }}
@@ -78,6 +116,7 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .deal b {{ font-weight: 800; font-size: 32px; }} .deal span {{ margin: 0 8px; color: #5B4A00; }}
 </style></head><body>
 {slide1()}
+{slide2()}
 </body></html>'''
 (HERE / 'slides.html').write_text(page)
 print('slides.html')

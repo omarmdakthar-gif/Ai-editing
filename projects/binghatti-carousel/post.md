@@ -3,7 +3,7 @@
 ## Slide 1 (done)
 Three tombstones only: RIP 1% payment plans · RIP AED 800K for a studio · RIP "Dubai is too expensive".
 
-## Content moved off slide 1 (for the next slides)
+## Slide 2 (done): the offer
 From Binghatti: studios from AED 499K, 1 bed from AED 799K, 2 bed from AED 1.2M. Developer has collaborated with Bugatti and Mercedes-Benz. 10% down payment and AED 2,500 a month.
 
 ## To confirm with Omar

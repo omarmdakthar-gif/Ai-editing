@@ -16,6 +16,26 @@ body { background: #111; font-family: Outfit, sans-serif; }
 .t1.quote { text-decoration: none; font-style: italic; color: #B3121F; }
 .swipe { position: absolute; left: 50%; bottom: 70px; transform: translateX(-50%); padding: 14px 34px; border-radius: 40px; background: #FFD43B; color: #111;
   font-weight: 800; font-size: 34px; letter-spacing: 0.04em; }
+.s2 { background: linear-gradient(180deg, #0B1530 0%, #3A2F5E 30%, #C2577A 55%, #F59E52 72%, #FFD27A 100%); }
+.sun { position: absolute; left: 50%; top: 420px; width: 520px; height: 520px; transform: translateX(-50%); border-radius: 50%;
+  background: radial-gradient(circle, #FFF3C4 0%, #FFD27A 45%, rgba(255,210,122,0) 70%); }
+.s2head { position: absolute; left: 70px; right: 70px; top: 90px; color: #fff; font-weight: 800; font-size: 92px; line-height: 1.05; letter-spacing: -0.01em;
+  text-shadow: 0 6px 30px rgba(0,0,0,0.35); }
+.s2head span { color: #FFD43B; }
+.c2 { padding: 36px 44px 42px; }
+.c2 .who img { width: 84px; height: 84px; } .c2 .name { font-size: 34px; } .c2 .handle { font-size: 25px; }
+.prices.big { flex-direction: column; gap: 0; margin-top: 8px; }
+.prices.big div { display: grid; grid-template-columns: 1fr auto 260px; align-items: baseline; gap: 14px; background: none; border-radius: 0; padding: 18px 0; border-bottom: 2px solid #E6E8EC; }
+.prices.big span { font-size: 40px; color: #111; font-weight: 500; }
+.prices.big em { font-style: normal; font-size: 24px; color: #8A9099; }
+.prices.big b { font-size: 50px; text-align: right; color: #111; }
+.deal.big { display: flex; align-items: center; gap: 14px; background: none; padding: 0; margin-top: 26px; }
+.deal.big > div { flex: 1; background: #FFD43B; border-radius: 20px; padding: 20px 22px; text-align: center; }
+.deal.big > div:last-child { background: #111; color: #fff; } .deal.big > div:last-child b { color: #FFC940; }
+.deal.big b { display: block; font-size: 58px; font-weight: 800; line-height: 1; }
+.deal.big span { display: block; margin: 8px 0 0; font-size: 26px; font-weight: 600; color: inherit; }
+.deal.big .plus { flex: none; background: none; padding: 0; font-size: 50px; font-weight: 800; color: #111; }
+.body.big { margin-top: 24px; font-size: 32px; }
 .card { position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }
 .who { display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }
 .who img { width: 70px; height: 70px; border-radius: 50%; }
@@ -41,5 +61,20 @@ body { background: #111; font-family: Outfit, sans-serif; }
       <div class="t1 quote" style="font-size:54px">&ldquo;Dubai is<br>too<br>expensive&rdquo;</div><div class="t2"></div></div>
   <div class="ground"></div>
   <div class="swipe">Swipe &rarr;</div>
+</section>
+
+<section class="slide s2">
+  <div class="sun"></div>
+  <div class="s2head">Because now,<br>from <span>Binghatti</span>&hellip;</div>
+  <div class="card c2">
+    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">Omar Akthar<svg class="tick" viewBox="0 0 24 24" aria-label="Verified"><path fill="#1D9BF0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484z"/><path fill="#fff" d="M10.54 16.2l-3.6-3.6 1.4-1.4 2.2 2.2 5.2-5.2 1.4 1.4z"/></svg></div><div class="handle">@omarakthar.in</div></div></div>
+    <div class="prices big">
+      <div><span>Studio</span><em>from</em><b>AED 499K</b></div>
+      <div><span>1 bed</span><em>from</em><b>AED 799K</b></div>
+      <div><span>2 bed</span><em>from</em><b>AED 1.2M</b></div>
+    </div>
+    <div class="deal big"><div><b>10%</b><span>down payment</span></div><div class="plus">+</div><div><b>AED 2,500</b><span>a month</span></div></div>
+    <p class="body big">From the developer that has collaborated with <b>Bugatti</b> and <b>Mercedes&#8209;Benz</b>.</p>
+  </div>
 </section>
 </body></html>
