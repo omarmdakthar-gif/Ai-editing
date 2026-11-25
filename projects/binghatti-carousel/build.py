@@ -144,6 +144,29 @@ def slide3():
 </section>'''
 
 
+def slide4():
+    stat = lambda n, l: f'<div class="st4"><b>{n}</b><span>{l}</span></div>'
+    return f'''
+<section class="slide s4" style="background-image:url('img/map_location.jpg')">
+  <div class="s4shade"></div>
+  <div class="s3head s4head">
+    <div class="who light"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div><div class="pill">The potential</div></div>
+    <h1>Why this location is<br><span>about to boom</span></h1>
+  </div>
+  <div class="zone dso">
+    <div class="zt"><i></i>Dubai Silicon Oasis</div>
+    <p>One of the <b>5 main urban centres</b> in the Dubai 2040 Urban Master Plan. Coming next: <b>District IO</b>, a future-tech district.</p>
+    <div class="stats4">{stat('AED 11B', 'investment')}{stat('70,000+', 'jobs in 10 years')}{stat('6,500+', 'companies')}</div>
+  </div>
+  <div class="zone dac">
+    <div class="zt"><i></i>Academic City</div>
+    <p>Dubai's university hub, right next door. Students, faculty and staff all need homes nearby.</p>
+    <div class="stats4">{stat('38,500+', 'students today')}{stat('+40%', 'more students by 2030')}</div>
+  </div>
+  <div class="take">Thousands of new jobs + students next door =<br><b>strong rental demand</b></div>
+</section>'''
+
+
 face = lambda w: f"@font-face{{font-family:Outfit;font-weight:{w};src:url('file://{FONTS}/outfit-latin-{w}-normal.woff2') format('woff2')}}"
 page = f'''<!doctype html><html><head><meta charset="utf-8"><style>
 {face(400)}{face(500)}{face(600)}{face(700)}{face(800)}
@@ -214,6 +237,19 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
   font-weight: 700; font-size: 28px; white-space: nowrap; transform: translateY(-50%); }}
 .proj {{ position: absolute; padding: 12px 24px; border-radius: 14px; background: #FFD43B; color: #111; font-weight: 800; font-size: 36px; white-space: nowrap;
   transform: translateY(-50%); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }}
+.s4 {{ background-color: #0B1226; background-size: cover; background-position: center 60%; }}
+.s4shade {{ position: absolute; inset: 0; background: rgba(6,10,24,0.72); }}
+.s4head {{ position: relative; height: 330px; }}
+.zone {{ position: relative; margin: 36px 50px 0; background: #fff; border-radius: 26px; padding: 34px 36px 36px; color: #111; }}
+.zt {{ display: flex; align-items: center; gap: 14px; font-size: 44px; font-weight: 800; }}
+.zt i {{ width: 22px; height: 22px; border-radius: 50%; background: #C77DFF; box-shadow: 0 0 0 6px rgba(199,125,255,0.25); }}
+.zone p {{ margin-top: 14px; font-size: 32px; line-height: 1.3; color: #2A2F38; }} .zone p b {{ color: #111; font-weight: 700; }}
+.stats4 {{ display: flex; gap: 12px; margin-top: 18px; }}
+.st4 {{ flex: 1; background: #111; border-radius: 16px; padding: 18px 20px; }}
+.st4 b {{ display: block; font-size: 52px; font-weight: 800; color: #FFC940; line-height: 1; white-space: nowrap; }}
+.st4 span {{ display: block; margin-top: 8px; font-size: 24px; font-weight: 600; color: #E8ECF4; }}
+.take {{ position: absolute; left: 50px; right: 50px; bottom: 50px; background: #FFD43B; color: #111; border-radius: 22px; padding: 24px 30px;
+  font-size: 34px; line-height: 1.25; text-align: center; font-weight: 500; }} .take b {{ font-weight: 800; }}
 .card {{ position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }}
 .who {{ display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }}
 .who img {{ width: 70px; height: 70px; border-radius: 50%; }}
@@ -232,6 +268,7 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 {slide1()}
 {slide2()}
 {slide3()}
+{slide4()}
 </body></html>'''
 (HERE / 'slides.html').write_text(page)
 print('slides.html')

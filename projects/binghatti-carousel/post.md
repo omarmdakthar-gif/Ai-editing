@@ -21,3 +21,7 @@ Morning sky. "Because now, from Binghatti... The developer that has collaborated
 
 ## Slide 3 (done): location
 Map (OpenStreetMap, map3.json) with Dubai Silicon Oasis, Academic City, The Arts District pin (position approximate), and drive-time chips from the brochure.
+
+## Slide 4 (done): the potential
+- Dubai Silicon Oasis: one of the 5 main urban centres in the Dubai 2040 Urban Master Plan. District IO: AED 11 billion, 70,000+ direct and indirect jobs over ten years, 6,500+ companies (Dubai Media Office, 22 Jan 2026).
+- Academic City: 38,500+ students across Dubai International Academic City and Dubai Knowledge Park at the end of 2024-25 (WAM); TECOM forecasts 40%+ growth in Dubai higher-education enrolment by 2029-30. Omar's "50,000 students by 2029" was not found in an official source, so it is not used.
