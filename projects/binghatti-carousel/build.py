@@ -163,6 +163,11 @@ def slide4():
     <p>Dubai's university hub, right next door. Students, faculty and staff all need homes nearby.</p>
     <div class="stats4">{stat('38,500+', 'students today')}{stat('+40%', 'more students by 2030')}</div>
   </div>
+  <div class="zone metro">
+    <div class="zt"><i></i>Metro Blue Line</div>
+    <p>Dubai Metro's new line will have stations at <b>Dubai Silicon Oasis</b> and <b>Academic City</b>.</p>
+    <div class="stats4">{stat('2029', 'opening')}{stat('30 km', 'new line')}{stat('14', 'stations')}</div>
+  </div>
   <div class="take">Thousands of new jobs + students next door =<br><b>strong rental demand</b></div>
 </section>'''
 
@@ -239,17 +244,18 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
   transform: translateY(-50%); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }}
 .s4 {{ background-color: #0B1226; background-size: cover; background-position: center 60%; }}
 .s4shade {{ position: absolute; inset: 0; background: rgba(6,10,24,0.72); }}
-.s4head {{ position: relative; height: 330px; }}
-.zone {{ position: relative; margin: 36px 50px 0; background: #fff; border-radius: 26px; padding: 34px 36px 36px; color: #111; }}
-.zt {{ display: flex; align-items: center; gap: 14px; font-size: 44px; font-weight: 800; }}
+.s4head {{ position: relative; height: 290px; }} .s4head h1 {{ font-size: 60px; }}
+.zone {{ position: relative; margin: 18px 50px 0; background: #fff; border-radius: 24px; padding: 22px 30px 24px; color: #111; }}
+.zt {{ display: flex; align-items: center; gap: 14px; font-size: 38px; font-weight: 800; }}
 .zt i {{ width: 22px; height: 22px; border-radius: 50%; background: #C77DFF; box-shadow: 0 0 0 6px rgba(199,125,255,0.25); }}
-.zone p {{ margin-top: 14px; font-size: 32px; line-height: 1.3; color: #2A2F38; }} .zone p b {{ color: #111; font-weight: 700; }}
-.stats4 {{ display: flex; gap: 12px; margin-top: 18px; }}
-.st4 {{ flex: 1; background: #111; border-radius: 16px; padding: 18px 20px; }}
-.st4 b {{ display: block; font-size: 52px; font-weight: 800; color: #FFC940; line-height: 1; white-space: nowrap; }}
-.st4 span {{ display: block; margin-top: 8px; font-size: 24px; font-weight: 600; color: #E8ECF4; }}
-.take {{ position: absolute; left: 50px; right: 50px; bottom: 50px; background: #FFD43B; color: #111; border-radius: 22px; padding: 24px 30px;
-  font-size: 34px; line-height: 1.25; text-align: center; font-weight: 500; }} .take b {{ font-weight: 800; }}
+.zone p {{ margin-top: 8px; font-size: 27px; line-height: 1.3; color: #2A2F38; }} .zone p b {{ color: #111; font-weight: 700; }}
+.stats4 {{ display: flex; gap: 10px; margin-top: 12px; }}
+.st4 {{ flex: 1; background: #111; border-radius: 14px; padding: 12px 18px; }}
+.st4 b {{ display: block; font-size: 42px; font-weight: 800; color: #FFC940; line-height: 1; white-space: nowrap; }}
+.st4 span {{ display: block; margin-top: 4px; font-size: 21px; font-weight: 600; color: #E8ECF4; }}
+.take {{ position: absolute; left: 50px; right: 50px; bottom: 30px; background: #FFD43B; color: #111; border-radius: 20px; padding: 16px 26px;
+  font-size: 30px; line-height: 1.25; text-align: center; font-weight: 500; }} .take b {{ font-weight: 800; }}
+.zone.metro .zt i {{ background: #2F7BFF; box-shadow: 0 0 0 6px rgba(47,123,255,0.25); }}
 .card {{ position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }}
 .who {{ display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }}
 .who img {{ width: 70px; height: 70px; border-radius: 50%; }}
