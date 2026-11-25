@@ -26,3 +26,8 @@ Map (OpenStreetMap, map3.json) with Dubai Silicon Oasis, Academic City, The Arts
 - Dubai Silicon Oasis: one of the 5 main urban centres in the Dubai 2040 Urban Master Plan. District IO: AED 11 billion, 70,000+ direct and indirect jobs over ten years, 6,500+ companies (Dubai Media Office, 22 Jan 2026).
 - Academic City: 38,500+ students across Dubai International Academic City and Dubai Knowledge Park at the end of 2024-25 (WAM); TECOM forecasts 40%+ growth in Dubai higher-education enrolment by 2029-30. Omar's "50,000 students by 2029" was not found in an official source, so it is not used.
 - Metro Blue Line (added): approved 2023, about 30 km and 14 stations, opening September 2029, with stations at Dubai Silicon Oasis and Academic City (RTA).
+
+## Slide 5 (done): student rent comparison
+- Student rooms near Academic City (KSK Homes website, screenshots from Omar, Nov 2026): single room AED 6,550/month, shared twin room (200 sq ft) AED 4,699/month, inclusive of VAT. Rooms include basic furniture, fridge, wardrobe, safe and Wi-Fi, so the slide says "no pool, no gym, no community" rather than "no amenities".
+- Studio at The Arts District: 370 sq ft (brochure). No specific return is promised on the slide.
+- Photo: plaza render from the Binghatti brochure (src/arts_district.pdf, page 1).
