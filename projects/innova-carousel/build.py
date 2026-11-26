@@ -240,6 +240,7 @@ def n1():
   <div class="stop">DON'T BUY IT YET</div>
   <div class="n1foot">*Ex-showroom starting price</div>
   <div class="swipe">Swipe &rarr;</div>
+  {foot()}
 </section>'''
 
 
@@ -263,8 +264,13 @@ def kicker(t):
     return f'<div class="kick"><i></i>{t}</div>'
 
 
+WA_ICON = '<svg class="wa" viewBox="0 0 24 24"><path fill="#25D366" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/><path fill="#fff" d="M16.5 14.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>'
+PHONE = '+971 56 837 6676'
+
+
 def foot():
-    return f'<div class="nfoot"><img src="img/avatar.png" alt=""><b>{NAME}</b>{TICK}<span>{HANDLE}</span></div>'
+    return (f'<div class="nfoot"><img src="img/avatar.png" alt=""><div class="fn"><div><b>{NAME}</b>{TICK}<strong>(Dubai Property Consultant)</strong></div>'
+            f'<div class="fp">{WA_ICON}{PHONE}</div></div></div>')
 
 
 def n2():
@@ -275,7 +281,7 @@ def n2():
   <div class="tix">
     <div class="tk car"><div class="tl">Option 1</div><div class="tt">Innova Hycross</div><div class="tp">₹25 L</div><div class="ts">Gone. The car is yours, the money is spent.</div><div class="x">&#10005;</div></div>
     <div class="tk home"><div class="tl">Option 2</div><div class="tt">Binghatti studio, Dubai</div><div class="tp">₹1.26 Cr <small>home</small></div>
-      <div class="pay"><div><b>₹25.25 L</b><span>20% down payment</span></div><div class="pl">+</div><div><b>₹63K</b><span>a month (AED 2,500)</span></div></div></div>
+      <div class="pay"><div><b>₹25.25 L</b><span>20% down payment</span></div><div class="pl">+</div><div><b>AED 2,500</b><span>a month (&asymp; ₹63,000)</span></div></div></div>
   </div>
   <p class="nfine">Studio from AED 499K after the 7% EOI discount. 20% = AED 99,800 &middot; {RATE_NOTE}</p>
   {foot()}
@@ -352,7 +358,7 @@ def n7():
   <div class="n7img" style="background-image:url('img/kids.jpg')"></div>
   <div class="n7grad"></div>
   <div class="n7box">
-    <div class="n7who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
+    <div class="n7who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}<strong class="cons">(Dubai Property Consultant)</strong></div><div class="handle n7ph">{WA_ICON}{PHONE}</div></div></div>
     <div class="n7q">Your ₹25 lakh.<br>Your choice.</div>
     <div class="n7c">Comment <b>ARTS DISTRICT</b></div>
     <div class="n7d">or DM me for the price list &amp; payment plan</div>
@@ -486,14 +492,14 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .s7c mark {{ background: #FFD43B; color: #111; padding: 0 18px; border-radius: 16px; font-weight: 800; }}
 .s7d {{ margin-top: 16px; font-size: 48px; font-weight: 600; color: #3A414C; }}
 .n1 {{ background: #05070D; }}
-.n1photo {{ position: absolute; left: 0; right: 0; top: 230px; height: 760px; background-size: cover; background-position: center; }}
-.n1shade {{ position: absolute; inset: 0; background: linear-gradient(180deg, #05070D 0%, rgba(5,7,13,0) 26%, rgba(5,7,13,0) 62%, #05070D 82%); }}
+.n1photo {{ position: absolute; left: 0; right: 0; top: 200px; height: 720px; background-size: cover; background-position: center; }}
+.n1shade {{ position: absolute; inset: 0; background: linear-gradient(180deg, #05070D 0%, rgba(5,7,13,0) 24%, rgba(5,7,13,0) 56%, #05070D 70%); }}
 .n1top {{ position: absolute; left: 60px; right: 60px; top: 70px; color: #fff; font-size: 58px; font-weight: 600; line-height: 1.15; text-align: center; }}
 .n1top b {{ font-weight: 800; }} .n1top span {{ color: #FFD43B; font-weight: 800; }}
-.stop {{ position: absolute; left: 50%; top: 1010px; transform: translateX(-50%) rotate(-4deg); white-space: nowrap; background: #E0182D; color: #fff; font-weight: 800; font-size: 92px;
+.stop {{ position: absolute; left: 50%; top: 880px; transform: translateX(-50%) rotate(-4deg); white-space: nowrap; background: #E0182D; color: #fff; font-weight: 800; font-size: 92px;
   letter-spacing: 0.03em; padding: 18px 44px; border-radius: 22px; border: 8px solid #fff; box-shadow: 0 20px 50px rgba(224,24,45,0.5); }}
-.n1foot {{ position: absolute; left: 60px; bottom: 60px; color: #8A9099; font-size: 22px; }}
-.n1 .swipe {{ left: auto; right: 60px; transform: none; bottom: 46px; }}
+.n1foot {{ position: absolute; left: 60px; bottom: 176px; color: #8A9099; font-size: 22px; }}
+.n1 .swipe {{ left: auto; right: 60px; transform: none; bottom: 160px; }}
 .n2 {{ background: linear-gradient(180deg, #0B1530 0%, #1F3A7A 100%); }}
 .c2n {{ top: 60px; bottom: 60px; left: 60px; right: 60px; padding: 44px 50px; display: flex; flex-direction: column; justify-content: center; }}
 .n2a {{ font-size: 46px; line-height: 1.28; color: #2A2F38; }} .n2a b {{ color: #111; font-weight: 800; }}
@@ -530,7 +536,11 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .nh {{ margin-top: 24px; font-size: 76px; font-weight: 800; line-height: 1.05; letter-spacing: -0.01em; }}
 .nh em {{ font-style: normal; color: #FFD43B; }}
 .nfoot {{ position: absolute; left: 60px; right: 60px; bottom: 44px; display: flex; align-items: center; gap: 12px; font-size: 26px; color: #fff; border-top: 2px solid #26262B; padding-top: 22px; }}
-.nfoot img {{ width: 56px; height: 56px; border-radius: 50%; }} .nfoot .tick {{ width: 26px; height: 26px; }} .nfoot span {{ color: #8A8F99; margin-left: 4px; }}
+.nfoot img {{ width: 72px; height: 72px; border-radius: 50%; border: 2px solid #FFD43B; }}
+.fn > div:first-child {{ display: flex; align-items: center; gap: 8px; font-size: 28px; }}
+.fn .tick {{ width: 26px; height: 26px; }} .fn strong, .cons {{ font-weight: 800; color: #FFD43B; margin-left: 6px; }}
+.fp, .n7ph {{ display: flex; align-items: center; gap: 8px; margin-top: 4px; font-size: 26px; font-weight: 700; color: #fff; letter-spacing: 0.02em; }}
+.wa {{ width: 28px; height: 28px; }}
 .tix {{ margin-top: 48px; display: grid; gap: 22px; }}
 .tk {{ position: relative; border-radius: 24px; padding: 28px 32px; }}
 .tk.car {{ background: #18181C; border: 2px solid #2A2A30; color: #8A8F99; }}
@@ -583,7 +593,7 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .n7grad {{ position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,5,6,0.1) 20%, rgba(5,5,6,0.85) 62%, #050506 85%); }}
 .n7box {{ position: absolute; left: 60px; right: 60px; bottom: 80px; }}
 .n7who {{ display: flex; align-items: center; gap: 18px; }} .n7who img {{ width: 84px; height: 84px; border-radius: 50%; border: 3px solid #FFD43B; }}
-.n7who .name {{ font-size: 34px; }} .n7who .handle {{ color: #C9CDD3; font-size: 24px; }}
+.n7who .name {{ font-size: 34px; display: flex; align-items: center; gap: 8px; }} .n7who .cons {{ font-size: 28px; }} .n7ph {{ font-size: 28px; color: #fff !important; }} .n7who .handle {{ color: #C9CDD3; font-size: 24px; }}
 .n7q {{ margin-top: 26px; font-size: 92px; font-weight: 800; line-height: 1.02; }}
 .n7c {{ margin-top: 30px; display: inline-block; background: #E0182D; color: #fff; font-size: 60px; font-weight: 700; padding: 16px 32px; border-radius: 20px; }} .n7c b {{ font-weight: 800; color: #FFD43B; }}
 .n7d {{ margin-top: 20px; font-size: 34px; color: #E8ECF4; }}
