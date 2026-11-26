@@ -13,3 +13,23 @@ Own design (black, red and gold, car-brochure / spec-sheet style), not the Bingh
 Open points (same as the Binghatti carousel): studio price vs brochure, 20% down vs brochure 60/40, 7% EOI discount, images from the confidential deck (slides 3 and 7).
 Car photo: launch-event photo cropped from the graphic Omar sent (src/innova_launch.jpg), without its text.
 - Update: footer on slides 2-7 (not slide 1, so the hook reads as car content) = photo, name, blue tick, "(Dubai Property Consultant)", WhatsApp +971 56 837 6676 (no handle). Slide 2 monthly box shows AED 2,500 big with "≈ ₹63,000" small.
+
+## Caption
+The new Innova Hycross just launched at ₹19.59 lakh. Before you book one, swipe 👉
+
+A well-specced Innova will cost you around ₹25 lakh. For that same ₹25 lakh, you could own a ₹1.26 crore studio in Dubai by Binghatti, the developer behind collaborations with Bugatti and Mercedes-Benz.
+
+🏠 The Arts District by Binghatti
+💰 ₹25.25 lakh (20%) down, then AED 2,500 a month
+📍 Next to Dubai Silicon Oasis & Academic City: 15 min to DXB, 17 min to Downtown
+🚇 Metro Blue Line coming by 2029
+🎁 Extra 7% off when you book at the EOI stage
+
+A car loses value from day one. A home in a growing area can work for you.
+
+Comment ARTS DISTRICT or WhatsApp me on +971 56 837 6676 for the price list and payment plan.
+
+*Studio from AED 499K after the 7% EOI discount. Rupee amounts at 1 AED = ₹25.30 (25 Nov 2026) and will change with the exchange rate. Prices and offers subject to availability.*
+
+## Hashtags
+#InnovaHycross #Toyota #NRI #IndiansInDubai #DubaiRealEstate #DubaiProperty #OffPlanDubai #Binghatti #DubaiInvestment #InvestInDubai
