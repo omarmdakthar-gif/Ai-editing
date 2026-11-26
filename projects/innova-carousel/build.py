@@ -240,7 +240,6 @@ def n1():
   <div class="stop">DON'T BUY IT YET</div>
   <div class="n1foot">*Ex-showroom starting price</div>
   <div class="swipe">Swipe &rarr;</div>
-  {foot()}
 </section>'''
 
 
@@ -492,14 +491,14 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .s7c mark {{ background: #FFD43B; color: #111; padding: 0 18px; border-radius: 16px; font-weight: 800; }}
 .s7d {{ margin-top: 16px; font-size: 48px; font-weight: 600; color: #3A414C; }}
 .n1 {{ background: #05070D; }}
-.n1photo {{ position: absolute; left: 0; right: 0; top: 200px; height: 720px; background-size: cover; background-position: center; }}
-.n1shade {{ position: absolute; inset: 0; background: linear-gradient(180deg, #05070D 0%, rgba(5,7,13,0) 24%, rgba(5,7,13,0) 56%, #05070D 70%); }}
+.n1photo {{ position: absolute; left: 0; right: 0; top: 220px; height: 800px; background-size: cover; background-position: center; }}
+.n1shade {{ position: absolute; inset: 0; background: linear-gradient(180deg, #05070D 0%, rgba(5,7,13,0) 24%, rgba(5,7,13,0) 62%, #05070D 78%); }}
 .n1top {{ position: absolute; left: 60px; right: 60px; top: 70px; color: #fff; font-size: 58px; font-weight: 600; line-height: 1.15; text-align: center; }}
 .n1top b {{ font-weight: 800; }} .n1top span {{ color: #FFD43B; font-weight: 800; }}
-.stop {{ position: absolute; left: 50%; top: 880px; transform: translateX(-50%) rotate(-4deg); white-space: nowrap; background: #E0182D; color: #fff; font-weight: 800; font-size: 92px;
+.stop {{ position: absolute; left: 50%; top: 990px; transform: translateX(-50%) rotate(-4deg); white-space: nowrap; background: #E0182D; color: #fff; font-weight: 800; font-size: 92px;
   letter-spacing: 0.03em; padding: 18px 44px; border-radius: 22px; border: 8px solid #fff; box-shadow: 0 20px 50px rgba(224,24,45,0.5); }}
-.n1foot {{ position: absolute; left: 60px; bottom: 176px; color: #8A9099; font-size: 22px; }}
-.n1 .swipe {{ left: auto; right: 60px; transform: none; bottom: 160px; }}
+.n1foot {{ position: absolute; left: 60px; bottom: 70px; color: #8A9099; font-size: 22px; }}
+.n1 .swipe {{ left: auto; right: 60px; transform: none; bottom: 56px; }}
 .n2 {{ background: linear-gradient(180deg, #0B1530 0%, #1F3A7A 100%); }}
 .c2n {{ top: 60px; bottom: 60px; left: 60px; right: 60px; padding: 44px 50px; display: flex; flex-direction: column; justify-content: center; }}
 .n2a {{ font-size: 46px; line-height: 1.28; color: #2A2F38; }} .n2a b {{ color: #111; font-weight: 800; }}

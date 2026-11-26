@@ -12,4 +12,4 @@ Own design (black, red and gold, car-brochure / spec-sheet style), not the Bingh
 
 Open points (same as the Binghatti carousel): studio price vs brochure, 20% down vs brochure 60/40, 7% EOI discount, images from the confidential deck (slides 3 and 7).
 Car photo: launch-event photo cropped from the graphic Omar sent (src/innova_launch.jpg), without its text.
-- Update: footer on every slide = photo, name, blue tick, "(Dubai Property Consultant)", WhatsApp +971 56 837 6676 (no handle). Slide 2 monthly box shows AED 2,500 big with "≈ ₹63,000" small.
+- Update: footer on slides 2-7 (not slide 1, so the hook reads as car content) = photo, name, blue tick, "(Dubai Property Consultant)", WhatsApp +971 56 837 6676 (no handle). Slide 2 monthly box shows AED 2,500 big with "≈ ₹63,000" small.
