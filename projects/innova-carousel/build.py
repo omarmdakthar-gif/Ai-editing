@@ -243,71 +243,119 @@ def n1():
 </section>'''
 
 
+def gauge(mins, maxm=30):
+    """Dashboard gauge: 240-degree arc, needle at mins/maxm."""
+    import math
+    cx, cy, r = 110, 110, 88
+    def pt(frac, rr=r):
+        ang = math.radians(150 + 240 * frac)
+        return cx + rr * math.cos(ang), cy + rr * math.sin(ang)
+    x0, y0 = pt(0); x1, y1 = pt(1); xm, ym = pt(mins / maxm)
+    big = 1 if 240 * mins / maxm > 180 else 0
+    ticks = ''.join(f'<line x1="{pt(k/6, 94)[0]:.1f}" y1="{pt(k/6, 94)[1]:.1f}" x2="{pt(k/6, 80)[0]:.1f}" y2="{pt(k/6, 80)[1]:.1f}" stroke="#555" stroke-width="3"/>' for k in range(7))
+    nx, ny = pt(mins / maxm, 70)
+    return (f'<svg viewBox="0 0 220 200" class="gsvg"><path d="M{x0:.1f} {y0:.1f} A{r} {r} 0 1 1 {x1:.1f} {y1:.1f}" stroke="#2A2A2E" stroke-width="14" fill="none" stroke-linecap="round"/>'
+            f'<path d="M{x0:.1f} {y0:.1f} A{r} {r} 0 {big} 1 {xm:.1f} {ym:.1f}" stroke="#E0182D" stroke-width="14" fill="none" stroke-linecap="round"/>{ticks}'
+            f'<line x1="{cx}" y1="{cy}" x2="{nx:.1f}" y2="{ny:.1f}" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="{cx}" cy="{cy}" r="9" fill="#fff"/></svg>')
+
+
+def kicker(t):
+    return f'<div class="kick"><i></i>{t}</div>'
+
+
+def foot():
+    return f'<div class="nfoot"><img src="img/avatar.png" alt=""><b>{NAME}</b>{TICK}<span>{HANDLE}</span></div>'
+
+
 def n2():
     return f'''
-<section class="slide n2">
-  <div class="card c2n">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
-    <p class="n2a">A well-specced Innova Hycross will cost you around</p>
-    <div class="big25">₹25 lakh</div>
-    <p class="n2a">For the <b>same ₹25 lakh</b>, you could make the down payment on a <b>Binghatti studio in Dubai.</b></p>
-    <div class="vs">
-      <div class="vcar"><span>Innova Hycross</span><b>~₹25 L</b><em>a car</em></div>
-      <div class="vmid">=</div>
-      <div class="vhome"><span>20% down payment</span><b>₹25.25 L</b><em>a Dubai home</em></div>
-    </div>
-    <p class="fine">20% of AED 499K = AED 99,800 &asymp; ₹25.25 lakh &middot; {RATE_NOTE}</p>
+<section class="slide nk">
+  {kicker('Same ₹25 lakh. Two choices.')}
+  <h2 class="nh">For the price of the car,<br>own a <em>₹1.26 crore</em><br>home in Dubai.</h2>
+  <div class="tix">
+    <div class="tk car"><div class="tl">Option 1</div><div class="tt">Innova Hycross</div><div class="tp">₹25 L</div><div class="ts">Gone. The car is yours, the money is spent.</div><div class="x">&#10005;</div></div>
+    <div class="tk home"><div class="tl">Option 2</div><div class="tt">Binghatti studio, Dubai</div><div class="tp">₹1.26 Cr <small>home</small></div>
+      <div class="pay"><div><b>₹25.25 L</b><span>20% down payment</span></div><div class="pl">+</div><div><b>₹63K</b><span>a month (AED 2,500)</span></div></div></div>
   </div>
+  <p class="nfine">Studio from AED 499K after the 7% EOI discount. 20% = AED 99,800 &middot; {RATE_NOTE}</p>
+  {foot()}
 </section>'''
 
 
 def n3():
+    row = lambda k, v, e='': f'<div class="sr"><span>{k}</span><b>{v}</b><em>{e}</em></div>'
     return f'''
-<section class="slide s2 n3">
-  <div class="sun"></div>
-  <div class="s2head">The Arts District<br>by <span>Binghatti</span></div>
-  <div class="s2sub">The developer that has collaborated with<div class="brands"><span>Bugatti</span><i>&amp;</i><span>Mercedes&#8209;Benz</span></div></div>
-  <div class="card c2">
-    <div class="who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
-    <div class="prices big inr">
-      <div><span>Studio</span><em>from</em><b>AED 499K<small>&asymp; ₹1.26 Cr</small></b></div>
-      <div><span>1 bed</span><em>from</em><b>AED 799K<small>&asymp; ₹2.02 Cr</small></b></div>
-      <div><span>2 bed</span><em>from</em><b>AED 1.2M<small>&asymp; ₹3.04 Cr</small></b></div>
-    </div>
-    <div class="deal big"><div><b>20%</b><span>down payment</span></div><div class="plus">&amp;</div><div><b>AED 2,500</b><span>a month &asymp; ₹63K</span></div></div>
-    <p class="fine">*Prices shown are after the 7% discount offered during the EOI stage &middot; {RATE_NOTE}</p>
+<section class="slide nk n3s">
+  <div class="n3img" style="background-image:url('img/violin.jpg')"></div>
+  <div class="n3grad"></div>
+  {kicker('Spec sheet')}
+  <h2 class="nh n3h">The Arts District<br><em>by Binghatti</em></h2>
+  <div class="spec">
+    {row('Developer', 'Binghatti', 'Bugatti &amp; Mercedes-Benz collabs')}
+    {row('Studio', 'AED 499K', '&asymp; ₹1.26 Cr')}
+    {row('1 bedroom', 'AED 799K', '&asymp; ₹2.02 Cr')}
+    {row('2 bedroom', 'AED 1.2M', '&asymp; ₹3.04 Cr')}
+    {row('Payment', '20% + AED 2,500/mo', '&asymp; ₹63K a month')}
+    {row('EOI offer', 'Extra 7% off', 'prices above include it')}
   </div>
+  {foot()}
+</section>'''
+
+
+def n4():
+    g = lambda m, place: f'<div class="gg">{gauge(m)}<div class="gm"><b>{m}</b><span>min</span></div><div class="gp">{place}</div></div>'
+    return f'''
+<section class="slide nk">
+  {kicker('Location')}
+  <h2 class="nh">Next to <em>Dubai Silicon Oasis</em><br>&amp; <em>Academic City</em></h2>
+  <div class="gauges">{g(10, 'Meydan')}{g(14, 'Dubai Creek Harbour')}{g(15, 'DXB Airport')}{g(17, 'Downtown Dubai')}</div>
+  <div class="mapstrip" style="background-image:url('img/map_location.jpg')"><div class="pin">The Arts District</div></div>
+  {foot()}
+</section>'''
+
+
+def n5():
+    step = lambda when, what, detail: f'<div class="tlr"><div class="tw">{when}</div><div class="td"><b>{what}</b><span>{detail}</span></div></div>'
+    return f'''
+<section class="slide nk">
+  {kicker('What is coming next door')}
+  <h2 class="nh">This area is<br><em>about to change</em></h2>
+  <div class="tline">
+    {step('Today', '38,500+ students', 'at Academic City &amp; Dubai Knowledge Park')}
+    {step('2029', 'Metro Blue Line opens', 'stations at Dubai Silicon Oasis &amp; Academic City')}
+    {step('2030', '+40% more students', 'forecast growth in Dubai higher education')}
+    {step('Next 10 yrs', 'District IO at DSO', 'AED 11B investment &middot; 70,000+ jobs')}
+    {step('2040', 'A main urban centre', 'DSO in the Dubai 2040 Urban Master Plan')}
+  </div>
+  {foot()}
 </section>'''
 
 
 def n6():
-    row = lambda a, b: f'<div class="cr"><div class="cl">{a}</div><div class="cv">{b}</div></div>'
+    li = lambda t: f'<li>{t}</li>'
     return f'''
-<section class="slide n6">
-  <div class="n6head">
-    <div class="who light"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div><div class="pill">Same ₹25 lakh</div></div>
-    <h1>Car or <span>Dubai home?</span></h1>
+<section class="slide nk">
+  {kicker('Fast forward 5 years')}
+  <h2 class="nh">Where will your<br><em>₹25 lakh</em> be?</h2>
+  <div class="ff">
+    <div class="fc down"><div class="fa">&#8600;</div><div class="ft">The car</div><ul>{li('Worth less every year')}{li('Fuel, insurance and service bills')}{li('Ready to be replaced')}</ul></div>
+    <div class="fc up"><div class="fa">&#8599;</div><div class="ft">The Dubai home</div><ul>{li('Handed over and ready to rent')}{li('Next to new jobs, students and a metro line')}{li('An asset by a top developer')}</ul></div>
   </div>
-  <div class="cmp">
-    <div class="ch"><div></div><div class="cl hd">Innova Hycross</div><div class="cv hd">Dubai studio</div></div>
-    <div class="cr"><div class="ck">Value over time</div><div class="cl">Loses value from day one</div><div class="cv">In a growth corridor next to DSO &amp; Academic City</div></div>
-    <div class="cr"><div class="ck">Every month</div><div class="cl">Fuel, insurance, service</div><div class="cv">Can earn rental income once handed over</div></div>
-    <div class="cr"><div class="ck">Paid</div><div class="cl">Upfront or a car loan</div><div class="cv">20% down, then AED 2,500 a month</div></div>
-    <div class="cr"><div class="ck">In 5 years</div><div class="cl">An older car</div><div class="cv">A home by a top developer</div></div>
-  </div>
-  <div class="take n6t">Drive the car you have. <b>Let the ₹25 lakh work for you.</b></div>
+  <div class="nquote">Drive the car you have. <b>Let your ₹25 lakh work for you.</b></div>
+  {foot()}
 </section>'''
 
 
 def n7():
     return f'''
-<section class="slide s7" style="background-image:url('img/aerial.jpg')">
-  <div class="s7shade"></div>
-  <div class="s7box">
-    <div class="who s7who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
-    <div class="s7q">Want the details?</div>
-    <div class="s7c">Comment <mark>ARTS DISTRICT</mark></div>
-    <div class="s7d">or DM me</div>
+<section class="slide nk n7s">
+  <div class="n7img" style="background-image:url('img/kids.jpg')"></div>
+  <div class="n7grad"></div>
+  <div class="n7box">
+    <div class="n7who"><img src="img/avatar.png" alt=""><div><div class="name">{NAME}{TICK}</div><div class="handle">{HANDLE}</div></div></div>
+    <div class="n7q">Your ₹25 lakh.<br>Your choice.</div>
+    <div class="n7c">Comment <b>ARTS DISTRICT</b></div>
+    <div class="n7d">or DM me for the price list &amp; payment plan</div>
   </div>
 </section>'''
 
@@ -476,6 +524,69 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 .cv {{ font-size: 31px; color: #111; font-weight: 700; line-height: 1.25; background: #FFF6D6; border-radius: 12px; padding: 10px 14px; }}
 .cl.hd {{ font-size: 30px; font-weight: 800; color: #111; }} .cv.hd {{ font-size: 30px; font-weight: 800; background: #FFD43B; }}
 .n6t {{ bottom: 44px; }}
+.nk {{ background: radial-gradient(90% 60% at 80% 0%, #2A0A10 0%, #0A0A0C 55%, #050506 100%); color: #fff; padding: 70px 60px 0; }}
+.kick {{ display: flex; align-items: center; gap: 14px; font-size: 26px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #FF5A6A; }}
+.kick i {{ width: 46px; height: 6px; background: #E0182D; border-radius: 3px; }}
+.nh {{ margin-top: 24px; font-size: 76px; font-weight: 800; line-height: 1.05; letter-spacing: -0.01em; }}
+.nh em {{ font-style: normal; color: #FFD43B; }}
+.nfoot {{ position: absolute; left: 60px; right: 60px; bottom: 44px; display: flex; align-items: center; gap: 12px; font-size: 26px; color: #fff; border-top: 2px solid #26262B; padding-top: 22px; }}
+.nfoot img {{ width: 56px; height: 56px; border-radius: 50%; }} .nfoot .tick {{ width: 26px; height: 26px; }} .nfoot span {{ color: #8A8F99; margin-left: 4px; }}
+.tix {{ margin-top: 48px; display: grid; gap: 22px; }}
+.tk {{ position: relative; border-radius: 24px; padding: 28px 32px; }}
+.tk.car {{ background: #18181C; border: 2px solid #2A2A30; color: #8A8F99; }}
+.tk.car .tp {{ text-decoration: line-through; text-decoration-color: #E0182D; text-decoration-thickness: 6px; color: #C9CDD3; }}
+.tk .x {{ position: absolute; right: 30px; top: 26px; width: 64px; height: 64px; border-radius: 50%; background: #E0182D; color: #fff; display: grid; place-items: center; font-size: 34px; font-weight: 800; }}
+.tk.home {{ background: linear-gradient(135deg, #FFE27A, #FFC940); color: #111; box-shadow: 0 20px 60px rgba(255,201,64,0.25); }}
+.tl {{ font-size: 22px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.8; }}
+.tt {{ font-size: 40px; font-weight: 700; margin-top: 4px; }}
+.tp {{ font-size: 84px; font-weight: 800; line-height: 1.05; margin-top: 6px; }} .tp small {{ font-size: 36px; font-weight: 700; }}
+.ts {{ font-size: 28px; margin-top: 6px; }}
+.pay {{ display: flex; align-items: center; gap: 14px; margin-top: 18px; }}
+.pay > div:not(.pl) {{ flex: 1; background: #111; color: #fff; border-radius: 16px; padding: 14px 18px; }}
+.pay b {{ display: block; font-size: 46px; font-weight: 800; color: #FFD43B; line-height: 1; }} .pay span {{ display: block; margin-top: 6px; font-size: 22px; font-weight: 600; }}
+.pl {{ font-size: 44px; font-weight: 800; }}
+.nfine {{ margin-top: 18px; font-size: 21px; color: #8A8F99; }}
+.n3img {{ position: absolute; inset: 0; background-size: cover; background-position: center 30%; }}
+.n3grad {{ position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,5,6,0.88) 0%, rgba(5,5,6,0.35) 30%, rgba(5,5,6,0.75) 52%, #050506 70%); }}
+.n3s > *:not(.n3img):not(.n3grad):not(.nfoot) {{ position: relative; }}
+.n3h {{ font-size: 80px; }}
+.spec {{ margin-top: 330px; background: rgba(15,15,18,0.85); border: 2px solid #2A2A30; border-radius: 24px; padding: 8px 30px; backdrop-filter: blur(6px); }}
+.sr {{ display: grid; grid-template-columns: 200px 1fr auto; gap: 16px; align-items: baseline; padding: 15px 0; border-bottom: 1.5px solid #2A2A30; }}
+.sr:last-child {{ border-bottom: none; }}
+.sr span {{ font-size: 22px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #FF5A6A; }}
+.sr b {{ font-size: 38px; font-weight: 800; white-space: nowrap; }} .sr em {{ font-style: normal; font-size: 24px; color: #C9CDD3; text-align: right; }}
+.n3s .nfoot {{ position: absolute; }}
+.gauges {{ margin-top: 44px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }}
+.gg {{ position: relative; background: #121215; border: 2px solid #26262B; border-radius: 22px; padding: 14px 10px 18px; text-align: center; }}
+.gsvg {{ width: 200px; height: 182px; }}
+.gm {{ margin-top: -40px; }} .gm b {{ font-size: 64px; font-weight: 800; line-height: 1; }} .gm span {{ display: inline !important; margin-left: 6px; }} .gm span {{ display: block; font-size: 22px; color: #8A8F99; font-weight: 700; letter-spacing: 0.1em; }}
+.gp {{ margin-top: 6px; font-size: 28px; font-weight: 700; }}
+.mapstrip {{ position: relative; margin-top: 20px; height: 200px; border-radius: 20px; background-size: cover; background-position: center 70%; border: 2px solid #26262B; }}
+.mapstrip .pin {{ position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); background: #FFD43B; color: #111; font-weight: 800; font-size: 30px; padding: 10px 22px; border-radius: 12px; }}
+.tline {{ margin-top: 64px; position: relative; padding-left: 10px; }}
+.tline::before {{ content: ''; position: absolute; left: 189px; top: 18px; bottom: 30px; width: 4px; background: linear-gradient(#E0182D, #FFD43B); border-radius: 2px; }}
+.tlr {{ display: grid; grid-template-columns: 160px 1fr; gap: 50px; align-items: start; margin-bottom: 52px; position: relative; }}
+.tlr::before {{ content: ''; position: absolute; left: 170px; top: 10px; width: 22px; height: 22px; border-radius: 50%; background: #fff; border: 5px solid #E0182D; }}
+.tw {{ font-size: 30px; font-weight: 800; color: #FFD43B; text-align: right; padding-top: 2px; white-space: nowrap; }}
+.td b {{ display: block; font-size: 46px; font-weight: 800; }} .td span {{ display: block; margin-top: 6px; font-size: 29px; color: #C9CDD3; }}
+.ff {{ margin-top: 46px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }}
+.fc {{ border-radius: 24px; padding: 34px 30px 40px; }}
+.fc.down {{ background: #18181C; border: 2px solid #3A1A1F; }} .fc.up {{ background: linear-gradient(160deg, #FFE27A, #FFC940); color: #111; }}
+.fa {{ width: 80px; height: 80px; border-radius: 50%; display: grid; place-items: center; font-size: 50px; font-weight: 800; }}
+.down .fa {{ background: #E0182D; color: #fff; }} .up .fa {{ background: #111; color: #FFD43B; }}
+.ft {{ margin-top: 22px; font-size: 48px; font-weight: 800; }}
+.fc ul {{ margin-top: 20px; padding-left: 1.1em; display: grid; gap: 22px; font-size: 34px; line-height: 1.25; }}
+.down ul {{ color: #C9CDD3; }}
+.nquote {{ margin-top: 50px; border-left: 8px solid #E0182D; padding: 8px 0 8px 26px; font-size: 40px; line-height: 1.25; }} .nquote b {{ color: #FFD43B; }}
+.n7s {{ padding: 0; }}
+.n7img {{ position: absolute; inset: 0; background-size: cover; background-position: center; }}
+.n7grad {{ position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,5,6,0.1) 20%, rgba(5,5,6,0.85) 62%, #050506 85%); }}
+.n7box {{ position: absolute; left: 60px; right: 60px; bottom: 80px; }}
+.n7who {{ display: flex; align-items: center; gap: 18px; }} .n7who img {{ width: 84px; height: 84px; border-radius: 50%; border: 3px solid #FFD43B; }}
+.n7who .name {{ font-size: 34px; }} .n7who .handle {{ color: #C9CDD3; font-size: 24px; }}
+.n7q {{ margin-top: 26px; font-size: 92px; font-weight: 800; line-height: 1.02; }}
+.n7c {{ margin-top: 30px; display: inline-block; background: #E0182D; color: #fff; font-size: 60px; font-weight: 700; padding: 16px 32px; border-radius: 20px; }} .n7c b {{ font-weight: 800; color: #FFD43B; }}
+.n7d {{ margin-top: 20px; font-size: 34px; color: #E8ECF4; }}
 .card {{ position: absolute; left: 70px; right: 70px; bottom: 50px; background: #fff; border-radius: 30px; padding: 28px 38px 32px; color: #111; }}
 .who {{ display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }}
 .who img {{ width: 70px; height: 70px; border-radius: 50%; }}
@@ -494,8 +605,8 @@ body {{ background: #111; font-family: Outfit, sans-serif; }}
 {n1()}
 {n2()}
 {n3()}
-{slide3()}
-{slide4()}
+{n4()}
+{n5()}
 {n6()}
 {n7()}
 </body></html>'''
