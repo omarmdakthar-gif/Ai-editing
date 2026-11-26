@@ -14,3 +14,6 @@ Notes:
 - Viral comparison photos belong to their photographers/architects; used in a "these went viral" context without naming buildings or firms.
 - Bugatti Residences is still under construction, so the slide says "rising", not "completed".
 - Same open points as the Arts District carousels: studio price, 20% down vs brochure 60/40, 7% EOI discount, confidential-deck renders (violin, kids).
+
+## Version B (build_b.py -> slides_b.html, out_b/)
+Native Instagram look: full-bleed photos, story-style white/black text highlights, short conversational lines, simple dark footer bar (slides 3-7). Same content as version A.
